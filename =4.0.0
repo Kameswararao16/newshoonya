@@ -1,0 +1,17 @@
+Collecting webdriver-manager
+  Downloading webdriver_manager-4.1.2-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: requests in ./.venv/lib/python3.9/site-packages (from webdriver-manager) (2.32.5)
+Collecting python-dotenv (from webdriver-manager)
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting packaging (from webdriver-manager)
+  Using cached packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.venv/lib/python3.9/site-packages (from requests->webdriver-manager) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.9/site-packages (from requests->webdriver-manager) (3.18)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.9/site-packages (from requests->webdriver-manager) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.9/site-packages (from requests->webdriver-manager) (2026.5.20)
+Downloading webdriver_manager-4.1.2-py3-none-any.whl (32 kB)
+Using cached packaging-26.2-py3-none-any.whl (100 kB)
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Installing collected packages: python-dotenv, packaging, webdriver-manager
+
+Successfully installed packaging-26.2 python-dotenv-1.2.1 webdriver-manager-4.1.2
