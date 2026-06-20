@@ -274,7 +274,7 @@ def get_processing_data(stock):
     )
 
     start_time = int(
-        (datetime.now() - timedelta(days=3))
+        (datetime.now() - timedelta(days=5))
         .timestamp()
     )
     print(f"start_time: {datetime.fromtimestamp(start_time)}, end_time: {datetime.fromtimestamp(end_time)}")
