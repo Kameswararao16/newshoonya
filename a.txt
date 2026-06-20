@@ -2,370 +2,158 @@
 OAuth header injected successfully.
 /home/nodeusr/Kamesh/newshoonya
 Loaded historical data for ZYDUSLIFE with 57 rows.
-start_time: 2026-06-15 22:42:58, end_time: 2026-06-18 22:42:58
+start_time: 2026-06-16 08:13:11, end_time: 2026-06-19 08:13:11
 token: 7929
 tradingsymbol: ZYDUSLIFE-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1069.90", "inth":"1077.80", "intl":"1053.80", "intc":"1061.40", "ssboe":"1781654400", "intv":"2497044.00"}', '{"time":"16-JUN-2026", "into":"1088.90", "inth":"1091.60", "intl":"1072.40", "intc":"1078.70", "ssboe":"1781568000", "intv":"1049320.00"}']
-ZYDUSLIFE: 57 candles loaded
-
-Processing ZYDUSLIFE with 57 rows of data...
-Data for ZYDUSLIFE loaded successfully with 57 rows.
-Data for ZYDUSLIFE after dropping ZYDUSLIFE has 57 rows.
-Data for ZYDUSLIFE is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ZYDUSLIFE-EQ No candles
+Error processing...
+ZYDUSLIFE: object of type 'NoneType' has no len()
 Loaded historical data for WIPRO with 57 rows.
-start_time: 2026-06-15 22:42:59, end_time: 2026-06-18 22:42:59
+start_time: 2026-06-16 08:13:11, end_time: 2026-06-19 08:13:11
 token: 3787
 tradingsymbol: WIPRO-EQ
-candles: ['{"time":"17-JUN-2026", "into":"184.00", "inth":"185.25", "intl":"183.58", "intc":"184.47", "ssboe":"1781654400", "intv":"16131548.00"}', '{"time":"16-JUN-2026", "into":"182.39", "inth":"183.38", "intl":"181.63", "intc":"182.67", "ssboe":"1781568000", "intv":"11706020.00"}']
-WIPRO: 57 candles loaded
-
-Processing WIPRO with 57 rows of data...
-Data for WIPRO loaded successfully with 57 rows.
-Data for WIPRO after dropping WIPRO has 57 rows.
-Data for WIPRO is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+WIPRO-EQ No candles
+Error processing...
+WIPRO: object of type 'NoneType' has no len()
 Loaded historical data for ULTRACEMCO with 57 rows.
-start_time: 2026-06-15 22:43:00, end_time: 2026-06-18 22:43:00
+start_time: 2026-06-16 08:13:12, end_time: 2026-06-19 08:13:12
 token: 11532
 tradingsymbol: ULTRACEMCO-EQ
-candles: ['{"time":"17-JUN-2026", "into":"11380.00", "inth":"11420.00", "intl":"11314.00", "intc":"11373.00", "ssboe":"1781654400", "intv":"177587.00"}', '{"time":"16-JUN-2026", "into":"11485.00", "inth":"11511.00", "intl":"11368.00", "intc":"11391.00", "ssboe":"1781568000", "intv":"234423.00"}']
-ULTRACEMCO: 57 candles loaded
-
-Processing ULTRACEMCO with 57 rows of data...
-Data for ULTRACEMCO loaded successfully with 57 rows.
-Data for ULTRACEMCO after dropping ULTRACEMCO has 57 rows.
-Data for ULTRACEMCO is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ULTRACEMCO-EQ No candles
+Error processing...
+ULTRACEMCO: object of type 'NoneType' has no len()
 Loaded historical data for TRENT with 57 rows.
-start_time: 2026-06-15 22:43:07, end_time: 2026-06-18 22:43:07
+start_time: 2026-06-16 08:13:12, end_time: 2026-06-19 08:13:12
 token: 1964
 tradingsymbol: TRENT-EQ
-candles: ['{"time":"17-JUN-2026", "into":"2905.00", "inth":"3115.00", "intl":"2905.00", "intc":"3102.80", "ssboe":"1781654400", "intv":"5645225.00"}', '{"time":"16-JUN-2026", "into":"2915.50", "inth":"2923.20", "intl":"2875.00", "intc":"2897.80", "ssboe":"1781568000", "intv":"811498.00"}']
-TRENT: 57 candles loaded
-
-Processing TRENT with 57 rows of data...
-Data for TRENT loaded successfully with 57 rows.
-Data for TRENT after dropping TRENT has 57 rows.
-Data for TRENT is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+TRENT-EQ No candles
+Error processing...
+TRENT: object of type 'NoneType' has no len()
 Loaded historical data for TITAN with 57 rows.
-start_time: 2026-06-15 22:43:08, end_time: 2026-06-18 22:43:08
+start_time: 2026-06-16 08:13:12, end_time: 2026-06-19 08:13:12
 token: 3506
 tradingsymbol: TITAN-EQ
-candles: ['{"time":"17-JUN-2026", "into":"4338.00", "inth":"4395.00", "intl":"4327.50", "intc":"4380.50", "ssboe":"1781654400", "intv":"623868.00"}', '{"time":"16-JUN-2026", "into":"4298.10", "inth":"4344.00", "intl":"4283.50", "intc":"4338.00", "ssboe":"1781568000", "intv":"779706.00"}']
-TITAN: 57 candles loaded
-
-Processing TITAN with 57 rows of data...
-Data for TITAN loaded successfully with 57 rows.
-Data for TITAN after dropping TITAN has 57 rows.
-Data for TITAN is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+TITAN-EQ No candles
+Error processing...
+TITAN: object of type 'NoneType' has no len()
 Loaded historical data for TECHM with 57 rows.
-start_time: 2026-06-15 22:43:08, end_time: 2026-06-18 22:43:08
+start_time: 2026-06-16 08:13:12, end_time: 2026-06-19 08:13:12
 token: 13538
 tradingsymbol: TECHM-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1455.00", "inth":"1476.80", "intl":"1454.00", "intc":"1462.40", "ssboe":"1781654400", "intv":"2126833.00"}', '{"time":"16-JUN-2026", "into":"1435.10", "inth":"1455.70", "intl":"1422.90", "intc":"1446.80", "ssboe":"1781568000", "intv":"1987359.00"}']
-TECHM: 57 candles loaded
-
-Processing TECHM with 57 rows of data...
-Data for TECHM loaded successfully with 57 rows.
-Data for TECHM after dropping TECHM has 57 rows.
-Data for TECHM is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+TECHM-EQ No candles
+Error processing...
+TECHM: object of type 'NoneType' has no len()
 Loaded historical data for TCS with 57 rows.
-start_time: 2026-06-15 22:43:08, end_time: 2026-06-18 22:43:08
+start_time: 2026-06-16 08:13:13, end_time: 2026-06-19 08:13:13
 token: 11536
 tradingsymbol: TCS-EQ
-candles: ['{"time":"17-JUN-2026", "into":"2209.00", "inth":"2231.00", "intl":"2200.70", "intc":"2223.00", "ssboe":"1781654400", "intv":"2865010.00"}', '{"time":"16-JUN-2026", "into":"2167.00", "inth":"2209.00", "intl":"2160.60", "intc":"2199.00", "ssboe":"1781568000", "intv":"3079898.00"}']
-TCS: 57 candles loaded
-
-Processing TCS with 57 rows of data...
-Data for TCS loaded successfully with 57 rows.
-Data for TCS after dropping TCS has 57 rows.
-Data for TCS is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+TCS-EQ No candles
+Error processing...
+TCS: object of type 'NoneType' has no len()
 Loaded historical data for TATASTEEL with 57 rows.
-start_time: 2026-06-15 22:43:09, end_time: 2026-06-18 22:43:09
+start_time: 2026-06-16 08:13:13, end_time: 2026-06-19 08:13:13
 token: 3499
 tradingsymbol: TATASTEEL-EQ
-candles: ['{"time":"17-JUN-2026", "into":"196.79", "inth":"199.50", "intl":"195.60", "intc":"199.01", "ssboe":"1781654400", "intv":"22491220.00"}', '{"time":"16-JUN-2026", "into":"197.51", "inth":"197.60", "intl":"193.31", "intc":"196.00", "ssboe":"1781568000", "intv":"29255187.00"}']
-TATASTEEL: 57 candles loaded
-
-Processing TATASTEEL with 57 rows of data...
-Data for TATASTEEL loaded successfully with 57 rows.
-Data for TATASTEEL after dropping TATASTEEL has 57 rows.
-Data for TATASTEEL is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+TATASTEEL-EQ No candles
+Error processing...
+TATASTEEL: object of type 'NoneType' has no len()
 Loaded historical data for TATACONSUM with 57 rows.
-start_time: 2026-06-15 22:43:09, end_time: 2026-06-18 22:43:09
+start_time: 2026-06-16 08:13:13, end_time: 2026-06-19 08:13:13
 token: 3432
 tradingsymbol: TATACONSUM-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1126.00", "inth":"1134.20", "intl":"1117.90", "intc":"1124.50", "ssboe":"1781654400", "intv":"931423.00"}', '{"time":"16-JUN-2026", "into":"1111.20", "inth":"1135.80", "intl":"1107.60", "intc":"1130.90", "ssboe":"1781568000", "intv":"2602426.00"}']
-TATACONSUM: 57 candles loaded
-
-Processing TATACONSUM with 57 rows of data...
-Data for TATACONSUM loaded successfully with 57 rows.
-Data for TATACONSUM after dropping TATACONSUM has 57 rows.
-Data for TATACONSUM is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+TATACONSUM-EQ No candles
+Error processing...
+TATACONSUM: object of type 'NoneType' has no len()
 Loaded historical data for SUNPHARMA with 57 rows.
-start_time: 2026-06-15 22:43:10, end_time: 2026-06-18 22:43:10
+start_time: 2026-06-16 08:13:13, end_time: 2026-06-19 08:13:13
 token: 3351
 tradingsymbol: SUNPHARMA-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1814.00", "inth":"1823.40", "intl":"1802.60", "intc":"1820.40", "ssboe":"1781654400", "intv":"1771990.00"}', '{"time":"16-JUN-2026", "into":"1808.00", "inth":"1809.90", "intl":"1792.60", "intc":"1800.70", "ssboe":"1781568000", "intv":"1373638.00"}']
-SUNPHARMA: 57 candles loaded
-
-Processing SUNPHARMA with 57 rows of data...
-Data for SUNPHARMA loaded successfully with 57 rows.
-Data for SUNPHARMA after dropping SUNPHARMA has 57 rows.
-Data for SUNPHARMA is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+SUNPHARMA-EQ No candles
+Error processing...
+SUNPHARMA: object of type 'NoneType' has no len()
 Loaded historical data for SHRIRAMFIN with 57 rows.
-start_time: 2026-06-15 22:43:10, end_time: 2026-06-18 22:43:10
+start_time: 2026-06-16 08:13:13, end_time: 2026-06-19 08:13:13
 token: 4306
 tradingsymbol: SHRIRAMFIN-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1005.00", "inth":"1015.75", "intl":"1001.95", "intc":"1007.50", "ssboe":"1781654400", "intv":"4353419.00"}', '{"time":"16-JUN-2026", "into":"998.00", "inth":"1010.05", "intl":"992.05", "intc":"1005.75", "ssboe":"1781568000", "intv":"4544903.00"}']
-SHRIRAMFIN: 57 candles loaded
-
-Processing SHRIRAMFIN with 57 rows of data...
-Data for SHRIRAMFIN loaded successfully with 57 rows.
-Data for SHRIRAMFIN after dropping SHRIRAMFIN has 57 rows.
-Data for SHRIRAMFIN is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+SHRIRAMFIN-EQ No candles
+Error processing...
+SHRIRAMFIN: object of type 'NoneType' has no len()
 Loaded historical data for SBIN with 57 rows.
-start_time: 2026-06-15 22:43:10, end_time: 2026-06-18 22:43:10
+start_time: 2026-06-16 08:13:13, end_time: 2026-06-19 08:13:13
 token: 3045
 tradingsymbol: SBIN-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1017.00", "inth":"1028.10", "intl":"1013.45", "intc":"1026.50", "ssboe":"1781654400", "intv":"8190062.00"}', '{"time":"16-JUN-2026", "into":"1023.80", "inth":"1026.55", "intl":"1007.40", "intc":"1015.30", "ssboe":"1781568000", "intv":"9693677.00"}']
-SBIN: 57 candles loaded
-
-Processing SBIN with 57 rows of data...
-Data for SBIN loaded successfully with 57 rows.
-Data for SBIN after dropping SBIN has 57 rows.
-Data for SBIN is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+SBIN-EQ No candles
+Error processing...
+SBIN: object of type 'NoneType' has no len()
 Loaded historical data for SBILIFE with 57 rows.
-start_time: 2026-06-15 22:43:11, end_time: 2026-06-18 22:43:11
+start_time: 2026-06-16 08:13:14, end_time: 2026-06-19 08:13:14
 token: 21808
 tradingsymbol: SBILIFE-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1756.00", "inth":"1803.10", "intl":"1756.00", "intc":"1793.60", "ssboe":"1781654400", "intv":"730989.00"}', '{"time":"16-JUN-2026", "into":"1771.70", "inth":"1793.00", "intl":"1764.00", "intc":"1767.60", "ssboe":"1781568000", "intv":"1423732.00"}']
-SBILIFE: 57 candles loaded
-
-Processing SBILIFE with 57 rows of data...
-Data for SBILIFE loaded successfully with 57 rows.
-Data for SBILIFE after dropping SBILIFE has 57 rows.
-Data for SBILIFE is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
-Signal: Bullish, Entry: 1793.6, SL: 1756.0, Target: 1868.8, RangeZone: MID-LOW
-         Date    Open    High     Low   Close     Volume      Trend  RangeHigh14  RangeLow14  RangePct RangeZone WickSignal EngulfType FinalSignal    TriggerLogic
-0  2026-03-23  1875.0  1889.8  1811.5  1832.3  1338816.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-1  2026-03-24  1842.0  1866.5  1812.2  1836.0  1403010.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-2  2026-03-25  1845.3  1867.4  1839.2  1851.8  1167758.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-3  2026-03-27  1835.2  1851.1  1828.9  1837.6  1156884.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-4  2026-03-30  1820.8  1828.4  1766.0  1777.3  2274502.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-5  2026-04-01  1828.4  1845.6  1762.5  1790.5  1132054.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-6  2026-04-02  1760.0  1778.9  1728.1  1774.0  1494738.0   Sideways          NaN         NaN       NaN        NA    Bullish    Neutral     Bullish            Wick
-7  2026-04-06  1757.5  1844.5  1757.5  1836.8  1721071.0   Sideways          NaN         NaN       NaN        NA    Neutral    Bullish     Bullish  Bullish Engulf
-8  2026-04-07  1814.5  1845.9  1805.5  1841.4   974742.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-9  2026-04-08  1880.0  1923.0  1870.0  1907.6  1104494.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-10 2026-04-09  1907.0  1930.0  1881.1  1904.0  1330082.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-11 2026-04-10  1914.9  1950.6  1914.3  1923.2   763543.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-12 2026-04-13  1909.0  1931.8  1889.0  1914.4   638729.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-13 2026-04-15  1929.8  1974.2  1928.1  1971.0  1341053.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-14 2026-04-16  1971.1  1990.9  1962.1  1974.7   642257.0    Uptrend       1974.2      1728.1  1.002032  HIGH-OUT    Neutral    Neutral     Neutral                
-15 2026-04-17  1967.0  1975.8  1954.9  1970.9   533713.0    Uptrend       1990.9      1728.1  0.923896      HIGH    Neutral    Neutral     Neutral                
-16 2026-04-20  1976.3  1989.6  1956.6  1982.5  1033871.0    Uptrend       1990.9      1728.1  0.968037      HIGH    Neutral    Neutral     Neutral                
-17 2026-04-21  1974.4  1975.8  1891.7  1911.6  5153618.0    Uptrend       1990.9      1728.1  0.698250  MID-HIGH    Neutral    Neutral     Neutral                
-18 2026-04-22  1910.0  1930.6  1880.0  1884.8  4044590.0    Uptrend       1990.9      1728.1  0.596271  MID-HIGH    Neutral    Neutral     Neutral                
-19 2026-04-23  1865.0  1886.7  1807.7  1828.1  4199895.0   Sideways       1990.9      1728.1  0.380518   MID-LOW    Neutral    Neutral     Neutral                
-20 2026-04-24  1817.0  1836.3  1762.1  1768.9  5283235.0  Downtrend       1990.9      1728.1  0.155251       LOW    Neutral    Neutral     Neutral                
-21 2026-04-27  1768.9  1818.5  1759.0  1815.4  1918952.0  Downtrend       1990.9      1757.5  0.248072       LOW    Neutral    Neutral     Neutral                
-22 2026-04-28  1814.6  1824.0  1798.8  1808.3  1487099.0  Downtrend       1990.9      1759.0  0.212592       LOW    Neutral    Neutral     Neutral                
-23 2026-04-29  1808.6  1829.5  1792.9  1816.2  1431080.0  Downtrend       1990.9      1759.0  0.246658       LOW    Neutral    Neutral     Neutral                
-24 2026-04-30  1814.9  1826.0  1785.2  1819.0  1082053.0  Downtrend       1990.9      1759.0  0.258732   MID-LOW    Bullish    Neutral     Bullish            Wick
-25 2026-05-04  1810.1  1845.0  1810.1  1820.1  1929706.0  Downtrend       1990.9      1759.0  0.263476   MID-LOW    Neutral    Bullish     Bullish  Bullish Engulf
-26 2026-05-05  1820.0  1835.0  1802.6  1821.2  1003169.0  Downtrend       1990.9      1759.0  0.268219   MID-LOW    Neutral    Neutral     Neutral                
-27 2026-05-06  1839.0  1868.9  1825.9  1859.0  1236623.0  Downtrend       1990.9      1759.0  0.431220   MID-LOW    Neutral    Neutral     Neutral                
-28 2026-05-07  1868.0  1879.2  1860.0  1872.2  1232684.0  Downtrend       1990.9      1759.0  0.488141   MID-LOW    Neutral    Neutral     Neutral                
-29 2026-05-08  1874.9  1885.0  1865.2  1872.1   673259.0  Downtrend       1989.6      1759.0  0.490460   MID-LOW    Neutral    Neutral     Neutral                
-30 2026-05-11  1865.6  1895.0  1863.9  1884.4   672604.0   Sideways       1989.6      1759.0  0.543799  MID-HIGH    Neutral    Bullish     Bullish  Bullish Engulf
-31 2026-05-12  1866.0  1875.6  1825.0  1833.9  1291216.0  Downtrend       1975.8      1759.0  0.345480   MID-LOW    Neutral    Neutral     Neutral                
-32 2026-05-13  1820.0  1851.4  1818.2  1837.5   853301.0  Downtrend       1930.6      1759.0  0.457459   MID-LOW    Neutral    Neutral     Neutral                
-33 2026-05-14  1831.0  1870.0  1825.0  1866.7   765124.0    Uptrend       1895.0      1759.0  0.791912      HIGH    Neutral    Neutral     Neutral                
-34 2026-05-15  1866.7  1883.9  1850.0  1864.5   851184.0    Uptrend       1895.0      1759.0  0.775735      HIGH    Neutral    Neutral     Neutral                
-35 2026-05-18  1846.0  1867.5  1825.3  1860.4   746942.0    Uptrend       1895.0      1759.0  0.745588  MID-HIGH    Bullish    Neutral     Bullish            Wick
-36 2026-05-19  1846.0  1892.0  1845.4  1881.4  1351813.0    Uptrend       1895.0      1785.2  0.876138      HIGH    Neutral    Neutral     Neutral                
-37 2026-05-20  1860.0  1882.4  1856.1  1864.2   563774.0    Uptrend       1895.0      1785.2  0.719490  MID-HIGH    Neutral    Neutral     Neutral                
-38 2026-05-21  1869.9  1876.4  1854.9  1859.9   383464.0    Uptrend       1895.0      1785.2  0.680328  MID-HIGH    Neutral    Bearish     Bearish  Bearish Engulf
-39 2026-05-22  1872.0  1893.0  1860.9  1870.7   934443.0    Uptrend       1895.0      1802.6  0.737013  MID-HIGH    Neutral    Neutral     Neutral                
-40 2026-05-25  1881.5  1905.0  1879.8  1901.9   445135.0    Uptrend       1895.0      1802.6  1.074675  HIGH-OUT    Neutral    Neutral     Neutral                
-41 2026-05-26  1904.8  1906.9  1876.1  1883.2   812898.0    Uptrend       1905.0      1818.2  0.748848  MID-HIGH    Neutral    Neutral     Neutral                
-42 2026-05-27  1883.0  1888.5  1860.0  1864.5   372683.0   Sideways       1906.9      1818.2  0.521984  MID-HIGH    Neutral    Neutral     Neutral                
-43 2026-05-29  1862.4  1864.0  1820.5  1830.1  2094924.0  Downtrend       1906.9      1818.2  0.134160       LOW    Neutral    Neutral     Neutral                
-44 2026-06-01  1839.0  1846.4  1801.8  1812.5  1991126.0  Downtrend       1906.9      1818.2 -0.064262   LOW-OUT    Neutral    Neutral     Neutral                
-45 2026-06-02  1786.0  1819.0  1781.7  1801.7  1196704.0  Downtrend       1906.9      1801.8 -0.000951   LOW-OUT    Neutral    Neutral     Neutral                
-46 2026-06-03  1801.7  1809.9  1759.0  1784.2   784328.0  Downtrend       1906.9      1781.7  0.019968       LOW    Neutral    Neutral     Neutral                
-47 2026-06-04  1781.6  1784.1  1760.5  1764.9   727483.0  Downtrend       1906.9      1759.0  0.039892       LOW    Neutral    Neutral     Neutral                
-48 2026-06-05  1774.0  1797.8  1766.1  1782.8   715458.0  Downtrend       1906.9      1759.0  0.160920       LOW    Neutral    Neutral     Neutral                
-49 2026-06-08  1772.6  1786.4  1755.3  1764.4   438892.0  Downtrend       1906.9      1759.0  0.036511       LOW    Neutral    Neutral     Neutral                
-50 2026-06-09  1755.0  1782.1  1754.7  1769.1   857754.0  Downtrend       1906.9      1755.3  0.091029       LOW    Neutral    Neutral     Neutral                
-51 2026-06-10  1756.9  1774.0  1722.2  1728.7  1149490.0  Downtrend       1906.9      1754.7 -0.170828   LOW-OUT    Neutral    Neutral     Neutral                
-52 2026-06-11  1727.0  1740.0  1704.2  1719.1   965035.0  Downtrend       1906.9      1722.2 -0.016784   LOW-OUT    Neutral    Neutral     Neutral                
-53 2026-06-12  1742.0  1744.9  1700.4  1706.0  1438254.0  Downtrend       1906.9      1704.2  0.008880       LOW    Neutral    Bearish     Bearish  Bearish Engulf
-54 2026-06-15  1723.0  1766.3  1710.0  1759.5  1258362.0  Downtrend       1906.9      1700.4  0.286199   MID-LOW    Neutral    Neutral     Neutral                
-58 2026-06-16  1771.7  1793.0  1764.0  1767.6  1423732.0  Downtrend       1906.9      1700.4  0.325424   MID-LOW    Bearish    Neutral     Bearish            Wick
-57 2026-06-17  1756.0  1803.1  1756.0  1793.6   730989.0  Downtrend       1888.5      1700.4  0.495481   MID-LOW    Neutral    Bullish     Bullish  Bullish Engulf
-SBILIFE | 2026-06-17 | Bullish | Bullish Engulf | MID-LOW
+candles: None
+SBILIFE-EQ No candles
+Error processing...
+SBILIFE: object of type 'NoneType' has no len()
 Loaded historical data for RELIANCE with 57 rows.
-start_time: 2026-06-15 22:43:11, end_time: 2026-06-18 22:43:11
+start_time: 2026-06-16 08:13:14, end_time: 2026-06-19 08:13:14
 token: 2885
 tradingsymbol: RELIANCE-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1333.00", "inth":"1334.00", "intl":"1317.00", "intc":"1332.70", "ssboe":"1781654400", "intv":"10029170.00"}', '{"time":"16-JUN-2026", "into":"1313.40", "inth":"1333.40", "intl":"1306.40", "intc":"1328.80", "ssboe":"1781568000", "intv":"18513223.00"}']
-RELIANCE: 57 candles loaded
-
-Processing RELIANCE with 57 rows of data...
-Data for RELIANCE loaded successfully with 57 rows.
-Data for RELIANCE after dropping RELIANCE has 57 rows.
-Data for RELIANCE is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+RELIANCE-EQ No candles
+Error processing...
+RELIANCE: object of type 'NoneType' has no len()
 Loaded historical data for POWERGRID with 57 rows.
-start_time: 2026-06-15 22:43:12, end_time: 2026-06-18 22:43:12
+start_time: 2026-06-16 08:13:14, end_time: 2026-06-19 08:13:14
 token: 14977
 tradingsymbol: POWERGRID-EQ
-candles: ['{"time":"17-JUN-2026", "into":"286.20", "inth":"286.65", "intl":"283.25", "intc":"286.35", "ssboe":"1781654400", "intv":"6008101.00"}', '{"time":"16-JUN-2026", "into":"286.10", "inth":"286.40", "intl":"282.85", "intc":"285.15", "ssboe":"1781568000", "intv":"8146761.00"}']
-POWERGRID: 57 candles loaded
-
-Processing POWERGRID with 57 rows of data...
-Data for POWERGRID loaded successfully with 57 rows.
-Data for POWERGRID after dropping POWERGRID has 57 rows.
-Data for POWERGRID is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+POWERGRID-EQ No candles
+Error processing...
+POWERGRID: object of type 'NoneType' has no len()
 Loaded historical data for ONGC with 57 rows.
-start_time: 2026-06-15 22:43:12, end_time: 2026-06-18 22:43:12
+start_time: 2026-06-16 08:13:14, end_time: 2026-06-19 08:13:14
 token: 2475
 tradingsymbol: ONGC-EQ
-candles: ['{"time":"17-JUN-2026", "into":"246.00", "inth":"247.75", "intl":"244.00", "intc":"245.00", "ssboe":"1781654400", "intv":"12816262.00"}', '{"time":"16-JUN-2026", "into":"244.15", "inth":"248.80", "intl":"243.50", "intc":"248.20", "ssboe":"1781568000", "intv":"17468010.00"}']
-ONGC: 57 candles loaded
-
-Processing ONGC with 57 rows of data...
-Data for ONGC loaded successfully with 57 rows.
-Data for ONGC after dropping ONGC has 57 rows.
-Data for ONGC is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ONGC-EQ No candles
+Error processing...
+ONGC: object of type 'NoneType' has no len()
 Loaded historical data for NTPC with 57 rows.
-start_time: 2026-06-15 22:43:12, end_time: 2026-06-18 22:43:12
+start_time: 2026-06-16 08:13:15, end_time: 2026-06-19 08:13:15
 token: 11630
 tradingsymbol: NTPC-EQ
-candles: ['{"time":"17-JUN-2026", "into":"355.55", "inth":"356.05", "intl":"352.05", "intc":"355.55", "ssboe":"1781654400", "intv":"9299676.00"}', '{"time":"16-JUN-2026", "into":"349.75", "inth":"356.20", "intl":"348.50", "intc":"355.55", "ssboe":"1781568000", "intv":"14555184.00"}']
-NTPC: 57 candles loaded
-
-Processing NTPC with 57 rows of data...
-Data for NTPC loaded successfully with 57 rows.
-Data for NTPC after dropping NTPC has 57 rows.
-Data for NTPC is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+NTPC-EQ No candles
+Error processing...
+NTPC: object of type 'NoneType' has no len()
 Loaded historical data for NESTLEIND with 57 rows.
-start_time: 2026-06-15 22:43:13, end_time: 2026-06-18 22:43:13
+start_time: 2026-06-16 08:13:15, end_time: 2026-06-19 08:13:15
 token: 17963
 tradingsymbol: NESTLEIND-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1392.00", "inth":"1415.50", "intl":"1387.10", "intc":"1407.30", "ssboe":"1781654400", "intv":"1876655.00"}', '{"time":"16-JUN-2026", "into":"1375.40", "inth":"1409.80", "intl":"1375.40", "intc":"1391.70", "ssboe":"1781568000", "intv":"1899090.00"}']
-NESTLEIND: 57 candles loaded
-
-Processing NESTLEIND with 57 rows of data...
-Data for NESTLEIND loaded successfully with 57 rows.
-Data for NESTLEIND after dropping NESTLEIND has 57 rows.
-Data for NESTLEIND is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+NESTLEIND-EQ No candles
+Error processing...
+NESTLEIND: object of type 'NoneType' has no len()
 Loaded historical data for MARUTI with 57 rows.
-start_time: 2026-06-15 22:43:19, end_time: 2026-06-18 22:43:19
+start_time: 2026-06-16 08:13:15, end_time: 2026-06-19 08:13:15
 token: 10999
 tradingsymbol: MARUTI-EQ
-candles: ['{"time":"17-JUN-2026", "into":"13700.00", "inth":"13740.00", "intl":"13560.00", "intc":"13630.00", "ssboe":"1781654400", "intv":"241534.00"}', '{"time":"16-JUN-2026", "into":"13861.00", "inth":"13874.00", "intl":"13661.00", "intc":"13691.00", "ssboe":"1781568000", "intv":"280511.00"}']
-MARUTI: 57 candles loaded
-
-Processing MARUTI with 57 rows of data...
-Data for MARUTI loaded successfully with 57 rows.
-Data for MARUTI after dropping MARUTI has 57 rows.
-Data for MARUTI is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
-start_time: 2026-06-15 22:43:19, end_time: 2026-06-18 22:43:19
+candles: None
+MARUTI-EQ No candles
+Error processing...
+MARUTI: object of type 'NoneType' has no len()
+start_time: 2026-06-16 08:13:15, end_time: 2026-06-19 08:13:15
 token: 2031
 tradingsymbol: M&M-EQ
 candles: None
@@ -373,681 +161,253 @@ M&M-EQ No candles
 Error processing...
 M&M: object of type 'NoneType' has no len()
 Loaded historical data for LT with 57 rows.
-start_time: 2026-06-15 22:43:19, end_time: 2026-06-18 22:43:19
+start_time: 2026-06-16 08:13:15, end_time: 2026-06-19 08:13:15
 token: 11483
 tradingsymbol: LT-EQ
-candles: ['{"time":"17-JUN-2026", "into":"4200.10", "inth":"4214.70", "intl":"4172.00", "intc":"4207.70", "ssboe":"1781654400", "intv":"1312925.00"}', '{"time":"16-JUN-2026", "into":"4205.00", "inth":"4235.40", "intl":"4177.10", "intc":"4186.40", "ssboe":"1781568000", "intv":"2647549.00"}']
-LT: 57 candles loaded
-
-Processing LT with 57 rows of data...
-Data for LT loaded successfully with 57 rows.
-Data for LT after dropping LT has 57 rows.
-Data for LT is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
-Signal: Bullish, Entry: 4207.7, SL: 4172.0, Target: 4279.1, RangeZone: HIGH
-         Date    Open    High     Low   Close     Volume      Trend  RangeHigh14  RangeLow14  RangePct RangeZone WickSignal EngulfType FinalSignal    TriggerLogic
-0  2026-03-23  3405.1  3409.9  3288.1  3342.4  5645839.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-1  2026-03-24  3440.0  3547.1  3390.5  3516.8  6037848.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-2  2026-03-25  3569.9  3660.0  3546.0  3649.3  5090205.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-3  2026-03-27  3640.0  3640.0  3547.0  3564.1  3991388.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-4  2026-03-30  3500.0  3543.6  3491.1  3504.1  3549203.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-5  2026-04-01  3655.0  3682.9  3597.3  3607.5  4099786.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-6  2026-04-02  3539.3  3629.0  3470.0  3613.1  4121638.0   Sideways          NaN         NaN       NaN        NA    Bullish    Neutral     Bullish            Wick
-7  2026-04-06  3616.6  3737.0  3577.0  3727.7  3353246.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-8  2026-04-07  3680.0  3736.2  3658.0  3723.3  3083714.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-9  2026-04-08  3948.0  4032.0  3931.0  4005.9  7368477.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-10 2026-04-09  3988.0  3988.0  3885.6  3896.2  4415151.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-11 2026-04-10  3932.0  3965.0  3915.6  3959.9  2822017.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-12 2026-04-13  3825.0  3971.7  3815.6  3954.3  4897563.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-13 2026-04-15  4045.4  4104.0  4031.1  4076.3  4562142.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-14 2026-04-16  4128.0  4149.0  4089.0  4119.8  5092608.0    Uptrend       4104.0      3288.1  1.019365  HIGH-OUT    Neutral    Neutral     Neutral                
-15 2026-04-17  4134.0  4142.9  4072.8  4096.1  2796673.0    Uptrend       4149.0      3390.5  0.930257      HIGH    Neutral    Bearish     Bearish  Bearish Engulf
-16 2026-04-20  4100.0  4130.0  4024.0  4051.0  3545024.0    Uptrend       4149.0      3470.0  0.855670      HIGH    Neutral    Neutral     Neutral                
-17 2026-04-21  4039.0  4091.8  4032.0  4075.4  2426718.0    Uptrend       4149.0      3470.0  0.891605      HIGH    Neutral    Neutral     Neutral                
-18 2026-04-22  4070.0  4070.0  4011.0  4021.1  2178082.0    Uptrend       4149.0      3470.0  0.811635      HIGH    Neutral    Neutral     Neutral                
-19 2026-04-23  4009.9  4064.0  3978.5  4054.1  2229134.0    Uptrend       4149.0      3470.0  0.860236      HIGH    Neutral    Neutral     Neutral                
-20 2026-04-24  4072.0  4088.1  3983.2  4014.3  2162213.0    Uptrend       4149.0      3470.0  0.801620      HIGH    Neutral    Neutral     Neutral                
-21 2026-04-27  4058.0  4089.5  4030.2  4053.6  2000348.0    Uptrend       4149.0      3577.0  0.833217      HIGH    Neutral    Neutral     Neutral                
-22 2026-04-28  4060.0  4087.9  4023.9  4037.7  1750237.0    Uptrend       4149.0      3658.0  0.773320      HIGH    Neutral    Bearish     Bearish  Bearish Engulf
-23 2026-04-29  4060.0  4126.0  4051.3  4096.1  2175030.0    Uptrend       4149.0      3815.6  0.841332      HIGH    Neutral    Neutral     Neutral                
-24 2026-04-30  4083.0  4100.0  3990.0  4014.0  2569328.0    Uptrend       4149.0      3815.6  0.595081  MID-HIGH    Neutral    Neutral     Neutral                
-25 2026-05-04  4026.0  4139.5  4026.0  4100.8  2173027.0    Uptrend       4149.0      3815.6  0.855429      HIGH    Neutral    Neutral     Neutral                
-26 2026-05-05  4085.0  4090.0  4024.0  4054.5  3849402.0    Uptrend       4149.0      3815.6  0.716557  MID-HIGH    Neutral    Neutral     Neutral                
-27 2026-05-06  3974.0  4021.0  3900.0  4008.5  9540104.0  Downtrend       4149.0      3978.5  0.175953       LOW    Bullish    Neutral     Bullish            Wick
-28 2026-05-07  4028.0  4065.8  3991.0  4023.0  3477185.0  Downtrend       4149.0      3900.0  0.493976   MID-LOW    Neutral    Neutral     Neutral                
-29 2026-05-08  4010.0  4014.0  3960.0  3974.5  1620273.0  Downtrend       4142.9      3900.0  0.306711   MID-LOW    Neutral    Neutral     Neutral                
-30 2026-05-11  3948.0  3953.5  3886.1  3940.2  2027769.0  Downtrend       4139.5      3900.0  0.167850       LOW    Neutral    Neutral     Neutral                
-31 2026-05-12  3925.1  3940.0  3847.0  3856.5  2255075.0  Downtrend       4139.5      3886.1 -0.116811   LOW-OUT    Neutral    Neutral     Neutral                
-32 2026-05-13  3848.0  3953.0  3848.0  3915.8  2486330.0  Downtrend       4139.5      3847.0  0.235214       LOW    Neutral    Neutral     Neutral                
-33 2026-05-14  3942.0  3988.0  3925.0  3940.4  2982228.0  Downtrend       4139.5      3847.0  0.319316   MID-LOW    Neutral    Neutral     Neutral                
-34 2026-05-15  3949.4  3949.4  3893.0  3909.0  1339185.0  Downtrend       4139.5      3847.0  0.211966       LOW    Neutral    Bearish     Bearish  Bearish Engulf
-35 2026-05-18  3873.9  3924.7  3852.0  3917.8  1771638.0  Downtrend       4139.5      3847.0  0.242051       LOW    Neutral    Neutral     Neutral                
-36 2026-05-19  3940.9  3960.0  3900.0  3921.0  2318170.0  Downtrend       4139.5      3847.0  0.252991   MID-LOW    Neutral    Neutral     Neutral                
-37 2026-05-20  3901.6  3943.5  3883.1  3910.7  1972259.0  Downtrend       4139.5      3847.0  0.217778       LOW    Neutral    Neutral     Neutral                
-38 2026-05-21  3970.0  3970.0  3912.7  3928.5  1624945.0  Downtrend       4139.5      3847.0  0.278632   MID-LOW    Neutral    Neutral     Neutral                
-39 2026-05-22  3907.0  3960.0  3900.1  3926.6  1330428.0  Downtrend       4139.5      3847.0  0.272137   MID-LOW    Neutral    Neutral     Neutral                
-40 2026-05-25  3970.0  4038.4  3961.5  4033.4  2099927.0   Sideways       4090.0      3847.0  0.767078      HIGH    Neutral    Neutral     Neutral                
-41 2026-05-26  4029.6  4052.9  4014.2  4037.8  1552847.0    Uptrend       4065.8      3847.0  0.872029      HIGH    Neutral    Neutral     Neutral                
-42 2026-05-27  4043.0  4069.9  4017.9  4047.5  1607028.0    Uptrend       4065.8      3847.0  0.916362      HIGH    Neutral    Neutral     Neutral                
-43 2026-05-29  4045.8  4128.0  4045.0  4076.5  4882940.0    Uptrend       4069.9      3847.0  1.029610  HIGH-OUT    Neutral    Neutral     Neutral                
-44 2026-06-01  4089.0  4105.8  4002.1  4010.8  1409388.0    Uptrend       4128.0      3847.0  0.582918  MID-HIGH    Neutral    Bearish     Bearish  Bearish Engulf
-45 2026-06-02  3980.0  4017.0  3923.5  4000.9  2085054.0    Uptrend       4128.0      3847.0  0.547687  MID-HIGH    Bullish    Neutral     Bullish            Wick
-46 2026-06-03  4000.9  4008.0  3894.0  3953.2  1872929.0   Sideways       4128.0      3848.0  0.375714   MID-LOW    Neutral    Neutral     Neutral                
-47 2026-06-04  3945.0  3974.9  3930.1  3942.1  1398297.0   Sideways       4128.0      3852.0  0.326449   MID-LOW    Neutral    Neutral     Neutral                
-48 2026-06-05  3960.0  3978.0  3923.9  3953.2  1278243.0   Sideways       4128.0      3852.0  0.366667   MID-LOW    Neutral    Neutral     Neutral                
-49 2026-06-08  3901.1  3916.7  3863.1  3875.5  1678709.0  Downtrend       4128.0      3852.0  0.085145       LOW    Neutral    Neutral     Neutral                
-50 2026-06-09  3924.9  3924.9  3885.0  3900.6  1506501.0  Downtrend       4128.0      3863.1  0.141563       LOW    Neutral    Neutral     Neutral                
-51 2026-06-10  3904.0  3962.8  3900.0  3917.5  2033070.0   Sideways       4128.0      3863.1  0.205361       LOW    Neutral    Neutral     Neutral                
-52 2026-06-11  3900.0  3909.8  3854.4  3862.0  2224659.0  Downtrend       4128.0      3863.1 -0.004153   LOW-OUT    Neutral    Neutral     Neutral                
-53 2026-06-12  3930.0  4059.8  3921.0  4049.3  3065790.0    Uptrend       4128.0      3854.4  0.712354  MID-HIGH    Neutral    Neutral     Neutral                
-54 2026-06-15  4130.0  4214.9  4130.0  4169.8  3978153.0    Uptrend       4128.0      3854.4  1.152778  HIGH-OUT    Neutral    Neutral     Neutral                
-58 2026-06-16  4205.0  4235.4  4177.1  4186.4  2647549.0    Uptrend       4214.9      3854.4  0.920943      HIGH    Bearish    Neutral     Bearish            Wick
-57 2026-06-17  4200.1  4214.7  4172.0  4207.7  1312925.0    Uptrend       4235.4      3854.4  0.927297      HIGH    Bullish    Neutral     Bullish            Wick
-LT | 2026-06-17 | Bullish | Wick | HIGH
+candles: None
+LT-EQ No candles
+Error processing...
+LT: object of type 'NoneType' has no len()
 Loaded historical data for KOTAKBANK with 57 rows.
-start_time: 2026-06-15 22:43:30, end_time: 2026-06-18 22:43:30
+start_time: 2026-06-16 08:13:16, end_time: 2026-06-19 08:13:16
 token: 1922
 tradingsymbol: KOTAKBANK-EQ
-candles: ['{"time":"17-JUN-2026", "into":"407.85", "inth":"408.75", "intl":"402.55", "intc":"404.50", "ssboe":"1781654400", "intv":"11654415.00"}', '{"time":"16-JUN-2026", "into":"405.75", "inth":"408.55", "intl":"404.50", "intc":"407.85", "ssboe":"1781568000", "intv":"9079548.00"}']
-KOTAKBANK: 57 candles loaded
-
-Processing KOTAKBANK with 57 rows of data...
-Data for KOTAKBANK loaded successfully with 57 rows.
-Data for KOTAKBANK after dropping KOTAKBANK has 57 rows.
-Data for KOTAKBANK is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+KOTAKBANK-EQ No candles
+Error processing...
+KOTAKBANK: object of type 'NoneType' has no len()
 Loaded historical data for JSWSTEEL with 57 rows.
-start_time: 2026-06-15 22:43:30, end_time: 2026-06-18 22:43:30
+start_time: 2026-06-16 08:13:16, end_time: 2026-06-19 08:13:16
 token: 11723
 tradingsymbol: JSWSTEEL-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1280.00", "inth":"1289.50", "intl":"1269.10", "intc":"1287.20", "ssboe":"1781654400", "intv":"1194899.00"}', '{"time":"16-JUN-2026", "into":"1300.00", "inth":"1302.50", "intl":"1269.00", "intc":"1274.30", "ssboe":"1781568000", "intv":"1110628.00"}']
-JSWSTEEL: 57 candles loaded
-
-Processing JSWSTEEL with 57 rows of data...
-Data for JSWSTEEL loaded successfully with 57 rows.
-Data for JSWSTEEL after dropping JSWSTEEL has 57 rows.
-Data for JSWSTEEL is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+JSWSTEEL-EQ No candles
+Error processing...
+JSWSTEEL: object of type 'NoneType' has no len()
 Loaded historical data for JIOFIN with 57 rows.
-start_time: 2026-06-15 22:43:31, end_time: 2026-06-18 22:43:31
+start_time: 2026-06-16 08:13:16, end_time: 2026-06-19 08:13:16
 token: 18143
 tradingsymbol: JIOFIN-EQ
-candles: ['{"time":"17-JUN-2026", "into":"242.20", "inth":"244.74", "intl":"241.22", "intc":"242.98", "ssboe":"1781654400", "intv":"10009881.00"}', '{"time":"16-JUN-2026", "into":"240.05", "inth":"243.32", "intl":"239.86", "intc":"241.95", "ssboe":"1781568000", "intv":"15505756.00"}']
-JIOFIN: 57 candles loaded
-
-Processing JIOFIN with 57 rows of data...
-Data for JIOFIN loaded successfully with 57 rows.
-Data for JIOFIN after dropping JIOFIN has 57 rows.
-Data for JIOFIN is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+JIOFIN-EQ No candles
+Error processing...
+JIOFIN: object of type 'NoneType' has no len()
 Loaded historical data for ITC with 57 rows.
-start_time: 2026-06-15 22:43:31, end_time: 2026-06-18 22:43:31
+start_time: 2026-06-16 08:13:16, end_time: 2026-06-19 08:13:16
 token: 1660
 tradingsymbol: ITC-EQ
-candles: ['{"time":"17-JUN-2026", "into":"291.95", "inth":"292.35", "intl":"290.00", "intc":"290.75", "ssboe":"1781654400", "intv":"8626353.00"}', '{"time":"16-JUN-2026", "into":"288.15", "inth":"292.15", "intl":"287.50", "intc":"291.65", "ssboe":"1781568000", "intv":"14467499.00"}']
-ITC: 57 candles loaded
-
-Processing ITC with 57 rows of data...
-Data for ITC loaded successfully with 57 rows.
-Data for ITC after dropping ITC has 57 rows.
-Data for ITC is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ITC-EQ No candles
+Error processing...
+ITC: object of type 'NoneType' has no len()
 Loaded historical data for INFY with 57 rows.
-start_time: 2026-06-15 22:43:34, end_time: 2026-06-18 22:43:34
+start_time: 2026-06-16 08:13:16, end_time: 2026-06-19 08:13:16
 token: 1594
 tradingsymbol: INFY-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1149.00", "inth":"1162.50", "intl":"1148.00", "intc":"1157.70", "ssboe":"1781654400", "intv":"5995119.00"}', '{"time":"16-JUN-2026", "into":"1136.90", "inth":"1153.80", "intl":"1123.20", "intc":"1143.60", "ssboe":"1781568000", "intv":"10456090.00"}']
-INFY: 57 candles loaded
-
-Processing INFY with 57 rows of data...
-Data for INFY loaded successfully with 57 rows.
-Data for INFY after dropping INFY has 57 rows.
-Data for INFY is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+INFY-EQ No candles
+Error processing...
+INFY: object of type 'NoneType' has no len()
 Loaded historical data for INDUSINDBK with 57 rows.
-start_time: 2026-06-15 22:43:34, end_time: 2026-06-18 22:43:34
+start_time: 2026-06-16 08:13:16, end_time: 2026-06-19 08:13:16
 token: 5258
 tradingsymbol: INDUSINDBK-EQ
-candles: ['{"time":"17-JUN-2026", "into":"926.00", "inth":"938.40", "intl":"920.20", "intc":"936.20", "ssboe":"1781654400", "intv":"1193109.00"}', '{"time":"16-JUN-2026", "into":"933.00", "inth":"936.05", "intl":"922.00", "intc":"926.00", "ssboe":"1781568000", "intv":"1602315.00"}']
-INDUSINDBK: 57 candles loaded
-
-Processing INDUSINDBK with 57 rows of data...
-Data for INDUSINDBK loaded successfully with 57 rows.
-Data for INDUSINDBK after dropping INDUSINDBK has 57 rows.
-Data for INDUSINDBK is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+INDUSINDBK-EQ No candles
+Error processing...
+INDUSINDBK: object of type 'NoneType' has no len()
 Loaded historical data for ICICIBANK with 57 rows.
-start_time: 2026-06-15 22:43:35, end_time: 2026-06-18 22:43:35
+start_time: 2026-06-16 08:13:17, end_time: 2026-06-19 08:13:17
 token: 4963
 tradingsymbol: ICICIBANK-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1342.00", "inth":"1346.00", "intl":"1333.40", "intc":"1336.80", "ssboe":"1781654400", "intv":"8026424.00"}', '{"time":"16-JUN-2026", "into":"1331.90", "inth":"1337.30", "intl":"1326.30", "intc":"1334.30", "ssboe":"1781568000", "intv":"13069159.00"}']
-ICICIBANK: 57 candles loaded
-
-Processing ICICIBANK with 57 rows of data...
-Data for ICICIBANK loaded successfully with 57 rows.
-Data for ICICIBANK after dropping ICICIBANK has 57 rows.
-Data for ICICIBANK is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ICICIBANK-EQ No candles
+Error processing...
+ICICIBANK: object of type 'NoneType' has no len()
 Loaded historical data for HINDUNILVR with 57 rows.
-start_time: 2026-06-15 22:43:35, end_time: 2026-06-18 22:43:35
+start_time: 2026-06-16 08:13:17, end_time: 2026-06-19 08:13:17
 token: 1394
 tradingsymbol: HINDUNILVR-EQ
-candles: ['{"time":"17-JUN-2026", "into":"2201.10", "inth":"2224.60", "intl":"2183.00", "intc":"2197.60", "ssboe":"1781654400", "intv":"1511401.00"}', '{"time":"16-JUN-2026", "into":"2161.00", "inth":"2209.00", "intl":"2160.10", "intc":"2199.90", "ssboe":"1781568000", "intv":"1337309.00"}']
-HINDUNILVR: 57 candles loaded
-
-Processing HINDUNILVR with 57 rows of data...
-Data for HINDUNILVR loaded successfully with 57 rows.
-Data for HINDUNILVR after dropping HINDUNILVR has 57 rows.
-Data for HINDUNILVR is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+HINDUNILVR-EQ No candles
+Error processing...
+HINDUNILVR: object of type 'NoneType' has no len()
 Loaded historical data for HINDALCO with 57 rows.
-start_time: 2026-06-15 22:43:36, end_time: 2026-06-18 22:43:36
+start_time: 2026-06-16 08:13:17, end_time: 2026-06-19 08:13:17
 token: 1363
 tradingsymbol: HINDALCO-EQ
-candles: ['{"time":"17-JUN-2026", "into":"985.00", "inth":"1011.60", "intl":"971.20", "intc":"1007.90", "ssboe":"1781654400", "intv":"10853418.00"}', '{"time":"16-JUN-2026", "into":"990.00", "inth":"990.00", "intl":"970.00", "intc":"982.40", "ssboe":"1781568000", "intv":"11200461.00"}']
-HINDALCO: 57 candles loaded
-
-Processing HINDALCO with 57 rows of data...
-Data for HINDALCO loaded successfully with 57 rows.
-Data for HINDALCO after dropping HINDALCO has 57 rows.
-Data for HINDALCO is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+HINDALCO-EQ No candles
+Error processing...
+HINDALCO: object of type 'NoneType' has no len()
 Loaded historical data for HEROMOTOCO with 57 rows.
-start_time: 2026-06-15 22:43:36, end_time: 2026-06-18 22:43:36
+start_time: 2026-06-16 08:13:17, end_time: 2026-06-19 08:13:17
 token: 1348
 tradingsymbol: HEROMOTOCO-EQ
-candles: ['{"time":"17-JUN-2026", "into":"5048.00", "inth":"5048.00", "intl":"4971.60", "intc":"5016.40", "ssboe":"1781654400", "intv":"354200.00"}', '{"time":"16-JUN-2026", "into":"5050.00", "inth":"5052.00", "intl":"4996.00", "intc":"5031.00", "ssboe":"1781568000", "intv":"456693.00"}']
-HEROMOTOCO: 57 candles loaded
-
-Processing HEROMOTOCO with 57 rows of data...
-Data for HEROMOTOCO loaded successfully with 57 rows.
-Data for HEROMOTOCO after dropping HEROMOTOCO has 57 rows.
-Data for HEROMOTOCO is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+HEROMOTOCO-EQ No candles
+Error processing...
+HEROMOTOCO: object of type 'NoneType' has no len()
 Loaded historical data for HDFCLIFE with 57 rows.
-start_time: 2026-06-15 22:43:37, end_time: 2026-06-18 22:43:37
+start_time: 2026-06-16 08:13:17, end_time: 2026-06-19 08:13:17
 token: 467
 tradingsymbol: HDFCLIFE-EQ
-candles: ['{"time":"17-JUN-2026", "into":"576.00", "inth":"582.95", "intl":"573.55", "intc":"581.80", "ssboe":"1781654400", "intv":"1106892.00"}', '{"time":"16-JUN-2026", "into":"582.00", "inth":"582.50", "intl":"571.25", "intc":"574.40", "ssboe":"1781568000", "intv":"2066303.00"}']
-HDFCLIFE: 57 candles loaded
-
-Processing HDFCLIFE with 57 rows of data...
-Data for HDFCLIFE loaded successfully with 57 rows.
-Data for HDFCLIFE after dropping HDFCLIFE has 57 rows.
-Data for HDFCLIFE is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+HDFCLIFE-EQ No candles
+Error processing...
+HDFCLIFE: object of type 'NoneType' has no len()
 Loaded historical data for HDFCBANK with 57 rows.
-start_time: 2026-06-15 22:43:37, end_time: 2026-06-18 22:43:37
+start_time: 2026-06-16 08:13:17, end_time: 2026-06-19 08:13:17
 token: 1333
 tradingsymbol: HDFCBANK-EQ
-candles: ['{"time":"17-JUN-2026", "into":"787.65", "inth":"794.30", "intl":"783.10", "intc":"787.10", "ssboe":"1781654400", "intv":"32405604.00"}', '{"time":"16-JUN-2026", "into":"780.50", "inth":"787.70", "intl":"779.45", "intc":"784.90", "ssboe":"1781568000", "intv":"27820970.00"}']
-HDFCBANK: 57 candles loaded
-
-Processing HDFCBANK with 57 rows of data...
-Data for HDFCBANK loaded successfully with 57 rows.
-Data for HDFCBANK after dropping HDFCBANK has 57 rows.
-Data for HDFCBANK is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+HDFCBANK-EQ No candles
+Error processing...
+HDFCBANK: object of type 'NoneType' has no len()
 Loaded historical data for HCLTECH with 57 rows.
-start_time: 2026-06-15 22:43:38, end_time: 2026-06-18 22:43:38
+start_time: 2026-06-16 08:13:18, end_time: 2026-06-19 08:13:18
 token: 7229
 tradingsymbol: HCLTECH-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1169.00", "inth":"1173.60", "intl":"1159.30", "intc":"1166.80", "ssboe":"1781654400", "intv":"2263670.00"}', '{"time":"16-JUN-2026", "into":"1141.00", "inth":"1161.90", "intl":"1137.50", "intc":"1159.00", "ssboe":"1781568000", "intv":"8343470.00"}']
-HCLTECH: 57 candles loaded
-
-Processing HCLTECH with 57 rows of data...
-Data for HCLTECH loaded successfully with 57 rows.
-Data for HCLTECH after dropping HCLTECH has 57 rows.
-Data for HCLTECH is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+HCLTECH-EQ No candles
+Error processing...
+HCLTECH: object of type 'NoneType' has no len()
 Loaded historical data for GRASIM with 57 rows.
-start_time: 2026-06-15 22:43:38, end_time: 2026-06-18 22:43:38
+start_time: 2026-06-16 08:13:18, end_time: 2026-06-19 08:13:18
 token: 1232
 tradingsymbol: GRASIM-EQ
-candles: ['{"time":"17-JUN-2026", "into":"3150.00", "inth":"3200.00", "intl":"3115.90", "intc":"3150.40", "ssboe":"1781654400", "intv":"395269.00"}', '{"time":"16-JUN-2026", "into":"3180.00", "inth":"3183.00", "intl":"3133.80", "intc":"3140.30", "ssboe":"1781568000", "intv":"308307.00"}']
-GRASIM: 57 candles loaded
-
-Processing GRASIM with 57 rows of data...
-Data for GRASIM loaded successfully with 57 rows.
-Data for GRASIM after dropping GRASIM has 57 rows.
-Data for GRASIM is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+GRASIM-EQ No candles
+Error processing...
+GRASIM: object of type 'NoneType' has no len()
 Loaded historical data for EICHERMOT with 57 rows.
-start_time: 2026-06-15 22:43:38, end_time: 2026-06-18 22:43:38
+start_time: 2026-06-16 08:13:18, end_time: 2026-06-19 08:13:18
 token: 910
 tradingsymbol: EICHERMOT-EQ
-candles: ['{"time":"17-JUN-2026", "into":"7560.50", "inth":"7578.50", "intl":"7452.50", "intc":"7509.00", "ssboe":"1781654400", "intv":"404085.00"}', '{"time":"16-JUN-2026", "into":"7654.00", "inth":"7666.00", "intl":"7540.50", "intc":"7560.50", "ssboe":"1781568000", "intv":"453796.00"}']
-EICHERMOT: 57 candles loaded
-
-Processing EICHERMOT with 57 rows of data...
-Data for EICHERMOT loaded successfully with 57 rows.
-Data for EICHERMOT after dropping EICHERMOT has 57 rows.
-Data for EICHERMOT is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+EICHERMOT-EQ No candles
+Error processing...
+EICHERMOT: object of type 'NoneType' has no len()
 Loaded historical data for DRREDDY with 57 rows.
-start_time: 2026-06-15 22:43:39, end_time: 2026-06-18 22:43:39
+start_time: 2026-06-16 08:13:18, end_time: 2026-06-19 08:13:18
 token: 881
 tradingsymbol: DRREDDY-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1276.00", "inth":"1277.40", "intl":"1260.90", "intc":"1269.00", "ssboe":"1781654400", "intv":"683616.00"}', '{"time":"16-JUN-2026", "into":"1279.00", "inth":"1286.00", "intl":"1269.10", "intc":"1276.90", "ssboe":"1781568000", "intv":"430918.00"}']
-DRREDDY: 57 candles loaded
-
-Processing DRREDDY with 57 rows of data...
-Data for DRREDDY loaded successfully with 57 rows.
-Data for DRREDDY after dropping DRREDDY has 57 rows.
-Data for DRREDDY is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+DRREDDY-EQ No candles
+Error processing...
+DRREDDY: object of type 'NoneType' has no len()
 Loaded historical data for COALINDIA with 57 rows.
-start_time: 2026-06-15 22:43:39, end_time: 2026-06-18 22:43:39
+start_time: 2026-06-16 08:13:18, end_time: 2026-06-19 08:13:18
 token: 20374
 tradingsymbol: COALINDIA-EQ
-candles: ['{"time":"17-JUN-2026", "into":"450.90", "inth":"461.55", "intl":"448.60", "intc":"455.75", "ssboe":"1781654400", "intv":"9064734.00"}', '{"time":"16-JUN-2026", "into":"445.95", "inth":"453.45", "intl":"443.60", "intc":"450.95", "ssboe":"1781568000", "intv":"7262608.00"}']
-COALINDIA: 57 candles loaded
-
-Processing COALINDIA with 57 rows of data...
-Data for COALINDIA loaded successfully with 57 rows.
-Data for COALINDIA after dropping COALINDIA has 57 rows.
-Data for COALINDIA is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+COALINDIA-EQ No candles
+Error processing...
+COALINDIA: object of type 'NoneType' has no len()
 Loaded historical data for CIPLA with 57 rows.
-start_time: 2026-06-15 22:43:40, end_time: 2026-06-18 22:43:40
+start_time: 2026-06-16 08:13:19, end_time: 2026-06-19 08:13:19
 token: 694
 tradingsymbol: CIPLA-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1380.00", "inth":"1381.70", "intl":"1341.10", "intc":"1350.80", "ssboe":"1781654400", "intv":"2014168.00"}', '{"time":"16-JUN-2026", "into":"1382.60", "inth":"1392.30", "intl":"1366.00", "intc":"1373.20", "ssboe":"1781568000", "intv":"613961.00"}']
-CIPLA: 57 candles loaded
-
-Processing CIPLA with 57 rows of data...
-Data for CIPLA loaded successfully with 57 rows.
-Data for CIPLA after dropping CIPLA has 57 rows.
-Data for CIPLA is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+CIPLA-EQ No candles
+Error processing...
+CIPLA: object of type 'NoneType' has no len()
 Loaded historical data for BRITANNIA with 57 rows.
-start_time: 2026-06-15 22:43:40, end_time: 2026-06-18 22:43:40
+start_time: 2026-06-16 08:13:19, end_time: 2026-06-19 08:13:19
 token: 547
 tradingsymbol: BRITANNIA-EQ
-candles: ['{"time":"17-JUN-2026", "into":"5220.00", "inth":"5239.00", "intl":"5191.00", "intc":"5232.00", "ssboe":"1781654400", "intv":"270826.00"}', '{"time":"16-JUN-2026", "into":"5199.50", "inth":"5232.50", "intl":"5169.50", "intc":"5217.50", "ssboe":"1781568000", "intv":"195644.00"}']
-BRITANNIA: 57 candles loaded
-
-Processing BRITANNIA with 57 rows of data...
-Data for BRITANNIA loaded successfully with 57 rows.
-Data for BRITANNIA after dropping BRITANNIA has 57 rows.
-Data for BRITANNIA is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+BRITANNIA-EQ No candles
+Error processing...
+BRITANNIA: object of type 'NoneType' has no len()
 Loaded historical data for BPCL with 57 rows.
-start_time: 2026-06-15 22:43:41, end_time: 2026-06-18 22:43:41
+start_time: 2026-06-16 08:13:19, end_time: 2026-06-19 08:13:19
 token: 526
 tradingsymbol: BPCL-EQ
-candles: ['{"time":"17-JUN-2026", "into":"316.00", "inth":"319.50", "intl":"315.30", "intc":"317.95", "ssboe":"1781654400", "intv":"14716072.00"}', '{"time":"16-JUN-2026", "into":"314.00", "inth":"314.00", "intl":"309.50", "intc":"312.10", "ssboe":"1781568000", "intv":"8875346.00"}']
-BPCL: 57 candles loaded
-
-Processing BPCL with 57 rows of data...
-Data for BPCL loaded successfully with 57 rows.
-Data for BPCL after dropping BPCL has 57 rows.
-Data for BPCL is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+BPCL-EQ No candles
+Error processing...
+BPCL: object of type 'NoneType' has no len()
 Loaded historical data for BHARTIARTL with 57 rows.
-start_time: 2026-06-15 22:43:41, end_time: 2026-06-18 22:43:41
+start_time: 2026-06-16 08:13:19, end_time: 2026-06-19 08:13:19
 token: 10604
 tradingsymbol: BHARTIARTL-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1853.00", "inth":"1878.00", "intl":"1841.50", "intc":"1875.70", "ssboe":"1781654400", "intv":"7653632.00"}', '{"time":"16-JUN-2026", "into":"1840.20", "inth":"1859.20", "intl":"1837.20", "intc":"1853.00", "ssboe":"1781568000", "intv":"5957732.00"}']
-BHARTIARTL: 57 candles loaded
-
-Processing BHARTIARTL with 57 rows of data...
-Data for BHARTIARTL loaded successfully with 57 rows.
-Data for BHARTIARTL after dropping BHARTIARTL has 57 rows.
-Data for BHARTIARTL is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+BHARTIARTL-EQ No candles
+Error processing...
+BHARTIARTL: object of type 'NoneType' has no len()
 Loaded historical data for BEL with 57 rows.
-start_time: 2026-06-15 22:43:42, end_time: 2026-06-18 22:43:42
+start_time: 2026-06-16 08:13:19, end_time: 2026-06-19 08:13:19
 token: 383
 tradingsymbol: BEL-EQ
-candles: ['{"time":"17-JUN-2026", "into":"407.00", "inth":"422.40", "intl":"406.15", "intc":"419.85", "ssboe":"1781654400", "intv":"24506595.00"}', '{"time":"16-JUN-2026", "into":"409.60", "inth":"410.80", "intl":"406.15", "intc":"407.55", "ssboe":"1781568000", "intv":"9701695.00"}']
-BEL: 57 candles loaded
-
-Processing BEL with 57 rows of data...
-Data for BEL loaded successfully with 57 rows.
-Data for BEL after dropping BEL has 57 rows.
-Data for BEL is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
-Signal: Bullish, Entry: 419.85, SL: 406.15, Target: 447.25, RangeZone: HIGH
-         Date    Open    High     Low   Close      Volume      Trend  RangeHigh14  RangeLow14  RangePct RangeZone WickSignal EngulfType FinalSignal    TriggerLogic
-0  2026-03-23  420.60  421.75  404.00  405.50  18894757.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-1  2026-03-24  412.50  417.45  408.75  414.45  14642804.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-2  2026-03-25  416.30  422.00  412.55  413.45  15134997.0   Sideways          NaN         NaN       NaN        NA    Bearish    Neutral     Bearish            Wick
-3  2026-03-27  411.90  413.45  403.25  404.75  21818224.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-4  2026-03-30  400.00  413.25  399.35  400.65  22694742.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-5  2026-04-01  415.00  430.20  412.65  418.70  25301241.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-6  2026-04-02  417.00  423.60  407.50  421.60  19686517.0   Sideways          NaN         NaN       NaN        NA    Bullish    Neutral     Bullish            Wick
-7  2026-04-06  422.00  428.05  420.00  427.15  12327836.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-8  2026-04-07  424.00  429.00  420.65  427.80  11417162.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-9  2026-04-08  440.00  440.00  428.80  433.10  20054221.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-10 2026-04-09  425.00  443.30  424.50  439.75  19917307.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-11 2026-04-10  444.10  447.45  440.45  442.45  10833065.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-12 2026-04-13  435.00  445.50  434.00  441.55  15149734.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-13 2026-04-15  447.50  449.20  444.80  447.65   9915383.0   Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-14 2026-04-16  449.85  457.00  448.90  455.65  12197884.0    Uptrend       449.20      399.35  1.129388  HIGH-OUT    Neutral    Neutral     Neutral                
-15 2026-04-17  458.00  463.75  454.45  462.75  14128030.0    Uptrend       457.00      399.35  1.099740  HIGH-OUT    Neutral    Neutral     Neutral                
-16 2026-04-20  462.00  464.40  456.00  457.55   9914017.0    Uptrend       463.75      399.35  0.903727      HIGH    Neutral    Neutral     Neutral                
-17 2026-04-21  457.50  461.80  449.45  451.50  13492130.0    Uptrend       464.40      399.35  0.801691      HIGH    Neutral    Neutral     Neutral                
-18 2026-04-22  450.80  451.85  444.70  448.70  11538028.0    Uptrend       464.40      399.35  0.758647      HIGH    Neutral    Neutral     Neutral                
-19 2026-04-23  451.70  455.70  444.50  449.95  15021500.0    Uptrend       464.40      407.50  0.746046  MID-HIGH    Neutral    Neutral     Neutral                
-20 2026-04-24  450.00  451.20  438.75  444.45  11651499.0    Uptrend       464.40      407.50  0.649385  MID-HIGH    Neutral    Neutral     Neutral                
-21 2026-04-27  445.00  448.30  432.95  435.60  18502535.0   Sideways       464.40      420.00  0.351351   MID-LOW    Neutral    Neutral     Neutral                
-22 2026-04-28  435.60  441.00  433.55  435.75  10883746.0   Sideways       464.40      420.65  0.345143   MID-LOW    Neutral    Neutral     Neutral                
-23 2026-04-29  437.05  442.80  435.25  437.55   9507163.0   Sideways       464.40      424.50  0.327068   MID-LOW    Neutral    Neutral     Neutral                
-24 2026-04-30  436.45  436.45  424.50  431.30  15795581.0  Downtrend       464.40      424.50  0.170426       LOW    Neutral    Neutral     Neutral                
-25 2026-05-04  433.00  438.60  428.60  433.55  10764998.0  Downtrend       464.40      424.50  0.226817       LOW    Neutral    Neutral     Neutral                
-26 2026-05-05  433.50  436.50  429.30  433.35  11671943.0  Downtrend       464.40      424.50  0.221805       LOW    Neutral    Neutral     Neutral                
-27 2026-05-06  437.00  439.65  435.15  438.20   9748728.0  Downtrend       464.40      424.50  0.343358   MID-LOW    Neutral    Neutral     Neutral                
-28 2026-05-07  439.90  441.00  433.50  439.45  15696400.0  Downtrend       464.40      424.50  0.374687   MID-LOW    Neutral    Neutral     Neutral                
-29 2026-05-08  439.00  443.80  437.80  439.70  11164661.0  Downtrend       464.40      424.50  0.380952   MID-LOW    Neutral    Neutral     Neutral                
-30 2026-05-11  438.00  439.15  431.00  431.95   7631226.0  Downtrend       464.40      424.50  0.186717       LOW    Neutral    Neutral     Neutral                
-31 2026-05-12  430.20  432.50  415.50  416.50  15199825.0  Downtrend       461.80      424.50 -0.214477   LOW-OUT    Neutral    Neutral     Neutral                
-32 2026-05-13  416.60  432.00  415.75  428.25  13230827.0  Downtrend       455.70      415.50  0.317164   MID-LOW    Neutral    Neutral     Neutral                
-33 2026-05-14  431.00  435.15  424.45  428.85   9807792.0  Downtrend       455.70      415.50  0.332090   MID-LOW    Neutral    Neutral     Neutral                
-34 2026-05-15  428.85  429.50  422.20  423.65   7593616.0  Downtrend       451.20      415.50  0.228291       LOW    Neutral    Neutral     Neutral                
-35 2026-05-18  423.85  427.80  414.60  426.60  10452161.0  Downtrend       448.30      415.50  0.338415   MID-LOW    Bullish    Neutral     Bullish            Wick
-36 2026-05-19  428.40  430.90  419.30  422.95  13350029.0  Downtrend       443.80      414.60  0.285959   MID-LOW    Neutral    Bearish     Bearish  Bearish Engulf
-37 2026-05-20  416.30  420.00  407.00  413.30  28012723.0  Downtrend       443.80      414.60 -0.044521   LOW-OUT    Neutral    Neutral     Neutral                
-38 2026-05-21  420.00  426.10  418.05  420.40  19789651.0  Downtrend       443.80      407.00  0.364130   MID-LOW    Neutral    Neutral     Neutral                
-39 2026-05-22  421.45  421.45  415.45  416.55   9175611.0  Downtrend       443.80      407.00  0.259511   MID-LOW    Neutral    Bearish     Bearish  Bearish Engulf
-40 2026-05-25  419.30  422.55  417.30  421.85   8862027.0  Downtrend       443.80      407.00  0.403533   MID-LOW    Neutral    Neutral     Neutral                
-41 2026-05-26  423.50  425.55  418.85  420.10  12315435.0  Downtrend       443.80      407.00  0.355978   MID-LOW    Neutral    Neutral     Neutral                
-42 2026-05-27  422.00  422.00  416.10  419.10  10871894.0  Downtrend       443.80      407.00  0.328804   MID-LOW    Neutral    Neutral     Neutral                
-43 2026-05-29  413.30  419.10  409.90  410.75  26559872.0  Downtrend       443.80      407.00  0.101902       LOW    Neutral    Neutral     Neutral                
-44 2026-06-01  412.35  413.70  404.75  407.20  16453240.0  Downtrend       439.15      407.00  0.006221       LOW    Neutral    Neutral     Neutral                
-45 2026-06-02  405.80  409.60  400.30  407.85  15004796.0  Downtrend       435.15      404.75  0.101974       LOW    Bullish    Neutral     Bullish            Wick
-46 2026-06-03  408.00  408.95  403.10  406.60   6626958.0  Downtrend       435.15      400.30  0.180775       LOW    Neutral    Neutral     Neutral                
-47 2026-06-04  405.00  411.55  404.00  409.90   9119774.0  Downtrend       435.15      400.30  0.275466   MID-LOW    Neutral    Bullish     Bullish  Bullish Engulf
-48 2026-06-05  410.10  412.00  405.10  408.20  11084641.0  Downtrend       430.90      400.30  0.258170   MID-LOW    Neutral    Neutral     Neutral                
-49 2026-06-08  399.00  415.50  399.00  412.95  12017495.0  Downtrend       430.90      400.30  0.413399   MID-LOW    Neutral    Bullish     Bullish  Bullish Engulf
-50 2026-06-09  417.00  417.00  410.00  412.05  10996007.0  Downtrend       430.90      399.00  0.409091   MID-LOW    Neutral    Neutral     Neutral                
-51 2026-06-10  413.00  415.25  407.10  408.35   5371511.0  Downtrend       426.10      399.00  0.345018   MID-LOW    Neutral    Neutral     Neutral                
-52 2026-06-11  407.35  407.35  401.75  402.30   6994969.0  Downtrend       426.10      399.00  0.121771       LOW    Neutral    Neutral     Neutral                
-53 2026-06-12  407.35  409.00  403.30  406.50   8086130.0  Downtrend       425.55      399.00  0.282486   MID-LOW    Neutral    Neutral     Neutral                
-54 2026-06-15  412.00  412.50  406.00  409.55  11500111.0  Downtrend       425.55      399.00  0.397363   MID-LOW    Neutral    Neutral     Neutral                
-58 2026-06-16  409.60  410.80  406.15  407.55   9701695.0  Downtrend       425.55      399.00  0.322034   MID-LOW    Neutral    Neutral     Neutral                
-57 2026-06-17  407.00  422.40  406.15  419.85  24506595.0    Uptrend       422.00      399.00  0.906522      HIGH    Neutral    Bullish     Bullish  Bullish Engulf
-BEL | 2026-06-17 | Bullish | Bullish Engulf | HIGH
+candles: None
+BEL-EQ No candles
+Error processing...
+BEL: object of type 'NoneType' has no len()
 Loaded historical data for BAJFINANCE with 57 rows.
-start_time: 2026-06-15 22:43:42, end_time: 2026-06-18 22:43:42
+start_time: 2026-06-16 08:13:19, end_time: 2026-06-19 08:13:19
 token: 317
 tradingsymbol: BAJFINANCE-EQ
-candles: ['{"time":"17-JUN-2026", "into":"955.10", "inth":"961.80", "intl":"951.55", "intc":"958.40", "ssboe":"1781654400", "intv":"5682977.00"}', '{"time":"16-JUN-2026", "into":"946.00", "inth":"963.90", "intl":"946.00", "intc":"959.65", "ssboe":"1781568000", "intv":"9335988.00"}']
-BAJFINANCE: 57 candles loaded
-
-Processing BAJFINANCE with 57 rows of data...
-Data for BAJFINANCE loaded successfully with 57 rows.
-Data for BAJFINANCE after dropping BAJFINANCE has 57 rows.
-Data for BAJFINANCE is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+BAJFINANCE-EQ No candles
+Error processing...
+BAJFINANCE: object of type 'NoneType' has no len()
 Loaded historical data for BAJAJFINSV with 57 rows.
-start_time: 2026-06-15 22:43:48, end_time: 2026-06-18 22:43:48
+start_time: 2026-06-16 08:13:20, end_time: 2026-06-19 08:13:20
 token: 16675
 tradingsymbol: BAJAJFINSV-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1792.00", "inth":"1794.00", "intl":"1751.60", "intc":"1764.60", "ssboe":"1781654400", "intv":"903580.00"}', '{"time":"16-JUN-2026", "into":"1755.00", "inth":"1801.80", "intl":"1751.10", "intc":"1787.30", "ssboe":"1781568000", "intv":"2043227.00"}']
-BAJAJFINSV: 57 candles loaded
-
-Processing BAJAJFINSV with 57 rows of data...
-Data for BAJAJFINSV loaded successfully with 57 rows.
-Data for BAJAJFINSV after dropping BAJAJFINSV has 57 rows.
-Data for BAJAJFINSV is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+BAJAJFINSV-EQ No candles
+Error processing...
+BAJAJFINSV: object of type 'NoneType' has no len()
 Loaded historical data for BAJAJ-AUTO with 57 rows.
-start_time: 2026-06-15 22:43:48, end_time: 2026-06-18 22:43:48
+start_time: 2026-06-16 08:13:20, end_time: 2026-06-19 08:13:20
 token: 16669
 tradingsymbol: BAJAJ-AUTO-EQ
-candles: ['{"time":"17-JUN-2026", "into":"9980.00", "inth":"10074.00", "intl":"9932.00", "intc":"10042.00", "ssboe":"1781654400", "intv":"302387.00"}', '{"time":"16-JUN-2026", "into":"9992.00", "inth":"9993.00", "intl":"9902.00", "intc":"9939.00", "ssboe":"1781568000", "intv":"203949.00"}']
-BAJAJ-AUTO: 57 candles loaded
-
-Processing BAJAJ-AUTO with 57 rows of data...
-Data for BAJAJ-AUTO loaded successfully with 57 rows.
-Data for BAJAJ-AUTO after dropping BAJAJ-AUTO has 57 rows.
-Data for BAJAJ-AUTO is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+BAJAJ-AUTO-EQ No candles
+Error processing...
+BAJAJ-AUTO: object of type 'NoneType' has no len()
 Loaded historical data for AXISBANK with 57 rows.
-start_time: 2026-06-15 22:43:56, end_time: 2026-06-18 22:43:56
+start_time: 2026-06-16 08:13:20, end_time: 2026-06-19 08:13:20
 token: 5900
 tradingsymbol: AXISBANK-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1364.10", "inth":"1365.70", "intl":"1349.30", "intc":"1350.90", "ssboe":"1781654400", "intv":"4761917.00"}', '{"time":"16-JUN-2026", "into":"1363.50", "inth":"1371.50", "intl":"1349.20", "intc":"1365.70", "ssboe":"1781568000", "intv":"7709061.00"}']
-AXISBANK: 57 candles loaded
-
-Processing AXISBANK with 57 rows of data...
-Data for AXISBANK loaded successfully with 57 rows.
-Data for AXISBANK after dropping AXISBANK has 57 rows.
-Data for AXISBANK is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+AXISBANK-EQ No candles
+Error processing...
+AXISBANK: object of type 'NoneType' has no len()
 Loaded historical data for ASIANPAINT with 57 rows.
-start_time: 2026-06-15 22:43:57, end_time: 2026-06-18 22:43:57
+start_time: 2026-06-16 08:13:20, end_time: 2026-06-19 08:13:20
 token: 236
 tradingsymbol: ASIANPAINT-EQ
-candles: ['{"time":"17-JUN-2026", "into":"2764.00", "inth":"2768.90", "intl":"2732.50", "intc":"2738.00", "ssboe":"1781654400", "intv":"557209.00"}', '{"time":"16-JUN-2026", "into":"2741.00", "inth":"2771.00", "intl":"2735.00", "intc":"2748.10", "ssboe":"1781568000", "intv":"962931.00"}']
-ASIANPAINT: 57 candles loaded
-
-Processing ASIANPAINT with 57 rows of data...
-Data for ASIANPAINT loaded successfully with 57 rows.
-Data for ASIANPAINT after dropping ASIANPAINT has 57 rows.
-Data for ASIANPAINT is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
-Signal: Bearish, Entry: 2738.0, SL: 2768.9, Target: 2676.2, RangeZone: MID-HIGH
-         Date    Open    High     Low   Close     Volume     Trend  RangeHigh14  RangeLow14  RangePct RangeZone WickSignal EngulfType FinalSignal    TriggerLogic
-0  2026-03-23  2180.0  2180.0  2115.0  2121.3   978398.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-1  2026-03-24  2184.0  2224.5  2153.3  2217.3  1561016.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-2  2026-03-25  2225.1  2289.7  2222.0  2270.2  1270855.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-3  2026-03-27  2246.3  2269.0  2201.1  2207.4  1089010.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-4  2026-03-30  2185.3  2202.9  2151.0  2165.2  1513565.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-5  2026-04-01  2224.8  2246.6  2198.4  2225.8  1209900.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-6  2026-04-02  2185.0  2185.1  2142.4  2169.0  1854061.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-7  2026-04-06  2169.0  2193.2  2145.9  2184.3  2048228.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-8  2026-04-07  2167.7  2198.7  2145.0  2186.2  1793007.0  Sideways          NaN         NaN       NaN        NA    Neutral    Bullish     Bullish  Bullish Engulf
-9  2026-04-08  2284.5  2336.9  2245.2  2282.4  2914767.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-10 2026-04-09  2275.0  2289.6  2252.0  2269.6  1980060.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-11 2026-04-10  2267.7  2376.9  2267.7  2360.7  3018178.0  Sideways          NaN         NaN       NaN        NA    Neutral    Bullish     Bullish  Bullish Engulf
-12 2026-04-13  2279.9  2362.5  2262.0  2352.4  1734562.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-13 2026-04-15  2400.5  2426.0  2381.0  2423.1  1182431.0  Sideways          NaN         NaN       NaN        NA    Neutral    Neutral     Neutral                
-14 2026-04-16  2435.0  2446.6  2411.6  2440.3  1496210.0   Uptrend       2426.0      2115.0  1.045981  HIGH-OUT    Neutral    Neutral     Neutral                
-15 2026-04-17  2425.0  2486.1  2417.5  2464.0  1286575.0   Uptrend       2446.6      2142.4  1.057199  HIGH-OUT    Neutral    Bullish     Bullish  Bullish Engulf
-16 2026-04-20  2470.0  2523.8  2456.5  2516.8  1203157.0   Uptrend       2486.1      2142.4  1.089322  HIGH-OUT    Neutral    Neutral     Neutral                
-17 2026-04-21  2516.3  2582.0  2513.7  2543.6  1681872.0   Uptrend       2523.8      2142.4  1.051914  HIGH-OUT    Neutral    Neutral     Neutral                
-18 2026-04-22  2500.0  2572.0  2500.0  2562.9  1126584.0   Uptrend       2582.0      2142.4  0.956551      HIGH    Neutral    Bullish     Bullish  Bullish Engulf
-19 2026-04-23  2530.0  2541.7  2510.0  2521.4  1378614.0   Uptrend       2582.0      2142.4  0.862147      HIGH    Neutral    Neutral     Neutral                
-20 2026-04-24  2521.4  2538.9  2470.7  2485.1   436871.0   Uptrend       2582.0      2142.4  0.779572      HIGH    Neutral    Neutral     Neutral                
-21 2026-04-27  2503.0  2519.8  2475.5  2485.2   452134.0   Uptrend       2582.0      2145.0  0.778490      HIGH    Neutral    Neutral     Neutral                
-22 2026-04-28  2475.0  2499.0  2456.1  2462.6   556571.0   Uptrend       2582.0      2145.0  0.726773  MID-HIGH    Neutral    Neutral     Neutral                
-23 2026-04-29  2469.9  2477.9  2438.6  2447.3   603585.0   Uptrend       2582.0      2245.2  0.600059  MID-HIGH    Neutral    Neutral     Neutral                
-24 2026-04-30  2426.7  2455.9  2385.5  2444.5   823684.0   Uptrend       2582.0      2252.0  0.583333  MID-HIGH    Bullish    Neutral     Bullish            Wick
-25 2026-05-04  2460.0  2507.0  2442.3  2448.1   581159.0   Uptrend       2582.0      2262.0  0.581562  MID-HIGH    Bearish    Neutral     Bearish            Wick
-26 2026-05-05  2430.0  2454.9  2415.0  2430.0   327682.0   Uptrend       2582.0      2262.0  0.525000  MID-HIGH    Neutral    Neutral     Neutral                
-27 2026-05-06  2460.0  2529.0  2440.4  2519.0  1395987.0   Uptrend       2582.0      2381.0  0.686567  MID-HIGH    Neutral    Neutral     Neutral                
-28 2026-05-07  2534.6  2555.8  2511.3  2530.6  1053513.0   Uptrend       2582.0      2385.5  0.738422  MID-HIGH    Neutral    Neutral     Neutral                
-29 2026-05-08  2540.0  2607.4  2515.4  2599.9  2327900.0   Uptrend       2582.0      2385.5  1.091094  HIGH-OUT    Neutral    Neutral     Neutral                
-30 2026-05-11  2578.9  2607.9  2555.0  2566.1  1271257.0   Uptrend       2607.4      2385.5  0.813880      HIGH    Neutral    Neutral     Neutral                
-31 2026-05-12  2546.2  2555.7  2500.0  2505.5   628802.0  Sideways       2607.9      2385.5  0.539568  MID-HIGH    Neutral    Neutral     Neutral                
-32 2026-05-13  2554.0  2642.4  2554.0  2617.6  3515018.0   Uptrend       2607.9      2385.5  1.043615  HIGH-OUT    Neutral    Neutral     Neutral                
-33 2026-05-14  2620.0  2665.7  2610.0  2622.2  1040916.0   Uptrend       2642.4      2385.5  0.921370      HIGH    Neutral    Neutral     Neutral                
-34 2026-05-15  2622.2  2640.0  2592.8  2605.6   796240.0   Uptrend       2665.7      2385.5  0.785510      HIGH    Neutral    Neutral     Neutral                
-35 2026-05-18  2580.1  2619.4  2556.0  2614.0   898479.0   Uptrend       2665.7      2385.5  0.815489      HIGH    Neutral    Neutral     Neutral                
-36 2026-05-19  2629.0  2646.0  2595.1  2600.7   688639.0   Uptrend       2665.7      2385.5  0.768023      HIGH    Neutral    Neutral     Neutral                
-37 2026-05-20  2562.0  2614.0  2562.0  2598.6   586190.0   Uptrend       2665.7      2385.5  0.760528      HIGH    Neutral    Neutral     Neutral                
-38 2026-05-21  2625.0  2648.3  2590.8  2598.8  1031843.0   Uptrend       2665.7      2385.5  0.761242      HIGH    Bearish    Neutral     Bearish            Wick
-39 2026-05-22  2606.1  2664.7  2600.2  2639.8  1556434.0   Uptrend       2665.7      2415.0  0.896689      HIGH    Neutral    Neutral     Neutral                
-40 2026-05-25  2672.0  2684.1  2653.2  2657.8   815621.0   Uptrend       2665.7      2415.0  0.968488      HIGH    Neutral    Neutral     Neutral                
-41 2026-05-26  2650.0  2664.3  2635.9  2647.0   486267.0   Uptrend       2684.1      2440.4  0.847764      HIGH    Neutral    Neutral     Neutral                
-42 2026-05-27  2644.8  2689.6  2642.0  2671.9   858457.0   Uptrend       2684.1      2500.0  0.933732      HIGH    Neutral    Bullish     Bullish  Bullish Engulf
-43 2026-05-29  2676.1  2748.2  2631.6  2671.6  5062328.0   Uptrend       2689.6      2500.0  0.905063      HIGH    Neutral    Neutral     Neutral                
-44 2026-06-01  2732.6  2778.8  2626.7  2632.4  2224344.0   Uptrend       2748.2      2500.0  0.533441  MID-HIGH    Neutral    Bearish     Bearish  Bearish Engulf
-45 2026-06-02  2626.1  2672.1  2607.9  2660.7  1026319.0   Uptrend       2778.8      2500.0  0.576399  MID-HIGH    Neutral    Neutral     Neutral                
-46 2026-06-03  2652.1  2676.0  2624.7  2662.4   958774.0  Sideways       2778.8      2554.0  0.482206   MID-LOW    Neutral    Neutral     Neutral                
-47 2026-06-04  2663.9  2698.8  2644.9  2661.6  1840743.0  Sideways       2778.8      2556.0  0.473968   MID-LOW    Neutral    Neutral     Neutral                
-48 2026-06-05  2666.0  2699.8  2665.0  2686.7  1615011.0   Uptrend       2778.8      2556.0  0.586625  MID-HIGH    Neutral    Neutral     Neutral                
-49 2026-06-08  2643.3  2675.0  2630.1  2659.2  1262904.0  Sideways       2778.8      2556.0  0.463196   MID-LOW    Neutral    Neutral     Neutral                
-50 2026-06-09  2666.2  2719.0  2661.5  2708.1  1416560.0   Uptrend       2778.8      2562.0  0.673893  MID-HIGH    Neutral    Neutral     Neutral                
-51 2026-06-10  2711.1  2744.0  2700.0  2715.1  1395772.0   Uptrend       2778.8      2562.0  0.706181  MID-HIGH    Neutral    Neutral     Neutral                
-52 2026-06-11  2693.9  2706.7  2671.0  2690.9   771558.0   Uptrend       2778.8      2590.8  0.532447  MID-HIGH    Neutral    Neutral     Neutral                
-53 2026-06-12  2725.7  2753.0  2709.4  2747.4  1078025.0   Uptrend       2778.8      2600.2  0.824188      HIGH    Neutral    Neutral     Neutral                
-54 2026-06-15  2820.3  2832.7  2730.0  2739.3  2752021.0   Uptrend       2778.8      2607.9  0.768871      HIGH    Neutral    Neutral     Neutral                
-58 2026-06-16  2741.0  2771.0  2735.0  2748.1   962931.0   Uptrend       2832.7      2607.9  0.623665  MID-HIGH    Neutral    Neutral     Neutral                
-57 2026-06-17  2764.0  2768.9  2732.5  2738.0   557209.0   Uptrend       2832.7      2607.9  0.578737  MID-HIGH    Neutral    Bearish     Bearish  Bearish Engulf
-ASIANPAINT | 2026-06-17 | Bearish | Bearish Engulf | MID-HIGH
+candles: None
+ASIANPAINT-EQ No candles
+Error processing...
+ASIANPAINT: object of type 'NoneType' has no len()
 Loaded historical data for APOLLOHOSP with 57 rows.
-start_time: 2026-06-15 22:43:57, end_time: 2026-06-18 22:43:57
+start_time: 2026-06-16 08:13:20, end_time: 2026-06-19 08:13:20
 token: 157
 tradingsymbol: APOLLOHOSP-EQ
-candles: ['{"time":"17-JUN-2026", "into":"8390.50", "inth":"8464.50", "intl":"8385.00", "intc":"8427.50", "ssboe":"1781654400", "intv":"185437.00"}', '{"time":"16-JUN-2026", "into":"8468.50", "inth":"8517.00", "intl":"8382.00", "intc":"8390.50", "ssboe":"1781568000", "intv":"263172.00"}']
-APOLLOHOSP: 57 candles loaded
-
-Processing APOLLOHOSP with 57 rows of data...
-Data for APOLLOHOSP loaded successfully with 57 rows.
-Data for APOLLOHOSP after dropping APOLLOHOSP has 57 rows.
-Data for APOLLOHOSP is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+APOLLOHOSP-EQ No candles
+Error processing...
+APOLLOHOSP: object of type 'NoneType' has no len()
 Loaded historical data for ADANIPORTS with 57 rows.
-start_time: 2026-06-15 22:43:57, end_time: 2026-06-18 22:43:57
+start_time: 2026-06-16 08:13:20, end_time: 2026-06-19 08:13:20
 token: 15083
 tradingsymbol: ADANIPORTS-EQ
-candles: ['{"time":"17-JUN-2026", "into":"1824.00", "inth":"1833.00", "intl":"1806.30", "intc":"1828.60", "ssboe":"1781654400", "intv":"2697924.00"}', '{"time":"16-JUN-2026", "into":"1804.80", "inth":"1828.00", "intl":"1797.10", "intc":"1822.00", "ssboe":"1781568000", "intv":"2215994.00"}']
-ADANIPORTS: 57 candles loaded
-
-Processing ADANIPORTS with 57 rows of data...
-Data for ADANIPORTS loaded successfully with 57 rows.
-Data for ADANIPORTS after dropping ADANIPORTS has 57 rows.
-Data for ADANIPORTS is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ADANIPORTS-EQ No candles
+Error processing...
+ADANIPORTS: object of type 'NoneType' has no len()
 Loaded historical data for ADANIENT with 57 rows.
-start_time: 2026-06-15 22:43:58, end_time: 2026-06-18 22:43:58
+start_time: 2026-06-16 08:13:21, end_time: 2026-06-19 08:13:21
 token: 25
 tradingsymbol: ADANIENT-EQ
-candles: ['{"time":"17-JUN-2026", "into":"2958.00", "inth":"2974.50", "intl":"2934.60", "intc":"2951.90", "ssboe":"1781654400", "intv":"1244567.00"}', '{"time":"16-JUN-2026", "into":"2971.40", "inth":"2997.70", "intl":"2928.30", "intc":"2943.60", "ssboe":"1781568000", "intv":"1851843.00"}']
-ADANIENT: 57 candles loaded
-
-Processing ADANIENT with 57 rows of data...
-Data for ADANIENT loaded successfully with 57 rows.
-Data for ADANIENT after dropping ADANIENT has 57 rows.
-Data for ADANIENT is ready for signal generation.
-Calculating 14-day trend...
-Calculating 14-day range position...
-Calculating wick signals...
-Calculating engulf signals...
-Generating final signals...
+candles: None
+ADANIENT-EQ No candles
+Error processing...
+ADANIENT: object of type 'NoneType' has no len()
 
 ================================
 SCAN COMPLETED
