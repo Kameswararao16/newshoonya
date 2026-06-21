@@ -240,63 +240,94 @@ def generate_signals(df):
 # =====================================================
 # SHOONYA DATA DOWNLOAD
 # =====================================================
+from datetime import datetime, timedelta
+import json
+import os
+import pandas as pd
+
 
 def get_processing_data(stock):
-
     symbol = stock["Symbol"]
     tradingsymbol = stock["TradingSymbol"]
     token = str(stock["Token"])
 
-    csv_file = os.path.join(
-        DATA_FOLDER,
-        symbol + ".csv"
-    )
+    csv_file = os.path.join(DATA_FOLDER, f"{symbol}.csv")
 
-    # Existing data
+    hist = pd.DataFrame()
+
+    # -----------------------------
+    # Load existing cache
+    # -----------------------------
     if os.path.exists(csv_file):
         hist = pd.read_csv(csv_file)
-        hist["Date"] = pd.to_datetime(
-            hist["Date"]
-        )
 
-        hist = (
-            hist
-            .sort_values("Date")
-            .tail(60)
-        )
-        print(f"Loaded historical data for {symbol} with {len(hist)} rows.")
-    else:
-        hist = pd.DataFrame()
+        if not hist.empty:
+            hist["Date"] = pd.to_datetime(hist["Date"])
 
-    # Get last 1 day candles from Shoonya
-    end_time = int(
-        datetime.now().timestamp()
-    )
+            hist = (
+                hist
+                .sort_values("Date")
+                .tail(60)
+            )
+
+            latest_date = hist["Date"].max().date()
+            today = datetime.now().date() - timedelta(days=1) # till yesterday's data is available
+
+            print(
+                f"{symbol}: latest cached date = {latest_date}, today = {today}"
+            )
+
+            # Skip Shoonya call if already updated today
+            if latest_date >= today:
+                print(
+                    f"{symbol}: already updated today, using cached data"
+                )
+                return hist
+
+            print(
+                f"Loaded historical data for {symbol} with {len(hist)} rows."
+            )
+
+    # -----------------------------
+    # Pull fresh data from Shoonya
+    # -----------------------------
+    end_time = int(datetime.now().timestamp())
 
     start_time = int(
         (datetime.now() - timedelta(days=5))
         .timestamp()
     )
-    print(f"start_time: {datetime.fromtimestamp(start_time)}, end_time: {datetime.fromtimestamp(end_time)}")
-    print(f"token: {token}")
-    print(f"tradingsymbol: {tradingsymbol}")
+
+    print(
+        f"Fetching Shoonya data for {symbol}"
+    )
+    print(
+        f"start_time: {datetime.fromtimestamp(start_time)}, "
+        f"end_time: {datetime.fromtimestamp(end_time)}"
+    )
 
     candles = api.get_daily_price_series(
-        exchange='NSE',
+        exchange="NSE",
         tradingsymbol=tradingsymbol,
         startdate=start_time,
         enddate=end_time
     )
-    # print(f"get_time_price_series: {api.get_time_price_series(exchange='NSE', token=token)}")
-    print(f"candles: {candles}")
-    # exit()
+
     if not candles:
-        print(tradingsymbol, "No candles")
+        print(f"{symbol}: No candles returned")
+
+        if not hist.empty:
+            return hist
+
         return None
 
+    # -----------------------------
+    # Convert Shoonya response
+    # -----------------------------
     candles = [json.loads(x) for x in candles]
+
     df = pd.DataFrame(candles)
-    # print(f"Raw data for {symbol}:\n{df.head()}")
+
     df = df.rename(
         columns={
             "time": "Date",
@@ -307,27 +338,21 @@ def get_processing_data(stock):
             "intv": "Volume"
         }
     )
-    # print(f"Renamed columns for {symbol}:\n{df.head()}")
 
-    df["Date"] = pd.to_datetime(
-        df["Date"]
-    )
-    # print(f"Converted Date for {symbol}:\n{df.head()}")
+    df["Date"] = pd.to_datetime(df["Date"])
 
-    for c in [
+    for col in [
         "Open",
         "High",
         "Low",
         "Close",
         "Volume"
     ]:
-
-        df[c] = pd.to_numeric(
-            df[c],
+        df[col] = pd.to_numeric(
+            df[col],
             errors="coerce"
         )
 
-    # print(f"Numeric conversion for {symbol}:\n{df.head()}")
     df = df[
         [
             "Date",
@@ -339,14 +364,15 @@ def get_processing_data(stock):
         ]
     ]
 
-    # Merge old + new data
+    # -----------------------------
+    # Merge old + new
+    # -----------------------------
     if not hist.empty:
         df = pd.concat(
             [hist, df],
             ignore_index=True
         )
 
-    # Remove duplicate dates (keep latest candle)
     df = (
         df
         .drop_duplicates(
@@ -355,9 +381,12 @@ def get_processing_data(stock):
         )
         .sort_values("Date")
         .tail(60)
+        .reset_index(drop=True)
     )
 
+    # -----------------------------
     # Save cache
+    # -----------------------------
     os.makedirs(
         DATA_FOLDER,
         exist_ok=True
@@ -369,7 +398,7 @@ def get_processing_data(stock):
     )
 
     print(
-        f"{symbol}: {len(df)} candles loaded"
+        f"{symbol}: saved {len(df)} candles"
     )
 
     return df
