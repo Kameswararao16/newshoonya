@@ -4,7 +4,7 @@ import pandas as pd
 
 
 DATA_FOLDER = "nifty100_data"
-LOOKBACK = 60
+LOOKBACK = 5
 
 MERGE_FACTOR = 0.1
 
@@ -113,49 +113,49 @@ def get_support_resistance(levels, close):
         supports,
         key=lambda x:x["level"],
         reverse=True
-    )[:10]
-    # Get top 5 by count
-    supports = sorted(
-        supports,
-        key=lambda x: x["count"],
-        reverse=True
     )[:5]
-    supports = sorted(
-        supports,
-        key=lambda x: x["level"],
-        reverse=False
-    )[:5]
+    # # Get top 5 by count
+    # supports = sorted(
+    #     supports,
+    #     key=lambda x: x["count"],
+    #     reverse=True
+    # )[:5]
+    # supports = sorted(
+    #     supports,
+    #     key=lambda x: x["level"],
+    #     reverse=False
+    # )[:5]
     # Get all resistances above close, sort by level, take top 50, then sort by count and take top 5
     resistances = sorted(
         resistances,
         key=lambda x:x["level"]
-    )[:10]
-    # Get top 5 by count
-    resistances = sorted(
-        resistances,
-        key=lambda x: x["count"],
-        reverse=True
     )[:5]
-    resistances = sorted(
-        resistances,
-        key=lambda x: x["level"],
-        reverse=False
-    )[:5]
+    # # Get top 5 by count
+    # resistances = sorted(
+    #     resistances,
+    #     key=lambda x: x["count"],
+    #     reverse=True
+    # )[:5]
+    # resistances = sorted(
+    #     resistances,
+    #     key=lambda x: x["level"],
+    #     reverse=False
+    # )[:5]
 
     return supports,resistances
 
 #=========================================================
 # Cluster levels that are close to each other
 #=========================================================
-def get_merge_step(df, lookback=14, factor=0.25):
+def get_merge_step(df, lookback=5, factor=0.25):
 
     recent = df.tail(lookback)
 
-    avg_range = (
+    average_range = (
         recent["High"] - recent["Low"]
-    ).mean()
+    ).sum() / len(recent)
 
-    merge_step = avg_range * factor
+    merge_step = average_range * factor
 
     return round(merge_step, 2)
 
@@ -167,9 +167,7 @@ def process_stock(file):
 
     stock = os.path.basename(file).replace(".csv","")
 
-
     df = pd.read_csv(file)
-
 
     required = [
         "Open",
@@ -178,28 +176,23 @@ def process_stock(file):
         "Close"
     ]
 
-
     if not all(c in df.columns for c in required):
         return None
 
-
     df = df.tail(LOOKBACK)
-
 
     close = float(df.iloc[-1]["Close"])
     merge_step = get_merge_step(
         df,
-        lookback=14,
+        lookback=5,
         factor=MERGE_FACTOR
     )
-
 
     # High/Low only
     levels = build_levels(
         df,
         merge_step
     )
-
 
     # add confirmation from Open/Close
     levels = add_open_close_hits(
@@ -208,48 +201,35 @@ def process_stock(file):
         merge_step
     )
 
-
     supports,resistances = get_support_resistance(
         levels,
         close
     )
-
 
     result = {
         "Stock":stock,
         "Close":round(close,2)
     }
 
-
     # supports
     for i in range(5):
 
         if i < len(supports):
-
             result[f"S{i+1}"] = supports[i]["level"]
             result[f"S{i+1}_Hits"] = supports[i]["count"]
-
         else:
-
             result[f"S{i+1}"] = None
             result[f"S{i+1}_Hits"] = None
 
-
-
     # resistances
-
     for i in range(5):
 
         if i < len(resistances):
-
             result[f"R{i+1}"] = resistances[i]["level"]
             result[f"R{i+1}_Hits"] = resistances[i]["count"]
-
         else:
-
             result[f"R{i+1}"] = None
             result[f"R{i+1}_Hits"] = None
-
 
     return result
 
@@ -268,14 +248,10 @@ def main():
         )
     )
 
-
     output = []
-
-
     for file in sorted(files):
 
         try:
-
             row = process_stock(file)
 
             if row:
@@ -292,25 +268,18 @@ def main():
                 )
 
         except Exception as e:
-
             print(file,e)
 
-
-
     result = pd.DataFrame(output)
-
-
     result.sort_values(
         "Stock",
         inplace=True
     )
 
-
     result.to_csv(
         "support_resistance_levels.csv",
         index=False
     )
-
 
     print("\nCreated support_resistance_levels.csv")
 

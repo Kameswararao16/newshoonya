@@ -11,16 +11,11 @@ import os
 
 DATA_FOLDER = "nifty100_data"
 
-n100 = pd.read_csv(
-    "NIFTY100_Tokens.csv"
-)
-
+n100 = pd.read_csv("NIFTY100_Tokens.csv")
 NIFTY100 = n100.to_dict("records")
 
 pd.set_option("display.max_columns", None)
 pd.set_option("display.width", None)
-
-
 
 # =====================================================
 # WICK LOGIC
@@ -423,7 +418,7 @@ for stock in NIFTY100:
 
     try:
 
-        file = os.path.join( DATA_FOLDER, ticker+".csv")
+        file = os.path.join( DATA_FOLDER, stock["Symbol"]+".csv")
         if not os.path.exists(file):
             print(ticker, "missing data")
             continue

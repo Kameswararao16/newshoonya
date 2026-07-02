@@ -1,0 +1,1 @@
+1. Use yesterday high and low as support and resistance. If it breaks, then use history
