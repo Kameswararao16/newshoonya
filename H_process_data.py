@@ -453,8 +453,8 @@ def last_group(df):
 # =====================================================
 
 
-print("\nSTART SCAN\n")
-
+# print("\nSTART SCAN\n")
+print("Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit")
 
 for stock in NIFTY100:
 
@@ -506,32 +506,15 @@ for stock in NIFTY100:
             watch = (abs(entry -sl)*1.5 < abs(entry -target))
             side="DAY"
 
-        print(
-            ticker,
-            "|",
-            last.Date.date(),
-            "|",
-            side,
-            "|",
-            last.FinalSignal,
-            "|",
-            last.TriggerLogic,
-            "| Entry:",
-            entry,
-            "| SL:",
-            sl,
-            "| Target:",
-            target,
-            "|",
-            last.RangeZone,
-            "|",
-            watch
+        print(ticker,",", last.Date.date(), ",", side, ",", 
+                last.FinalSignal, ",", last.TriggerLogic, ",", 
+                entry, ",", sl, ",", target, ",", last.RangeZone,",", watch
         )
 
     except Exception as e:
         print(ticker, e)
 
 
-print("\n===================")
-print("SCAN COMPLETED")
-print("===================")
+# print("\n===================")
+# print("SCAN COMPLETED")
+# print("===================")
