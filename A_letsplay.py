@@ -66,12 +66,12 @@ while True:
         except subprocess.CalledProcessError as e:
             print(f"Script failed: {e}")
 
-        try:
-            # dowload all stocks data
-            pbs.process_buy_sell(api)
+        # try:
+        #     # dowload all stocks data
+        #     pbs.process_buy_sell(api)
 
-        except subprocess.CalledProcessError as e:
-            print(f"Script failed: {e}")
+        # except subprocess.CalledProcessError as e:
+        #     print(f"Script failed: {e}")
 
         # Calculate remaining time in the 5-minute window
         elapsed = time.time() - loop_start

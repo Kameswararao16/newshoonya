@@ -35,7 +35,7 @@ print("API connected")
 
 DATA_FOLDER = "nifty100_data"
 
-n100 = pd.read_csv("NIFTY100_Tokens.csv")
+n100 = pd.read_csv("NIFTY100_Tokens_org.csv")
 NIFTY100 = n100.to_dict("records")
 
 
@@ -73,9 +73,8 @@ def download_stock(stock):
 
             latest = old["Date"].max().date()
             today = datetime.now().date() - timedelta(days=1)
-
+            print(f"latest: {latest}, today: {today}")
             if latest >= today:
-
                 print(
                     f"{symbol}: already updated"
                 )
@@ -104,7 +103,7 @@ def download_stock(stock):
         )
     )
 
-
+    print(f"candles: {candles}")
     if not candles:
         print(
             f"No data {symbol}"
@@ -119,8 +118,6 @@ def download_stock(stock):
 
 
     df = pd.DataFrame(candles)
-
-
     df = df.rename(
         columns={
             "time":"Date",

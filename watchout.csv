@@ -1,5 +1,41 @@
-ZYDUSLIFE, 1083=>PE(1), 1078=>PE(2), min=1062/1049
-TORNTPHARM, 4495=>PE(1), 4438=>PE(2) min=4417/4399/4353
-NESTLEIND, 1410=>CE(3), 1400=>CE(2), 1394/1384=>CE(1) max:1415/1426
-HINDALCO, 989=>CE(1) max=1011/1023
-HCLTECH, 1121=>CE(1), max=1136/1152
+
+START SCAN
+
+VEDL | 2026-07-03 | DAY | Bearish | Wick | Entry: 280.8 | SL: 282.8 | Target: 278.8 | LOW | False
+TECHM | 2026-07-03 | DAY | Bearish | Wick | Entry: 1421.75 | SL: 1445.0 | Target: 1373.4 | MID-LOW | True
+TATAPOWER | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 377.92 | SL: 387.05 | Target: 374.3 | LOW | False
+SIEMENS | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 3548.35 | SL: 3616.5 | Target: 3497.5 | LOW | False
+SBIN | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 1045.75 | SL: 1057.0 | Target: 1034.5 | MID-HIGH | False
+RECLTD | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 368.1 | SL: 372.35 | Target: 363.85 | HIGH | False
+POWERGRID | 2026-07-03 | DAY | Bearish | Wick | Entry: 289.55 | SL: 292.0 | Target: 284.2 | MID-LOW | True
+PNB | 2026-07-03 | DAY | Bullish | Wick | Entry: 105.56 | SL: 104.11 | Target: 107.01 | LOW | False
+NHPC | 2026-07-03 | DAY | Bearish | Wick | Entry: 81.45 | SL: 82.5 | Target: 79.25 | HIGH | True
+MOTHERSON | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 147.88 | SL: 149.73 | Target: 146.02 | MID-LOW | False
+MARICO | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 854.05 | SL: 873.0 | Target: 835.1 | MID-HIGH | False
+MANKIND | 2026-07-03 | DAY | Bullish | Bullish Tweezer | Entry: 2511.6 | SL: 2480.2 | Target: 2543.0 | MID-HIGH | False
+M&M missing data
+LICHSGFIN | 2026-07-03 | DAY | Bearish | Wick | Entry: 558.4 | SL: 568.5 | Target: 547.05 | MID-LOW | False
+JIOFIN | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 240.53 | SL: 242.2 | Target: 238.86 | MID-HIGH | False
+JINDALSTEL | 2026-07-03 | DAY | Bearish | Wick | Entry: 1062.4 | SL: 1073.8 | Target: 1051.0 | LOW | False
+ICICIPRULI | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 492.07 | SL: 500.45 | Target: 483.7 | MID-LOW | False
+HINDALCO | 2026-07-03 | DAY | Bearish | Wick | Entry: 964.97 | SL: 978.9 | Target: 951.05 | LOW | False
+HEROMOTOCO | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 4870.15 | SL: 4913.8 | Target: 4826.5 | MID-LOW | False
+HAL | 2026-07-03 | DAY | Bearish | Wick | Entry: 4461.85 | SL: 4502.4 | Target: 4382.0 | MID-HIGH | True
+GRASIM | 2026-07-03 | DAY | Bearish | Wick | Entry: 3192.15 | SL: 3219.3 | Target: 3165.0 | HIGH | False
+GODREJCP | 2026-07-03 | DAY | Bearish | Wick | Entry: 1084.8 | SL: 1098.5 | Target: 1043.0 | HIGH | True
+GAIL | 2026-07-03 | DAY | Bearish | Wick | Entry: 174.79 | SL: 175.89 | Target: 172.21 | MID-HIGH | True
+ETERNAL | 2026-07-03 | DAY | Bearish | Wick | Entry: 283.73 | SL: 287.8 | Target: 278.6 | HIGH | False
+DABUR | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 446.12 | SL: 451.0 | Target: 442.15 | HIGH | False
+CUMMINSIND | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 5572.25 | SL: 5690.0 | Target: 5454.5 | LOW-OUT | False
+CIPLA | 2026-07-03 | DAY | Bearish | Wick | Entry: 1461.5 | SL: 1471.0 | Target: 1452.0 | HIGH | False
+CANBK | 2026-07-03 | DAY | Bullish | Wick | Entry: 126.45 | SL: 124.7 | Target: 129.26 | LOW | True
+BEL | 2026-07-03 | DAY | Bearish | Wick | Entry: 420.8 | SL: 424.5 | Target: 417.1 | MID-LOW | False
+BAJAJHLDNG | 2026-07-03 | DAY | Bearish | Wick | Entry: 11069.5 | SL: 11218.0 | Target: 10921.0 | HIGH-OUT | False
+ASIANPAINT | 2026-07-03 | DAY | Bearish | Bearish Tweezer | Entry: 2746.2 | SL: 2762.4 | Target: 2711.0 | MID-HIGH | True
+ADANIENT | 2026-07-03 | DAY | Bullish | Wick | Entry: 3164.75 | SL: 3105.5 | Target: 3229.6 | HIGH | False
+NIFTYBANK | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 58071.15 | SL: 58396.1 | Target: 57799.05 | MID-HIGH | False
+NIFTYNXT50 | 2026-07-03 | DAY | Bearish | Bearish Engulf | Entry: 72435.9 | SL: 72701.9 | Target: 72169.9 | HIGH | False
+
+===================
+SCAN COMPLETED
+===================

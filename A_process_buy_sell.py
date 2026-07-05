@@ -203,24 +203,24 @@ def process_buy_sell(api):
 
             df = pd.read_csv(file)
             df["Date"] = pd.to_datetime(df["Date"])
-            df = (df.sort_values("Date").tail(3))
+            # df = (df.sort_values("Date").tail(3))
 
-            # #====test=====
-            # df = df.sort_values("Date")
-            # print(f"df: {len(df)}")
+            #====test=====
+            df = df.sort_values("Date")
+            print(f"df: {len(df)}")
 
-            # for i in range(len(df) - 1):
-            #     window = df.iloc[i:i+2]
-            #     hg = (df.iloc[0:i+2][["Open","Close"]]).max().max()
-            #     lg = (df.iloc[0:i+2][["Open","Close"]]).min().min()
-            #     hgw = df.iloc[0:i+2]["High"].max()
-            #     lgw = df.iloc[0:i+2]["Low"].min()
-            #     print(f"Window index {i}: High: {hg}, Low: {lg}, High wick: {hgw}, Low wick: {lgw}")
-            #     print(f"Processing stock: {stock['Symbol']}")
-            #     detect_candlestick_pattern(window, stock['Symbol'], hg, lg, hgw, lgw)
-            #     # print(f"waiting 10 second before next stock...")
-            #     # time.sleep(10)
-            # #=============
+            for i in range(len(df) - 1):
+                window = df.iloc[i:i+2]
+                hg = (df.iloc[0:i+2][["Open","Close"]]).max().max()
+                lg = (df.iloc[0:i+2][["Open","Close"]]).min().min()
+                hgw = df.iloc[0:i+2]["High"].max()
+                lgw = df.iloc[0:i+2]["Low"].min()
+                print(f"Window index {i}: High: {hg}, Low: {lg}, High wick: {hgw}, Low wick: {lgw}")
+                print(f"Processing stock: {stock['Symbol']}")
+                detect_candlestick_pattern(window, stock['Symbol'], hg, lg, hgw, lgw)
+                # print(f"waiting 10 second before next stock...")
+                # time.sleep(10)
+            #=============
 
             if len(df)<3: 
                 print(f"Not enough data to process {stock['Symbol']}")
@@ -232,3 +232,25 @@ def process_buy_sell(api):
             print(stock["Symbol"], e)
 
     # print("DOWNLOAD COMPLETE")
+#===================TEST===================================
+# #login to API
+# from api_helper import NorenApiPy
+
+# api = NorenApiPy()
+
+# with open("cred.yml") as f:
+#     cred = yaml.load(f, Loader=yaml.FullLoader)
+
+# loginstatus = api.injectOAuthHeader(
+#     cred["Access_token"],
+#     cred["UID"],
+#     cred["Account_ID"]
+# )
+
+# if loginstatus is None:
+#     print("Login failed")
+#     exit()
+
+# print("API connected")
+# #=================================================
+# process_buy_sell(api)

@@ -11,7 +11,7 @@ import os
 
 DATA_FOLDER = "nifty100_data"
 
-n100 = pd.read_csv("NIFTY100_Tokens.csv")
+n100 = pd.read_csv("NIFTY100_Tokens_org.csv")
 NIFTY100 = n100.to_dict("records")
 
 pd.set_option("display.max_columns", None)
@@ -49,42 +49,29 @@ def add_wick_signal(df):
     green = df["Close"] > df["Open"]
     red = df["Close"] < df["Open"]
 
-
     df["WickSignal"] = np.select(
         [
+            (df["Low"] < prev_low) &
+            (
+                (lower_pct > 0.70) |
+                ((lower_pct > 0.40) & (upper_pct < 0.10))
+            ),
 
-            (lower_pct > 0.40)
-            &
-            (upper_pct < 0.20)
-            &
-            (df["Low"] < prev_low)
-            &
-            green,
-
-
-            (upper_pct > 0.40)
-            &
-            (lower_pct < 0.20)
-            &
-            (df["High"] > prev_high)
-            &
-            red
-
+            (df["High"] > prev_high) &
+            (
+                (upper_pct > 0.70) |
+                ((upper_pct > 0.40) & (lower_pct < 0.10))
+            ),
         ],
-
         [
             "Bullish",
-            "Bearish"
+            "Bearish",
         ],
-
-        default="Neutral"
+        default="Neutral",
     )
 
 
     return df
-
-
-
 
 # =====================================================
 # ENGULFING
@@ -139,9 +126,6 @@ def engulf_wick_reference(df):
         result,
         index=df.index
     )
-
-
-
 
 # =====================================================
 # RANGE
@@ -404,6 +388,66 @@ def generate_signals(df):
     return df
 
 
+
+# =====================================================
+# Find last swing group
+# =====================================================
+def body_high(c):
+    return max(c['Open'], c['Close'])
+
+def body_low(c):
+    return min(c['Open'], c['Close'])
+
+
+def last_group(df):
+    """
+    df columns:
+    open, high, low, close
+    oldest -> newest
+    """
+    # print("start last_group....")
+    n = len(df)
+    # print(f"n: {n}")
+    if n == 0:
+        print(f"None.")
+        return None
+
+    # Start from latest candle
+    idx = n - 1
+
+    grp_start = idx
+
+    comb_body_high = body_high(df.iloc[idx])
+    comb_body_low = body_low(df.iloc[idx])
+    # print(f"{comb_body_high}, {comb_body_low}")
+    while idx > 0:
+
+        prev = df.iloc[idx - 1]
+
+        prev_high = prev["High"]
+        prev_low = prev["Low"]
+        # print(f"{prev_low}, {prev_high}")
+        # Break previous candle?
+        if comb_body_high > prev_high or comb_body_low < prev_low:
+            break
+
+        # Merge candle
+        comb_body_high = max(comb_body_high, body_high(prev))
+        comb_body_low = min(comb_body_low, body_low(prev))
+
+        grp_start = idx - 1
+        idx -= 1
+
+    group = df.iloc[grp_start:]
+    # print(f"group: {group}")
+    return {
+        "start": grp_start,
+        "end": n - 1,
+        "high": group["High"].max(),
+        "low": group["Low"].min(),
+        "candles": group
+    }
+
 # =====================================================
 # PROCESS ALL STOCKS
 # =====================================================
@@ -418,7 +462,7 @@ for stock in NIFTY100:
 
     try:
 
-        file = os.path.join( DATA_FOLDER, stock["Symbol"]+".csv")
+        file = os.path.join( DATA_FOLDER, ticker+".csv")
         if not os.path.exists(file):
             print(ticker, "missing data")
             continue
@@ -441,16 +485,26 @@ for stock in NIFTY100:
         if last["FinalSignal"]=="Neutral":
             continue
 
-        entry = round(float(last.Close), 2)
-
+        # entry = round(float(last.Close), 2)
+        lastSwingGroupData = last_group(df)
+        # print(lastSwingGroupData)
+        entry = round(float((df["Low"].iloc[-1] + df["High"].iloc[-1])/2), 2)
         if last.FinalSignal=="Bullish":
-            sl = round(float(last.Low), 2)
-            target = round(entry + (entry-sl)*2, 2)
-            side="LONG"
+            # sl = round(float(last.Low), 2)
+            # target = round(entry + (entry-sl)*2, 2)
+            sl = lastSwingGroupData["low"]
+            target = lastSwingGroupData["high"]
+            watch = (abs(entry -sl)*1.5 < abs(entry -target))
+            # if(df["WickSignal"].iloc[i]):
+            # elif(df["EngulfType"].iloc[i])
+            side="DAY"
         else:
-            sl = round(float(last.High), 2)
-            target = round( entry - (sl-entry)*2, 2)
-            side="SHORT"
+            # sl = round(float(last.High), 2)
+            # target = round( entry - (sl-entry)*2, 2)
+            sl = lastSwingGroupData["high"]
+            target = lastSwingGroupData["low"]
+            watch = (abs(entry -sl)*1.5 < abs(entry -target))
+            side="DAY"
 
         print(
             ticker,
@@ -469,7 +523,9 @@ for stock in NIFTY100:
             "| Target:",
             target,
             "|",
-            last.RangeZone
+            last.RangeZone,
+            "|",
+            watch
         )
 
     except Exception as e:
