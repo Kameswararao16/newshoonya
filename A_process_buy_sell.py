@@ -9,11 +9,11 @@ import time
 import sendtelegram as tg
 
 # ===========================================================
-# Input NIFTY100 stocks
+# Input NIFTY stocks
 # ==========================================================
 DATA_FOLDER = "nifty100_data_today"
-n100 = pd.read_csv("NIFTY100_Tokens.csv")
-NIFTY100 = n100.to_dict("records")
+NIFTY = pd.read_csv("NIFTY50_Tokens.csv")
+NIFTY = NIFTY.to_dict("records")
 
 #====================================================================
 # Detect candlestick patterns
@@ -194,7 +194,7 @@ def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
 def process_buy_sell(api):
     print("Starting to process all stocks for buy/sell signals...")
     # time.sleep(5)  # Wait for 5 seconds before starting
-    for stock in NIFTY100:
+    for stock in NIFTY:
         try:
             file = os.path.join( DATA_FOLDER, stock["Symbol"]+".csv")
             if not os.path.exists(file):
@@ -203,31 +203,36 @@ def process_buy_sell(api):
 
             df = pd.read_csv(file)
             df["Date"] = pd.to_datetime(df["Date"])
-            # df = (df.sort_values("Date").tail(3))
+            hg = (df[["Open","Close"]]).max().max()
+            lg = (df[["Open","Close"]]).min().min()
+            hgw = df["High"].max()
+            lgw = df["Low"].min()
+            print(f"Processing stock: {stock['Symbol']}, High: {hg}, Low: {lg}, High Wick: {hgw}, Low Wick: {lgw}")
+            df = (df.sort_values("Date").tail(3))
 
-            #====test=====
-            df = df.sort_values("Date")
-            print(f"df: {len(df)}")
+            # #====test=====
+            # df = df.sort_values("Date")
+            # print(f"df: {len(df)}")
 
-            for i in range(len(df) - 1):
-                window = df.iloc[i:i+2]
-                hg = (df.iloc[0:i+2][["Open","Close"]]).max().max()
-                lg = (df.iloc[0:i+2][["Open","Close"]]).min().min()
-                hgw = df.iloc[0:i+2]["High"].max()
-                lgw = df.iloc[0:i+2]["Low"].min()
-                print(f"Window index {i}: High: {hg}, Low: {lg}, High wick: {hgw}, Low wick: {lgw}")
-                print(f"Processing stock: {stock['Symbol']}")
-                detect_candlestick_pattern(window, stock['Symbol'], hg, lg, hgw, lgw)
-                # print(f"waiting 10 second before next stock...")
-                # time.sleep(10)
-            #=============
+            # for i in range(len(df) - 1):
+            #     window = df.iloc[i:i+2]
+            #     hg = (df.iloc[0:i+2][["Open","Close"]]).max().max()
+            #     lg = (df.iloc[0:i+2][["Open","Close"]]).min().min()
+            #     hgw = df.iloc[0:i+2]["High"].max()
+            #     lgw = df.iloc[0:i+2]["Low"].min()
+            #     print(f"Window index {i}: High: {hg}, Low: {lg}, High wick: {hgw}, Low wick: {lgw}")
+            #     print(f"Processing stock: {stock['Symbol']}")
+            #     detect_candlestick_pattern(window, stock['Symbol'], hg, lg, hgw, lgw)
+            #     # print(f"waiting 10 second before next stock...")
+            #     # time.sleep(10)
+            # #=============
 
             if len(df)<3: 
                 print(f"Not enough data to process {stock['Symbol']}")
                 continue
 
             # print(f"Processing stock: {stock['Symbol']}")
-            # detect_candlestick_pattern(df)
+            detect_candlestick_pattern(df, stock['Symbol'], hg, lg, hgw, lgw)
         except Exception as e:
             print(stock["Symbol"], e)
 

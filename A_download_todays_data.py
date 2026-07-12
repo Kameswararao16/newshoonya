@@ -7,12 +7,11 @@ import csv
 import time
 
 # =========================
-# Input NIFTY100 stocks
+# Input NIFTY stocks
 # =========================
-
 DATA_FOLDER = "nifty100_data_today"
-n100 = pd.read_csv("NIFTY100_Tokens.csv")
-NIFTY100 = n100.to_dict("records")
+NIFTY = pd.read_csv("NIFTY50_Tokens.csv")
+NIFTY = NIFTY.to_dict("records")
 
 # =========================
 # DOWNLOAD FUNCTION
@@ -23,7 +22,6 @@ def download_stock(stock, api):
     tradingsymbol = stock["TradingSymbol"]
     token = stock["Token"]
     # print(f"Downloading {symbol} ({tradingsymbol}:{token})")
-
 
     # create folder
     os.makedirs(DATA_FOLDER, exist_ok=True)
@@ -56,6 +54,7 @@ def download_stock(stock, api):
             reader = csv.DictReader(f)
             for row in reader:
                 existing.add(row["Date"])
+
     # print(f"{symbol}: existing timestamps: {len(existing)}")
     new_rows = []
     for item in candles:
@@ -76,6 +75,7 @@ def download_stock(stock, api):
         if row[0] not in existing:
             new_rows.append(row)
             existing.add(row[0])
+            
     # print(f"{symbol}: new candles: {len(new_rows)}")
     if not new_rows:
         print(f"{symbol}: no new candles")
@@ -110,7 +110,7 @@ def download_stock(stock, api):
 # RUN DOWNLOAD
 # =========================
 def download_all_stocks(api):
-    for stock in NIFTY100:
+    for stock in NIFTY:
         try:
             download_stock(stock, api)
         except Exception as e:

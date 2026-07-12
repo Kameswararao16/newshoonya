@@ -55,7 +55,7 @@ while True:
 
     # Trading window: 09:15 to 15:30
     start_minutes = 9 * 60 + 15
-    end_minutes = 23 * 60 + 30
+    end_minutes = 15 * 60 + 30
     if start_minutes <= current_minutes <= end_minutes:
         loop_start = time.time()
         
@@ -66,12 +66,12 @@ while True:
         except subprocess.CalledProcessError as e:
             print(f"Script failed: {e}")
 
-        # try:
-        #     # dowload all stocks data
-        #     pbs.process_buy_sell(api)
+        try:
+            # dowload all stocks data
+            pbs.process_buy_sell(api)
 
-        # except subprocess.CalledProcessError as e:
-        #     print(f"Script failed: {e}")
+        except subprocess.CalledProcessError as e:
+            print(f"Script failed: {e}")
 
         # Calculate remaining time in the 5-minute window
         elapsed = time.time() - loop_start

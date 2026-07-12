@@ -73,9 +73,10 @@ import json
 
 def event_handler_feed_update(feed):
     print("Market Feed Update:", feed)
-
+    now = datetime.now()
+    print("Current Time:", now.strftime("%Y-%m-%d %H:%M:%S"))
     latest_key = f"HavyaTej:{feed['tk']}"
-    history_key = f"HavyaTej:{feed['tk']}:history"
+    # history_key = f"HavyaTej:{feed['tk']}:history"
 
     updateData = False
 
@@ -104,9 +105,11 @@ def event_handler_feed_update(feed):
 
         # Store latest snapshot
         redisObject.set(latest_key, latest_feed)
-
+        print(f"Updated Redis key: {latest_key} with latest feed.")
+        now = datetime.now()
+        print("Current Time:", now.strftime("%Y-%m-%d %H:%M:%S"))
         # Append to history
-        redisObject.rpush(history_key, latest_feed)
+        # redisObject.rpush(history_key, latest_feed)
 
         # Keep only last 10,000 updates (optional)
         # redisObject.ltrim(history_key, -10000, -1)
@@ -122,7 +125,12 @@ def event_handler_order_update(message):
 
 def socket_open_callback():
     print("WebSocket connection opened.")
-    api.subscribe('NSE|26000')
+
+    df = pd.read_csv("NIFTY50_Tokens.csv")
+    tokens = [f"NSE|{int(t)}" for t in df["Token"]]
+    api.subscribe(tokens)
+    print(f"Subscribed to {len(tokens)} tokens.")
+    # api.subscribe('NSE|26000')
     #api.subscribe(['NSE|22', 'BSE|522032'])
 
 def socket_close_callback():
