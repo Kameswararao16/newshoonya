@@ -17,7 +17,7 @@ NIFTY = NIFTY.to_dict("records")
 
 #====================================================================
 # Detect candlestick patterns
-def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
+def detect_candlestick_pattern(candles, stkname, dh, dl, dhw, dlw, hX, lX, hwX, lwX, minmovement):
 
     if len(candles) < 2:
         print("Not enough candles to detect patterns")
@@ -34,13 +34,13 @@ def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
     ph = float(prev["High"])
     pl = float(prev["Low"])
     pc = float(prev["Close"])
-
+    print(f"Previous candle - Open: {po}, High: {ph}, Low: {pl}, Close: {pc}")
     # Current candle
     co = float(curr["Open"])
     ch = float(curr["High"])
     cl = float(curr["Low"])
     cc = float(curr["Close"])
-
+    print(f"Current candle - Open: {co}, High: {ch}, Low: {cl}, Close: {cc}")
     # -------------------------
     # Previous candle properties
     # -------------------------
@@ -63,36 +63,62 @@ def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
     buffer = 0.25 * c_range
     print(f"Buffer: {buffer}")
 
-    last_candle_at_high = abs(max(cc, co) - hg) <= buffer
-    last_candle_at_low = abs(min(cc, co) - lg) <= buffer
-    last_candle_at_high_wick = abs(max(ch, cl) - hgw) <= buffer
-    last_candle_at_low_wick = abs(min(ch, cl) - lgw) <= buffer
-    print(f"Last candle at high: {last_candle_at_high}, Last candle at low: {last_candle_at_low}, Last candle at high wick: {last_candle_at_high_wick}, Last candle at low wick: {last_candle_at_low_wick}")
-    if not (last_candle_at_high or last_candle_at_low or last_candle_at_high_wick or last_candle_at_low_wick):
-        print("Last candle is not at high or low")
+    last_candle_at_dhigh = abs(max(cc, co) - dh) <= buffer
+    last_candle_at_dlow = abs(min(cc, co) - dl) <= buffer
+    last_candle_at_dhigh_wick = abs(max(ch, cl) - dhw) <= buffer
+    last_candle_at_dlow_wick = abs(min(ch, cl) - dlw) <= buffer
+
+    last_candle_at_highX = abs(max(cc, co) - hX) <= buffer
+    last_candle_at_lowX = abs(min(cc, co) - lX) <= buffer
+    last_candle_at_highX_wick = abs(max(ch, cl) - hwX) <= buffer
+    last_candle_at_lowX_wick = abs(min(ch, cl) - lwX) <= buffer
+
+    if (last_candle_at_dhigh or last_candle_at_dhigh_wick):
+        print("Last candle is at day high.")
+        if abs(dhw-dlw) < minmovement:
+            print("Not enough bullish momentum, skipping pattern detection.")
+            return None
+    elif (last_candle_at_dlow or last_candle_at_dlow_wick):
+        print("Last candle is at day low.")
+        if abs(dhw-dlw) < minmovement:
+            print("Not enough bearish momentum, skipping pattern detection.")
+            return None
+    elif (last_candle_at_highX or last_candle_at_highX_wick):
+        print("Last candle is at X-candle high.")
+        if abs(hwX-lwX) < minmovement:
+            print("Not enough bullish momentum, skipping pattern detection.")
+            return None
+    elif (last_candle_at_lowX or last_candle_at_lowX_wick):
+        print("Last candle is at X-candle low.")
+        if abs(hwX-lwX) < minmovement:
+            print("Not enough bearish momentum, skipping pattern detection.")
+            return None
+
+    else:
+        print("Last candle is neither day high/low nor last X-candle high/low")
         return None
 
     now = curr["Date"]
-    entry = (ch + cl) / 2
+    entry = round((ch + cl) / 2, 2)
     # ==================================================
     # Bullish Engulfing
     # ==================================================
-    print(f"pc: {pc}, po: {po}, cc: {cc}, co: {co}, cstrong_body: {cstrong_body}, pstrong_body: {pstrong_body}, last_candle_at_low: {last_candle_at_low}")
+    print(f"pc: {pc}, po: {po}, cc: {cc}, co: {co}, cstrong_body: {cstrong_body}, pstrong_body: {pstrong_body}")
     if (pc <= po and
         cc >= co and
         co <= pc and
         cc >= po and
         cstrong_body and
         pstrong_body and
-        last_candle_at_low):
+        (last_candle_at_lowX or last_candle_at_dlow)):
         print("BUY:Bullish Engulfing detected")
 
         tg.send_telegram_alert(
             symbol=stkname,
             signal="BUY",
             entry_price=str(entry),
-            stop_loss=str(cl),
-            target_price="1X",
+            stop_loss=str(cl - (c_range*0.1)) ,
+            target_price="T1:" + str(hX),
             logic=f"Bullish Engulfing",
             buy_type="Intraday",
             entry_time=str(now)
@@ -108,14 +134,14 @@ def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
         cc <= po and
         cstrong_body and
         pstrong_body and 
-        last_candle_at_high):
+        (last_candle_at_highX or last_candle_at_dhigh)):
         print("SELL:Bearish Engulfing detected")
         tg.send_telegram_alert(
             symbol=stkname,
             signal="SELL",
             entry_price=str(entry),
-            stop_loss=str(ch),
-            target_price="1X",
+            stop_loss=str(ch + (c_range*0.1)),
+            target_price="T1:" + str(lX),
             logic=f"Bearish Engulfing",
             buy_type="Intraday",
             entry_time=str(now)
@@ -140,14 +166,14 @@ def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
     #     cc > ph                        # Closes above Hammer high
     # )
 
-    if hammer and bullish_confirmation and last_candle_at_low:
+    if hammer and bullish_confirmation and (last_candle_at_lowX or last_candle_at_dlow):
         print("BUY: Hammer + Confirmation detected")
         tg.send_telegram_alert(
             symbol=stkname,
             signal="BUY",
             entry_price=str(entry),
-            stop_loss=str(cl),
-            target_price="1X",
+            stop_loss=str(cl - (c_range*0.1)),
+            target_price="T1:" + str(hX),
             logic=f"Hammer",
             buy_type="Intraday",
             entry_time=str(now)
@@ -172,14 +198,14 @@ def detect_candlestick_pattern(candles, stkname, hg, lg, hgw, lgw):
     #     cc < pl                        # Closes below Shooting Star low
     # )
 
-    if shooting_star and bearish_confirmation and last_candle_at_high:
+    if shooting_star and bearish_confirmation and (last_candle_at_highX or last_candle_at_dhigh):
         print("SELL: Shooting Star + Confirmation detected")
         tg.send_telegram_alert(
             symbol=stkname,
             signal="SELL",
             entry_price=str(entry),
-            stop_loss=str(ch),
-            target_price="1X",
+            stop_loss=str(ch + (c_range*0.1)),
+            target_price="T1: " + str(lX),
             logic=f"Shooting Star",
             buy_type="Intraday",
             entry_time=str(now)
@@ -203,11 +229,16 @@ def process_buy_sell(api):
 
             df = pd.read_csv(file)
             df["Date"] = pd.to_datetime(df["Date"])
-            hg = (df[["Open","Close"]]).max().max()
-            lg = (df[["Open","Close"]]).min().min()
-            hgw = df["High"].max()
-            lgw = df["Low"].min()
-            print(f"Processing stock: {stock['Symbol']}, High: {hg}, Low: {lg}, High Wick: {hgw}, Low Wick: {lgw}")
+            dh = (df[["Open","Close"]]).max().max()
+            dl = (df[["Open","Close"]]).min().min()
+            dhw = df["High"].max()
+            dlw = df["Low"].min()
+            hX = df.iloc[-12:-1][["Open", "Close"]].max().max()
+            lX = df.iloc[-12:-1][["Open", "Close"]].min().min()
+            hwX = df.iloc[-12:-1]["High"].max()
+            lwX = df.iloc[-12:-1]["Low"].min()
+            print(f"Processing stock: {stock['Symbol']}, High: {dh}, Low: {dl}, High Wick: {dhw}, Low Wick: {dlw}")
+            print(f"11-candle High: {hX}, 11-candle Low: {lX}, 11-candle High Wick: {hwX}, 11-candle Low Wick: {lwX}")
             df = (df.sort_values("Date").tail(3))
 
             # #====test=====
@@ -216,13 +247,13 @@ def process_buy_sell(api):
 
             # for i in range(len(df) - 1):
             #     window = df.iloc[i:i+2]
-            #     hg = (df.iloc[0:i+2][["Open","Close"]]).max().max()
-            #     lg = (df.iloc[0:i+2][["Open","Close"]]).min().min()
-            #     hgw = df.iloc[0:i+2]["High"].max()
-            #     lgw = df.iloc[0:i+2]["Low"].min()
-            #     print(f"Window index {i}: High: {hg}, Low: {lg}, High wick: {hgw}, Low wick: {lgw}")
+            #     dh = (df.iloc[0:i+2][["Open","Close"]]).max().max()
+            #     dl = (df.iloc[0:i+2][["Open","Close"]]).min().min()
+            #     dhw = df.iloc[0:i+2]["High"].max()
+            #     dlw = df.iloc[0:i+2]["Low"].min()
+            #     print(f"Window index {i}: High: {dh}, Low: {dl}, High wick: {dhw}, Low wick: {dlw}")
             #     print(f"Processing stock: {stock['Symbol']}")
-            #     detect_candlestick_pattern(window, stock['Symbol'], hg, lg, hgw, lgw)
+            #     detect_candlestick_pattern(window, stock['Symbol'], dh, dl, dhw, dlw, hX, lX, hwX, lwX)
             #     # print(f"waiting 10 second before next stock...")
             #     # time.sleep(10)
             # #=============
@@ -232,7 +263,7 @@ def process_buy_sell(api):
                 continue
 
             # print(f"Processing stock: {stock['Symbol']}")
-            detect_candlestick_pattern(df, stock['Symbol'], hg, lg, hgw, lgw)
+            detect_candlestick_pattern(df, stock['Symbol'], dh, dl, dhw, dlw, hX, lX, hwX, lwX, round(float(stock['LotSize']) * 0.4))
         except Exception as e:
             print(stock["Symbol"], e)
 

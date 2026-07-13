@@ -1,0 +1,23 @@
+Logging in to Shoonya (background)...
+Credentials submitted. Capturing auth code...
+Auth Code: bebf89ad-d7f6-4467-a44a-e5c13f5e9ed2
+INFO:root:https://api.shoonya.com/NorenWeb/authorize/oauth?client_id=FA199969_U
+DEBUG:NorenRestApiPy.NorenApi:https://api.shoonya.com/NorenWClientAPI//GenAcsTok
+DEBUG:NorenRestApiPy.NorenApi:Req:jData={"code": "bebf89ad-d7f6-4467-a44a-e5c13f5e9ed2", "checksum": "e2667143f04b0c35d21830c4151ffbb5e101cdbc352628fd0cf204f2c3d7aff0", "uid": "FA199969"}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.shoonya.com:443
+DEBUG:urllib3.connectionpool:https://api.shoonya.com:443 "POST /NorenWClientAPI//GenAcsTok HTTP/1.1" 200 740
+DEBUG:NorenRestApiPy.NorenApi:Response:{"USERID":"FA199969","access_token":"326e2765ae2c49632e41ff86636e03b8805f76afa0abca1ae25ab3cad0c0a773","expires_in":"1791689713","refresh_token":"d421c645342e7eaf4b69e96786bda2c958484b3e8a2998c189ccb99ce7da13dc","scope":"0","actid":"FA199969","uname":"KAMESWARA RAO BELAMKONDA","prarr":[],"exch_prd":[{"exch":"NSE","prds":[]},{"exch":"NIPO","prds":[]},{"exch":"BSE","prds":[]},{"exch":"BSTAR","prds":[]},{"exch":"NFO","prds":[]},{"exch":"BFO","prds":[]}],"stat":"Ok","susertoken":"326e2765ae2c49632e41ff86636e03b8805f76afa0abca1ae25ab3cad0c0a773","uid":"FA199969","brnchid":"HO","totp_set":"1","orarr":[],"exarr":["NSE","NIPO","BSE","BSTAR","NFO","BFO"],"values":[],"mws":{},"brkname":"FINV","lastaccesstime":"1783913709","lastpwdtime":"0"}
+INFO:root:
+Access token is : 326e2765ae2c49632e41ff86636e03b8805f76afa0abca1ae25ab3cad0c0a773 
+Refresh token is : d421c645342e7eaf4b69e96786bda2c958484b3e8a2998c189ccb99ce7da13dc 
+User ID token is : FA199969 
+Account ID is : FA199969 
+
+INFO:root:{'Access_token': '326e2765ae2c49632e41ff86636e03b8805f76afa0abca1ae25ab3cad0c0a773', 'Account_ID': 'FA199969', 'Secret_Code': 'I1Fny1fE23G9lzQAiJPAm7LQxDmj0DROC7PXHblBBECaFjy0n8n6cX0HJGQaZE02', 'UID': 'FA199969', 'client_id': 'FA199969_U', 'oauth_url': 'https://api.shoonya.com/NorenWeb/authorize/oauth'}
+DEBUG:NorenRestApiPy.NorenApi:https://api.shoonya.com/NorenWClientAPI//MWList
+DEBUG:NorenRestApiPy.NorenApi:jData={"ordersource": "API", "uid": "FA199969"}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.shoonya.com:443
+DEBUG:urllib3.connectionpool:https://api.shoonya.com:443 "POST /NorenWClientAPI//MWList HTTP/1.1" 200 81
+DEBUG:NorenRestApiPy.NorenApi:{"request_time":"09:05:14 13-07-2026","values":["3","2","5","4","1"],"stat":"Ok"}
+INFO:root:watchlistname : {'request_time': '09:05:14 13-07-2026', 'values': ['3', '2', '5', '4', '1'], 'stat': 'Ok'}
+Both scripts completed.
