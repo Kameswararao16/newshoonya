@@ -1,0 +1,727 @@
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+API connected
+Downloading ZYDUSLIFE (ZYDUSLIFE-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ZYDUSLIFE
+candles: ['{"time":"16-JUL-2026", "into":"1160.00", "inth":"1165.30", "intl":"1146.00", "intc":"1153.90", "ssboe":"1784160000", "intv":"982363.00"}', '{"time":"15-JUL-2026", "into":"1145.10", "inth":"1169.70", "intl":"1134.80", "intc":"1156.90", "ssboe":"1784073600", "intv":"2033795.00"}', '{"time":"14-JUL-2026", "into":"1127.20", "inth":"1151.70", "intl":"1126.60", "intc":"1133.60", "ssboe":"1783987200", "intv":"1125219.00"}', '{"time":"13-JUL-2026", "into":"1142.90", "inth":"1155.70", "intl":"1128.50", "intc":"1131.30", "ssboe":"1783900800", "intv":"1514991.00"}']
+ZYDUSLIFE: saved 60 rows
+Downloading WIPRO (WIPRO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading WIPRO
+candles: ['{"time":"16-JUL-2026", "into":"175.60", "inth":"177.99", "intl":"175.41", "intc":"177.74", "ssboe":"1784160000", "intv":"11184572.00"}', '{"time":"15-JUL-2026", "into":"175.12", "inth":"176.60", "intl":"174.49", "intc":"174.65", "ssboe":"1784073600", "intv":"10398720.00"}', '{"time":"14-JUL-2026", "into":"178.50", "inth":"180.50", "intl":"176.71", "intc":"177.14", "ssboe":"1783987200", "intv":"14461463.00"}', '{"time":"13-JUL-2026", "into":"174.60", "inth":"179.95", "intl":"174.36", "intc":"178.43", "ssboe":"1783900800", "intv":"22417855.00"}']
+WIPRO: saved 60 rows
+Downloading VEDL (VEDL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading VEDL
+candles: ['{"time":"16-JUL-2026", "into":"261.00", "inth":"262.40", "intl":"256.10", "intc":"257.90", "ssboe":"1784160000", "intv":"15712716.00"}', '{"time":"15-JUL-2026", "into":"268.00", "inth":"271.30", "intl":"260.10", "intc":"260.55", "ssboe":"1784073600", "intv":"21696090.00"}', '{"time":"14-JUL-2026", "into":"269.65", "inth":"270.95", "intl":"266.20", "intc":"267.70", "ssboe":"1783987200", "intv":"11000576.00"}', '{"time":"13-JUL-2026", "into":"271.00", "inth":"271.25", "intl":"268.10", "intc":"269.65", "ssboe":"1783900800", "intv":"9688301.00"}']
+VEDL: saved 60 rows
+Downloading VBL (VBL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading VBL
+candles: ['{"time":"16-JUL-2026", "into":"465.45", "inth":"467.85", "intl":"462.05", "intc":"466.55", "ssboe":"1784160000", "intv":"5854168.00"}', '{"time":"15-JUL-2026", "into":"471.25", "inth":"472.70", "intl":"463.25", "intc":"464.20", "ssboe":"1784073600", "intv":"5070265.00"}', '{"time":"14-JUL-2026", "into":"468.00", "inth":"474.30", "intl":"465.50", "intc":"470.25", "ssboe":"1783987200", "intv":"7372887.00"}', '{"time":"13-JUL-2026", "into":"477.25", "inth":"478.70", "intl":"464.55", "intc":"469.10", "ssboe":"1783900800", "intv":"7281774.00"}']
+VBL: saved 60 rows
+Downloading UNIONBANK (UNIONBANK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading UNIONBANK
+candles: ['{"time":"16-JUL-2026", "into":"175.05", "inth":"175.09", "intl":"168.05", "intc":"168.77", "ssboe":"1784160000", "intv":"13286469.00"}', '{"time":"15-JUL-2026", "into":"171.21", "inth":"177.49", "intl":"168.70", "intc":"172.38", "ssboe":"1784073600", "intv":"60853488.00"}', '{"time":"14-JUL-2026", "into":"170.00", "inth":"171.42", "intl":"167.18", "intc":"170.67", "ssboe":"1783987200", "intv":"15703329.00"}', '{"time":"13-JUL-2026", "into":"163.00", "inth":"170.75", "intl":"162.51", "intc":"170.39", "ssboe":"1783900800", "intv":"30404181.00"}']
+UNIONBANK: saved 60 rows
+Downloading ULTRACEMCO (ULTRACEMCO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ULTRACEMCO
+candles: ['{"time":"16-JUL-2026", "into":"11860.00", "inth":"11876.00", "intl":"11706.00", "intc":"11771.00", "ssboe":"1784160000", "intv":"260149.00"}', '{"time":"15-JUL-2026", "into":"11504.00", "inth":"11855.00", "intl":"11504.00", "intc":"11812.00", "ssboe":"1784073600", "intv":"379635.00"}', '{"time":"14-JUL-2026", "into":"11462.00", "inth":"11543.00", "intl":"11355.00", "intc":"11496.00", "ssboe":"1783987200", "intv":"404659.00"}', '{"time":"13-JUL-2026", "into":"11600.00", "inth":"11639.00", "intl":"11535.00", "intc":"11571.00", "ssboe":"1783900800", "intv":"121301.00"}']
+ULTRACEMCO: saved 60 rows
+Downloading TVSMOTOR (TVSMOTOR-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TVSMOTOR
+candles: ['{"time":"16-JUL-2026", "into":"3622.10", "inth":"3629.90", "intl":"3549.90", "intc":"3563.50", "ssboe":"1784160000", "intv":"1209278.00"}', '{"time":"15-JUL-2026", "into":"3607.70", "inth":"3650.90", "intl":"3582.50", "intc":"3612.30", "ssboe":"1784073600", "intv":"709493.00"}', '{"time":"14-JUL-2026", "into":"3640.00", "inth":"3655.00", "intl":"3589.70", "intc":"3608.40", "ssboe":"1783987200", "intv":"636848.00"}', '{"time":"13-JUL-2026", "into":"3599.80", "inth":"3695.00", "intl":"3572.80", "intc":"3676.90", "ssboe":"1783900800", "intv":"497827.00"}']
+TVSMOTOR: saved 60 rows
+Downloading TRENT (TRENT-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TRENT
+candles: ['{"time":"16-JUL-2026", "into":"2876.70", "inth":"2905.00", "intl":"2855.00", "intc":"2860.20", "ssboe":"1784160000", "intv":"905518.00"}', '{"time":"15-JUL-2026", "into":"2875.00", "inth":"2897.40", "intl":"2857.40", "intc":"2867.70", "ssboe":"1784073600", "intv":"1034561.00"}', '{"time":"14-JUL-2026", "into":"2900.00", "inth":"2900.00", "intl":"2855.20", "intc":"2869.10", "ssboe":"1783987200", "intv":"784332.00"}', '{"time":"13-JUL-2026", "into":"2884.00", "inth":"2914.90", "intl":"2862.50", "intc":"2900.10", "ssboe":"1783900800", "intv":"1111293.00"}']
+TRENT: saved 60 rows
+Downloading TORNTPHARM (TORNTPHARM-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TORNTPHARM
+candles: ['{"time":"16-JUL-2026", "into":"5025.30", "inth":"5085.80", "intl":"4812.20", "intc":"4987.60", "ssboe":"1784160000", "intv":"5061339.00"}', '{"time":"15-JUL-2026", "into":"4975.00", "inth":"5033.40", "intl":"4918.10", "intc":"5017.80", "ssboe":"1784073600", "intv":"778853.00"}', '{"time":"14-JUL-2026", "into":"4940.00", "inth":"5010.00", "intl":"4916.40", "intc":"4973.50", "ssboe":"1783987200", "intv":"794164.00"}', '{"time":"13-JUL-2026", "into":"4898.70", "inth":"4973.00", "intl":"4861.50", "intc":"4951.10", "ssboe":"1783900800", "intv":"763977.00"}']
+TORNTPHARM: saved 60 rows
+Downloading TITAN (TITAN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TITAN
+candles: ['{"time":"16-JUL-2026", "into":"4585.30", "inth":"4668.80", "intl":"4580.00", "intc":"4625.80", "ssboe":"1784160000", "intv":"1136159.00"}', '{"time":"15-JUL-2026", "into":"4573.70", "inth":"4607.00", "intl":"4565.10", "intc":"4579.40", "ssboe":"1784073600", "intv":"619451.00"}', '{"time":"14-JUL-2026", "into":"4579.80", "inth":"4600.00", "intl":"4554.00", "intc":"4573.70", "ssboe":"1783987200", "intv":"631158.00"}', '{"time":"13-JUL-2026", "into":"4578.00", "inth":"4635.00", "intl":"4524.40", "intc":"4601.50", "ssboe":"1783900800", "intv":"770367.00"}']
+TITAN: saved 60 rows
+Downloading TECHM (TECHM-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TECHM
+candles: ['{"time":"16-JUL-2026", "into":"1510.00", "inth":"1538.30", "intl":"1504.20", "intc":"1510.30", "ssboe":"1784160000", "intv":"2903245.00"}', '{"time":"15-JUL-2026", "into":"1465.20", "inth":"1507.00", "intl":"1453.00", "intc":"1498.70", "ssboe":"1784073600", "intv":"1834279.00"}', '{"time":"14-JUL-2026", "into":"1509.00", "inth":"1519.90", "intl":"1480.00", "intc":"1484.30", "ssboe":"1783987200", "intv":"2011058.00"}', '{"time":"13-JUL-2026", "into":"1444.20", "inth":"1524.80", "intl":"1444.20", "intc":"1504.50", "ssboe":"1783900800", "intv":"2285072.00"}']
+TECHM: saved 60 rows
+Downloading TCS (TCS-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TCS
+candles: ['{"time":"16-JUL-2026", "into":"2206.00", "inth":"2231.40", "intl":"2187.80", "intc":"2201.00", "ssboe":"1784160000", "intv":"5197595.00"}', '{"time":"15-JUL-2026", "into":"2174.10", "inth":"2202.90", "intl":"2145.40", "intc":"2189.20", "ssboe":"1784073600", "intv":"5426489.00"}', '{"time":"14-JUL-2026", "into":"2182.90", "inth":"2228.00", "intl":"2179.00", "intc":"2200.60", "ssboe":"1783987200", "intv":"9546290.00"}', '{"time":"13-JUL-2026", "into":"2075.00", "inth":"2204.90", "intl":"2065.10", "intc":"2181.50", "ssboe":"1783900800", "intv":"12382622.00"}']
+TCS: saved 60 rows
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+Downloading TATASTEEL (TATASTEEL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TATASTEEL
+candles: ['{"time":"16-JUL-2026", "into":"186.50", "inth":"186.75", "intl":"184.91", "intc":"185.49", "ssboe":"1784160000", "intv":"13166990.00"}', '{"time":"15-JUL-2026", "into":"188.74", "inth":"189.33", "intl":"184.81", "intc":"185.26", "ssboe":"1784073600", "intv":"24924570.00"}', '{"time":"14-JUL-2026", "into":"186.70", "inth":"190.35", "intl":"186.70", "intc":"188.27", "ssboe":"1783987200", "intv":"24096425.00"}', '{"time":"13-JUL-2026", "into":"189.00", "inth":"189.27", "intl":"185.40", "intc":"187.11", "ssboe":"1783900800", "intv":"47597415.00"}']
+TATASTEEL: saved 60 rows
+Downloading TATAPOWER (TATAPOWER-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TATAPOWER
+candles: ['{"time":"16-JUL-2026", "into":"381.10", "inth":"385.30", "intl":"376.65", "intc":"377.10", "ssboe":"1784160000", "intv":"3391530.00"}', '{"time":"15-JUL-2026", "into":"377.70", "inth":"385.00", "intl":"377.30", "intc":"380.90", "ssboe":"1784073600", "intv":"5743594.00"}', '{"time":"14-JUL-2026", "into":"377.85", "inth":"379.00", "intl":"374.55", "intc":"377.70", "ssboe":"1783987200", "intv":"3224890.00"}', '{"time":"13-JUL-2026", "into":"379.70", "inth":"379.85", "intl":"375.40", "intc":"377.85", "ssboe":"1783900800", "intv":"3204238.00"}']
+TATAPOWER: saved 60 rows
+Downloading TATACONSUM (TATACONSUM-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading TATACONSUM
+candles: ['{"time":"16-JUL-2026", "into":"1088.30", "inth":"1100.00", "intl":"1081.70", "intc":"1088.50", "ssboe":"1784160000", "intv":"1188115.00"}', '{"time":"15-JUL-2026", "into":"1095.50", "inth":"1101.90", "intl":"1081.10", "intc":"1085.50", "ssboe":"1784073600", "intv":"1154409.00"}', '{"time":"14-JUL-2026", "into":"1089.80", "inth":"1110.20", "intl":"1089.80", "intc":"1097.60", "ssboe":"1783987200", "intv":"1581478.00"}', '{"time":"13-JUL-2026", "into":"1105.60", "inth":"1106.60", "intl":"1092.10", "intc":"1098.60", "ssboe":"1783900800", "intv":"1072732.00"}']
+TATACONSUM: saved 60 rows
+Downloading SUNPHARMA (SUNPHARMA-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading SUNPHARMA
+candles: ['{"time":"16-JUL-2026", "into":"1950.00", "inth":"1957.70", "intl":"1943.00", "intc":"1950.10", "ssboe":"1784160000", "intv":"1396189.00"}', '{"time":"15-JUL-2026", "into":"1955.00", "inth":"1962.70", "intl":"1943.30", "intc":"1951.50", "ssboe":"1784073600", "intv":"2283494.00"}', '{"time":"14-JUL-2026", "into":"1910.00", "inth":"1950.80", "intl":"1910.00", "intc":"1942.60", "ssboe":"1783987200", "intv":"2822124.00"}', '{"time":"13-JUL-2026", "into":"1925.90", "inth":"1933.10", "intl":"1911.00", "intc":"1921.40", "ssboe":"1783900800", "intv":"1573176.00"}']
+SUNPHARMA: saved 60 rows
+Downloading SRF (SRF-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading SRF
+candles: ['{"time":"16-JUL-2026", "into":"2777.10", "inth":"2916.00", "intl":"2777.10", "intc":"2889.30", "ssboe":"1784160000", "intv":"1533270.00"}', '{"time":"15-JUL-2026", "into":"2738.00", "inth":"2819.00", "intl":"2738.00", "intc":"2775.60", "ssboe":"1784073600", "intv":"339745.00"}', '{"time":"14-JUL-2026", "into":"2729.40", "inth":"2759.90", "intl":"2716.00", "intc":"2744.90", "ssboe":"1783987200", "intv":"397057.00"}', '{"time":"13-JUL-2026", "into":"2777.60", "inth":"2780.40", "intl":"2739.00", "intc":"2741.60", "ssboe":"1783900800", "intv":"122987.00"}']
+SRF: saved 60 rows
+Downloading SIEMENS (SIEMENS-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading SIEMENS
+candles: ['{"time":"16-JUL-2026", "into":"3599.00", "inth":"3855.00", "intl":"3558.70", "intc":"3657.60", "ssboe":"1784160000", "intv":"1382371.00"}', '{"time":"15-JUL-2026", "into":"3531.00", "inth":"3608.00", "intl":"3527.80", "intc":"3571.80", "ssboe":"1784073600", "intv":"315307.00"}', '{"time":"14-JUL-2026", "into":"3450.00", "inth":"3525.00", "intl":"3437.00", "intc":"3510.30", "ssboe":"1783987200", "intv":"224121.00"}', '{"time":"13-JUL-2026", "into":"3479.30", "inth":"3498.00", "intl":"3440.50", "intc":"3477.80", "ssboe":"1783900800", "intv":"231661.00"}']
+SIEMENS: saved 60 rows
+Downloading SHRIRAMFIN (SHRIRAMFIN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading SHRIRAMFIN
+candles: ['{"time":"16-JUL-2026", "into":"1035.80", "inth":"1040.00", "intl":"1020.10", "intc":"1024.40", "ssboe":"1784160000", "intv":"2703222.00"}', '{"time":"15-JUL-2026", "into":"1028.00", "inth":"1049.00", "intl":"1025.20", "intc":"1033.80", "ssboe":"1784073600", "intv":"7089054.00"}', '{"time":"14-JUL-2026", "into":"1040.00", "inth":"1042.30", "intl":"1007.00", "intc":"1013.90", "ssboe":"1783987200", "intv":"6517181.00"}', '{"time":"13-JUL-2026", "into":"1019.90", "inth":"1053.10", "intl":"1017.00", "intc":"1048.10", "ssboe":"1783900800", "intv":"3212203.00"}']
+SHRIRAMFIN: saved 60 rows
+Downloading SBIN (SBIN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading SBIN
+candles: ['{"time":"16-JUL-2026", "into":"1030.10", "inth":"1036.00", "intl":"1027.30", "intc":"1031.20", "ssboe":"1784160000", "intv":"7708316.00"}', '{"time":"15-JUL-2026", "into":"1015.50", "inth":"1036.00", "intl":"1013.70", "intc":"1030.10", "ssboe":"1784073600", "intv":"14275394.00"}', '{"time":"14-JUL-2026", "into":"1033.30", "inth":"1033.70", "intl":"1011.40", "intc":"1015.40", "ssboe":"1783987200", "intv":"11562326.00"}', '{"time":"13-JUL-2026", "into":"1023.50", "inth":"1042.90", "intl":"1022.10", "intc":"1037.00", "ssboe":"1783900800", "intv":"8381510.00"}']
+SBIN: saved 60 rows
+Downloading SBILIFE (SBILIFE-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading SBILIFE
+candles: ['{"time":"16-JUL-2026", "into":"1871.00", "inth":"1872.10", "intl":"1810.00", "intc":"1822.10", "ssboe":"1784160000", "intv":"898103.00"}', '{"time":"15-JUL-2026", "into":"1842.50", "inth":"1880.60", "intl":"1838.00", "intc":"1866.40", "ssboe":"1784073600", "intv":"895874.00"}', '{"time":"14-JUL-2026", "into":"1842.00", "inth":"1852.60", "intl":"1829.60", "intc":"1840.30", "ssboe":"1783987200", "intv":"1035413.00"}', '{"time":"13-JUL-2026", "into":"1850.00", "inth":"1861.00", "intl":"1832.10", "intc":"1855.90", "ssboe":"1783900800", "intv":"455392.00"}']
+SBILIFE: saved 60 rows
+Downloading RELIANCE (RELIANCE-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading RELIANCE
+candles: ['{"time":"16-JUL-2026", "into":"1295.50", "inth":"1309.40", "intl":"1291.80", "intc":"1296.60", "ssboe":"1784160000", "intv":"15631046.00"}', '{"time":"15-JUL-2026", "into":"1294.10", "inth":"1310.90", "intl":"1294.10", "intc":"1295.50", "ssboe":"1784073600", "intv":"9577965.00"}', '{"time":"14-JUL-2026", "into":"1290.00", "inth":"1308.00", "intl":"1286.90", "intc":"1293.00", "ssboe":"1783987200", "intv":"13511284.00"}', '{"time":"13-JUL-2026", "into":"1300.00", "inth":"1306.40", "intl":"1295.00", "intc":"1296.90", "ssboe":"1783900800", "intv":"9488352.00"}']
+RELIANCE: saved 60 rows
+Downloading RECLTD (RECLTD-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading RECLTD
+candles: ['{"time":"16-JUL-2026", "into":"353.20", "inth":"355.65", "intl":"349.05", "intc":"349.60", "ssboe":"1784160000", "intv":"4094233.00"}', '{"time":"15-JUL-2026", "into":"354.00", "inth":"356.45", "intl":"350.55", "intc":"351.70", "ssboe":"1784073600", "intv":"3884183.00"}', '{"time":"14-JUL-2026", "into":"348.00", "inth":"353.60", "intl":"346.85", "intc":"352.45", "ssboe":"1783987200", "intv":"3710161.00"}', '{"time":"13-JUL-2026", "into":"349.10", "inth":"352.60", "intl":"347.30", "intc":"351.05", "ssboe":"1783900800", "intv":"3848578.00"}']
+RECLTD: saved 60 rows
+Downloading POWERGRID (POWERGRID-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading POWERGRID
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+candles: ['{"time":"16-JUL-2026", "into":"280.40", "inth":"284.40", "intl":"280.00", "intc":"280.75", "ssboe":"1784160000", "intv":"7143529.00"}', '{"time":"15-JUL-2026", "into":"285.90", "inth":"286.80", "intl":"278.90", "intc":"280.70", "ssboe":"1784073600", "intv":"9907688.00"}', '{"time":"14-JUL-2026", "into":"282.35", "inth":"286.95", "intl":"282.30", "intc":"286.15", "ssboe":"1783987200", "intv":"7596298.00"}', '{"time":"13-JUL-2026", "into":"282.80", "inth":"286.45", "intl":"281.65", "intc":"286.00", "ssboe":"1783900800", "intv":"8083023.00"}']
+POWERGRID: saved 60 rows
+Downloading PNB (PNB-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading PNB
+candles: ['{"time":"16-JUL-2026", "into":"106.09", "inth":"106.09", "intl":"104.90", "intc":"105.22", "ssboe":"1784160000", "intv":"11650044.00"}', '{"time":"15-JUL-2026", "into":"105.50", "inth":"106.93", "intl":"104.88", "intc":"105.71", "ssboe":"1784073600", "intv":"11898610.00"}', '{"time":"14-JUL-2026", "into":"106.00", "inth":"106.30", "intl":"104.60", "intc":"105.00", "ssboe":"1783987200", "intv":"9414016.00"}', '{"time":"13-JUL-2026", "into":"104.60", "inth":"106.45", "intl":"104.00", "intc":"106.34", "ssboe":"1783900800", "intv":"11968478.00"}']
+PNB: saved 60 rows
+Downloading PIDILITIND (PIDILITIND-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading PIDILITIND
+candles: ['{"time":"16-JUL-2026", "into":"1568.80", "inth":"1584.10", "intl":"1557.40", "intc":"1559.60", "ssboe":"1784160000", "intv":"700762.00"}', '{"time":"15-JUL-2026", "into":"1570.00", "inth":"1597.30", "intl":"1566.00", "intc":"1568.80", "ssboe":"1784073600", "intv":"1092354.00"}', '{"time":"14-JUL-2026", "into":"1565.00", "inth":"1572.90", "intl":"1547.40", "intc":"1555.40", "ssboe":"1783987200", "intv":"1040498.00"}', '{"time":"13-JUL-2026", "into":"1578.90", "inth":"1583.20", "intl":"1559.60", "intc":"1580.70", "ssboe":"1783900800", "intv":"617150.00"}']
+PIDILITIND: saved 60 rows
+Downloading ONGC (ONGC-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ONGC
+candles: ['{"time":"16-JUL-2026", "into":"247.92", "inth":"247.96", "intl":"245.61", "intc":"246.75", "ssboe":"1784160000", "intv":"6243845.00"}', '{"time":"15-JUL-2026", "into":"249.42", "inth":"249.45", "intl":"246.30", "intc":"247.18", "ssboe":"1784073600", "intv":"13302251.00"}', '{"time":"14-JUL-2026", "into":"252.00", "inth":"252.00", "intl":"247.30", "intc":"248.90", "ssboe":"1783987200", "intv":"16299949.00"}', '{"time":"13-JUL-2026", "into":"246.30", "inth":"249.25", "intl":"245.55", "intc":"248.45", "ssboe":"1783900800", "intv":"12453319.00"}']
+ONGC: saved 60 rows
+Downloading NTPC (NTPC-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NTPC
+candles: ['{"time":"16-JUL-2026", "into":"344.20", "inth":"346.05", "intl":"342.10", "intc":"342.45", "ssboe":"1784160000", "intv":"10347549.00"}', '{"time":"15-JUL-2026", "into":"347.50", "inth":"348.45", "intl":"343.05", "intc":"344.35", "ssboe":"1784073600", "intv":"11352533.00"}', '{"time":"14-JUL-2026", "into":"348.50", "inth":"353.95", "intl":"347.50", "intc":"348.15", "ssboe":"1783987200", "intv":"8579646.00"}', '{"time":"13-JUL-2026", "into":"345.05", "inth":"355.00", "intl":"343.70", "intc":"351.75", "ssboe":"1783900800", "intv":"8226337.00"}']
+NTPC: saved 60 rows
+Downloading NHPC (NHPC-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NHPC
+candles: ['{"time":"16-JUL-2026", "into":"79.09", "inth":"80.08", "intl":"78.75", "intc":"78.91", "ssboe":"1784160000", "intv":"8540966.00"}', '{"time":"15-JUL-2026", "into":"78.75", "inth":"79.55", "intl":"78.42", "intc":"79.09", "ssboe":"1784073600", "intv":"6393098.00"}', '{"time":"14-JUL-2026", "into":"78.73", "inth":"79.30", "intl":"78.30", "intc":"78.77", "ssboe":"1783987200", "intv":"7050747.00"}', '{"time":"13-JUL-2026", "into":"78.75", "inth":"79.77", "intl":"78.53", "intc":"79.46", "ssboe":"1783900800", "intv":"15935734.00"}']
+NHPC: saved 60 rows
+Downloading NESTLEIND (NESTLEIND-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NESTLEIND
+candles: ['{"time":"16-JUL-2026", "into":"1427.90", "inth":"1436.30", "intl":"1417.80", "intc":"1423.50", "ssboe":"1784160000", "intv":"1179052.00"}', '{"time":"15-JUL-2026", "into":"1431.80", "inth":"1442.00", "intl":"1419.60", "intc":"1424.40", "ssboe":"1784073600", "intv":"1328750.00"}', '{"time":"14-JUL-2026", "into":"1418.50", "inth":"1448.70", "intl":"1418.50", "intc":"1427.10", "ssboe":"1783987200", "intv":"1841895.00"}', '{"time":"13-JUL-2026", "into":"1452.30", "inth":"1452.30", "intl":"1420.10", "intc":"1427.00", "ssboe":"1783900800", "intv":"2167829.00"}']
+NESTLEIND: saved 60 rows
+Downloading NAUKRI (NAUKRI-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NAUKRI
+candles: ['{"time":"16-JUL-2026", "into":"1191.75", "inth":"1210.80", "intl":"1184.20", "intc":"1207.00", "ssboe":"1784160000", "intv":"1096469.00"}', '{"time":"15-JUL-2026", "into":"1187.50", "inth":"1205.90", "intl":"1175.00", "intc":"1185.95", "ssboe":"1784073600", "intv":"1057048.00"}', '{"time":"14-JUL-2026", "into":"1190.70", "inth":"1199.85", "intl":"1175.75", "intc":"1187.95", "ssboe":"1783987200", "intv":"712150.00"}', '{"time":"13-JUL-2026", "into":"1191.00", "inth":"1206.75", "intl":"1180.30", "intc":"1191.05", "ssboe":"1783900800", "intv":"1659497.00"}']
+NAUKRI: saved 60 rows
+Downloading MOTHERSON (MOTHERSON-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading MOTHERSON
+candles: ['{"time":"16-JUL-2026", "into":"142.50", "inth":"145.50", "intl":"142.11", "intc":"143.65", "ssboe":"1784160000", "intv":"29245554.00"}', '{"time":"15-JUL-2026", "into":"142.91", "inth":"144.35", "intl":"141.62", "intc":"142.11", "ssboe":"1784073600", "intv":"14174935.00"}', '{"time":"14-JUL-2026", "into":"143.25", "inth":"143.55", "intl":"141.29", "intc":"142.06", "ssboe":"1783987200", "intv":"12934232.00"}', '{"time":"13-JUL-2026", "into":"142.05", "inth":"144.75", "intl":"141.06", "intc":"144.06", "ssboe":"1783900800", "intv":"14294629.00"}']
+MOTHERSON: saved 60 rows
+Downloading MAXHEALTH (MAXHEALTH-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading MAXHEALTH
+candles: ['{"time":"16-JUL-2026", "into":"1106.00", "inth":"1112.30", "intl":"1095.20", "intc":"1098.20", "ssboe":"1784160000", "intv":"1454340.00"}', '{"time":"15-JUL-2026", "into":"1092.90", "inth":"1111.90", "intl":"1086.20", "intc":"1102.70", "ssboe":"1784073600", "intv":"2718551.00"}', '{"time":"14-JUL-2026", "into":"1096.50", "inth":"1120.70", "intl":"1089.00", "intc":"1092.90", "ssboe":"1783987200", "intv":"2223510.00"}', '{"time":"13-JUL-2026", "into":"1107.10", "inth":"1118.00", "intl":"1094.20", "intc":"1106.20", "ssboe":"1783900800", "intv":"1676994.00"}']
+MAXHEALTH: saved 60 rows
+Downloading MARUTI (MARUTI-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading MARUTI
+candles: ['{"time":"16-JUL-2026", "into":"13605.00", "inth":"13845.00", "intl":"13584.00", "intc":"13783.00", "ssboe":"1784160000", "intv":"356847.00"}', '{"time":"15-JUL-2026", "into":"13503.00", "inth":"13606.00", "intl":"13435.00", "intc":"13583.00", "ssboe":"1784073600", "intv":"456369.00"}', '{"time":"14-JUL-2026", "into":"13619.00", "inth":"13690.00", "intl":"13470.00", "intc":"13489.00", "ssboe":"1783987200", "intv":"368645.00"}', '{"time":"13-JUL-2026", "into":"13682.00", "inth":"13841.00", "intl":"13536.00", "intc":"13695.00", "ssboe":"1783900800", "intv":"458633.00"}']
+MARUTI: saved 60 rows
+Downloading MARICO (MARICO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading MARICO
+candles: ['{"time":"16-JUL-2026", "into":"844.45", "inth":"849.45", "intl":"837.40", "intc":"839.35", "ssboe":"1784160000", "intv":"1149031.00"}', '{"time":"15-JUL-2026", "into":"850.00", "inth":"851.65", "intl":"841.10", "intc":"844.45", "ssboe":"1784073600", "intv":"1449908.00"}', '{"time":"14-JUL-2026", "into":"842.55", "inth":"850.95", "intl":"841.45", "intc":"848.25", "ssboe":"1783987200", "intv":"1441052.00"}', '{"time":"13-JUL-2026", "into":"850.00", "inth":"853.10", "intl":"841.75", "intc":"846.75", "ssboe":"1783900800", "intv":"1169864.00"}']
+MARICO: saved 60 rows
+Downloading MANKIND (MANKIND-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading MANKIND
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+candles: ['{"time":"16-JUL-2026", "into":"2550.00", "inth":"2556.80", "intl":"2531.90", "intc":"2546.00", "ssboe":"1784160000", "intv":"344420.00"}', '{"time":"15-JUL-2026", "into":"2531.10", "inth":"2639.00", "intl":"2531.10", "intc":"2543.10", "ssboe":"1784073600", "intv":"1273173.00"}', '{"time":"14-JUL-2026", "into":"2491.10", "inth":"2545.30", "intl":"2491.10", "intc":"2531.10", "ssboe":"1783987200", "intv":"247728.00"}', '{"time":"13-JUL-2026", "into":"2525.10", "inth":"2535.50", "intl":"2493.50", "intc":"2507.50", "ssboe":"1783900800", "intv":"289767.00"}']
+MANKIND: saved 60 rows
+Downloading LT (LT-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading LT
+candles: ['{"time":"16-JUL-2026", "into":"3795.00", "inth":"3802.00", "intl":"3762.30", "intc":"3775.60", "ssboe":"1784160000", "intv":"2936753.00"}', '{"time":"15-JUL-2026", "into":"3868.00", "inth":"3868.00", "intl":"3778.60", "intc":"3783.90", "ssboe":"1784073600", "intv":"3602201.00"}', '{"time":"14-JUL-2026", "into":"3892.00", "inth":"3897.90", "intl":"3843.00", "intc":"3848.70", "ssboe":"1783987200", "intv":"2409089.00"}', '{"time":"13-JUL-2026", "into":"3895.00", "inth":"3939.00", "intl":"3875.60", "intc":"3928.50", "ssboe":"1783900800", "intv":"1744547.00"}']
+LT: saved 60 rows
+Downloading LODHA (LODHA-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading LODHA
+candles: ['{"time":"16-JUL-2026", "into":"1165.50", "inth":"1194.60", "intl":"1150.75", "intc":"1178.10", "ssboe":"1784160000", "intv":"2047707.00"}', '{"time":"15-JUL-2026", "into":"1145.00", "inth":"1178.90", "intl":"1145.00", "intc":"1162.40", "ssboe":"1784073600", "intv":"1703105.00"}', '{"time":"14-JUL-2026", "into":"1185.00", "inth":"1188.85", "intl":"1144.20", "intc":"1147.25", "ssboe":"1783987200", "intv":"2379703.00"}', '{"time":"13-JUL-2026", "into":"1206.00", "inth":"1219.95", "intl":"1183.10", "intc":"1198.65", "ssboe":"1783900800", "intv":"2250980.00"}']
+LODHA: saved 60 rows
+Downloading LICHSGFIN (LICHSGFIN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading LICHSGFIN
+candles: ['{"time":"16-JUL-2026", "into":"551.95", "inth":"553.25", "intl":"545.30", "intc":"546.75", "ssboe":"1784160000", "intv":"1117938.00"}', '{"time":"15-JUL-2026", "into":"552.00", "inth":"563.00", "intl":"549.20", "intc":"550.15", "ssboe":"1784073600", "intv":"1624750.00"}', '{"time":"14-JUL-2026", "into":"549.50", "inth":"553.70", "intl":"543.35", "intc":"549.60", "ssboe":"1783987200", "intv":"1622604.00"}', '{"time":"13-JUL-2026", "into":"546.25", "inth":"554.90", "intl":"543.05", "intc":"551.90", "ssboe":"1783900800", "intv":"1885782.00"}']
+LICHSGFIN: saved 60 rows
+Downloading KOTAKBANK (KOTAKBANK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading KOTAKBANK
+candles: ['{"time":"16-JUL-2026", "into":"377.50", "inth":"381.25", "intl":"376.55", "intc":"377.15", "ssboe":"1784160000", "intv":"10889356.00"}', '{"time":"15-JUL-2026", "into":"379.35", "inth":"382.80", "intl":"376.25", "intc":"378.40", "ssboe":"1784073600", "intv":"8082156.00"}', '{"time":"14-JUL-2026", "into":"383.50", "inth":"383.50", "intl":"376.10", "intc":"378.65", "ssboe":"1783987200", "intv":"16237528.00"}', '{"time":"13-JUL-2026", "into":"375.80", "inth":"385.15", "intl":"375.10", "intc":"384.65", "ssboe":"1783900800", "intv":"14167721.00"}']
+KOTAKBANK: saved 60 rows
+Downloading JSWSTEEL (JSWSTEEL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading JSWSTEEL
+candles: ['{"time":"16-JUL-2026", "into":"1232.90", "inth":"1233.30", "intl":"1219.40", "intc":"1221.00", "ssboe":"1784160000", "intv":"1342230.00"}', '{"time":"15-JUL-2026", "into":"1249.60", "inth":"1252.60", "intl":"1224.90", "intc":"1226.90", "ssboe":"1784073600", "intv":"836306.00"}', '{"time":"14-JUL-2026", "into":"1225.10", "inth":"1254.80", "intl":"1225.10", "intc":"1247.70", "ssboe":"1783987200", "intv":"1042163.00"}', '{"time":"13-JUL-2026", "into":"1235.20", "inth":"1240.10", "intl":"1220.40", "intc":"1237.40", "ssboe":"1783900800", "intv":"1403822.00"}']
+JSWSTEEL: saved 60 rows
+Downloading JIOFIN (JIOFIN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading JIOFIN
+candles: ['{"time":"16-JUL-2026", "into":"237.78", "inth":"237.91", "intl":"234.10", "intc":"235.65", "ssboe":"1784160000", "intv":"9649365.00"}', '{"time":"15-JUL-2026", "into":"237.20", "inth":"238.50", "intl":"235.35", "intc":"236.59", "ssboe":"1784073600", "intv":"9708543.00"}', '{"time":"14-JUL-2026", "into":"239.70", "inth":"239.89", "intl":"235.20", "intc":"235.97", "ssboe":"1783987200", "intv":"10014430.00"}', '{"time":"13-JUL-2026", "into":"239.80", "inth":"243.48", "intl":"239.35", "intc":"241.41", "ssboe":"1783900800", "intv":"13432355.00"}']
+JIOFIN: saved 60 rows
+Downloading JINDALSTEL (JINDALSTEL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading JINDALSTEL
+candles: ['{"time":"16-JUL-2026", "into":"1041.90", "inth":"1044.20", "intl":"1023.00", "intc":"1028.00", "ssboe":"1784160000", "intv":"1097051.00"}', '{"time":"15-JUL-2026", "into":"1045.70", "inth":"1050.50", "intl":"1037.90", "intc":"1042.20", "ssboe":"1784073600", "intv":"1751517.00"}', '{"time":"14-JUL-2026", "into":"1026.70", "inth":"1049.90", "intl":"1025.00", "intc":"1040.10", "ssboe":"1783987200", "intv":"2286094.00"}', '{"time":"13-JUL-2026", "into":"1044.30", "inth":"1044.30", "intl":"1010.10", "intc":"1028.80", "ssboe":"1783900800", "intv":"1907483.00"}']
+JINDALSTEL: saved 60 rows
+Downloading ITC (ITC-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ITC
+candles: ['{"time":"16-JUL-2026", "into":"277.00", "inth":"280.45", "intl":"276.00", "intc":"279.35", "ssboe":"1784160000", "intv":"11220653.00"}', '{"time":"15-JUL-2026", "into":"276.65", "inth":"277.70", "intl":"275.30", "intc":"276.65", "ssboe":"1784073600", "intv":"8523722.00"}', '{"time":"14-JUL-2026", "into":"279.25", "inth":"280.65", "intl":"275.00", "intc":"275.55", "ssboe":"1783987200", "intv":"15018851.00"}', '{"time":"13-JUL-2026", "into":"281.35", "inth":"281.50", "intl":"279.50", "intc":"279.65", "ssboe":"1783900800", "intv":"12559492.00"}']
+ITC: saved 60 rows
+Downloading IRFC (IRFC-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading IRFC
+candles: ['{"time":"16-JUL-2026", "into":"88.87", "inth":"89.36", "intl":"88.25", "intc":"88.41", "ssboe":"1784160000", "intv":"6202992.00"}', '{"time":"15-JUL-2026", "into":"88.80", "inth":"90.00", "intl":"88.60", "intc":"88.87", "ssboe":"1784073600", "intv":"7302377.00"}', '{"time":"14-JUL-2026", "into":"89.50", "inth":"89.60", "intl":"88.51", "intc":"88.71", "ssboe":"1783987200", "intv":"6693634.00"}', '{"time":"13-JUL-2026", "into":"89.90", "inth":"89.90", "intl":"88.72", "intc":"89.75", "ssboe":"1783900800", "intv":"6101114.00"}']
+IRFC: saved 60 rows
+Downloading IOC (IOC-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading IOC
+candles: ['{"time":"16-JUL-2026", "into":"140.50", "inth":"143.39", "intl":"139.34", "intc":"141.80", "ssboe":"1784160000", "intv":"22023161.00"}', '{"time":"15-JUL-2026", "into":"137.90", "inth":"140.50", "intl":"137.16", "intc":"140.24", "ssboe":"1784073600", "intv":"21309498.00"}', '{"time":"14-JUL-2026", "into":"137.99", "inth":"138.69", "intl":"136.70", "intc":"137.05", "ssboe":"1783987200", "intv":"14151551.00"}', '{"time":"13-JUL-2026", "into":"137.00", "inth":"140.17", "intl":"136.62", "intc":"139.95", "ssboe":"1783900800", "intv":"11620086.00"}']
+IOC: saved 60 rows
+Downloading INFY (INFY-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading INFY
+candles: ['{"time":"16-JUL-2026", "into":"1082.50", "inth":"1097.30", "intl":"1077.90", "intc":"1082.40", "ssboe":"1784160000", "intv":"8592146.00"}', '{"time":"15-JUL-2026", "into":"1079.00", "inth":"1088.10", "intl":"1073.00", "intc":"1076.30", "ssboe":"1784073600", "intv":"8501933.00"}', '{"time":"14-JUL-2026", "into":"1107.80", "inth":"1113.50", "intl":"1090.00", "intc":"1092.90", "ssboe":"1783987200", "intv":"14819413.00"}', '{"time":"13-JUL-2026", "into":"1057.10", "inth":"1114.90", "intl":"1057.10", "intc":"1102.60", "ssboe":"1783900800", "intv":"20994760.00"}']
+INFY: saved 60 rows
+Downloading INDUSINDBK (INDUSINDBK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading INDUSINDBK
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+candles: ['{"time":"16-JUL-2026", "into":"1018.00", "inth":"1019.00", "intl":"1005.55", "intc":"1013.50", "ssboe":"1784160000", "intv":"695548.00"}', '{"time":"15-JUL-2026", "into":"998.40", "inth":"1022.85", "intl":"992.00", "intc":"1009.70", "ssboe":"1784073600", "intv":"1491258.00"}', '{"time":"14-JUL-2026", "into":"1008.90", "inth":"1009.00", "intl":"994.10", "intc":"997.35", "ssboe":"1783987200", "intv":"767488.00"}', '{"time":"13-JUL-2026", "into":"1010.00", "inth":"1018.20", "intl":"1000.55", "intc":"1012.90", "ssboe":"1783900800", "intv":"862018.00"}']
+INDUSINDBK: saved 60 rows
+Downloading INDIGO (INDIGO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading INDIGO
+candles: ['{"time":"16-JUL-2026", "into":"5179.50", "inth":"5280.00", "intl":"5176.00", "intc":"5265.50", "ssboe":"1784160000", "intv":"996192.00"}', '{"time":"15-JUL-2026", "into":"5125.00", "inth":"5226.50", "intl":"5125.00", "intc":"5171.00", "ssboe":"1784073600", "intv":"737971.00"}', '{"time":"14-JUL-2026", "into":"5119.00", "inth":"5131.50", "intl":"5064.50", "intc":"5108.00", "ssboe":"1783987200", "intv":"1504890.00"}', '{"time":"13-JUL-2026", "into":"5175.00", "inth":"5248.00", "intl":"5141.50", "intc":"5229.50", "ssboe":"1783900800", "intv":"659838.00"}']
+INDIGO: saved 60 rows
+Downloading INDHOTEL (INDHOTEL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading INDHOTEL
+candles: ['{"time":"16-JUL-2026", "into":"743.05", "inth":"743.95", "intl":"730.40", "intc":"731.45", "ssboe":"1784160000", "intv":"3887339.00"}', '{"time":"15-JUL-2026", "into":"731.00", "inth":"746.85", "intl":"731.00", "intc":"743.20", "ssboe":"1784073600", "intv":"1514872.00"}', '{"time":"14-JUL-2026", "into":"736.80", "inth":"737.00", "intl":"726.35", "intc":"733.30", "ssboe":"1783987200", "intv":"1604337.00"}', '{"time":"13-JUL-2026", "into":"748.25", "inth":"750.90", "intl":"736.35", "intc":"738.55", "ssboe":"1783900800", "intv":"3853243.00"}']
+INDHOTEL: saved 60 rows
+Downloading ICICIPRULI (ICICIPRULI-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ICICIPRULI
+candles: ['{"time":"16-JUL-2026", "into":"530.35", "inth":"531.00", "intl":"501.40", "intc":"508.85", "ssboe":"1784160000", "intv":"4730699.00"}', '{"time":"15-JUL-2026", "into":"506.70", "inth":"531.95", "intl":"502.60", "intc":"525.15", "ssboe":"1784073600", "intv":"7283643.00"}', '{"time":"14-JUL-2026", "into":"520.25", "inth":"520.25", "intl":"500.05", "intc":"503.95", "ssboe":"1783987200", "intv":"1254279.00"}', '{"time":"13-JUL-2026", "into":"510.00", "inth":"527.50", "intl":"506.50", "intc":"519.70", "ssboe":"1783900800", "intv":"2214317.00"}']
+ICICIPRULI: saved 60 rows
+Downloading ICICIBANK (ICICIBANK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ICICIBANK
+candles: ['{"time":"16-JUL-2026", "into":"1420.10", "inth":"1423.70", "intl":"1406.20", "intc":"1418.20", "ssboe":"1784160000", "intv":"10165264.00"}', '{"time":"15-JUL-2026", "into":"1412.90", "inth":"1428.00", "intl":"1409.20", "intc":"1416.20", "ssboe":"1784073600", "intv":"12961648.00"}', '{"time":"14-JUL-2026", "into":"1400.00", "inth":"1411.80", "intl":"1392.00", "intc":"1407.70", "ssboe":"1783987200", "intv":"14133017.00"}', '{"time":"13-JUL-2026", "into":"1393.50", "inth":"1413.00", "intl":"1386.30", "intc":"1409.50", "ssboe":"1783900800", "intv":"10091437.00"}']
+ICICIBANK: saved 60 rows
+Downloading HYUNDAI (HYUNDAI-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HYUNDAI
+candles: ['{"time":"16-JUL-2026", "into":"2001.90", "inth":"2064.80", "intl":"1986.10", "intc":"2025.00", "ssboe":"1784160000", "intv":"1402890.00"}', '{"time":"15-JUL-2026", "into":"1995.00", "inth":"2044.00", "intl":"1980.70", "intc":"2002.90", "ssboe":"1784073600", "intv":"1834296.00"}', '{"time":"14-JUL-2026", "into":"1968.00", "inth":"1994.70", "intl":"1948.20", "intc":"1959.70", "ssboe":"1783987200", "intv":"351452.00"}', '{"time":"13-JUL-2026", "into":"1955.00", "inth":"2000.10", "intl":"1943.50", "intc":"1994.40", "ssboe":"1783900800", "intv":"450442.00"}']
+HYUNDAI: saved 60 rows
+Downloading HINDUNILVR (HINDUNILVR-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HINDUNILVR
+candles: ['{"time":"16-JUL-2026", "into":"2104.90", "inth":"2123.00", "intl":"2096.00", "intc":"2098.40", "ssboe":"1784160000", "intv":"2143092.00"}', '{"time":"15-JUL-2026", "into":"2121.00", "inth":"2128.50", "intl":"2091.00", "intc":"2102.60", "ssboe":"1784073600", "intv":"2029614.00"}', '{"time":"14-JUL-2026", "into":"2125.00", "inth":"2145.00", "intl":"2116.10", "intc":"2120.20", "ssboe":"1783987200", "intv":"2681897.00"}', '{"time":"13-JUL-2026", "into":"2143.00", "inth":"2143.00", "intl":"2120.00", "intc":"2130.60", "ssboe":"1783900800", "intv":"1833988.00"}']
+HINDUNILVR: saved 60 rows
+Downloading HINDALCO (HINDALCO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HINDALCO
+candles: ['{"time":"16-JUL-2026", "into":"972.40", "inth":"972.40", "intl":"957.20", "intc":"959.30", "ssboe":"1784160000", "intv":"3388958.00"}', '{"time":"15-JUL-2026", "into":"972.00", "inth":"976.00", "intl":"953.00", "intc":"955.80", "ssboe":"1784073600", "intv":"5279138.00"}', '{"time":"14-JUL-2026", "into":"964.00", "inth":"998.00", "intl":"964.00", "intc":"974.30", "ssboe":"1783987200", "intv":"8061017.00"}', '{"time":"13-JUL-2026", "into":"963.10", "inth":"971.70", "intl":"956.45", "intc":"966.85", "ssboe":"1783900800", "intv":"4070887.00"}']
+HINDALCO: saved 60 rows
+Downloading HEROMOTOCO (HEROMOTOCO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HEROMOTOCO
+candles: ['{"time":"16-JUL-2026", "into":"4900.00", "inth":"4928.50", "intl":"4874.40", "intc":"4898.00", "ssboe":"1784160000", "intv":"289732.00"}', '{"time":"15-JUL-2026", "into":"4914.90", "inth":"4958.00", "intl":"4868.00", "intc":"4876.20", "ssboe":"1784073600", "intv":"596432.00"}', '{"time":"14-JUL-2026", "into":"4922.00", "inth":"4958.00", "intl":"4865.20", "intc":"4878.30", "ssboe":"1783987200", "intv":"680383.00"}', '{"time":"13-JUL-2026", "into":"4917.60", "inth":"4967.00", "intl":"4871.00", "intc":"4952.10", "ssboe":"1783900800", "intv":"508201.00"}']
+HEROMOTOCO: saved 60 rows
+Downloading HDFCBANK (HDFCBANK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HDFCBANK
+candles: ['{"time":"16-JUL-2026", "into":"814.50", "inth":"818.00", "intl":"806.50", "intc":"808.30", "ssboe":"1784160000", "intv":"18698186.00"}', '{"time":"15-JUL-2026", "into":"811.00", "inth":"819.70", "intl":"809.70", "intc":"815.45", "ssboe":"1784073600", "intv":"21488739.00"}', '{"time":"14-JUL-2026", "into":"811.40", "inth":"818.40", "intl":"807.00", "intc":"809.40", "ssboe":"1783987200", "intv":"25605395.00"}', '{"time":"13-JUL-2026", "into":"817.00", "inth":"821.95", "intl":"811.00", "intc":"817.95", "ssboe":"1783900800", "intv":"21741736.00"}']
+HDFCBANK: saved 60 rows
+Downloading HCLTECH (HCLTECH-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HCLTECH
+candles: ['{"time":"16-JUL-2026", "into":"1175.40", "inth":"1204.00", "intl":"1174.70", "intc":"1187.40", "ssboe":"1784160000", "intv":"5147444.00"}', '{"time":"15-JUL-2026", "into":"1157.00", "inth":"1181.60", "intl":"1144.50", "intc":"1168.00", "ssboe":"1784073600", "intv":"3253196.00"}', '{"time":"14-JUL-2026", "into":"1200.00", "inth":"1209.10", "intl":"1164.00", "intc":"1166.70", "ssboe":"1783987200", "intv":"9754723.00"}', '{"time":"13-JUL-2026", "into":"1162.00", "inth":"1237.00", "intl":"1162.00", "intc":"1221.20", "ssboe":"1783900800", "intv":"9028077.00"}']
+HCLTECH: saved 60 rows
+Downloading HAVELLS (HAVELLS-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading HAVELLS
+candles: ['{"time":"16-JUL-2026", "into":"1179.00", "inth":"1188.10", "intl":"1165.10", "intc":"1170.60", "ssboe":"1784160000", "intv":"1429928.00"}', '{"time":"15-JUL-2026", "into":"1188.50", "inth":"1195.60", "intl":"1172.00", "intc":"1177.40", "ssboe":"1784073600", "intv":"969323.00"}', '{"time":"14-JUL-2026", "into":"1178.50", "inth":"1190.00", "intl":"1167.30", "intc":"1187.30", "ssboe":"1783987200", "intv":"1122208.00"}', '{"time":"13-JUL-2026", "into":"1180.90", "inth":"1187.90", "intl":"1161.60", "intc":"1178.80", "ssboe":"1783900800", "intv":"2184918.00"}']
+HAVELLS: saved 60 rows
+Downloading HAL (HAL-EQ)
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+latest: 2026-07-15, today: 2026-07-16
+Downloading HAL
+candles: ['{"time":"16-JUL-2026", "into":"4420.50", "inth":"4460.00", "intl":"4394.00", "intc":"4433.80", "ssboe":"1784160000", "intv":"474213.00"}', '{"time":"15-JUL-2026", "into":"4444.40", "inth":"4486.60", "intl":"4414.60", "intc":"4420.50", "ssboe":"1784073600", "intv":"440343.00"}', '{"time":"14-JUL-2026", "into":"4510.10", "inth":"4510.10", "intl":"4392.00", "intc":"4442.40", "ssboe":"1783987200", "intv":"770894.00"}', '{"time":"13-JUL-2026", "into":"4498.70", "inth":"4521.70", "intl":"4438.00", "intc":"4511.30", "ssboe":"1783900800", "intv":"569353.00"}']
+HAL: saved 60 rows
+Downloading GRASIM (GRASIM-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading GRASIM
+candles: ['{"time":"16-JUL-2026", "into":"3086.70", "inth":"3105.00", "intl":"3060.00", "intc":"3072.90", "ssboe":"1784160000", "intv":"536911.00"}', '{"time":"15-JUL-2026", "into":"3120.00", "inth":"3150.00", "intl":"3080.00", "intc":"3086.10", "ssboe":"1784073600", "intv":"726262.00"}', '{"time":"14-JUL-2026", "into":"3138.00", "inth":"3153.50", "intl":"3093.10", "intc":"3113.30", "ssboe":"1783987200", "intv":"1058130.00"}', '{"time":"13-JUL-2026", "into":"3202.40", "inth":"3216.30", "intl":"3125.20", "intc":"3144.30", "ssboe":"1783900800", "intv":"654390.00"}']
+GRASIM: saved 60 rows
+Downloading GODREJCP (GODREJCP-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading GODREJCP
+candles: ['{"time":"16-JUL-2026", "into":"1058.90", "inth":"1068.00", "intl":"1051.90", "intc":"1057.70", "ssboe":"1784160000", "intv":"384375.00"}', '{"time":"15-JUL-2026", "into":"1061.60", "inth":"1065.00", "intl":"1049.40", "intc":"1052.70", "ssboe":"1784073600", "intv":"600220.00"}', '{"time":"14-JUL-2026", "into":"1047.60", "inth":"1072.30", "intl":"1040.50", "intc":"1061.60", "ssboe":"1783987200", "intv":"668384.00"}', '{"time":"13-JUL-2026", "into":"1076.80", "inth":"1079.70", "intl":"1067.20", "intc":"1068.70", "ssboe":"1783900800", "intv":"468745.00"}']
+GODREJCP: saved 60 rows
+Downloading GAIL (GAIL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading GAIL
+candles: ['{"time":"16-JUL-2026", "into":"172.90", "inth":"175.73", "intl":"171.00", "intc":"171.71", "ssboe":"1784160000", "intv":"9023749.00"}', '{"time":"15-JUL-2026", "into":"170.81", "inth":"174.95", "intl":"170.50", "intc":"173.15", "ssboe":"1784073600", "intv":"5667626.00"}', '{"time":"14-JUL-2026", "into":"172.30", "inth":"172.90", "intl":"170.95", "intc":"171.51", "ssboe":"1783987200", "intv":"5005945.00"}', '{"time":"13-JUL-2026", "into":"172.84", "inth":"173.40", "intl":"170.53", "intc":"173.12", "ssboe":"1783900800", "intv":"3261762.00"}']
+GAIL: saved 60 rows
+Downloading ETERNAL (ETERNAL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ETERNAL
+candles: ['{"time":"16-JUL-2026", "into":"298.75", "inth":"299.00", "intl":"285.05", "intc":"286.45", "ssboe":"1784160000", "intv":"31866265.00"}', '{"time":"15-JUL-2026", "into":"285.00", "inth":"296.45", "intl":"283.05", "intc":"294.80", "ssboe":"1784073600", "intv":"45125835.00"}', '{"time":"14-JUL-2026", "into":"283.05", "inth":"287.90", "intl":"278.55", "intc":"286.15", "ssboe":"1783987200", "intv":"42966836.00"}', '{"time":"13-JUL-2026", "into":"286.10", "inth":"288.90", "intl":"284.60", "intc":"285.20", "ssboe":"1783900800", "intv":"14808761.00"}']
+ETERNAL: saved 60 rows
+Downloading EICHERMOT (EICHERMOT-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading EICHERMOT
+candles: ['{"time":"16-JUL-2026", "into":"7410.00", "inth":"7451.00", "intl":"7366.50", "intc":"7418.50", "ssboe":"1784160000", "intv":"618180.00"}', '{"time":"15-JUL-2026", "into":"7285.00", "inth":"7428.00", "intl":"7285.00", "intc":"7404.50", "ssboe":"1784073600", "intv":"758954.00"}', '{"time":"14-JUL-2026", "into":"7257.00", "inth":"7313.00", "intl":"7140.00", "intc":"7279.50", "ssboe":"1783987200", "intv":"458624.00"}', '{"time":"13-JUL-2026", "into":"7325.00", "inth":"7339.50", "intl":"7260.00", "intc":"7296.50", "ssboe":"1783900800", "intv":"787762.00"}']
+EICHERMOT: saved 60 rows
+Downloading DRREDDY (DRREDDY-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading DRREDDY
+candles: ['{"time":"16-JUL-2026", "into":"1227.50", "inth":"1235.00", "intl":"1221.80", "intc":"1224.40", "ssboe":"1784160000", "intv":"1935887.00"}', '{"time":"15-JUL-2026", "into":"1249.10", "inth":"1249.10", "intl":"1226.40", "intc":"1229.50", "ssboe":"1784073600", "intv":"1685660.00"}', '{"time":"14-JUL-2026", "into":"1234.50", "inth":"1248.00", "intl":"1231.20", "intc":"1246.20", "ssboe":"1783987200", "intv":"1984818.00"}', '{"time":"13-JUL-2026", "into":"1244.30", "inth":"1249.10", "intl":"1226.30", "intc":"1234.50", "ssboe":"1783900800", "intv":"2437935.00"}']
+DRREDDY: saved 60 rows
+Downloading DMART (DMART-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading DMART
+candles: ['{"time":"16-JUL-2026", "into":"3930.00", "inth":"3987.00", "intl":"3930.00", "intc":"3950.90", "ssboe":"1784160000", "intv":"356588.00"}', '{"time":"15-JUL-2026", "into":"3919.60", "inth":"3941.80", "intl":"3886.70", "intc":"3929.30", "ssboe":"1784073600", "intv":"346726.00"}', '{"time":"14-JUL-2026", "into":"3988.90", "inth":"3994.40", "intl":"3895.10", "intc":"3915.90", "ssboe":"1783987200", "intv":"678162.00"}', '{"time":"13-JUL-2026", "into":"3950.00", "inth":"4012.80", "intl":"3908.00", "intc":"3994.10", "ssboe":"1783900800", "intv":"2286738.00"}']
+DMART: saved 60 rows
+Downloading DLF (DLF-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading DLF
+candles: ['{"time":"16-JUL-2026", "into":"661.00", "inth":"661.45", "intl":"646.70", "intc":"648.10", "ssboe":"1784160000", "intv":"6440702.00"}', '{"time":"15-JUL-2026", "into":"671.50", "inth":"681.40", "intl":"655.45", "intc":"657.75", "ssboe":"1784073600", "intv":"5657410.00"}', '{"time":"14-JUL-2026", "into":"678.00", "inth":"681.60", "intl":"665.40", "intc":"671.45", "ssboe":"1783987200", "intv":"2589578.00"}', '{"time":"13-JUL-2026", "into":"679.55", "inth":"690.25", "intl":"673.35", "intc":"682.35", "ssboe":"1783900800", "intv":"6977830.00"}']
+DLF: saved 60 rows
+Downloading DIVISLAB (DIVISLAB-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading DIVISLAB
+candles: ['{"time":"16-JUL-2026", "into":"7320.00", "inth":"7390.00", "intl":"7274.00", "intc":"7316.00", "ssboe":"1784160000", "intv":"668484.00"}', '{"time":"15-JUL-2026", "into":"7260.00", "inth":"7330.00", "intl":"7234.00", "intc":"7273.00", "ssboe":"1784073600", "intv":"726479.00"}', '{"time":"14-JUL-2026", "into":"6960.00", "inth":"7208.50", "intl":"6909.00", "intc":"7188.50", "ssboe":"1783987200", "intv":"1093244.00"}', '{"time":"13-JUL-2026", "into":"6830.00", "inth":"6958.00", "intl":"6786.50", "intc":"6938.50", "ssboe":"1783900800", "intv":"274183.00"}']
+DIVISLAB: saved 60 rows
+Downloading DABUR (DABUR-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading DABUR
+candles: ['{"time":"16-JUL-2026", "into":"433.60", "inth":"433.80", "intl":"428.75", "intc":"429.45", "ssboe":"1784160000", "intv":"1622560.00"}', '{"time":"15-JUL-2026", "into":"434.00", "inth":"437.60", "intl":"430.05", "intc":"431.30", "ssboe":"1784073600", "intv":"1001738.00"}', '{"time":"14-JUL-2026", "into":"437.90", "inth":"440.45", "intl":"432.10", "intc":"434.45", "ssboe":"1783987200", "intv":"1427118.00"}', '{"time":"13-JUL-2026", "into":"442.00", "inth":"442.75", "intl":"438.40", "intc":"438.90", "ssboe":"1783900800", "intv":"774683.00"}']
+DABUR: saved 60 rows
+Downloading CUMMINSIND (CUMMINSIND-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading CUMMINSIND
+candles: ['{"time":"16-JUL-2026", "into":"5557.00", "inth":"5674.50", "intl":"5473.50", "intc":"5592.00", "ssboe":"1784160000", "intv":"686668.00"}', '{"time":"15-JUL-2026", "into":"5515.00", "inth":"5601.50", "intl":"5512.00", "intc":"5549.50", "ssboe":"1784073600", "intv":"522110.00"}', '{"time":"14-JUL-2026", "into":"5537.50", "inth":"5555.00", "intl":"5480.00", "intc":"5493.50", "ssboe":"1783987200", "intv":"356814.00"}', '{"time":"13-JUL-2026", "into":"5600.00", "inth":"5601.50", "intl":"5529.00", "intc":"5555.00", "ssboe":"1783900800", "intv":"323370.00"}']
+CUMMINSIND: saved 60 rows
+Downloading CONCOR (CONCOR-EQ)
+latest: 2026-07-15, today: 2026-07-16
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+Downloading CONCOR
+candles: ['{"time":"16-JUL-2026", "into":"492.00", "inth":"494.70", "intl":"485.35", "intc":"490.30", "ssboe":"1784160000", "intv":"912852.00"}', '{"time":"15-JUL-2026", "into":"493.00", "inth":"496.90", "intl":"488.75", "intc":"492.90", "ssboe":"1784073600", "intv":"2000945.00"}', '{"time":"14-JUL-2026", "into":"468.10", "inth":"496.00", "intl":"468.10", "intc":"493.15", "ssboe":"1783987200", "intv":"14171169.00"}', '{"time":"13-JUL-2026", "into":"460.90", "inth":"470.40", "intl":"456.20", "intc":"463.95", "ssboe":"1783900800", "intv":"3105163.00"}']
+CONCOR: saved 60 rows
+Downloading COALINDIA (COALINDIA-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading COALINDIA
+candles: ['{"time":"16-JUL-2026", "into":"427.55", "inth":"430.50", "intl":"425.85", "intc":"427.35", "ssboe":"1784160000", "intv":"4570655.00"}', '{"time":"15-JUL-2026", "into":"430.55", "inth":"432.95", "intl":"426.60", "intc":"427.55", "ssboe":"1784073600", "intv":"5624520.00"}', '{"time":"14-JUL-2026", "into":"429.95", "inth":"436.50", "intl":"428.05", "intc":"430.60", "ssboe":"1783987200", "intv":"6155516.00"}', '{"time":"13-JUL-2026", "into":"429.00", "inth":"431.90", "intl":"425.00", "intc":"430.20", "ssboe":"1783900800", "intv":"5650932.00"}']
+COALINDIA: saved 60 rows
+Downloading CIPLA (CIPLA-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading CIPLA
+candles: ['{"time":"16-JUL-2026", "into":"1439.90", "inth":"1444.00", "intl":"1426.60", "intc":"1429.50", "ssboe":"1784160000", "intv":"568731.00"}', '{"time":"15-JUL-2026", "into":"1447.00", "inth":"1453.00", "intl":"1433.00", "intc":"1438.00", "ssboe":"1784073600", "intv":"924453.00"}', '{"time":"14-JUL-2026", "into":"1426.70", "inth":"1454.50", "intl":"1425.30", "intc":"1438.10", "ssboe":"1783987200", "intv":"1221695.00"}', '{"time":"13-JUL-2026", "into":"1439.40", "inth":"1443.00", "intl":"1420.00", "intc":"1426.70", "ssboe":"1783900800", "intv":"844670.00"}']
+CIPLA: saved 60 rows
+Downloading CHOLAFIN (CHOLAFIN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading CHOLAFIN
+candles: ['{"time":"16-JUL-2026", "into":"1810.50", "inth":"1813.20", "intl":"1784.90", "intc":"1789.10", "ssboe":"1784160000", "intv":"773364.00"}', '{"time":"15-JUL-2026", "into":"1779.50", "inth":"1828.10", "intl":"1779.50", "intc":"1803.90", "ssboe":"1784073600", "intv":"1510352.00"}', '{"time":"14-JUL-2026", "into":"1792.20", "inth":"1792.40", "intl":"1742.70", "intc":"1771.50", "ssboe":"1783987200", "intv":"1288807.00"}', '{"time":"13-JUL-2026", "into":"1799.00", "inth":"1818.90", "intl":"1777.50", "intc":"1810.90", "ssboe":"1783900800", "intv":"635788.00"}']
+CHOLAFIN: saved 60 rows
+Downloading CGPOWER (CGPOWER-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading CGPOWER
+candles: ['{"time":"16-JUL-2026", "into":"935.00", "inth":"954.90", "intl":"919.00", "intc":"921.95", "ssboe":"1784160000", "intv":"3437360.00"}', '{"time":"15-JUL-2026", "into":"918.40", "inth":"937.85", "intl":"915.10", "intc":"929.15", "ssboe":"1784073600", "intv":"4646962.00"}', '{"time":"14-JUL-2026", "into":"905.50", "inth":"915.00", "intl":"893.70", "intc":"913.85", "ssboe":"1783987200", "intv":"3241089.00"}', '{"time":"13-JUL-2026", "into":"912.00", "inth":"912.00", "intl":"895.60", "intc":"905.50", "ssboe":"1783900800", "intv":"2819640.00"}']
+CGPOWER: saved 60 rows
+Downloading CANBK (CANBK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading CANBK
+candles: ['{"time":"16-JUL-2026", "into":"127.00", "inth":"127.19", "intl":"125.35", "intc":"125.90", "ssboe":"1784160000", "intv":"11463126.00"}', '{"time":"15-JUL-2026", "into":"126.50", "inth":"128.20", "intl":"126.10", "intc":"126.47", "ssboe":"1784073600", "intv":"24325901.00"}', '{"time":"14-JUL-2026", "into":"128.00", "inth":"128.90", "intl":"125.32", "intc":"125.74", "ssboe":"1783987200", "intv":"18692217.00"}', '{"time":"13-JUL-2026", "into":"127.47", "inth":"129.73", "intl":"126.44", "intc":"129.33", "ssboe":"1783900800", "intv":"19227723.00"}']
+CANBK: saved 60 rows
+Downloading BRITANNIA (BRITANNIA-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BRITANNIA
+candles: ['{"time":"16-JUL-2026", "into":"5311.00", "inth":"5367.00", "intl":"5294.00", "intc":"5310.50", "ssboe":"1784160000", "intv":"219782.00"}', '{"time":"15-JUL-2026", "into":"5311.50", "inth":"5345.00", "intl":"5274.00", "intc":"5315.50", "ssboe":"1784073600", "intv":"208524.00"}', '{"time":"14-JUL-2026", "into":"5244.00", "inth":"5347.50", "intl":"5235.50", "intc":"5283.50", "ssboe":"1783987200", "intv":"326899.00"}', '{"time":"13-JUL-2026", "into":"5335.50", "inth":"5368.50", "intl":"5290.50", "intc":"5348.50", "ssboe":"1783900800", "intv":"132632.00"}']
+BRITANNIA: saved 60 rows
+Downloading BPCL (BPCL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BPCL
+candles: ['{"time":"16-JUL-2026", "into":"312.05", "inth":"318.25", "intl":"310.30", "intc":"312.00", "ssboe":"1784160000", "intv":"7899255.00"}', '{"time":"15-JUL-2026", "into":"306.00", "inth":"311.15", "intl":"306.00", "intc":"309.60", "ssboe":"1784073600", "intv":"9056446.00"}', '{"time":"14-JUL-2026", "into":"302.95", "inth":"307.20", "intl":"302.05", "intc":"305.35", "ssboe":"1783987200", "intv":"9995741.00"}', '{"time":"13-JUL-2026", "into":"304.80", "inth":"309.15", "intl":"302.15", "intc":"307.55", "ssboe":"1783900800", "intv":"5543349.00"}']
+BPCL: saved 60 rows
+Downloading BHARTIARTL (BHARTIARTL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BHARTIARTL
+candles: ['{"time":"16-JUL-2026", "into":"1928.00", "inth":"1936.00", "intl":"1917.00", "intc":"1921.80", "ssboe":"1784160000", "intv":"4644787.00"}', '{"time":"15-JUL-2026", "into":"1953.70", "inth":"1953.70", "intl":"1916.60", "intc":"1918.30", "ssboe":"1784073600", "intv":"5763065.00"}', '{"time":"14-JUL-2026", "into":"1885.00", "inth":"1941.10", "intl":"1885.00", "intc":"1936.50", "ssboe":"1783987200", "intv":"6964062.00"}', '{"time":"13-JUL-2026", "into":"1914.00", "inth":"1917.00", "intl":"1896.70", "intc":"1901.80", "ssboe":"1783900800", "intv":"7862506.00"}']
+BHARTIARTL: saved 60 rows
+Downloading BEL (BEL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BEL
+candles: ['{"time":"16-JUL-2026", "into":"412.25", "inth":"412.50", "intl":"406.50", "intc":"407.10", "ssboe":"1784160000", "intv":"5679241.00"}', '{"time":"15-JUL-2026", "into":"409.00", "inth":"414.30", "intl":"408.40", "intc":"410.95", "ssboe":"1784073600", "intv":"9115088.00"}', '{"time":"14-JUL-2026", "into":"409.35", "inth":"411.25", "intl":"405.70", "intc":"410.10", "ssboe":"1783987200", "intv":"10652838.00"}', '{"time":"13-JUL-2026", "into":"411.95", "inth":"412.90", "intl":"408.60", "intc":"410.80", "ssboe":"1783900800", "intv":"6650781.00"}']
+BEL: saved 60 rows
+Downloading BANKBARODA (BANKBARODA-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BANKBARODA
+candles: ['{"time":"16-JUL-2026", "into":"249.20", "inth":"249.60", "intl":"247.05", "intc":"248.30", "ssboe":"1784160000", "intv":"5277402.00"}', '{"time":"15-JUL-2026", "into":"248.00", "inth":"250.40", "intl":"246.95", "intc":"248.15", "ssboe":"1784073600", "intv":"8127491.00"}', '{"time":"14-JUL-2026", "into":"249.80", "inth":"251.15", "intl":"245.70", "intc":"246.60", "ssboe":"1783987200", "intv":"9026197.00"}', '{"time":"13-JUL-2026", "into":"249.00", "inth":"252.70", "intl":"247.00", "intc":"250.65", "ssboe":"1783900800", "intv":"18662940.00"}']
+BANKBARODA: saved 60 rows
+Downloading BAJFINANCE (BAJFINANCE-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BAJFINANCE
+candles: ['{"time":"16-JUL-2026", "into":"1024.00", "inth":"1042.40", "intl":"1021.20", "intc":"1037.60", "ssboe":"1784160000", "intv":"9079076.00"}', '{"time":"15-JUL-2026", "into":"1006.60", "inth":"1037.30", "intl":"1006.60", "intc":"1021.30", "ssboe":"1784073600", "intv":"5538356.00"}', '{"time":"14-JUL-2026", "into":"1007.00", "inth":"1022.00", "intl":"995.20", "intc":"1006.60", "ssboe":"1783987200", "intv":"6458393.00"}', '{"time":"13-JUL-2026", "into":"1014.00", "inth":"1028.00", "intl":"1003.70", "intc":"1022.60", "ssboe":"1783900800", "intv":"4874070.00"}']
+BAJFINANCE: saved 60 rows
+Downloading BAJAJHLDNG (BAJAJHLDNG-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BAJAJHLDNG
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+candles: ['{"time":"16-JUL-2026", "into":"10531.00", "inth":"10559.00", "intl":"10380.00", "intc":"10417.00", "ssboe":"1784160000", "intv":"60178.00"}', '{"time":"15-JUL-2026", "into":"10480.00", "inth":"10577.00", "intl":"10458.00", "intc":"10531.00", "ssboe":"1784073600", "intv":"42422.00"}', '{"time":"14-JUL-2026", "into":"10635.00", "inth":"10714.00", "intl":"10459.00", "intc":"10486.00", "ssboe":"1783987200", "intv":"29082.00"}', '{"time":"13-JUL-2026", "into":"10150.00", "inth":"10915.00", "intl":"10132.00", "intc":"10752.00", "ssboe":"1783900800", "intv":"83705.00"}']
+BAJAJHLDNG: saved 60 rows
+Downloading BAJAJFINSV (BAJAJFINSV-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BAJAJFINSV
+candles: ['{"time":"16-JUL-2026", "into":"1843.60", "inth":"1856.60", "intl":"1827.70", "intc":"1838.60", "ssboe":"1784160000", "intv":"1669077.00"}', '{"time":"15-JUL-2026", "into":"1875.00", "inth":"1892.60", "intl":"1843.40", "intc":"1849.60", "ssboe":"1784073600", "intv":"595343.00"}', '{"time":"14-JUL-2026", "into":"1884.40", "inth":"1899.00", "intl":"1861.00", "intc":"1869.20", "ssboe":"1783987200", "intv":"1811978.00"}', '{"time":"13-JUL-2026", "into":"1900.00", "inth":"1912.00", "intl":"1884.40", "intc":"1908.10", "ssboe":"1783900800", "intv":"1002460.00"}']
+BAJAJFINSV: saved 60 rows
+Downloading BAJAJ-AUTO (BAJAJ-AUTO-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading BAJAJ-AUTO
+candles: ['{"time":"16-JUL-2026", "into":"10323.00", "inth":"10395.00", "intl":"10278.00", "intc":"10331.50", "ssboe":"1784160000", "intv":"407238.00"}', '{"time":"15-JUL-2026", "into":"10200.00", "inth":"10369.00", "intl":"10200.00", "intc":"10323.00", "ssboe":"1784073600", "intv":"451477.00"}', '{"time":"14-JUL-2026", "into":"10212.50", "inth":"10374.00", "intl":"10145.50", "intc":"10166.00", "ssboe":"1783987200", "intv":"802768.00"}', '{"time":"13-JUL-2026", "into":"10080.00", "inth":"10442.00", "intl":"10030.50", "intc":"10381.00", "ssboe":"1783900800", "intv":"1009236.00"}']
+BAJAJ-AUTO: saved 60 rows
+Downloading AXISBANK (AXISBANK-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading AXISBANK
+candles: ['{"time":"16-JUL-2026", "into":"1315.10", "inth":"1315.50", "intl":"1299.40", "intc":"1307.60", "ssboe":"1784160000", "intv":"5001226.00"}', '{"time":"15-JUL-2026", "into":"1328.00", "inth":"1348.00", "intl":"1303.30", "intc":"1312.30", "ssboe":"1784073600", "intv":"9442403.00"}', '{"time":"14-JUL-2026", "into":"1320.10", "inth":"1323.70", "intl":"1298.60", "intc":"1317.60", "ssboe":"1783987200", "intv":"6005505.00"}', '{"time":"13-JUL-2026", "into":"1315.90", "inth":"1329.90", "intl":"1313.50", "intc":"1319.40", "ssboe":"1783900800", "intv":"3674483.00"}']
+AXISBANK: saved 60 rows
+Downloading ASIANPAINT (ASIANPAINT-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ASIANPAINT
+candles: ['{"time":"16-JUL-2026", "into":"2688.00", "inth":"2693.10", "intl":"2660.10", "intc":"2674.70", "ssboe":"1784160000", "intv":"455037.00"}', '{"time":"15-JUL-2026", "into":"2644.90", "inth":"2684.00", "intl":"2644.90", "intc":"2670.00", "ssboe":"1784073600", "intv":"809114.00"}', '{"time":"14-JUL-2026", "into":"2604.00", "inth":"2655.90", "intl":"2579.90", "intc":"2641.00", "ssboe":"1783987200", "intv":"975301.00"}', '{"time":"13-JUL-2026", "into":"2650.50", "inth":"2664.40", "intl":"2630.10", "intc":"2652.10", "ssboe":"1783900800", "intv":"1107802.00"}']
+ASIANPAINT: saved 60 rows
+Downloading APOLLOHOSP (APOLLOHOSP-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading APOLLOHOSP
+candles: ['{"time":"16-JUL-2026", "into":"8930.50", "inth":"8944.50", "intl":"8851.50", "intc":"8888.00", "ssboe":"1784160000", "intv":"234384.00"}', '{"time":"15-JUL-2026", "into":"8948.50", "inth":"9009.00", "intl":"8905.00", "intc":"8934.00", "ssboe":"1784073600", "intv":"501832.00"}', '{"time":"14-JUL-2026", "into":"8750.00", "inth":"8919.50", "intl":"8739.00", "intc":"8900.50", "ssboe":"1783987200", "intv":"412508.00"}', '{"time":"13-JUL-2026", "into":"8879.00", "inth":"8932.00", "intl":"8764.50", "intc":"8782.50", "ssboe":"1783900800", "intv":"410798.00"}']
+APOLLOHOSP: saved 60 rows
+Downloading AMBUJACEM (AMBUJACEM-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading AMBUJACEM
+candles: ['{"time":"16-JUL-2026", "into":"438.00", "inth":"440.30", "intl":"432.50", "intc":"433.60", "ssboe":"1784160000", "intv":"1467915.00"}', '{"time":"15-JUL-2026", "into":"430.00", "inth":"439.90", "intl":"430.00", "intc":"435.25", "ssboe":"1784073600", "intv":"2405317.00"}', '{"time":"14-JUL-2026", "into":"429.75", "inth":"436.45", "intl":"427.20", "intc":"429.80", "ssboe":"1783987200", "intv":"2665735.00"}', '{"time":"13-JUL-2026", "into":"430.00", "inth":"434.45", "intl":"429.40", "intc":"432.15", "ssboe":"1783900800", "intv":"733484.00"}']
+AMBUJACEM: saved 60 rows
+Downloading ADANIPOWER (ADANIPOWER-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ADANIPOWER
+candles: ['{"time":"16-JUL-2026", "into":"222.00", "inth":"222.20", "intl":"216.12", "intc":"216.57", "ssboe":"1784160000", "intv":"40710986.00"}', '{"time":"15-JUL-2026", "into":"227.55", "inth":"228.40", "intl":"218.05", "intc":"218.97", "ssboe":"1784073600", "intv":"36262411.00"}', '{"time":"14-JUL-2026", "into":"216.35", "inth":"228.94", "intl":"216.30", "intc":"226.17", "ssboe":"1783987200", "intv":"55601636.00"}', '{"time":"13-JUL-2026", "into":"217.10", "inth":"218.78", "intl":"215.10", "intc":"215.46", "ssboe":"1783900800", "intv":"26415659.00"}']
+ADANIPOWER: saved 60 rows
+Downloading ADANIPORTS (ADANIPORTS-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ADANIPORTS
+candles: ['{"time":"16-JUL-2026", "into":"1828.50", "inth":"1859.70", "intl":"1817.50", "intc":"1826.40", "ssboe":"1784160000", "intv":"1952268.00"}', '{"time":"15-JUL-2026", "into":"1826.00", "inth":"1838.00", "intl":"1817.20", "intc":"1829.10", "ssboe":"1784073600", "intv":"917984.00"}', '{"time":"14-JUL-2026", "into":"1819.30", "inth":"1840.90", "intl":"1808.60", "intc":"1821.90", "ssboe":"1783987200", "intv":"1636778.00"}', '{"time":"13-JUL-2026", "into":"1811.00", "inth":"1825.90", "intl":"1807.10", "intc":"1810.30", "ssboe":"1783900800", "intv":"1156618.00"}']
+ADANIPORTS: saved 60 rows
+Downloading ADANIGREEN (ADANIGREEN-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ADANIGREEN
+candles: ['{"time":"16-JUL-2026", "into":"1565.00", "inth":"1585.80", "intl":"1540.70", "intc":"1543.70", "ssboe":"1784160000", "intv":"2128635.00"}', '{"time":"15-JUL-2026", "into":"1604.50", "inth":"1610.30", "intl":"1547.00", "intc":"1555.40", "ssboe":"1784073600", "intv":"2364540.00"}', '{"time":"14-JUL-2026", "into":"1545.00", "inth":"1631.50", "intl":"1533.00", "intc":"1604.50", "ssboe":"1783987200", "intv":"4833988.00"}', '{"time":"13-JUL-2026", "into":"1525.40", "inth":"1575.40", "intl":"1523.00", "intc":"1546.50", "ssboe":"1783900800", "intv":"2868246.00"}']
+ADANIGREEN: saved 60 rows
+Downloading ADANIENT (ADANIENT-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ADANIENT
+candles: ['{"time":"16-JUL-2026", "into":"3167.60", "inth":"3190.00", "intl":"3140.10", "intc":"3151.40", "ssboe":"1784160000", "intv":"1151243.00"}', '{"time":"15-JUL-2026", "into":"3195.00", "inth":"3199.90", "intl":"3142.30", "intc":"3150.60", "ssboe":"1784073600", "intv":"1035101.00"}', '{"time":"14-JUL-2026", "into":"3169.90", "inth":"3219.70", "intl":"3145.00", "intc":"3188.90", "ssboe":"1783987200", "intv":"1932879.00"}', '{"time":"13-JUL-2026", "into":"3127.30", "inth":"3195.00", "intl":"3115.20", "intc":"3177.50", "ssboe":"1783900800", "intv":"1599810.00"}']
+ADANIENT: saved 60 rows
+Downloading ADANIENSOL (ADANIENSOL-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ADANIENSOL
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+/home/nodeusr/Kamesh/newshoonya/H_download_historical_data.py:133: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df["Date"] = pd.to_datetime(
+candles: ['{"time":"16-JUL-2026", "into":"1689.10", "inth":"1744.00", "intl":"1685.60", "intc":"1689.50", "ssboe":"1784160000", "intv":"2839672.00"}', '{"time":"15-JUL-2026", "into":"1700.00", "inth":"1704.30", "intl":"1666.40", "intc":"1678.00", "ssboe":"1784073600", "intv":"1169341.00"}', '{"time":"14-JUL-2026", "into":"1644.10", "inth":"1713.90", "intl":"1636.60", "intc":"1690.30", "ssboe":"1783987200", "intv":"2237295.00"}', '{"time":"13-JUL-2026", "into":"1651.00", "inth":"1667.20", "intl":"1634.00", "intc":"1644.60", "ssboe":"1783900800", "intv":"1062110.00"}']
+ADANIENSOL: saved 60 rows
+Downloading ABB (ABB-EQ)
+latest: 2026-07-15, today: 2026-07-16
+Downloading ABB
+candles: ['{"time":"16-JUL-2026", "into":"7210.50", "inth":"7924.50", "intl":"7191.00", "intc":"7667.50", "ssboe":"1784160000", "intv":"2577801.00"}', '{"time":"15-JUL-2026", "into":"6940.00", "inth":"7270.00", "intl":"6926.50", "intc":"7204.50", "ssboe":"1784073600", "intv":"763817.00"}', '{"time":"14-JUL-2026", "into":"6778.50", "inth":"6920.00", "intl":"6744.00", "intc":"6892.00", "ssboe":"1783987200", "intv":"187662.00"}', '{"time":"13-JUL-2026", "into":"6800.00", "inth":"6872.00", "intl":"6715.50", "intc":"6807.00", "ssboe":"1783900800", "intv":"297882.00"}']
+ABB: saved 60 rows
+Downloading NIFTY50 (Nifty 50)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NIFTY50
+candles: ['{"time":"16-JUL-2026", "into":"24142.10", "inth":"24186.50", "intl":"24050.00", "intc":"24072.75", "ssboe":"1784160000", "intv":"264271962.00"}', '{"time":"15-JUL-2026", "into":"24085.85", "inth":"24220.35", "intl":"24010.55", "intc":"24078.50", "ssboe":"1784073600", "intv":"306924577.00"}', '{"time":"14-JUL-2026", "into":"24068.00", "inth":"24157.10", "intl":"24023.70", "intc":"24052.05", "ssboe":"1783987200", "intv":"355829008.00"}', '{"time":"13-JUL-2026", "into":"24039.40", "inth":"24259.80", "intl":"24000.20", "intc":"24211.00", "ssboe":"1783900800", "intv":"322678968.00"}']
+NIFTY50: saved 58 rows
+Downloading NIFTYBANK (Nifty Bank)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NIFTYBANK
+candles: ['{"time":"16-JUL-2026", "into":"57831.10", "inth":"57931.30", "intl":"57420.15", "intc":"57582.25", "ssboe":"1784160000", "intv":"171394681.00"}', '{"time":"15-JUL-2026", "into":"57643.75", "inth":"58148.80", "intl":"57545.20", "intc":"57757.85", "ssboe":"1784073600", "intv":"230970224.00"}', '{"time":"14-JUL-2026", "into":"57832.55", "inth":"57840.05", "intl":"57286.90", "intc":"57462.30", "ssboe":"1783987200", "intv":"206834900.00"}', '{"time":"13-JUL-2026", "into":"57616.70", "inth":"58219.90", "intl":"57492.05", "intc":"58131.45", "ssboe":"1783900800", "intv":"210287279.00"}']
+NIFTYBANK: saved 58 rows
+Downloading NIFTYNXT50 (Nifty Next 50)
+latest: 2026-07-15, today: 2026-07-16
+Downloading NIFTYNXT50
+candles: ['{"time":"16-JUL-2026", "into":"72376.00", "inth":"72675.80", "intl":"71826.80", "intc":"71896.75", "ssboe":"1784160000", "intv":"244823100.00"}', '{"time":"15-JUL-2026", "into":"72108.05", "inth":"72552.05", "intl":"72011.90", "intc":"72148.80", "ssboe":"1784073600", "intv":"292846140.00"}', '{"time":"14-JUL-2026", "into":"71757.25", "inth":"71938.55", "intl":"71449.15", "intc":"71851.60", "ssboe":"1783987200", "intv":"234690007.00"}', '{"time":"13-JUL-2026", "into":"71819.15", "inth":"72209.05", "intl":"71429.60", "intc":"72111.40", "ssboe":"1783900800", "intv":"223183267.00"}']
+NIFTYNXT50: saved 58 rows
+DOWNLOAD COMPLETE
+Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit
+UNIONBANK , 2026-07-16 , DAY , Bearish , Bearish Engulf , 171.57 , 177.49 , 168.05 , MID-HIGH , False
+TVSMOTOR , 2026-07-16 , DAY , Bearish , Bearish Engulf , 3589.9 , 3629.9 , 3549.9 , MID-LOW , False
+TRENT , 2026-07-16 , DAY , Bearish , Bearish Engulf , 2880.0 , 2905.0 , 2855.0 , LOW , False
+TITAN , 2026-07-16 , DAY , Bearish , Wick , 4624.4 , 4668.8 , 4580.0 , HIGH , False
+TECHM , 2026-07-16 , DAY , Bearish , Wick , 1521.25 , 1538.3 , 1504.2 , HIGH , False
+TATAPOWER , 2026-07-16 , DAY , Bearish , Wick , 380.98 , 385.3 , 376.65 , MID-LOW , False
+TATACONSUM , 2026-07-16 , DAY , Bullish , Bullish Tweezer , 1090.85 , 1081.1 , 1101.9 , MID-LOW , False
+SUNPHARMA , 2026-07-16 , DAY , Bullish , Bullish Tweezer , 1950.35 , 1943.0 , 1962.7 , HIGH , True
+SHRIRAMFIN , 2026-07-16 , DAY , Bearish , Bearish Engulf , 1030.05 , 1040.0 , 1020.1 , LOW , False
+SBILIFE , 2026-07-16 , DAY , Bearish , Bearish Engulf , 1841.05 , 1872.1 , 1810.0 , MID-HIGH , False
+PNB , 2026-07-16 , DAY , Bearish , Bearish Engulf , 105.5 , 107.55 , 103.71 , MID-HIGH , False
+ONGC , 2026-07-16 , DAY , Bullish , Wick , 246.79 , 245.61 , 249.45 , HIGH , True
+NHPC , 2026-07-16 , DAY , Bearish , Wick , 79.41 , 80.08 , 78.3 , LOW , True
+MAXHEALTH , 2026-07-16 , DAY , Bearish , Bearish Tweezer , 1103.75 , 1120.7 , 1086.2 , LOW , False
+JIOFIN , 2026-07-16 , DAY , Bullish , Wick , 236.0 , 234.1 , 239.89 , MID-LOW , True
+INFY , 2026-07-16 , DAY , Bearish , Wick , 1087.6 , 1097.3 , 1073.0 , HIGH , True
+HCLTECH , 2026-07-16 , DAY , Bearish , Wick , 1189.35 , 1204.0 , 1174.7 , HIGH , False
+DMART , 2026-07-16 , DAY , Bearish , Wick , 3958.5 , 3987.0 , 3930.0 , LOW , False
+CGPOWER , 2026-07-16 , DAY , Bearish , Wick , 936.95 , 954.9 , 915.1 , MID-LOW , False
+CANBK , 2026-07-16 , DAY , Bearish , Bearish Engulf , 126.27 , 127.19 , 125.35 , MID-LOW , False
+BRITANNIA , 2026-07-16 , DAY , Bearish , Wick , 5330.5 , 5367.0 , 5235.5 , MID-HIGH , True
+BPCL , 2026-07-16 , DAY , Bearish , Wick , 314.27 , 318.25 , 310.3 , MID-HIGH , False
+BEL , 2026-07-16 , DAY , Bearish , Bearish Engulf , 409.5 , 412.5 , 406.5 , LOW , False
+AXISBANK , 2026-07-16 , DAY , Bullish , Wick , 1307.45 , 1299.4 , 1348.0 , LOW , True
+AMBUJACEM , 2026-07-16 , DAY , Bearish , Bearish Tweezer , 436.4 , 440.3 , 430.0 , MID-HIGH , True
+ADANIPORTS , 2026-07-16 , DAY , Bearish , Wick , 1838.6 , 1859.7 , 1808.6 , MID-LOW , False
+ADANIENSOL , 2026-07-16 , DAY , Bearish , Wick , 1714.8 , 1744.0 , 1636.6 , HIGH , True
+NIFTY50 , 2026-07-16 , DAY , Bearish , Bearish Engulf , 24118.25 , 24259.8 , 24000.2 , MID-LOW , False
+NIFTYBANK , 2026-07-16 , DAY , Bearish , Bearish Engulf , 57675.73 , 58148.8 , 57286.9 , MID-LOW , False
+NIFTYNXT50 , 2026-07-16 , DAY , Bearish , Bearish Engulf , 72251.3 , 72675.8 , 71826.8 , MID-HIGH , False
+Both scripts completed.

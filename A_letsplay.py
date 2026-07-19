@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 import A_download_todays_data as dta
-import A_process_buy_sell as pbs
+# import A_process_buy_sell as pbs
 #=======================================================
 # Delete all files/folders inside "nifty100_data_today"
 folder = Path("nifty100_data_today")
@@ -55,7 +55,7 @@ while True:
 
     # Trading window: 09:15 to 15:30
     start_minutes = 9 * 60 + 15
-    end_minutes = 15 * 60 + 30
+    end_minutes = 15 * 60 + 10
     if start_minutes <= current_minutes <= end_minutes:
         loop_start = time.time()
         
