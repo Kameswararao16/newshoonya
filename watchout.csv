@@ -1,35 +1,28 @@
 Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit
-VEDL , 2026-07-03 , DAY , Bearish , Wick , 280.8 , 282.8 , 278.8 , LOW , False
-TECHM , 2026-07-03 , DAY , Bearish , Wick , 1421.75 , 1445.0 , 1373.4 , MID-LOW , True
-TATAPOWER , 2026-07-03 , DAY , Bearish , Bearish Engulf , 377.92 , 387.05 , 374.3 , LOW , False
-SIEMENS , 2026-07-03 , DAY , Bearish , Bearish Engulf , 3548.35 , 3616.5 , 3497.5 , LOW , False
-SBIN , 2026-07-03 , DAY , Bearish , Bearish Engulf , 1045.75 , 1057.0 , 1034.5 , MID-HIGH , False
-RECLTD , 2026-07-03 , DAY , Bearish , Bearish Engulf , 368.1 , 372.35 , 363.85 , HIGH , False
-POWERGRID , 2026-07-03 , DAY , Bearish , Wick , 289.55 , 292.0 , 284.2 , MID-LOW , True
-PNB , 2026-07-03 , DAY , Bullish , Wick , 105.56 , 104.11 , 107.01 , LOW , False
-NHPC , 2026-07-03 , DAY , Bearish , Wick , 81.45 , 82.5 , 79.25 , HIGH , True
-MOTHERSON , 2026-07-03 , DAY , Bearish , Bearish Engulf , 147.88 , 149.73 , 146.02 , MID-LOW , False
-MARICO , 2026-07-03 , DAY , Bearish , Bearish Engulf , 854.05 , 873.0 , 835.1 , MID-HIGH , False
-MANKIND , 2026-07-03 , DAY , Bullish , Bullish Tweezer , 2511.6 , 2480.2 , 2543.0 , MID-HIGH , False
-M&M missing data
-LICHSGFIN , 2026-07-03 , DAY , Bearish , Wick , 558.4 , 568.5 , 547.05 , MID-LOW , False
-JIOFIN , 2026-07-03 , DAY , Bearish , Bearish Engulf , 240.53 , 242.2 , 238.86 , MID-HIGH , False
-JINDALSTEL , 2026-07-03 , DAY , Bearish , Wick , 1062.4 , 1073.8 , 1051.0 , LOW , False
-ICICIPRULI , 2026-07-03 , DAY , Bearish , Bearish Engulf , 492.07 , 500.45 , 483.7 , MID-LOW , False
-HINDALCO , 2026-07-03 , DAY , Bearish , Wick , 964.97 , 978.9 , 951.05 , LOW , False
-HEROMOTOCO , 2026-07-03 , DAY , Bearish , Bearish Engulf , 4870.15 , 4913.8 , 4826.5 , MID-LOW , False
-HAL , 2026-07-03 , DAY , Bearish , Wick , 4461.85 , 4502.4 , 4382.0 , MID-HIGH , True
-GRASIM , 2026-07-03 , DAY , Bearish , Wick , 3192.15 , 3219.3 , 3165.0 , HIGH , False
-GODREJCP , 2026-07-03 , DAY , Bearish , Wick , 1084.8 , 1098.5 , 1043.0 , HIGH , True
-GAIL , 2026-07-03 , DAY , Bearish , Wick , 174.79 , 175.89 , 172.21 , MID-HIGH , True
-ETERNAL , 2026-07-03 , DAY , Bearish , Wick , 283.73 , 287.8 , 278.6 , HIGH , False
-DABUR , 2026-07-03 , DAY , Bearish , Bearish Engulf , 446.12 , 451.0 , 442.15 , HIGH , False
-CUMMINSIND , 2026-07-03 , DAY , Bearish , Bearish Engulf , 5572.25 , 5690.0 , 5454.5 , LOW-OUT , False
-CIPLA , 2026-07-03 , DAY , Bearish , Wick , 1461.5 , 1471.0 , 1452.0 , HIGH , False
-CANBK , 2026-07-03 , DAY , Bullish , Wick , 126.45 , 124.7 , 129.26 , LOW , True
-BEL , 2026-07-03 , DAY , Bearish , Wick , 420.8 , 424.5 , 417.1 , MID-LOW , False
-BAJAJHLDNG , 2026-07-03 , DAY , Bearish , Wick , 11069.5 , 11218.0 , 10921.0 , HIGH-OUT , False
-ASIANPAINT , 2026-07-03 , DAY , Bearish , Bearish Tweezer , 2746.2 , 2762.4 , 2711.0 , MID-HIGH , True
-ADANIENT , 2026-07-03 , DAY , Bullish , Wick , 3164.75 , 3105.5 , 3229.6 , HIGH , False
-NIFTYBANK , 2026-07-03 , DAY , Bearish , Bearish Engulf , 58071.15 , 58396.1 , 57799.05 , MID-HIGH , False
-NIFTYNXT50 , 2026-07-03 , DAY , Bearish , Bearish Engulf , 72435.9 , 72701.9 , 72169.9 , HIGH , False
+WIPRO , 2026-07-30 , DAY , Bearish , Wick , 187.37 , 191.34 , 183.4 , HIGH-OUT , False
+UNIONBANK , 2026-07-30 , DAY , Bullish , Wick , 169.49 , 167.7 , 171.94 , MID-HIGH , False
+TORNTPHARM , 2026-07-30 , DAY , Bearish , Wick , 4906.9 , 5040.0 , 4857.2 , MID-LOW , False
+TITAN , 2026-07-30 , DAY , Bearish , Wick , 4845.4 , 4869.9 , 4820.9 , HIGH , False
+TCS , 2026-07-30 , DAY , Bearish , Wick , 2459.0 , 2495.0 , 2415.1 , HIGH , False
+SBIN , 2026-07-30 , DAY , Bullish , Bullish Engulf , 1017.95 , 1007.6 , 1028.3 , MID-LOW , False
+PIDILITIND , 2026-07-30 , DAY , Bearish , Bearish Tweezer , 1627.55 , 1637.0 , 1608.9 , HIGH , True
+ONGC , 2026-07-30 , DAY , Bearish , Wick , 241.72 , 244.39 , 239.06 , MID-LOW , False
+MAXHEALTH , 2026-07-30 , DAY , Bearish , Wick , 1123.1 , 1135.9 , 1110.3 , HIGH , False
+MARICO , 2026-07-30 , DAY , Bullish , Bullish Engulf , 880.75 , 872.4 , 889.1 , HIGH , False
+LT , 2026-07-30 , DAY , Bullish , Wick , 3917.6 , 3883.5 , 3978.2 , HIGH , True
+JINDALSTEL , 2026-07-30 , DAY , Bearish , Wick , 1102.95 , 1120.0 , 1054.2 , HIGH , True
+INDHOTEL , 2026-07-30 , DAY , Bullish , Bullish Engulf , 742.2 , 733.9 , 750.5 , HIGH , False
+ICICIPRULI , 2026-07-30 , DAY , Bearish , Bearish Tweezer , 510.2 , 513.7 , 506.7 , MID-HIGH , False
+HYUNDAI , 2026-07-30 , DAY , Bullish , Bullish Engulf , 2013.95 , 1980.1 , 2047.8 , MID-HIGH , False
+HCLTECH , 2026-07-30 , DAY , Bearish , Wick , 1357.75 , 1369.9 , 1323.2 , HIGH , True
+HAL , 2026-07-30 , DAY , Bullish , Bullish Tweezer , 4567.85 , 4500.1 , 4644.8 , HIGH , False
+GRASIM , 2026-07-30 , DAY , Bullish , Wick , 3100.5 , 3085.5 , 3115.5 , LOW , False
+EICHERMOT , 2026-07-30 , DAY , Bullish , Wick , 7830.0 , 7730.0 , 7930.0 , HIGH , False
+DMART , 2026-07-30 , DAY , Bearish , Wick , 3902.15 , 4094.2 , 3755.1 , MID-LOW , False
+DABUR , 2026-07-30 , DAY , Bullish , Wick , 424.27 , 415.55 , 433.0 , LOW , False
+CUMMINSIND , 2026-07-30 , DAY , Bullish , Wick , 5370.5 , 5315.0 , 5477.5 , LOW , True
+CGPOWER , 2026-07-30 , DAY , Bullish , Wick , 825.25 , 814.85 , 845.2 , LOW , True
+ASIANPAINT , 2026-07-30 , DAY , Bullish , Wick , 2717.05 , 2666.2 , 2864.0 , MID-HIGH , True
+APOLLOHOSP , 2026-07-30 , DAY , Bullish , Bullish Engulf , 8937.25 , 8865.5 , 9009.0 , HIGH , False
+ADANIPOWER , 2026-07-30 , DAY , Bearish , Bearish Tweezer , 209.16 , 214.8 , 207.11 , LOW , False
+NIFTYBANK , 2026-07-30 , DAY , Bullish , Wick , 57002.62 , 56768.6 , 57315.95 , MID-LOW , False

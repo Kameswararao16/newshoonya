@@ -1,85 +1,173 @@
-API connected
-Starting to process all stocks for buy/sell signals...
-Processing stock: RELIANCE, High: 1325.6, Low: 1300.6, High Wick: 1326.9, Low Wick: 1296.1
-11-candle High: 1325.2, 11-candle Low: 1319.7, 11-candle High Wick: 1326.9, 11-candle Low Wick: 1319.1
-first_3_candles:                  Date    Open    High     Low   Close  Volume
-0 2026-07-17 09:15:00  1300.6  1310.5  1296.1  1309.0  570026
-1 2026-07-17 09:20:00  1309.3  1311.6  1308.6  1310.0  273483
-2 2026-07-17 09:25:00  1310.3  1311.5  1309.0  1311.0  173614
-First candle - f_dh: 1311.0, f_dl: 1300.6, f_dhw: 1311.6, f_dlw: 1296.1,  f_midw: 1305.8
-Day - dh: 1325.6, dl: 1300.6, dhw: 1326.9, dlw: 1296.1
-Detecting patterns for 3 candles
-                  Date    Open    High     Low   Close  Volume
-68 2026-07-17 14:55:00  1323.8  1324.0  1320.6  1321.9  387249
-69 2026-07-17 15:00:00  1321.7  1323.2  1321.2  1322.3  296137
-70 2026-07-17 15:05:00  1322.7  1325.9  1322.3  1325.6  193636
-Previous candle: Date      2026-07-17 15:00:00
-Open                   1321.7
-High                   1323.2
-Low                    1321.2
-Close                  1322.3
-Volume                 296137
-Name: 69, dtype: object
-Current candle: Date      2026-07-17 15:05:00
-Open                   1322.7
-High                   1325.9
-Low                    1322.3
-Close                  1325.6
-Volume                 193636
-Name: 70, dtype: object
-Previous candle - Open: 1321.7, High: 1323.2, Low: 1321.2, Close: 1322.3
-Current candle - Open: 1322.7, High: 1325.9, Low: 1322.3, Close: 1325.6
-p_body: 0.6, p_upper_wick: 0.9, p_lower_wick: 0.5, p_range: 2.0
-c_high: 1325.6, c_low: 1322.7, c_body: 2.9, c_upper_wick: 0.3, c_lower_wick:  0.4, c_range: 3.6
-Buffer: 2.0
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle high.
-Days high is more to proceed.
-Price is at day high.
-Processing stock: NIFTY50, High: 24333.55, Low: 24128.1, High Wick: 24367.3, Low Wick: 24099.05
-11-candle High: 24324.0, 11-candle Low: 24253.25, 11-candle High Wick: 24367.3, 11-candle Low Wick: 24252.75
-first_3_candles:                  Date     Open      High       Low     Close  Volume
-0 2026-07-17 09:15:00  24128.1  24194.90  24099.05  24187.85       0
-1 2026-07-17 09:20:00  24188.9  24196.25  24182.65  24191.90       0
-2 2026-07-17 09:25:00  24193.3  24211.70  24192.85  24210.00       0
-First candle - f_dh: 24210.0, f_dl: 24128.1, f_dhw: 24211.7, f_dlw: 24099.05,  f_midw: 24169.05
-Day - dh: 24333.55, dl: 24128.1, dhw: 24367.3, dlw: 24099.05
-Detecting patterns for 3 candles
-                  Date      Open      High       Low     Close  Volume
-68 2026-07-17 14:55:00  24321.05  24334.80  24311.70  24311.75       0
-69 2026-07-17 15:00:00  24311.85  24332.80  24311.20  24322.05       0
-70 2026-07-17 15:05:00  24321.80  24335.05  24321.75  24333.55       0
-Previous candle: Date      2026-07-17 15:00:00
-Open                 24311.85
-High                  24332.8
-Low                   24311.2
-Close                24322.05
-Volume                      0
-Name: 69, dtype: object
-Current candle: Date      2026-07-17 15:05:00
-Open                  24321.8
-High                 24335.05
-Low                  24321.75
-Close                24333.55
-Volume                      0
-Name: 70, dtype: object
-Previous candle - Open: 24311.85, High: 24332.8, Low: 24311.2, Close: 24322.05
-Current candle - Open: 24321.8, High: 24335.05, Low: 24321.75, Close: 24333.55
-p_body: 10.2, p_upper_wick: 10.75, p_lower_wick: 0.65, p_range: 21.6
-c_high: 24333.55, c_low: 24321.8, c_body: 11.75, c_upper_wick: 1.5, c_lower_wick:  0.05, c_range: 13.3
-Buffer: 10.0
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle high.
-Days high is more to proceed.
+Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit
+Red
+Green
+Green
+Green
+Green-Downtrend
+Red
+Red-Uptrend
+Green
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+TRENT , 2026-07-30 , DAY, Bearish, Last Candle, 2999.2 , 3020.2 , 2938.6
+Red
+Green
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+TCS , 2026-07-30 , DAY, Bearish, Last Candle, 2431.8 , 2440.0 , 2359.8
+Red
+Red
+Red
+Green
+Red
+Green
+Red
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+SBILIFE , 2026-07-30 , DAY, Bearish, Last Candle, 1877.5 , 1882.2 , 1830.1
+Green
+Green
+Green
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+PIDILITIND , 2026-07-30 , DAY, Bearish, Last Candle, 1629.9 , 1636.0 , 1613.0
+Green
+Green-Downtrend
+Green
+Green-Downtrend
+Green
+Green-Downtrend
+Grean-Near 14 days low.
+NHPC , 2026-07-30 , DAY, Bullish, Last Candle, 78.07 , 77.9 , 79.11
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+NAUKRI , 2026-07-30 , DAY, Bearish, Last Candle, 1244.05 , 1248.9 , 1214.6
+Green
+Green
+Green
+Green
+Red
+Red-Uptrend
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+LODHA , 2026-07-30 , DAY, Bearish, Last Candle, 1287.15 , 1305.0 , 1239.45
+Red
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+JSWSTEEL , 2026-07-30 , DAY, Bearish, Last Candle, 1270.8 , 1279.1 , 1227.8
+Red
+Red-Uptrend
+Red-Near 14 days high.
+JIOFIN , 2026-07-30 , DAY, Bearish, Last Candle, 246.95 , 248.75 , 242.14999999999998
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+ITC , 2026-07-30 , DAY, Bearish, Last Candle, 285.05 , 286.1 , 280.40000000000003
+Red
+Red-Uptrend
+Red
+Red
+Red-Uptrend
+Red-Near 14 days high.
+INFY , 2026-07-30 , DAY, Bearish, Last Candle, 1155.1 , 1168.0 , 1118.6999999999998
+Red
+Green
+Green
+Red
+Red-Uptrend
+Green
+Green
+Red
+Green
+Green
+Green
+Green-Downtrend
+Grean-Near 14 days low.
+HDFCBANK , 2026-07-30 , DAY, Bullish, Last Candle, 753.95 , 752.8 , 766.35
+Green
+Green
+Green
+Red
+Red
+Red
+Red-Uptrend
+Green
+Green
+Green
+Green-Downtrend
+Grean-Near 14 days low.
+DRREDDY , 2026-07-30 , DAY, Bullish, Last Candle, 1144.8 , 1143.0 , 1156.8
+Green
+Green-Downtrend
+Red
+Red
+Red-Uptrend
+Red-Near 14 days high.
+DIVISLAB , 2026-07-30 , DAY, Bearish, Last Candle, 7835.0 , 7885.5 , 7692.0
+Red
+Red
+Red
+Red-Uptrend
+Red-Near 14 days high.
+CONCOR , 2026-07-30 , DAY, Bearish, Last Candle, 525.15 , 525.85 , 517.4499999999999
+Green
+Green-Downtrend
+Red
+Red-Uptrend
+Red-Near 14 days high.
+CIPLA , 2026-07-30 , DAY, Bearish, Last Candle, 1466.4 , 1478.8 , 1446.7
+Red
+Red-Uptrend
+Green
+Green-Downtrend
+Grean-Near 14 days low.
+CGPOWER , 2026-07-30 , DAY, Bullish, Last Candle, 832.6 , 830.0 , 853.4
+Red
+Red
+Red-Uptrend
+Red-Near 14 days high.
+BRITANNIA , 2026-07-30 , DAY, Bearish, Last Candle, 5524.5 , 5528.0 , 5445.0
+Green
+Green
+Red
+Red
+Green
+Green
+Red
+Red-Uptrend
+Red-Near 14 days high.
+BAJAJFINSV , 2026-07-30 , DAY, Bearish, Last Candle, 1909.4 , 1918.3 , 1868.3
+Green
+Red
+Red
+Red-Uptrend
+Green
+Red
+Red-Uptrend
+Red
+Red
+Red
+Green
+Red
+Red
+Green
+Green
+Green-Downtrend
+Grean-Near 14 days low.
+NIFTYBANK , 2026-07-30 , DAY, Bullish, Last Candle, 57147.5 , 57127.05 , 57615.55
+Green

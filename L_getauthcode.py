@@ -12,7 +12,7 @@ import requests
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 CLIENT_ID   = "FA199969_U"
 USER_ID     = "FA199969" 
-PASSWORD    = "Havya0@3" 
+PASSWORD    = "Havya0@4" 
 TOTP_SECRET = "YC46H7C4HB6KO25R564JNSXGY6EAH7T5" 
 LOGIN_URL   = f"https://api.shoonya.com/OAuthlogin/investor-entry-level/login?api_key={CLIENT_ID}&route_to=FA199969" 
 SECRET_CODE = "I1Fny1fE23G9lzQAiJPAm7LQxDmj0DROC7PXHblBBECaFjy0n8n6cX0HJGQaZE02" 

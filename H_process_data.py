@@ -37,14 +37,11 @@ def add_wick_signal(df):
         - df["Low"]
     )
 
-
     upper_pct = upper_wick / total_range
     lower_pct = lower_wick / total_range
 
-
     prev_high = df["High"].shift(1)
     prev_low = df["Low"].shift(1)
-
 
     green = df["Close"] > df["Open"]
     red = df["Close"] < df["Open"]
@@ -70,7 +67,6 @@ def add_wick_signal(df):
         default="Neutral",
     )
 
-
     return df
 
 # =====================================================
@@ -81,18 +77,14 @@ def engulf_wick_reference(df):
 
     result = []
 
-
     for i in range(len(df)):
-
 
         if i == 0:
             result.append("Neutral")
             continue
 
-
         prev = df.iloc[i-1]
         cur = df.iloc[i]
-
 
         bullish = (
             cur.Close > cur.Open
@@ -102,7 +94,6 @@ def engulf_wick_reference(df):
             cur.Close > max(prev.Open,prev.Close)
         )
 
-
         bearish = (
             cur.Close < cur.Open
             and
@@ -110,7 +101,6 @@ def engulf_wick_reference(df):
             and
             cur.Close < min(prev.Open,prev.Close)
         )
-
 
         if bullish:
             result.append("Bullish")
@@ -120,7 +110,6 @@ def engulf_wick_reference(df):
 
         else:
             result.append("Neutral")
-
 
     return pd.Series(
         result,
@@ -133,14 +122,12 @@ def engulf_wick_reference(df):
 
 def add_14day_range_position(df):
 
-
     high14 = (
         df["High"]
         .shift(1)
         .rolling(14)
         .max()
     )
-
 
     low14 = (
         df["Low"]
@@ -149,9 +136,7 @@ def add_14day_range_position(df):
         .min()
     )
 
-
     size = high14-low14
-
 
     df["RangePct"] = np.where(
         size>0,
@@ -159,41 +144,25 @@ def add_14day_range_position(df):
         np.nan
     )
 
-
     df["RangeZone"] = np.select(
-
         [
-
             df["RangePct"]<=0,
-
             df["RangePct"]<=0.25,
-
             df["RangePct"]<=0.50,
-
             df["RangePct"]<=0.75,
-
             df["RangePct"]<=1,
-
             df["RangePct"]>1
-
         ],
-
-
         [
-
             "LOW-OUT",
             "LOW",
             "MID-LOW",
             "MID-HIGH",
             "HIGH",
             "HIGH-OUT"
-
         ],
-
-
         default="NA"
     )
-
 
     return df
 
@@ -204,14 +173,12 @@ def add_14day_range_position(df):
 
 def add_14day_trend(df):
 
-
     high14 = (
         df["High"]
         .shift(1)
         .rolling(14)
         .max()
     )
-
 
     low14 = (
         df["Low"]
@@ -220,40 +187,27 @@ def add_14day_trend(df):
         .min()
     )
 
-
     mid = (high14+low14)/2
-
-
     old_close = df["Close"].shift(14)
 
-
     df["Trend"] = np.select(
-
         [
-
             (df["Close"] > mid)
             &
             (df["Close"] > old_close),
 
-
             (df["Close"] < mid)
             &
             (df["Close"] < old_close)
-
         ],
 
-
         [
-
             "Uptrend",
             "Downtrend"
-
         ],
 
         default="Sideways"
-
     )
-
 
     return df
 
@@ -272,10 +226,8 @@ def tweezers(df):
             result.append("Neutral")
             continue
 
-
         prev = df.iloc[i-1]
         cur = df.iloc[i]
-
 
         same_low = (
             abs(prev.Low - cur.Low)
@@ -298,12 +250,10 @@ def tweezers(df):
         else:
             result.append("Neutral")
 
-
     return pd.Series(
         result,
         index=df.index
     )
-
 
 # =====================================================
 # FINAL SIGNAL
@@ -317,7 +267,8 @@ def generate_signals(df):
     for i in range(len(df)):
         wick = df["WickSignal"].iloc[i]
         engulf = df["EngulfType"].iloc[i]
-        tweezer = df["tweezer"].iloc[i]
+        tweezer = df["Tweezer"].iloc[i]
+
 
         if wick != "Neutral":
 
@@ -330,7 +281,6 @@ def generate_signals(df):
                 df.index[i],
                 "TriggerLogic"
             ] = "Wick"
-
 
         elif tweezer == "Bullish":
 
@@ -357,7 +307,6 @@ def generate_signals(df):
                 "TriggerLogic"
             ]="Bearish Tweezer"
 
-
         elif engulf=="Bullish":
 
             df.at[
@@ -369,7 +318,6 @@ def generate_signals(df):
                 df.index[i],
                 "TriggerLogic"
             ]="Bullish Engulf"
-
 
         elif engulf=="Bearish":
 
@@ -386,7 +334,6 @@ def generate_signals(df):
     # print(f"======={stock['Symbol']}==================")
     # print(df)
     return df
-
 
 
 # =====================================================
@@ -462,7 +409,7 @@ for stock in NIFTY100:
 
     try:
 
-        file = os.path.join( DATA_FOLDER, ticker+".csv")
+        file = os.path.join(DATA_FOLDER, ticker+".csv")
         if not os.path.exists(file):
             print(ticker, "missing data")
             continue
@@ -474,11 +421,50 @@ for stock in NIFTY100:
         if len(df)<20: 
             continue
 
+        # Get trned and range position
         df = add_14day_trend(df)
         df = add_14day_range_position(df)
-        df = add_wick_signal(df)
+        #-----------------------------------------------------------------------
+        # Simple last candle logic
+        last_candle_data = df.iloc[-1]
+        lRange = last_candle_data["High"] - last_candle_data["Low"]
+        lMid = (last_candle_data["High"] + last_candle_data["Low"])/2
+        uWick = last_candle_data["High"] - max(last_candle_data["Open"], last_candle_data["Close"])
+        lWick = min(last_candle_data["Open"], last_candle_data["Close"]) - last_candle_data["Low"]
+        uWickPct = uWick / lRange
+        lWickPct = lWick / lRange
+        # print(f"ticker: {ticker}, uWickPct: {uWickPct}, lWickPct: {lWickPct}, lRange: {lRange}")
+        # Last candle is green + No pull back by sellers or long pull back buyers
+        if ((last_candle_data["Close"] > last_candle_data["Open"]) and ((lWickPct <= 0.1) or (lWickPct >= 0.7))):
+            print("Green")
+            if last_candle_data["Trend"] == "Downtrend":
+                print("Green-Downtrend")
+                if last_candle_data["RangePct"] <= 0.3:
+                    print("Grean-Near 14 days low.")
+                    print(ticker,",", last_candle_data.Date.date(), ", DAY, Bullish, Last Candle,", 
+                            last_candle_data["Close"], ",", last_candle_data["Open"], ",", 
+                            last_candle_data["Close"]+lRange)
+        # Last candle is red + No pull back by buyers or long pull back seller
+        elif ((last_candle_data["Close"] < last_candle_data["Open"]) and ((uWickPct >= 0.7) or (uWickPct <= 0.1))):
+            print("Red")
+            if last_candle_data["Trend"] == "Uptrend":
+                print("Red-Uptrend")
+                if last_candle_data["RangePct"] >= 0.7:
+                    print("Red-Near 14 days high.")
+                    print(ticker,",", last_candle_data.Date.date(), ", DAY, Bearish, Last Candle,", 
+                            last_candle_data["Close"], ",", last_candle_data["Open"], ",", 
+                            last_candle_data["Close"]-lRange)
+        # Last candle is doji
+        else:
+            print("Doji")
+            
+        continue
+        #---------------------------------------------------------------------
+
+
+        df["Wick"] = add_wick_signal(df)
         df["EngulfType"] = engulf_wick_reference(df)
-        df["tweezer"] = tweezers(df)
+        df["Tweezer"] = tweezers(df)
         df = generate_signals(df)
 
         last = df.iloc[-1]

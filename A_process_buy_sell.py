@@ -236,197 +236,7 @@ def detect_candlestick_pattern(first_3_candles, candles, stkname, lsize, dh, dl,
         )
     
     return None
-    # #-----------------------------------------------------------------------
-    # # if(last_candle_at_fhigh or last_candle_at_fhigh_wick):
-    # # elif(last_candle_at_flow or last_candle_at_flow_wick):
-
-    # last_candle_at_dhigh = abs(max(cc, co) - dh) <= buffer
-    # last_candle_at_dlow = abs(min(cc, co) - dl) <= buffer
-    # last_candle_at_dhigh_wick = abs(max(ch, cl) - dhw) <= buffer
-    # last_candle_at_dlow_wick = abs(min(ch, cl) - dlw) <= buffer
-
-    # last_candle_at_highX = abs(max(cc, co) - hX) <= buffer
-    # last_candle_at_lowX = abs(min(cc, co) - lX) <= buffer
-    # last_candle_at_highX_wick = abs(max(ch, cl) - hwX) <= buffer
-    # last_candle_at_lowX_wick = abs(min(ch, cl) - lwX) <= buffer
-
-    # if (last_candle_at_fhigh or last_candle_at_fhigh_wick):
-    #     print("Last candle is at first candle high.")
-    #     if abs(round(f_dh-f_dl, 2)) < minmovement:
-    #         print("Not enough bullish momentum, skipping pattern detection.")
-    #         return None
-    # elif (last_candle_at_flow or last_candle_at_flow_wick):
-    #     print("Last candle is at first candle low.")
-    #     if abs(round(f_dh-f_dl, 2)) < minmovement:
-    #         print("Not enough bearish momentum, skipping pattern detection.")
-    #         return None
-    # if (last_candle_at_dhigh or last_candle_at_dhigh_wick):
-    #     print("Last candle is at day high.")
-    #     if abs(round(dhw-dlw, 2)) < minmovement:
-    #         print("Not enough bullish momentum, skipping pattern detection.")
-    #         return None
-    # elif (last_candle_at_dlow or last_candle_at_dlow_wick):
-    #     print("Last candle is at day low.")
-    #     if abs(round(dhw-dlw, 2)) < minmovement:
-    #         print("Not enough bearish momentum, skipping pattern detection.")
-    #         return None
-    # elif (last_candle_at_highX or last_candle_at_highX_wick):
-    #     print("Last candle is at X-candle high.")
-    #     if abs(round(hwX-lwX, 2)) < minmovement:
-    #         print("Not enough bullish momentum, skipping pattern detection.")
-    #         return None
-    # elif (last_candle_at_lowX or last_candle_at_lowX_wick):
-    #     print("Last candle is at X-candle low.")
-    #     if abs(round(hwX-lwX, 2)) < minmovement:
-    #         print("Not enough bearish momentum, skipping pattern detection.")
-    #         return None
-
-    # else:
-    #     print("Last candle is neither day high/low nor last X-candle high/low")
-    #     return None
-
-    
-    # entry = round((ch + cl) / 2, 2)
-    # # ==================================================
-    # # Bullish Engulfing
-    # # ==================================================
-    # print(f"pc: {pc}, po: {po}, cc: {cc}, co: {co}, cstrong_body: {cstrong_body}, pstrong_body: {pstrong_body}")
-    # if (pc <= po and
-    #     cc >= co and
-    #     co <= pc and
-    #     cc >= po and
-    #     cstrong_body and
-    #     pstrong_body and
-    #     (last_candle_at_lowX or last_candle_at_dlow)):
-    #     print("BUY:Bullish Engulfing detected")
-
-    #     tg.send_telegram_alert(
-    #         symbol=stkname,
-    #         signal="BUY",
-    #         entry_price=str(entry),
-    #         stop_loss=str(round(cl - (c_range*0.1), 2)),
-    #         target_price="T1:" + str(hX),
-    #         logic=f"Bullish Engulfing",
-    #         buy_type="Intraday",
-    #         entry_time=str(now)
-    #     )
-    #     # return "Bullish Engulfing"
-
-    # # ==================================================
-    # # Bearish Engulfing
-    # # ==================================================
-    # if (pc >= po and
-    #     cc <= co and
-    #     co >= pc and
-    #     cc <= po and
-    #     cstrong_body and
-    #     pstrong_body and 
-    #     (last_candle_at_highX or last_candle_at_dhigh)):
-    #     print("SELL:Bearish Engulfing detected")
-    #     tg.send_telegram_alert(
-    #         symbol=stkname,
-    #         signal="SELL",
-    #         entry_price=str(entry),
-    #         stop_loss=str(round(ch + (c_range*0.1), 2)),
-    #         target_price="T1:" + str(lX),
-    #         logic=f"Bearish Engulfing",
-    #         buy_type="Intraday",
-    #         entry_time=str(now)
-    #     )
-    #     # return "Bearish Engulfing"
-
-    # # ==================================================
-    # # Hammer + Confirmation
-    # # ==================================================
-    # hammer = (
-    #     (c_lower_wick >= 0.50 * c_range and c_body >= 0.1 * c_range)
-    #     or
-    #     (c_lower_wick >= 0.70 * c_range)  # Ensure the body is not too small
-    # )
-    # print(f"c_lower_wick: {c_lower_wick}, 0.5*c_range: {0.5*c_range}, 0.7*c_range: {round(0.7*c_range, 2)}, c_body: {c_body}, 0.1*c_range: {round(0.1*c_range, 2)}")
-
-
-    # if hammer and bullish_confirmation and (last_candle_at_lowX or last_candle_at_dlow):
-    #     print("BUY: Hammer + Confirmation detected")
-    #     tg.send_telegram_alert(
-    #         symbol=stkname,
-    #         signal="BUY",
-    #         entry_price=str(entry),
-    #         stop_loss=str(round(cl - (c_range*0.1), 2)),
-    #         target_price="T1:" + str(hX),
-    #         logic=f"Hammer",
-    #         buy_type="Intraday",
-    #         entry_time=str(now)
-    #     )
-    #     # return "Hammer Confirmation"
-
-    # # ==================================================
-    # # Shooting Star + Confirmation
-    # # ==================================================
-    # shooting_star = (
-    #     (c_upper_wick >= 0.50 * c_range and c_body >= 0.1 * c_range)
-    #     or
-    #     (c_upper_wick >= 0.70 * c_range)
-    # )
-    # print(f"c_upper_wick: {c_upper_wick}, 0.5*c_range: {0.5*c_range}, 0.7*c_range: {round(0.7*c_range, 2)}, c_body: {c_body}, 0.1*c_range: {round(0.1*c_range, 2)}")
-
-    # if shooting_star and bearish_confirmation and (last_candle_at_highX or last_candle_at_dhigh):
-    #     print("SELL: Shooting Star + Confirmation detected")
-    #     tg.send_telegram_alert(
-    #         symbol=stkname,
-    #         signal="SELL",
-    #         entry_price=str(entry),
-    #         stop_loss=str(round(ch + (c_range*0.1), 2)),
-    #         target_price="T1: " + str(lX),
-    #         logic=f"Shooting Star",
-    #         buy_type="Intraday",
-    #         entry_time=str(now)
-    #     )
-    #     # return "Shooting Star Confirmation"
-
-    # #=======================================================
-    # # Marbozu + Confirmation
-    # #=======================================================
-    # marubozu = (
-    #     (c_upper_wick <= 0.05 * c_range and c_lower_wick <= 0.05 * c_range) and
-    #     (c_body >= 0.9 * c_range)
-    # )
-    # print(f"c_upper_wick: {c_upper_wick}, c_lower_wick: {c_lower_wick}, c_body: {c_body}, c_range: {c_range}, marubozu: {marubozu}")
-    # bullish_confirmation = (
-    #     cc > co and                    # Green candle
-    #     cc > max(pc, po)               # Current closes above previous candle's close or open
-    # )
-    # if marubozu and bullish_confirmation and (last_candle_at_lowX or last_candle_at_dlow):
-    #     print("BUY: Marubozu + Confirmation detected")
-    #     tg.send_telegram_alert(
-    #         symbol=stkname,
-    #         signal="BUY",
-    #         entry_price=str(entry),
-    #         stop_loss=str(round(cl - (c_range*0.1), 2)),
-    #         target_price="T1:" + str(hX),
-    #         logic=f"Marubozu",
-    #         buy_type="Intraday",
-    #         entry_time=str(now)
-    #     )
-        
-    # bearish_confirmation = (
-    #     cc < co and                    # Red candle
-    #     cc < min(pc, po)               # Closes below previous candle's close or open
-    # )   
-    # if marubozu and bearish_confirmation and (last_candle_at_highX or last_candle_at_dhigh):
-    #     print("SELL: Marubozu + Confirmation detected")
-    #     tg.send_telegram_alert(
-    #         symbol=stkname,
-    #         signal="SELL",
-    #         entry_price=str(entry),
-    #         stop_loss=str(round(ch + (c_range*0.1), 2)),
-    #         target_price="T1: " + str(lX),
-    #         logic=f"Marubozu",
-    #         buy_type="Intraday",
-    #         entry_time=str(now)
-    #     )
-        
-    # return None    
+   
 
 # =========================================================
 # Process all stocks and detect patterns
@@ -451,38 +261,6 @@ def process_buy_sell(api):
                 continue
             first_3_candles = df.iloc[:3]
 
-            # #----------------- Get blocks-------------------
-            # blocks = []  
-            # for i in range(0, len(df) - 1):
-            #     # print(f"Processing row {i} of {len(df)}")
-            #     row = df.iloc[i]
-            #     ch = row["High"]
-            #     cl = row["Low"]
-            #     if not blocks:
-            #         if(round(ch-cl, 2) < (0.8*lsize)):
-            #             blocks.extend([cl, ch])
-            #         else:
-            #             blocks.extend([cl, round((ch+cl)/2, 2)])
-            #             blocks.extend([ch])
-            #         # print(f"Initial blocks for {stock['Symbol']}: {blocks}")
-            #         continue
-            #     low = blocks[0]
-            #     high = blocks[-1]
-            #     if(ch > high):
-            #         r = blocks[-1] - blocks[-2]
-            #         ext = r * 0.30
-            #         # print(f"Current blocks for {stock['Symbol']}: {blocks}, Current candle: High={ch}, Range={r}, Extension={ext}")
-            #         if (ch > high+ext):
-            #             blocks.extend([ch])
-            #     elif(cl < low):
-            #         r = blocks[1] - blocks[0]
-            #         ext = r * 0.30
-            #         # print(f"Current blocks for {stock['Symbol']}: {blocks}, Current candle: Low={cl}, Range={r}, Extension={ext}")
-            #         if (cl < low-ext):
-            #             blocks.insert(0, cl)
-            #     # print(f"Updated blocks for {stock['Symbol']}: {blocks}")
-            # print(f"Symbol {stock['Symbol']}: {blocks}")
-            # continue  # Skip pattern detection for now, just printing blocks
             #-----------------------------------------------
             dh = (df[["Open","Close"]]).max().max()
             dl = (df[["Open","Close"]]).min().min()
@@ -524,25 +302,25 @@ def process_buy_sell(api):
             print(stock["Symbol"], e)
 
     # print("DOWNLOAD COMPLETE")
-#===================TEST===================================
-#login to API
-from api_helper import NorenApiPy
+# #===================TEST===================================
+# #login to API
+# from api_helper import NorenApiPy
 
-api = NorenApiPy()
+# api = NorenApiPy()
 
-with open("cred.yml") as f:
-    cred = yaml.load(f, Loader=yaml.FullLoader)
+# with open("cred.yml") as f:
+#     cred = yaml.load(f, Loader=yaml.FullLoader)
 
-loginstatus = api.injectOAuthHeader(
-    cred["Access_token"],
-    cred["UID"],
-    cred["Account_ID"]
-)
+# loginstatus = api.injectOAuthHeader(
+#     cred["Access_token"],
+#     cred["UID"],
+#     cred["Account_ID"]
+# )
 
-if loginstatus is None:
-    print("Login failed")
-    exit()
+# if loginstatus is None:
+#     print("Login failed")
+#     exit()
 
-print("API connected")
-#=================================================
-process_buy_sell(api)
+# print("API connected")
+# #=================================================
+# process_buy_sell(api)
