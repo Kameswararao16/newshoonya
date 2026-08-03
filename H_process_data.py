@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 import os
-
+import sendtelegram as tg
 
 # =====================================================
 # SETTINGS
@@ -403,6 +403,15 @@ def last_group(df):
 # print("\nSTART SCAN\n")
 print("Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit")
 
+# Read today's data 
+today_ohlc = (
+    pd.read_csv("Today_OHLC.csv")
+      .set_index("Symbol")
+      .to_dict("index")
+)
+# print(today_ohlc)
+
+#Read historical data and process each stock
 for stock in NIFTY100:
 
     ticker = stock["Symbol"]
@@ -418,6 +427,30 @@ for stock in NIFTY100:
         df["Date"] = pd.to_datetime(df["Date"])
         df = (df.sort_values("Date").tail(60))
 
+        #--------------------------------------
+        # Add today's OHLC if available
+        if ticker in today_ohlc:
+
+            print(f"Adding today's OHLC for {ticker}")
+            new_row = pd.DataFrame([{
+                "Date": pd.to_datetime(today_ohlc[ticker]["Date"]),
+                "Open": today_ohlc[ticker]["Open"],
+                "High": today_ohlc[ticker]["High"],
+                "Low": today_ohlc[ticker]["Low"],
+                "Close": today_ohlc[ticker]["Close"],
+                "Volume": np.nan      # or 0 if you prefer
+            }])
+            print(new_row)
+
+            df = (
+                pd.concat([df, new_row], ignore_index=True)
+                .drop_duplicates(subset="Date", keep="last")
+                .sort_values("Date")
+                .tail(60)
+            )
+            print(f"df: {df.iloc[-1]}")
+        #----------------------------------------
+
         if len(df)<20: 
             continue
 
@@ -428,39 +461,61 @@ for stock in NIFTY100:
         # Simple last candle logic
         last_candle_data = df.iloc[-1]
         lRange = last_candle_data["High"] - last_candle_data["Low"]
+        lbody = abs(last_candle_data["Close"] - last_candle_data["Open"])
         lMid = (last_candle_data["High"] + last_candle_data["Low"])/2
         uWick = last_candle_data["High"] - max(last_candle_data["Open"], last_candle_data["Close"])
         lWick = min(last_candle_data["Open"], last_candle_data["Close"]) - last_candle_data["Low"]
         uWickPct = uWick / lRange
         lWickPct = lWick / lRange
-        # print(f"ticker: {ticker}, uWickPct: {uWickPct}, lWickPct: {lWickPct}, lRange: {lRange}")
-        # Last candle is green + No pull back by sellers or long pull back buyers
-        if ((last_candle_data["Close"] > last_candle_data["Open"]) and ((lWickPct <= 0.1) or (lWickPct >= 0.7))):
-            print("Green")
+        bPct = lbody / lRange
+        # print(f"ticker: {ticker}, uWickPct: {uWickPct}, lWickPct: {lWickPct}, lRange: {lRange}, bPct: {bPct}")
+        # Last candle is green + No pull back by sellers or long pull back buyers or not Doji
+        if ((last_candle_data["Close"] > last_candle_data["Open"]) and 
+            ( (lWickPct <= 0.1) or (lWickPct >= 0.7) or ((lWickPct >= 0.49) and (bPct >= 0.3)) )):
+            # print("Green")
             if last_candle_data["Trend"] == "Downtrend":
-                print("Green-Downtrend")
+                # print("Green-Downtrend")
                 if last_candle_data["RangePct"] <= 0.3:
-                    print("Grean-Near 14 days low.")
+                    # print("Grean-Near 14 days low.")
                     print(ticker,",", last_candle_data.Date.date(), ", DAY, Bullish, Last Candle,", 
                             last_candle_data["Close"], ",", last_candle_data["Open"], ",", 
                             last_candle_data["Close"]+lRange)
-        # Last candle is red + No pull back by buyers or long pull back seller
-        elif ((last_candle_data["Close"] < last_candle_data["Open"]) and ((uWickPct >= 0.7) or (uWickPct <= 0.1))):
-            print("Red")
+                    # Send telegram alert
+                    tg.send_telegram_alert(symbol=ticker,
+                                        signal="BUY",
+                                        entry_price=str(last_candle_data["Close"]),
+                                        stop_loss=str(last_candle_data["Open"]),
+                                        target_price="T1: " + str(last_candle_data["Close"]+lRange) ,
+                                        logic=f"Yesterday's Candle",
+                                        buy_type="Intraday",
+                                        entry_time="Any Time")
+        # Last candle is red + No pull back by buyers or long pull back seller or not Doji
+        elif ((last_candle_data["Close"] < last_candle_data["Open"]) and 
+              ( (uWickPct >= 0.7) or (uWickPct <= 0.1) or ((uWickPct >= 0.49) and (bPct >= 0.3)) )):
+            # print("Red")
             if last_candle_data["Trend"] == "Uptrend":
-                print("Red-Uptrend")
+                # print("Red-Uptrend")
                 if last_candle_data["RangePct"] >= 0.7:
-                    print("Red-Near 14 days high.")
+                    # print("Red-Near 14 days high.")
                     print(ticker,",", last_candle_data.Date.date(), ", DAY, Bearish, Last Candle,", 
                             last_candle_data["Close"], ",", last_candle_data["Open"], ",", 
                             last_candle_data["Close"]-lRange)
+                    # Send telegram alert
+                    tg.send_telegram_alert(symbol=ticker,
+                                        signal="SELL",
+                                        entry_price=str(last_candle_data["Close"]),
+                                        stop_loss=str(last_candle_data["Open"]),
+                                        target_price="T1: " + str(last_candle_data["Close"]-lRange) ,
+                                        logic=f"Yesterday's Candle",
+                                        buy_type="Intraday",
+                                        entry_time="Any Time")
         # Last candle is doji
-        else:
-            print("Doji")
+        # else:
+        #     print("Doji")
             
         continue
         #---------------------------------------------------------------------
-
+        # Not usefull at present, but can be used in future for more complex logic
 
         df["Wick"] = add_wick_signal(df)
         df["EngulfType"] = engulf_wick_reference(df)

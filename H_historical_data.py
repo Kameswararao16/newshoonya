@@ -3,7 +3,7 @@ import time
 import sys
 
 # Run first script and wait for it to complete
-subprocess.run([sys.executable, "H_download_historical_data.py"], check=True)
+subprocess.run([sys.executable, "H_download_todays_data.py"], check=True)
 
 # Wait 1 second
 time.sleep(1)

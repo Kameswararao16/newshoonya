@@ -1,117 +1,19 @@
 Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit
-Doji
-Green
-Doji
-Doji
-Red
-Red-Uptrend
-Doji
-Green
-Doji
-Red
-Green
-Doji
-Red
-Red-Uptrend
-Red-Near 14 days high.
 TCS , 2026-07-30 , DAY, Bearish, Last Candle, 2431.8 , 2440.0 , 2359.8
-Doji
-Doji
-Doji
-Doji
-Red
-Green
-Doji
-Doji
-Doji
-Doji
-Doji
-Green
-Doji
-Red
-Red-Uptrend
-Red-Near 14 days high.
+Sending telegram message ...
+✅ Telegram alert sent successfully
 PIDILITIND , 2026-07-30 , DAY, Bearish, Last Candle, 1629.9 , 1636.0 , 1613.0
-Green
-Green-Downtrend
-Doji
-Doji
-Doji
-Doji
-Doji
-Green
-Doji
-Doji
-Doji
-Green
-Doji
-Red
-Green
-Doji
-Doji
-Doji
-Doji
-Red
-Red-Uptrend
-Doji
-Doji
-Red
-Doji
-Doji
-Doji
-Doji
-Doji
-Doji
-Doji
-Green
-Doji
-Doji
-Doji
-Green
-Red
-Doji
-Doji
-Doji
-Doji
-Doji
-Green
-Green-Downtrend
-Red
-Doji
-Red
-Doji
-Doji
-Doji
-Doji
-Doji
-Green
-Green-Downtrend
-Grean-Near 14 days low.
+Sending telegram message ...
+✅ Telegram alert sent successfully
+LODHA , 2026-07-30 , DAY, Bearish, Last Candle, 1287.15 , 1305.0 , 1239.45
+Sending telegram message ...
+✅ Telegram alert sent successfully
+INFY , 2026-07-30 , DAY, Bearish, Last Candle, 1155.1 , 1168.0 , 1118.6999999999998
+Sending telegram message ...
+✅ Telegram alert sent successfully
 CGPOWER , 2026-07-30 , DAY, Bullish, Last Candle, 832.6 , 830.0 , 853.4
-Doji
-Doji
-Doji
-Doji
-Doji
-Red
-Doji
-Green
-Doji
-Doji
-Doji
-Red
-Red-Uptrend
-Doji
-Doji
-Doji
-Red
-Red
-Doji
-Doji
-Red
-Doji
-Green
-Green-Downtrend
-Grean-Near 14 days low.
+Sending telegram message ...
+✅ Telegram alert sent successfully
 NIFTYBANK , 2026-07-30 , DAY, Bullish, Last Candle, 57147.5 , 57127.05 , 57615.55
-Doji
+Sending telegram message ...
+✅ Telegram alert sent successfully

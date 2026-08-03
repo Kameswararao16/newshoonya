@@ -209,11 +209,7 @@ for stock in NIFTY100:
         download_stock(stock)
 
     except Exception as e:
-
-        print(
-            stock["Symbol"],
-            e
-        )
+        print(stock["Symbol"], e)
 
 
 print("DOWNLOAD COMPLETE")
