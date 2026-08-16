@@ -94,27 +94,27 @@ for symbol, group in opt.groupby("Symbol"):
 # 3. Merge Futures + Strike Diff
 # -------------------------------
 
+# -------------------------------
+# 3. Merge Futures + Strike Diff
+# -------------------------------
+
 result = fut[
     ["Symbol", "Expiry", "LotSize"]
 ].copy()
 
-
 result["StrikeDiff"] = result["Symbol"].map(
     strike_diff
 )
-
 
 # Format expiry like 29SEP26
 result["Expiry"] = result["Expiry"].dt.strftime(
     "%d%b%y"
 ).str.upper()
 
-
 # Save
 result.to_csv(
     OUTPUT_FILE,
     index=False
 )
-
 
 print("Created:", OUTPUT_FILE)

@@ -8,9 +8,6 @@ import redis
 
 from api_helper import NorenApiPy
 
-#sample
-# logging.basicConfig(level=logging.DEBUG)
-
 #==========================================================
 # Login 
 #==========================================================
@@ -75,7 +72,7 @@ def event_handler_feed_update(feed):
     print("Market Feed Update:", feed)
     now = datetime.now()
     print("Current Time:", now.strftime("%Y-%m-%d %H:%M:%S"))
-    latest_key = f"HavyaTej:{feed['tk']}"
+    latest_key = f"HTA:{feed['tk']}"
     # history_key = f"HavyaTej:{feed['tk']}:history"
 
     updateData = False

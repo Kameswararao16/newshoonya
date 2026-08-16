@@ -31,7 +31,6 @@ token_file = "NIFTY50_Tokens.csv"
 
 levels = {}
 
-
 @dataclass
 class PDLevels:
     symbol: str

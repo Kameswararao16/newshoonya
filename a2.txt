@@ -1,0 +1,2911 @@
+API connected
+Starting to process all stocks for buy/sell signals...
+last_5_candles:                   Date      Open      High       Low    Close  Volume
+53 2026-08-14 14:30:00  24372.60  24375.00  24367.55  24371.6       0
+54 2026-08-14 14:40:00  24369.15  24373.75  24368.40  24372.1       0
+55 2026-08-14 14:45:00  24370.00  24374.15  24364.75  24366.8       0
+56 2026-08-14 14:50:00  24365.65  24383.40  24365.65  24382.4       0
+57 2026-08-14 14:55:00  24380.90  24384.40  24373.40  24374.6       0
+df: 59
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24365.0, Low: 24311.45, Close: 24323.55, Range: 53.55
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+Previous candle: Date      2026-08-14 09:25:00
+Open                 24324.95
+High                 24326.05
+Low                  24318.05
+Close                24323.55
+Volume                      0
+Name: 1, dtype: object
+Current candle: Date      2026-08-14 09:35:00
+Open                 24327.45
+High                 24337.85
+Low                  24326.45
+Close                24332.85
+Volume                      0
+Name: 2, dtype: object
+Previous candle - Open: 24324.95, High: 24326.05, Low: 24318.05, Close: 24323.55
+Current candle - Open: 24327.45, High: 24337.85, Low: 24326.45, Close: 24332.85
+p_body: 1.4, p_upper_wick: 1.1, p_lower_wick: 5.5, p_range: 8.0
+c_high: 24332.85, c_low: 24327.45, c_body: 5.4, c_upper_wick: 5.0, c_lower_wick:  1.0, c_range: 11.4
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24365.0, Low: 24311.45, Close: 24332.85, Range: 53.55
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+Previous candle: Date      2026-08-14 09:35:00
+Open                 24327.45
+High                 24337.85
+Low                  24326.45
+Close                24332.85
+Volume                      0
+Name: 2, dtype: object
+Current candle: Date      2026-08-14 09:40:00
+Open                 24338.45
+High                 24338.65
+Low                  24326.15
+Close                24332.05
+Volume                      0
+Name: 3, dtype: object
+Previous candle - Open: 24327.45, High: 24337.85, Low: 24326.45, Close: 24332.85
+Current candle - Open: 24338.45, High: 24338.65, Low: 24326.15, Close: 24332.05
+p_body: 5.4, p_upper_wick: 5.0, p_lower_wick: 1.0, p_range: 11.4
+c_high: 24338.45, c_low: 24332.05, c_body: 6.4, c_upper_wick: 0.2, c_lower_wick:  5.9, c_range: 12.5
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24365.0, Low: 24311.45, Close: 24332.05, Range: 53.55
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+4 2026-08-14 09:45:00  24332.90  24346.80  24331.85  24341.60       0
+Previous candle: Date      2026-08-14 09:40:00
+Open                 24338.45
+High                 24338.65
+Low                  24326.15
+Close                24332.05
+Volume                      0
+Name: 3, dtype: object
+Current candle: Date      2026-08-14 09:45:00
+Open                  24332.9
+High                  24346.8
+Low                  24331.85
+Close                 24341.6
+Volume                      0
+Name: 4, dtype: object
+Previous candle - Open: 24338.45, High: 24338.65, Low: 24326.15, Close: 24332.05
+Current candle - Open: 24332.9, High: 24346.8, Low: 24331.85, Close: 24341.6
+p_body: 6.4, p_upper_wick: 0.2, p_lower_wick: 5.9, p_range: 12.5
+c_high: 24341.6, c_low: 24332.9, c_body: 8.7, c_upper_wick: 5.2, c_lower_wick:  1.05, c_range: 14.95
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: True
+bearish_engulf: False
+bullish_engulf: True, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+4 2026-08-14 09:45:00  24332.90  24346.80  24331.85  24341.60       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24365.0, Low: 24311.45, Close: 24341.6, Range: 53.55
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open     High       Low    Close  Volume
+4 2026-08-14 09:45:00  24332.90  24346.8  24331.85  24341.6       0
+5 2026-08-14 09:50:00  24341.15  24345.2  24324.20  24324.7       0
+Previous candle: Date      2026-08-14 09:45:00
+Open                  24332.9
+High                  24346.8
+Low                  24331.85
+Close                 24341.6
+Volume                      0
+Name: 4, dtype: object
+Current candle: Date      2026-08-14 09:50:00
+Open                 24341.15
+High                  24345.2
+Low                   24324.2
+Close                 24324.7
+Volume                      0
+Name: 5, dtype: object
+Previous candle - Open: 24332.9, High: 24346.8, Low: 24331.85, Close: 24341.6
+Current candle - Open: 24341.15, High: 24345.2, Low: 24324.2, Close: 24324.7
+p_body: 8.7, p_upper_wick: 5.2, p_lower_wick: 1.05, p_range: 14.95
+c_high: 24341.15, c_low: 24324.7, c_body: 16.45, c_upper_wick: 4.05, c_lower_wick:  0.5, c_range: 21.0
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: True
+bullish_engulf: False, bearish_engulf: True
+bullish_confirmation: False
+bearish_confirmation: True
+With in first 3-candles.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+4 2026-08-14 09:45:00  24332.90  24346.80  24331.85  24341.60       0
+5 2026-08-14 09:50:00  24341.15  24345.20  24324.20  24324.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24346.8, Low: 24318.05, Close: 24324.7, Range: 28.75
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+5 2026-08-14 09:50:00  24341.15  24345.20  24324.20  24324.70       0
+6 2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+Previous candle: Date      2026-08-14 09:50:00
+Open                 24341.15
+High                  24345.2
+Low                   24324.2
+Close                 24324.7
+Volume                      0
+Name: 5, dtype: object
+Current candle: Date      2026-08-14 09:55:00
+Open                 24326.45
+High                 24344.85
+Low                  24322.55
+Close                24343.55
+Volume                      0
+Name: 6, dtype: object
+Previous candle - Open: 24341.15, High: 24345.2, Low: 24324.2, Close: 24324.7
+Current candle - Open: 24326.45, High: 24344.85, Low: 24322.55, Close: 24343.55
+p_body: 16.45, p_upper_wick: 4.05, p_lower_wick: 0.5, p_range: 21.0
+c_high: 24343.55, c_low: 24326.45, c_body: 17.1, c_upper_wick: 1.3, c_lower_wick:  3.9, c_range: 22.3
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+4 2026-08-14 09:45:00  24332.90  24346.80  24331.85  24341.60       0
+5 2026-08-14 09:50:00  24341.15  24345.20  24324.20  24324.70       0
+6 2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24346.8, Low: 24322.55, Close: 24343.55, Range: 24.25
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+6 2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+7 2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+Previous candle: Date      2026-08-14 09:55:00
+Open                 24326.45
+High                 24344.85
+Low                  24322.55
+Close                24343.55
+Volume                      0
+Name: 6, dtype: object
+Current candle: Date      2026-08-14 10:00:00
+Open                 24344.65
+High                 24353.45
+Low                  24340.65
+Close                 24350.7
+Volume                      0
+Name: 7, dtype: object
+Previous candle - Open: 24326.45, High: 24344.85, Low: 24322.55, Close: 24343.55
+Current candle - Open: 24344.65, High: 24353.45, Low: 24340.65, Close: 24350.7
+p_body: 17.1, p_upper_wick: 1.3, p_lower_wick: 3.9, p_range: 22.3
+c_high: 24350.7, c_low: 24344.65, c_body: 6.05, c_upper_wick: 2.75, c_lower_wick:  4.0, c_range: 12.8
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+3 2026-08-14 09:40:00  24338.45  24338.65  24326.15  24332.05       0
+4 2026-08-14 09:45:00  24332.90  24346.80  24331.85  24341.60       0
+5 2026-08-14 09:50:00  24341.15  24345.20  24324.20  24324.70       0
+6 2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+7 2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24353.45, Low: 24322.55, Close: 24350.7, Range: 30.9
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+7 2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+8 2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+Previous candle: Date      2026-08-14 10:00:00
+Open                 24344.65
+High                 24353.45
+Low                  24340.65
+Close                 24350.7
+Volume                      0
+Name: 7, dtype: object
+Current candle: Date      2026-08-14 10:05:00
+Open                 24350.85
+High                 24355.15
+Low                   24343.2
+Close                24355.15
+Volume                      0
+Name: 8, dtype: object
+Previous candle - Open: 24344.65, High: 24353.45, Low: 24340.65, Close: 24350.7
+Current candle - Open: 24350.85, High: 24355.15, Low: 24343.2, Close: 24355.15
+p_body: 6.05, p_upper_wick: 2.75, p_lower_wick: 4.0, p_range: 12.8
+c_high: 24355.15, c_low: 24350.85, c_body: 4.3, c_upper_wick: 0.0, c_lower_wick:  7.65, c_range: 11.95
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: True
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+4 2026-08-14 09:45:00  24332.90  24346.80  24331.85  24341.60       0
+5 2026-08-14 09:50:00  24341.15  24345.20  24324.20  24324.70       0
+6 2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+7 2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+8 2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24355.15, Low: 24322.55, Close: 24355.15, Range: 32.6
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                 Date      Open      High       Low     Close  Volume
+8 2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+9 2026-08-14 10:10:00  24354.65  24359.20  24342.65  24345.45       0
+Previous candle: Date      2026-08-14 10:05:00
+Open                 24350.85
+High                 24355.15
+Low                   24343.2
+Close                24355.15
+Volume                      0
+Name: 8, dtype: object
+Current candle: Date      2026-08-14 10:10:00
+Open                 24354.65
+High                  24359.2
+Low                  24342.65
+Close                24345.45
+Volume                      0
+Name: 9, dtype: object
+Previous candle - Open: 24350.85, High: 24355.15, Low: 24343.2, Close: 24355.15
+Current candle - Open: 24354.65, High: 24359.2, Low: 24342.65, Close: 24345.45
+p_body: 4.3, p_upper_wick: 0.0, p_lower_wick: 7.65, p_range: 11.95
+c_high: 24354.65, c_low: 24345.45, c_body: 9.2, c_upper_wick: 4.55, c_lower_wick:  2.8, c_range: 16.55
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: True
+bullish_engulf: False, bearish_engulf: True
+bullish_confirmation: False
+bearish_confirmation: True
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                  Date      Open      High       Low     Close  Volume
+5 2026-08-14 09:50:00  24341.15  24345.20  24324.20  24324.70       0
+6 2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+7 2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+8 2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+9 2026-08-14 10:10:00  24354.65  24359.20  24342.65  24345.45       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24359.2, Low: 24322.55, Close: 24345.45, Range: 36.65
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                  Date      Open     High       Low     Close  Volume
+9  2026-08-14 10:10:00  24354.65  24359.2  24342.65  24345.45       0
+10 2026-08-14 10:15:00  24345.15  24347.0  24336.20  24336.90       0
+Previous candle: Date      2026-08-14 10:10:00
+Open                 24354.65
+High                  24359.2
+Low                  24342.65
+Close                24345.45
+Volume                      0
+Name: 9, dtype: object
+Current candle: Date      2026-08-14 10:15:00
+Open                 24345.15
+High                  24347.0
+Low                   24336.2
+Close                 24336.9
+Volume                      0
+Name: 10, dtype: object
+Previous candle - Open: 24354.65, High: 24359.2, Low: 24342.65, Close: 24345.45
+Current candle - Open: 24345.15, High: 24347.0, Low: 24336.2, Close: 24336.9
+p_body: 9.2, p_upper_wick: 4.55, p_lower_wick: 2.8, p_range: 16.55
+c_high: 24345.15, c_low: 24336.9, c_body: 8.25, c_upper_wick: 1.85, c_lower_wick:  0.7, c_range: 10.8
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+6  2026-08-14 09:55:00  24326.45  24344.85  24322.55  24343.55       0
+7  2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+8  2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+9  2026-08-14 10:10:00  24354.65  24359.20  24342.65  24345.45       0
+10 2026-08-14 10:15:00  24345.15  24347.00  24336.20  24336.90       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24363.75, 11-candle Low: 24322.7, 11-candle High Wick: 24365.0, 11-candle Low Wick: 24311.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24359.2, Low: 24322.55, Close: 24336.9, Range: 36.65
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                  Date      Open     High       Low     Close  Volume
+10 2026-08-14 10:15:00  24345.15  24347.0  24336.20  24336.90       0
+11 2026-08-14 10:20:00  24337.40  24341.1  24332.15  24334.05       0
+Previous candle: Date      2026-08-14 10:15:00
+Open                 24345.15
+High                  24347.0
+Low                   24336.2
+Close                 24336.9
+Volume                      0
+Name: 10, dtype: object
+Current candle: Date      2026-08-14 10:20:00
+Open                  24337.4
+High                  24341.1
+Low                  24332.15
+Close                24334.05
+Volume                      0
+Name: 11, dtype: object
+Previous candle - Open: 24345.15, High: 24347.0, Low: 24336.2, Close: 24336.9
+Current candle - Open: 24337.4, High: 24341.1, Low: 24332.15, Close: 24334.05
+p_body: 8.25, p_upper_wick: 1.85, p_lower_wick: 0.7, p_range: 10.8
+c_high: 24337.4, c_low: 24334.05, c_body: 3.35, c_upper_wick: 3.7, c_lower_wick:  1.9, c_range: 8.95
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+7  2026-08-14 10:00:00  24344.65  24353.45  24340.65  24350.70       0
+8  2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+9  2026-08-14 10:10:00  24354.65  24359.20  24342.65  24345.45       0
+10 2026-08-14 10:15:00  24345.15  24347.00  24336.20  24336.90       0
+11 2026-08-14 10:20:00  24337.40  24341.10  24332.15  24334.05       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24355.15, 11-candle Low: 24323.55, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24318.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24359.2, Low: 24332.15, Close: 24334.05, Range: 27.05
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                  Date      Open     High       Low     Close  Volume
+11 2026-08-14 10:20:00  24337.40  24341.1  24332.15  24334.05       0
+12 2026-08-14 10:25:00  24334.85  24338.1  24329.55  24331.25       0
+Previous candle: Date      2026-08-14 10:20:00
+Open                  24337.4
+High                  24341.1
+Low                  24332.15
+Close                24334.05
+Volume                      0
+Name: 11, dtype: object
+Current candle: Date      2026-08-14 10:25:00
+Open                 24334.85
+High                  24338.1
+Low                  24329.55
+Close                24331.25
+Volume                      0
+Name: 12, dtype: object
+Previous candle - Open: 24337.4, High: 24341.1, Low: 24332.15, Close: 24334.05
+Current candle - Open: 24334.85, High: 24338.1, Low: 24329.55, Close: 24331.25
+p_body: 3.35, p_upper_wick: 3.7, p_lower_wick: 1.9, p_range: 8.95
+c_high: 24334.85, c_low: 24331.25, c_body: 3.6, c_upper_wick: 3.25, c_lower_wick:  1.7, c_range: 8.55
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+8  2026-08-14 10:05:00  24350.85  24355.15  24343.20  24355.15       0
+9  2026-08-14 10:10:00  24354.65  24359.20  24342.65  24345.45       0
+10 2026-08-14 10:15:00  24345.15  24347.00  24336.20  24336.90       0
+11 2026-08-14 10:20:00  24337.40  24341.10  24332.15  24334.05       0
+12 2026-08-14 10:25:00  24334.85  24338.10  24329.55  24331.25       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24322.7, High Wick: 24365.0, Low Wick: 24311.45
+11-candle High: 24355.15, 11-candle Low: 24324.7, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24322.55
+Processing stock: NIFTY50
+Last 5 candles - High: 24359.2, Low: 24329.55, Close: 24331.25, Range: 29.65
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24322.7, dhw: 24365.0, dlw: 24311.45
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+12 2026-08-14 10:25:00  24334.85  24338.10  24329.55  24331.25       0
+13 2026-08-14 10:30:00  24331.90  24332.25  24296.80  24309.25       0
+Previous candle: Date      2026-08-14 10:25:00
+Open                 24334.85
+High                  24338.1
+Low                  24329.55
+Close                24331.25
+Volume                      0
+Name: 12, dtype: object
+Current candle: Date      2026-08-14 10:30:00
+Open                  24331.9
+High                 24332.25
+Low                   24296.8
+Close                24309.25
+Volume                      0
+Name: 13, dtype: object
+Previous candle - Open: 24334.85, High: 24338.1, Low: 24329.55, Close: 24331.25
+Current candle - Open: 24331.9, High: 24332.25, Low: 24296.8, Close: 24309.25
+p_body: 3.6, p_upper_wick: 3.25, p_lower_wick: 1.7, p_range: 8.55
+c_high: 24331.9, c_low: 24309.25, c_body: 22.65, c_upper_wick: 0.35, c_lower_wick:  12.45, c_range: 35.45
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle low.
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+9  2026-08-14 10:10:00  24354.65  24359.20  24342.65  24345.45       0
+10 2026-08-14 10:15:00  24345.15  24347.00  24336.20  24336.90       0
+11 2026-08-14 10:20:00  24337.40  24341.10  24332.15  24334.05       0
+12 2026-08-14 10:25:00  24334.85  24338.10  24329.55  24331.25       0
+13 2026-08-14 10:30:00  24331.90  24332.25  24296.80  24309.25       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.25, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24355.15, 11-candle Low: 24309.25, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24359.2, Low: 24296.8, Close: 24309.25, Range: 62.4
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.25, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High      Low     Close  Volume
+13 2026-08-14 10:30:00  24331.9  24332.25  24296.8  24309.25       0
+14 2026-08-14 10:35:00  24309.0  24321.80  24307.1  24321.75       0
+Previous candle: Date      2026-08-14 10:30:00
+Open                  24331.9
+High                 24332.25
+Low                   24296.8
+Close                24309.25
+Volume                      0
+Name: 13, dtype: object
+Current candle: Date      2026-08-14 10:35:00
+Open                  24309.0
+High                  24321.8
+Low                   24307.1
+Close                24321.75
+Volume                      0
+Name: 14, dtype: object
+Previous candle - Open: 24331.9, High: 24332.25, Low: 24296.8, Close: 24309.25
+Current candle - Open: 24309.0, High: 24321.8, Low: 24307.1, Close: 24321.75
+p_body: 22.65, p_upper_wick: 0.35, p_lower_wick: 12.45, p_range: 35.45
+c_high: 24321.75, c_low: 24309.0, c_body: 12.75, c_upper_wick: 0.05, c_lower_wick:  1.9, c_range: 14.7
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle low.
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+10 2026-08-14 10:15:00  24345.15  24347.00  24336.20  24336.90       0
+11 2026-08-14 10:20:00  24337.40  24341.10  24332.15  24334.05       0
+12 2026-08-14 10:25:00  24334.85  24338.10  24329.55  24331.25       0
+13 2026-08-14 10:30:00  24331.90  24332.25  24296.80  24309.25       0
+14 2026-08-14 10:35:00  24309.00  24321.80  24307.10  24321.75       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24355.15, 11-candle Low: 24309.0, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24347.0, Low: 24296.8, Close: 24321.75, Range: 50.2
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open     High       Low     Close  Volume
+14 2026-08-14 10:35:00  24309.0  24321.8  24307.10  24321.75       0
+15 2026-08-14 10:40:00  24322.2  24325.7  24316.75  24324.70       0
+Previous candle: Date      2026-08-14 10:35:00
+Open                  24309.0
+High                  24321.8
+Low                   24307.1
+Close                24321.75
+Volume                      0
+Name: 14, dtype: object
+Current candle: Date      2026-08-14 10:40:00
+Open                  24322.2
+High                  24325.7
+Low                  24316.75
+Close                 24324.7
+Volume                      0
+Name: 15, dtype: object
+Previous candle - Open: 24309.0, High: 24321.8, Low: 24307.1, Close: 24321.75
+Current candle - Open: 24322.2, High: 24325.7, Low: 24316.75, Close: 24324.7
+p_body: 12.75, p_upper_wick: 0.05, p_lower_wick: 1.9, p_range: 14.7
+c_high: 24324.7, c_low: 24322.2, c_body: 2.5, c_upper_wick: 1.0, c_lower_wick:  5.45, c_range: 8.95
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: True
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+11 2026-08-14 10:20:00  24337.40  24341.10  24332.15  24334.05       0
+12 2026-08-14 10:25:00  24334.85  24338.10  24329.55  24331.25       0
+13 2026-08-14 10:30:00  24331.90  24332.25  24296.80  24309.25       0
+14 2026-08-14 10:35:00  24309.00  24321.80  24307.10  24321.75       0
+15 2026-08-14 10:40:00  24322.20  24325.70  24316.75  24324.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24355.15, 11-candle Low: 24309.0, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24341.1, Low: 24296.8, Close: 24324.7, Range: 44.3
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open     High       Low    Close  Volume
+15 2026-08-14 10:40:00  24322.20  24325.7  24316.75  24324.7       0
+16 2026-08-14 10:50:00  24334.35  24338.7  24331.20  24336.2       0
+Previous candle: Date      2026-08-14 10:40:00
+Open                  24322.2
+High                  24325.7
+Low                  24316.75
+Close                 24324.7
+Volume                      0
+Name: 15, dtype: object
+Current candle: Date      2026-08-14 10:50:00
+Open                 24334.35
+High                  24338.7
+Low                   24331.2
+Close                 24336.2
+Volume                      0
+Name: 16, dtype: object
+Previous candle - Open: 24322.2, High: 24325.7, Low: 24316.75, Close: 24324.7
+Current candle - Open: 24334.35, High: 24338.7, Low: 24331.2, Close: 24336.2
+p_body: 2.5, p_upper_wick: 1.0, p_lower_wick: 5.45, p_range: 8.95
+c_high: 24336.2, c_low: 24334.35, c_body: 1.85, c_upper_wick: 2.5, c_lower_wick:  3.15, c_range: 7.5
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+12 2026-08-14 10:25:00  24334.85  24338.10  24329.55  24331.25       0
+13 2026-08-14 10:30:00  24331.90  24332.25  24296.80  24309.25       0
+14 2026-08-14 10:35:00  24309.00  24321.80  24307.10  24321.75       0
+15 2026-08-14 10:40:00  24322.20  24325.70  24316.75  24324.70       0
+16 2026-08-14 10:50:00  24334.35  24338.70  24331.20  24336.20       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24355.15, 11-candle Low: 24309.0, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24338.7, Low: 24296.8, Close: 24336.2, Range: 41.9
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High      Low    Close  Volume
+16 2026-08-14 10:50:00  24334.35  24338.70  24331.2  24336.2       0
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.0  24312.2       0
+Previous candle: Date      2026-08-14 10:50:00
+Open                 24334.35
+High                  24338.7
+Low                   24331.2
+Close                 24336.2
+Volume                      0
+Name: 16, dtype: object
+Current candle: Date      2026-08-14 10:55:00
+Open                 24335.45
+High                 24337.75
+Low                   24312.0
+Close                 24312.2
+Volume                      0
+Name: 17, dtype: object
+Previous candle - Open: 24334.35, High: 24338.7, Low: 24331.2, Close: 24336.2
+Current candle - Open: 24335.45, High: 24337.75, Low: 24312.0, Close: 24312.2
+p_body: 1.85, p_upper_wick: 2.5, p_lower_wick: 3.15, p_range: 7.5
+c_high: 24335.45, c_low: 24312.2, c_body: 23.25, c_upper_wick: 2.3, c_lower_wick:  0.2, c_range: 25.75
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: True
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: True
+bullish_engulf: False, bearish_engulf: True
+bullish_confirmation: False
+bearish_confirmation: True
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+13 2026-08-14 10:30:00  24331.90  24332.25  24296.80  24309.25       0
+14 2026-08-14 10:35:00  24309.00  24321.80  24307.10  24321.75       0
+15 2026-08-14 10:40:00  24322.20  24325.70  24316.75  24324.70       0
+16 2026-08-14 10:50:00  24334.35  24338.70  24331.20  24336.20       0
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.00  24312.20       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24355.15, 11-candle Low: 24309.0, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24338.7, Low: 24296.8, Close: 24312.2, Range: 41.9
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High      Low     Close  Volume
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.0  24312.20       0
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.4  24320.85       0
+Previous candle: Date      2026-08-14 10:55:00
+Open                 24335.45
+High                 24337.75
+Low                   24312.0
+Close                 24312.2
+Volume                      0
+Name: 17, dtype: object
+Current candle: Date      2026-08-14 11:00:00
+Open                 24313.05
+High                 24322.35
+Low                   24306.4
+Close                24320.85
+Volume                      0
+Name: 18, dtype: object
+Previous candle - Open: 24335.45, High: 24337.75, Low: 24312.0, Close: 24312.2
+Current candle - Open: 24313.05, High: 24322.35, Low: 24306.4, Close: 24320.85
+p_body: 23.25, p_upper_wick: 2.3, p_lower_wick: 0.2, p_range: 25.75
+c_high: 24320.85, c_low: 24313.05, c_body: 7.8, c_upper_wick: 1.5, c_lower_wick:  6.65, c_range: 15.95
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+14 2026-08-14 10:35:00  24309.00  24321.80  24307.10  24321.75       0
+15 2026-08-14 10:40:00  24322.20  24325.70  24316.75  24324.70       0
+16 2026-08-14 10:50:00  24334.35  24338.70  24331.20  24336.20       0
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.00  24312.20       0
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.40  24320.85       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24355.15, 11-candle Low: 24309.0, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24338.7, Low: 24306.4, Close: 24320.85, Range: 32.3
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.40  24320.85       0
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+Previous candle: Date      2026-08-14 11:00:00
+Open                 24313.05
+High                 24322.35
+Low                   24306.4
+Close                24320.85
+Volume                      0
+Name: 18, dtype: object
+Current candle: Date      2026-08-14 11:05:00
+Open                 24321.95
+High                 24321.95
+Low                  24309.35
+Close                24314.25
+Volume                      0
+Name: 19, dtype: object
+Previous candle - Open: 24313.05, High: 24322.35, Low: 24306.4, Close: 24320.85
+Current candle - Open: 24321.95, High: 24321.95, Low: 24309.35, Close: 24314.25
+p_body: 7.8, p_upper_wick: 1.5, p_lower_wick: 6.65, p_range: 15.95
+c_high: 24321.95, c_low: 24314.25, c_body: 7.7, c_upper_wick: 0.0, c_lower_wick:  4.9, c_range: 12.6
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: True
+bullish_engulf: False, bearish_engulf: True
+bullish_confirmation: False
+bearish_confirmation: True
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+15 2026-08-14 10:40:00  24322.20  24325.70  24316.75  24324.70       0
+16 2026-08-14 10:50:00  24334.35  24338.70  24331.20  24336.20       0
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.00  24312.20       0
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.40  24320.85       0
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24354.65, 11-candle Low: 24309.0, 11-candle High Wick: 24359.2, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24338.7, Low: 24306.4, Close: 24314.25, Range: 32.3
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+20 2026-08-14 11:10:00  24314.80  24318.55  24311.70  24315.00       0
+Previous candle: Date      2026-08-14 11:05:00
+Open                 24321.95
+High                 24321.95
+Low                  24309.35
+Close                24314.25
+Volume                      0
+Name: 19, dtype: object
+Current candle: Date      2026-08-14 11:10:00
+Open                  24314.8
+High                 24318.55
+Low                   24311.7
+Close                 24315.0
+Volume                      0
+Name: 20, dtype: object
+Previous candle - Open: 24321.95, High: 24321.95, Low: 24309.35, Close: 24314.25
+Current candle - Open: 24314.8, High: 24318.55, Low: 24311.7, Close: 24315.0
+p_body: 7.7, p_upper_wick: 0.0, p_lower_wick: 4.9, p_range: 12.6
+c_high: 24315.0, c_low: 24314.8, c_body: 0.2, c_upper_wick: 3.55, c_lower_wick:  3.1, c_range: 6.85
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+16 2026-08-14 10:50:00  24334.35  24338.70  24331.20  24336.20       0
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.00  24312.20       0
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.40  24320.85       0
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+20 2026-08-14 11:10:00  24314.80  24318.55  24311.70  24315.00       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24345.15, 11-candle Low: 24309.0, 11-candle High Wick: 24347.0, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24338.7, Low: 24306.4, Close: 24315.0, Range: 32.3
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low     Close  Volume
+20 2026-08-14 11:10:00  24314.8  24318.55  24311.70  24315.00       0
+21 2026-08-14 11:15:00  24315.5  24329.95  24313.95  24327.85       0
+Previous candle: Date      2026-08-14 11:10:00
+Open                  24314.8
+High                 24318.55
+Low                   24311.7
+Close                 24315.0
+Volume                      0
+Name: 20, dtype: object
+Current candle: Date      2026-08-14 11:15:00
+Open                  24315.5
+High                 24329.95
+Low                  24313.95
+Close                24327.85
+Volume                      0
+Name: 21, dtype: object
+Previous candle - Open: 24314.8, High: 24318.55, Low: 24311.7, Close: 24315.0
+Current candle - Open: 24315.5, High: 24329.95, Low: 24313.95, Close: 24327.85
+p_body: 0.2, p_upper_wick: 3.55, p_lower_wick: 3.1, p_range: 6.85
+c_high: 24327.85, c_low: 24315.5, c_body: 12.35, c_upper_wick: 2.1, c_lower_wick:  1.55, c_range: 16.0
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+17 2026-08-14 10:55:00  24335.45  24337.75  24312.00  24312.20       0
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.40  24320.85       0
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+20 2026-08-14 11:10:00  24314.80  24318.55  24311.70  24315.00       0
+21 2026-08-14 11:15:00  24315.50  24329.95  24313.95  24327.85       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24337.4, 11-candle Low: 24309.0, 11-candle High Wick: 24341.1, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24337.75, Low: 24306.4, Close: 24327.85, Range: 31.35
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+21 2026-08-14 11:15:00  24315.50  24329.95  24313.95  24327.85       0
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.70       0
+Previous candle: Date      2026-08-14 11:15:00
+Open                  24315.5
+High                 24329.95
+Low                  24313.95
+Close                24327.85
+Volume                      0
+Name: 21, dtype: object
+Current candle: Date      2026-08-14 11:20:00
+Open                 24328.45
+High                 24332.25
+Low                  24322.95
+Close                 24327.7
+Volume                      0
+Name: 22, dtype: object
+Previous candle - Open: 24315.5, High: 24329.95, Low: 24313.95, Close: 24327.85
+Current candle - Open: 24328.45, High: 24332.25, Low: 24322.95, Close: 24327.7
+p_body: 12.35, p_upper_wick: 2.1, p_lower_wick: 1.55, p_range: 16.0
+c_high: 24328.45, c_low: 24327.7, c_body: 0.75, c_upper_wick: 3.8, c_lower_wick:  4.75, c_range: 9.3
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+18 2026-08-14 11:00:00  24313.05  24322.35  24306.40  24320.85       0
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+20 2026-08-14 11:10:00  24314.80  24318.55  24311.70  24315.00       0
+21 2026-08-14 11:15:00  24315.50  24329.95  24313.95  24327.85       0
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24336.2, 11-candle Low: 24309.0, 11-candle High Wick: 24338.7, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24332.25, Low: 24306.4, Close: 24327.7, Range: 25.85
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low    Close  Volume
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.7       0
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.8       0
+Previous candle: Date      2026-08-14 11:20:00
+Open                 24328.45
+High                 24332.25
+Low                  24322.95
+Close                 24327.7
+Volume                      0
+Name: 22, dtype: object
+Current candle: Date      2026-08-14 11:25:00
+Open                 24328.25
+High                 24329.85
+Low                  24313.45
+Close                 24315.8
+Volume                      0
+Name: 23, dtype: object
+Previous candle - Open: 24328.45, High: 24332.25, Low: 24322.95, Close: 24327.7
+Current candle - Open: 24328.25, High: 24329.85, Low: 24313.45, Close: 24315.8
+p_body: 0.75, p_upper_wick: 3.8, p_lower_wick: 4.75, p_range: 9.3
+c_high: 24328.25, c_low: 24315.8, c_body: 12.45, c_upper_wick: 1.6, c_lower_wick:  2.35, c_range: 16.4
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+19 2026-08-14 11:05:00  24321.95  24321.95  24309.35  24314.25       0
+20 2026-08-14 11:10:00  24314.80  24318.55  24311.70  24315.00       0
+21 2026-08-14 11:15:00  24315.50  24329.95  24313.95  24327.85       0
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.70       0
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.80       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24336.2, 11-candle Low: 24309.0, 11-candle High Wick: 24338.7, 11-candle Low Wick: 24296.8
+Processing stock: NIFTY50
+Last 5 candles - High: 24332.25, Low: 24309.35, Close: 24315.8, Range: 22.9
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.80       0
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+Previous candle: Date      2026-08-14 11:25:00
+Open                 24328.25
+High                 24329.85
+Low                  24313.45
+Close                 24315.8
+Volume                      0
+Name: 23, dtype: object
+Current candle: Date      2026-08-14 11:30:00
+Open                  24315.7
+High                  24321.8
+Low                   24309.4
+Close                24318.75
+Volume                      0
+Name: 24, dtype: object
+Previous candle - Open: 24328.25, High: 24329.85, Low: 24313.45, Close: 24315.8
+Current candle - Open: 24315.7, High: 24321.8, Low: 24309.4, Close: 24318.75
+p_body: 12.45, p_upper_wick: 1.6, p_lower_wick: 2.35, p_range: 16.4
+c_high: 24318.75, c_low: 24315.7, c_body: 3.05, c_upper_wick: 3.05, c_lower_wick:  6.3, c_range: 12.4
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: True
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+20 2026-08-14 11:10:00  24314.80  24318.55  24311.70  24315.00       0
+21 2026-08-14 11:15:00  24315.50  24329.95  24313.95  24327.85       0
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.70       0
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.80       0
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24336.2, 11-candle Low: 24309.0, 11-candle High Wick: 24338.7, 11-candle Low Wick: 24306.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24332.25, Low: 24309.4, Close: 24318.75, Range: 22.85
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+Previous candle: Date      2026-08-14 11:30:00
+Open                  24315.7
+High                  24321.8
+Low                   24309.4
+Close                24318.75
+Volume                      0
+Name: 24, dtype: object
+Current candle: Date      2026-08-14 11:35:00
+Open                 24318.45
+High                 24322.35
+Low                  24312.35
+Close                24320.45
+Volume                      0
+Name: 25, dtype: object
+Previous candle - Open: 24315.7, High: 24321.8, Low: 24309.4, Close: 24318.75
+Current candle - Open: 24318.45, High: 24322.35, Low: 24312.35, Close: 24320.45
+p_body: 3.05, p_upper_wick: 3.05, p_lower_wick: 6.3, p_range: 12.4
+c_high: 24320.45, c_low: 24318.45, c_body: 2.0, c_upper_wick: 1.9, c_lower_wick:  6.1, c_range: 10.0
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: True
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+21 2026-08-14 11:15:00  24315.50  24329.95  24313.95  24327.85       0
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.70       0
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.80       0
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24336.2, 11-candle Low: 24312.2, 11-candle High Wick: 24338.7, 11-candle Low Wick: 24306.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24332.25, Low: 24309.4, Close: 24320.45, Range: 22.85
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+26 2026-08-14 11:40:00  24322.20  24330.70  24319.30  24327.70       0
+Previous candle: Date      2026-08-14 11:35:00
+Open                 24318.45
+High                 24322.35
+Low                  24312.35
+Close                24320.45
+Volume                      0
+Name: 25, dtype: object
+Current candle: Date      2026-08-14 11:40:00
+Open                  24322.2
+High                  24330.7
+Low                   24319.3
+Close                 24327.7
+Volume                      0
+Name: 26, dtype: object
+Previous candle - Open: 24318.45, High: 24322.35, Low: 24312.35, Close: 24320.45
+Current candle - Open: 24322.2, High: 24330.7, Low: 24319.3, Close: 24327.7
+p_body: 2.0, p_upper_wick: 1.9, p_lower_wick: 6.1, p_range: 10.0
+c_high: 24327.7, c_low: 24322.2, c_body: 5.5, c_upper_wick: 3.0, c_lower_wick:  2.9, c_range: 11.4
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+22 2026-08-14 11:20:00  24328.45  24332.25  24322.95  24327.70       0
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.80       0
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+26 2026-08-14 11:40:00  24322.20  24330.70  24319.30  24327.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24336.2, 11-candle Low: 24312.2, 11-candle High Wick: 24338.7, 11-candle Low Wick: 24306.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24332.25, Low: 24309.4, Close: 24327.7, Range: 22.85
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open     High      Low     Close  Volume
+26 2026-08-14 11:40:00  24322.20  24330.7  24319.3  24327.70       0
+27 2026-08-14 11:50:00  24327.65  24330.2  24325.2  24329.15       0
+Previous candle: Date      2026-08-14 11:40:00
+Open                  24322.2
+High                  24330.7
+Low                   24319.3
+Close                 24327.7
+Volume                      0
+Name: 26, dtype: object
+Current candle: Date      2026-08-14 11:50:00
+Open                 24327.65
+High                  24330.2
+Low                   24325.2
+Close                24329.15
+Volume                      0
+Name: 27, dtype: object
+Previous candle - Open: 24322.2, High: 24330.7, Low: 24319.3, Close: 24327.7
+Current candle - Open: 24327.65, High: 24330.2, Low: 24325.2, Close: 24329.15
+p_body: 5.5, p_upper_wick: 3.0, p_lower_wick: 2.9, p_range: 11.4
+c_high: 24329.15, c_low: 24327.65, c_body: 1.5, c_upper_wick: 1.05, c_lower_wick:  2.45, c_range: 5.0
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+23 2026-08-14 11:25:00  24328.25  24329.85  24313.45  24315.80       0
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+26 2026-08-14 11:40:00  24322.20  24330.70  24319.30  24327.70       0
+27 2026-08-14 11:50:00  24327.65  24330.20  24325.20  24329.15       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24335.45, 11-candle Low: 24312.2, 11-candle High Wick: 24337.75, 11-candle Low Wick: 24306.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24330.7, Low: 24309.4, Close: 24329.15, Range: 21.3
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open     High       Low     Close  Volume
+27 2026-08-14 11:50:00  24327.65  24330.2  24325.20  24329.15       0
+28 2026-08-14 11:55:00  24330.55  24333.6  24321.95  24326.90       0
+Previous candle: Date      2026-08-14 11:50:00
+Open                 24327.65
+High                  24330.2
+Low                   24325.2
+Close                24329.15
+Volume                      0
+Name: 27, dtype: object
+Current candle: Date      2026-08-14 11:55:00
+Open                 24330.55
+High                  24333.6
+Low                  24321.95
+Close                 24326.9
+Volume                      0
+Name: 28, dtype: object
+Previous candle - Open: 24327.65, High: 24330.2, Low: 24325.2, Close: 24329.15
+Current candle - Open: 24330.55, High: 24333.6, Low: 24321.95, Close: 24326.9
+p_body: 1.5, p_upper_wick: 1.05, p_lower_wick: 2.45, p_range: 5.0
+c_high: 24330.55, c_low: 24326.9, c_body: 3.65, c_upper_wick: 3.05, c_lower_wick:  4.95, c_range: 11.65
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+24 2026-08-14 11:30:00  24315.70  24321.80  24309.40  24318.75       0
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+26 2026-08-14 11:40:00  24322.20  24330.70  24319.30  24327.70       0
+27 2026-08-14 11:50:00  24327.65  24330.20  24325.20  24329.15       0
+28 2026-08-14 11:55:00  24330.55  24333.60  24321.95  24326.90       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24330.55, 11-candle Low: 24313.05, 11-candle High Wick: 24333.6, 11-candle Low Wick: 24306.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24333.6, Low: 24309.4, Close: 24326.9, Range: 24.2
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low    Close  Volume
+28 2026-08-14 11:55:00  24330.55  24333.60  24321.95  24326.9       0
+29 2026-08-14 12:00:00  24328.20  24329.65  24319.25  24321.7       0
+Previous candle: Date      2026-08-14 11:55:00
+Open                 24330.55
+High                  24333.6
+Low                  24321.95
+Close                 24326.9
+Volume                      0
+Name: 28, dtype: object
+Current candle: Date      2026-08-14 12:00:00
+Open                  24328.2
+High                 24329.65
+Low                  24319.25
+Close                 24321.7
+Volume                      0
+Name: 29, dtype: object
+Previous candle - Open: 24330.55, High: 24333.6, Low: 24321.95, Close: 24326.9
+Current candle - Open: 24328.2, High: 24329.65, Low: 24319.25, Close: 24321.7
+p_body: 3.65, p_upper_wick: 3.05, p_lower_wick: 4.95, p_range: 11.65
+c_high: 24328.2, c_low: 24321.7, c_body: 6.5, c_upper_wick: 1.45, c_lower_wick:  2.45, c_range: 10.4
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+25 2026-08-14 11:35:00  24318.45  24322.35  24312.35  24320.45       0
+26 2026-08-14 11:40:00  24322.20  24330.70  24319.30  24327.70       0
+27 2026-08-14 11:50:00  24327.65  24330.20  24325.20  24329.15       0
+28 2026-08-14 11:55:00  24330.55  24333.60  24321.95  24326.90       0
+29 2026-08-14 12:00:00  24328.20  24329.65  24319.25  24321.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24330.55, 11-candle Low: 24314.25, 11-candle High Wick: 24333.6, 11-candle Low Wick: 24309.35
+Processing stock: NIFTY50
+Last 5 candles - High: 24333.6, Low: 24312.35, Close: 24321.7, Range: 21.25
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low     Close  Volume
+29 2026-08-14 12:00:00  24328.2  24329.65  24319.25  24321.70       0
+30 2026-08-14 12:05:00  24321.9  24340.65  24321.45  24335.35       0
+Previous candle: Date      2026-08-14 12:00:00
+Open                  24328.2
+High                 24329.65
+Low                  24319.25
+Close                 24321.7
+Volume                      0
+Name: 29, dtype: object
+Current candle: Date      2026-08-14 12:05:00
+Open                  24321.9
+High                 24340.65
+Low                  24321.45
+Close                24335.35
+Volume                      0
+Name: 30, dtype: object
+Previous candle - Open: 24328.2, High: 24329.65, Low: 24319.25, Close: 24321.7
+Current candle - Open: 24321.9, High: 24340.65, Low: 24321.45, Close: 24335.35
+p_body: 6.5, p_upper_wick: 1.45, p_lower_wick: 2.45, p_range: 10.4
+c_high: 24335.35, c_low: 24321.9, c_body: 13.45, c_upper_wick: 5.3, c_lower_wick:  0.45, c_range: 19.2
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: True
+bearish_engulf: False
+bullish_engulf: True, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle low.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+26 2026-08-14 11:40:00  24322.20  24330.70  24319.30  24327.70       0
+27 2026-08-14 11:50:00  24327.65  24330.20  24325.20  24329.15       0
+28 2026-08-14 11:55:00  24330.55  24333.60  24321.95  24326.90       0
+29 2026-08-14 12:00:00  24328.20  24329.65  24319.25  24321.70       0
+30 2026-08-14 12:05:00  24321.90  24340.65  24321.45  24335.35       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24335.35, 11-candle Low: 24314.8, 11-candle High Wick: 24340.65, 11-candle Low Wick: 24309.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24340.65, Low: 24319.25, Close: 24335.35, Range: 21.4
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+30 2026-08-14 12:05:00  24321.90  24340.65  24321.45  24335.35       0
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.10  24341.45       0
+Previous candle: Date      2026-08-14 12:05:00
+Open                  24321.9
+High                 24340.65
+Low                  24321.45
+Close                24335.35
+Volume                      0
+Name: 30, dtype: object
+Current candle: Date      2026-08-14 12:10:00
+Open                 24335.75
+High                 24345.55
+Low                   24335.1
+Close                24341.45
+Volume                      0
+Name: 31, dtype: object
+Previous candle - Open: 24321.9, High: 24340.65, Low: 24321.45, Close: 24335.35
+Current candle - Open: 24335.75, High: 24345.55, Low: 24335.1, Close: 24341.45
+p_body: 13.45, p_upper_wick: 5.3, p_lower_wick: 0.45, p_range: 19.2
+c_high: 24341.45, c_low: 24335.75, c_body: 5.7, c_upper_wick: 4.1, c_lower_wick:  0.65, c_range: 10.45
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+27 2026-08-14 11:50:00  24327.65  24330.20  24325.20  24329.15       0
+28 2026-08-14 11:55:00  24330.55  24333.60  24321.95  24326.90       0
+29 2026-08-14 12:00:00  24328.20  24329.65  24319.25  24321.70       0
+30 2026-08-14 12:05:00  24321.90  24340.65  24321.45  24335.35       0
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.10  24341.45       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24341.45, 11-candle Low: 24315.5, 11-candle High Wick: 24345.55, 11-candle Low Wick: 24309.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24345.55, Low: 24319.25, Close: 24341.45, Range: 26.3
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High      Low     Close  Volume
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.1  24341.45       0
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.9  24349.00       0
+Previous candle: Date      2026-08-14 12:10:00
+Open                 24335.75
+High                 24345.55
+Low                   24335.1
+Close                24341.45
+Volume                      0
+Name: 31, dtype: object
+Current candle: Date      2026-08-14 12:15:00
+Open                  24342.0
+High                 24349.25
+Low                   24339.9
+Close                 24349.0
+Volume                      0
+Name: 32, dtype: object
+Previous candle - Open: 24335.75, High: 24345.55, Low: 24335.1, Close: 24341.45
+Current candle - Open: 24342.0, High: 24349.25, Low: 24339.9, Close: 24349.0
+p_body: 5.7, p_upper_wick: 4.1, p_lower_wick: 0.65, p_range: 10.45
+c_high: 24349.0, c_low: 24342.0, c_body: 7.0, c_upper_wick: 0.25, c_lower_wick:  2.1, c_range: 9.35
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+28 2026-08-14 11:55:00  24330.55  24333.60  24321.95  24326.90       0
+29 2026-08-14 12:00:00  24328.20  24329.65  24319.25  24321.70       0
+30 2026-08-14 12:05:00  24321.90  24340.65  24321.45  24335.35       0
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.10  24341.45       0
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.90  24349.00       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24349.0, 11-candle Low: 24315.7, 11-candle High Wick: 24349.25, 11-candle Low Wick: 24309.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24349.25, Low: 24319.25, Close: 24349.0, Range: 30.0
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.90  24349.00       0
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+Previous candle: Date      2026-08-14 12:15:00
+Open                  24342.0
+High                 24349.25
+Low                   24339.9
+Close                 24349.0
+Volume                      0
+Name: 32, dtype: object
+Current candle: Date      2026-08-14 12:25:00
+Open                 24353.75
+High                 24354.65
+Low                  24343.55
+Close                24345.45
+Volume                      0
+Name: 33, dtype: object
+Previous candle - Open: 24342.0, High: 24349.25, Low: 24339.9, Close: 24349.0
+Current candle - Open: 24353.75, High: 24354.65, Low: 24343.55, Close: 24345.45
+p_body: 7.0, p_upper_wick: 0.25, p_lower_wick: 2.1, p_range: 9.35
+c_high: 24353.75, c_low: 24345.45, c_body: 8.3, c_upper_wick: 0.9, c_lower_wick:  1.9, c_range: 11.1
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+29 2026-08-14 12:00:00  24328.20  24329.65  24319.25  24321.70       0
+30 2026-08-14 12:05:00  24321.90  24340.65  24321.45  24335.35       0
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.10  24341.45       0
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.90  24349.00       0
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24315.7, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24309.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24354.65, Low: 24319.25, Close: 24345.45, Range: 35.4
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+34 2026-08-14 12:30:00  24346.80  24347.95  24340.00  24344.50       0
+Previous candle: Date      2026-08-14 12:25:00
+Open                 24353.75
+High                 24354.65
+Low                  24343.55
+Close                24345.45
+Volume                      0
+Name: 33, dtype: object
+Current candle: Date      2026-08-14 12:30:00
+Open                  24346.8
+High                 24347.95
+Low                   24340.0
+Close                 24344.5
+Volume                      0
+Name: 34, dtype: object
+Previous candle - Open: 24353.75, High: 24354.65, Low: 24343.55, Close: 24345.45
+Current candle - Open: 24346.8, High: 24347.95, Low: 24340.0, Close: 24344.5
+p_body: 8.3, p_upper_wick: 0.9, p_lower_wick: 1.9, p_range: 11.1
+c_high: 24346.8, c_low: 24344.5, c_body: 2.3, c_upper_wick: 1.15, c_lower_wick:  4.5, c_range: 7.95
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+30 2026-08-14 12:05:00  24321.90  24340.65  24321.45  24335.35       0
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.10  24341.45       0
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.90  24349.00       0
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+34 2026-08-14 12:30:00  24346.80  24347.95  24340.00  24344.50       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24315.7, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24309.4
+Processing stock: NIFTY50
+Last 5 candles - High: 24354.65, Low: 24321.45, Close: 24344.5, Range: 33.2
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low    Close  Volume
+34 2026-08-14 12:30:00  24346.8  24347.95  24340.00  24344.5       0
+35 2026-08-14 12:35:00  24344.1  24346.80  24338.85  24340.9       0
+Previous candle: Date      2026-08-14 12:30:00
+Open                  24346.8
+High                 24347.95
+Low                   24340.0
+Close                 24344.5
+Volume                      0
+Name: 34, dtype: object
+Current candle: Date      2026-08-14 12:35:00
+Open                  24344.1
+High                  24346.8
+Low                  24338.85
+Close                 24340.9
+Volume                      0
+Name: 35, dtype: object
+Previous candle - Open: 24346.8, High: 24347.95, Low: 24340.0, Close: 24344.5
+Current candle - Open: 24344.1, High: 24346.8, Low: 24338.85, Close: 24340.9
+p_body: 2.3, p_upper_wick: 1.15, p_lower_wick: 4.5, p_range: 7.95
+c_high: 24344.1, c_low: 24340.9, c_body: 3.2, c_upper_wick: 2.7, c_lower_wick:  2.05, c_range: 7.95
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+31 2026-08-14 12:10:00  24335.75  24345.55  24335.10  24341.45       0
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.90  24349.00       0
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+34 2026-08-14 12:30:00  24346.80  24347.95  24340.00  24344.50       0
+35 2026-08-14 12:35:00  24344.10  24346.80  24338.85  24340.90       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24318.45, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24312.35
+Processing stock: NIFTY50
+Last 5 candles - High: 24354.65, Low: 24335.1, Close: 24340.9, Range: 19.55
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open     High       Low     Close  Volume
+35 2026-08-14 12:35:00  24344.1  24346.8  24338.85  24340.90       0
+36 2026-08-14 12:40:00  24342.0  24346.1  24333.45  24335.85       0
+Previous candle: Date      2026-08-14 12:35:00
+Open                  24344.1
+High                  24346.8
+Low                  24338.85
+Close                 24340.9
+Volume                      0
+Name: 35, dtype: object
+Current candle: Date      2026-08-14 12:40:00
+Open                  24342.0
+High                  24346.1
+Low                  24333.45
+Close                24335.85
+Volume                      0
+Name: 36, dtype: object
+Previous candle - Open: 24344.1, High: 24346.8, Low: 24338.85, Close: 24340.9
+Current candle - Open: 24342.0, High: 24346.1, Low: 24333.45, Close: 24335.85
+p_body: 3.2, p_upper_wick: 2.7, p_lower_wick: 2.05, p_range: 7.95
+c_high: 24342.0, c_low: 24335.85, c_body: 6.15, c_upper_wick: 4.1, c_lower_wick:  2.4, c_range: 12.65
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+32 2026-08-14 12:15:00  24342.00  24349.25  24339.90  24349.00       0
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+34 2026-08-14 12:30:00  24346.80  24347.95  24340.00  24344.50       0
+35 2026-08-14 12:35:00  24344.10  24346.80  24338.85  24340.90       0
+36 2026-08-14 12:40:00  24342.00  24346.10  24333.45  24335.85       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24321.7, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24319.25
+Processing stock: NIFTY50
+Last 5 candles - High: 24354.65, Low: 24333.45, Close: 24335.85, Range: 21.2
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+36 2026-08-14 12:40:00  24342.00  24346.10  24333.45  24335.85       0
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+Previous candle: Date      2026-08-14 12:40:00
+Open                  24342.0
+High                  24346.1
+Low                  24333.45
+Close                24335.85
+Volume                      0
+Name: 36, dtype: object
+Current candle: Date      2026-08-14 12:50:00
+Open                 24345.45
+High                 24351.35
+Low                   24343.7
+Close                24348.65
+Volume                      0
+Name: 37, dtype: object
+Previous candle - Open: 24342.0, High: 24346.1, Low: 24333.45, Close: 24335.85
+Current candle - Open: 24345.45, High: 24351.35, Low: 24343.7, Close: 24348.65
+p_body: 6.15, p_upper_wick: 4.1, p_lower_wick: 2.4, p_range: 12.65
+c_high: 24348.65, c_low: 24345.45, c_body: 3.2, c_upper_wick: 2.7, c_lower_wick:  1.75, c_range: 7.65
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+33 2026-08-14 12:25:00  24353.75  24354.65  24343.55  24345.45       0
+34 2026-08-14 12:30:00  24346.80  24347.95  24340.00  24344.50       0
+35 2026-08-14 12:35:00  24344.10  24346.80  24338.85  24340.90       0
+36 2026-08-14 12:40:00  24342.00  24346.10  24333.45  24335.85       0
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24321.7, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24319.25
+Processing stock: NIFTY50
+Last 5 candles - High: 24354.65, Low: 24333.45, Close: 24348.65, Range: 21.2
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+38 2026-08-14 12:55:00  24349.90  24352.00  24344.15  24349.55       0
+Previous candle: Date      2026-08-14 12:50:00
+Open                 24345.45
+High                 24351.35
+Low                   24343.7
+Close                24348.65
+Volume                      0
+Name: 37, dtype: object
+Current candle: Date      2026-08-14 12:55:00
+Open                  24349.9
+High                  24352.0
+Low                  24344.15
+Close                24349.55
+Volume                      0
+Name: 38, dtype: object
+Previous candle - Open: 24345.45, High: 24351.35, Low: 24343.7, Close: 24348.65
+Current candle - Open: 24349.9, High: 24352.0, Low: 24344.15, Close: 24349.55
+p_body: 3.2, p_upper_wick: 2.7, p_lower_wick: 1.75, p_range: 7.65
+c_high: 24349.9, c_low: 24349.55, c_body: 0.35, c_upper_wick: 2.1, c_lower_wick:  5.4, c_range: 7.85
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+34 2026-08-14 12:30:00  24346.80  24347.95  24340.00  24344.50       0
+35 2026-08-14 12:35:00  24344.10  24346.80  24338.85  24340.90       0
+36 2026-08-14 12:40:00  24342.00  24346.10  24333.45  24335.85       0
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+38 2026-08-14 12:55:00  24349.90  24352.00  24344.15  24349.55       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24321.7, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24319.25
+Processing stock: NIFTY50
+Last 5 candles - High: 24352.0, Low: 24333.45, Close: 24349.55, Range: 18.55
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low     Close  Volume
+38 2026-08-14 12:55:00  24349.9  24352.00  24344.15  24349.55       0
+39 2026-08-14 13:00:00  24349.4  24352.15  24343.95  24344.90       0
+Previous candle: Date      2026-08-14 12:55:00
+Open                  24349.9
+High                  24352.0
+Low                  24344.15
+Close                24349.55
+Volume                      0
+Name: 38, dtype: object
+Current candle: Date      2026-08-14 13:00:00
+Open                  24349.4
+High                 24352.15
+Low                  24343.95
+Close                 24344.9
+Volume                      0
+Name: 39, dtype: object
+Previous candle - Open: 24349.9, High: 24352.0, Low: 24344.15, Close: 24349.55
+Current candle - Open: 24349.4, High: 24352.15, Low: 24343.95, Close: 24344.9
+p_body: 0.35, p_upper_wick: 2.1, p_lower_wick: 5.4, p_range: 7.85
+c_high: 24349.4, c_low: 24344.9, c_body: 4.5, c_upper_wick: 2.75, c_lower_wick:  0.95, c_range: 8.2
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+35 2026-08-14 12:35:00  24344.10  24346.80  24338.85  24340.90       0
+36 2026-08-14 12:40:00  24342.00  24346.10  24333.45  24335.85       0
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+38 2026-08-14 12:55:00  24349.90  24352.00  24344.15  24349.55       0
+39 2026-08-14 13:00:00  24349.40  24352.15  24343.95  24344.90       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24321.7, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24319.25
+Processing stock: NIFTY50
+Last 5 candles - High: 24352.15, Low: 24333.45, Close: 24344.9, Range: 18.7
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low    Close  Volume
+39 2026-08-14 13:00:00  24349.40  24352.15  24343.95  24344.9       0
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.0       0
+Previous candle: Date      2026-08-14 13:00:00
+Open                  24349.4
+High                 24352.15
+Low                  24343.95
+Close                 24344.9
+Volume                      0
+Name: 39, dtype: object
+Current candle: Date      2026-08-14 13:05:00
+Open                 24345.15
+High                 24347.35
+Low                  24340.45
+Close                 24342.0
+Volume                      0
+Name: 40, dtype: object
+Previous candle - Open: 24349.4, High: 24352.15, Low: 24343.95, Close: 24344.9
+Current candle - Open: 24345.15, High: 24347.35, Low: 24340.45, Close: 24342.0
+p_body: 4.5, p_upper_wick: 2.75, p_lower_wick: 0.95, p_range: 8.2
+c_high: 24345.15, c_low: 24342.0, c_body: 3.15, c_upper_wick: 2.2, c_lower_wick:  1.55, c_range: 6.9
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+36 2026-08-14 12:40:00  24342.00  24346.10  24333.45  24335.85       0
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+38 2026-08-14 12:55:00  24349.90  24352.00  24344.15  24349.55       0
+39 2026-08-14 13:00:00  24349.40  24352.15  24343.95  24344.90       0
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.00       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24321.9, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24321.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24352.15, Low: 24333.45, Close: 24342.0, Range: 18.7
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low     Close  Volume
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.00       0
+41 2026-08-14 13:10:00  24341.80  24348.35  24340.75  24346.85       0
+Previous candle: Date      2026-08-14 13:05:00
+Open                 24345.15
+High                 24347.35
+Low                  24340.45
+Close                 24342.0
+Volume                      0
+Name: 40, dtype: object
+Current candle: Date      2026-08-14 13:10:00
+Open                  24341.8
+High                 24348.35
+Low                  24340.75
+Close                24346.85
+Volume                      0
+Name: 41, dtype: object
+Previous candle - Open: 24345.15, High: 24347.35, Low: 24340.45, Close: 24342.0
+Current candle - Open: 24341.8, High: 24348.35, Low: 24340.75, Close: 24346.85
+p_body: 3.15, p_upper_wick: 2.2, p_lower_wick: 1.55, p_range: 6.9
+c_high: 24346.85, c_low: 24341.8, c_body: 5.05, c_upper_wick: 1.5, c_lower_wick:  1.05, c_range: 7.6
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: True
+bearish_engulf: False
+bullish_engulf: True, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+37 2026-08-14 12:50:00  24345.45  24351.35  24343.70  24348.65       0
+38 2026-08-14 12:55:00  24349.90  24352.00  24344.15  24349.55       0
+39 2026-08-14 13:00:00  24349.40  24352.15  24343.95  24344.90       0
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.00       0
+41 2026-08-14 13:10:00  24341.80  24348.35  24340.75  24346.85       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24335.75, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24333.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24352.15, Low: 24340.45, Close: 24346.85, Range: 11.7
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low     Close  Volume
+41 2026-08-14 13:10:00  24341.8  24348.35  24340.75  24346.85       0
+42 2026-08-14 13:15:00  24347.0  24348.80  24339.45  24343.75       0
+Previous candle: Date      2026-08-14 13:10:00
+Open                  24341.8
+High                 24348.35
+Low                  24340.75
+Close                24346.85
+Volume                      0
+Name: 41, dtype: object
+Current candle: Date      2026-08-14 13:15:00
+Open                  24347.0
+High                  24348.8
+Low                  24339.45
+Close                24343.75
+Volume                      0
+Name: 42, dtype: object
+Previous candle - Open: 24341.8, High: 24348.35, Low: 24340.75, Close: 24346.85
+Current candle - Open: 24347.0, High: 24348.8, Low: 24339.45, Close: 24343.75
+p_body: 5.05, p_upper_wick: 1.5, p_lower_wick: 1.05, p_range: 7.6
+c_high: 24347.0, c_low: 24343.75, c_body: 3.25, c_upper_wick: 1.8, c_lower_wick:  4.3, c_range: 9.35
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+38 2026-08-14 12:55:00  24349.90  24352.00  24344.15  24349.55       0
+39 2026-08-14 13:00:00  24349.40  24352.15  24343.95  24344.90       0
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.00       0
+41 2026-08-14 13:10:00  24341.80  24348.35  24340.75  24346.85       0
+42 2026-08-14 13:15:00  24347.00  24348.80  24339.45  24343.75       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24335.85, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24333.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24352.15, Low: 24339.45, Close: 24343.75, Range: 12.7
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open     High       Low     Close  Volume
+42 2026-08-14 13:15:00  24347.0  24348.8  24339.45  24343.75       0
+43 2026-08-14 13:25:00  24343.5  24344.7  24337.30  24338.60       0
+Previous candle: Date      2026-08-14 13:15:00
+Open                  24347.0
+High                  24348.8
+Low                  24339.45
+Close                24343.75
+Volume                      0
+Name: 42, dtype: object
+Current candle: Date      2026-08-14 13:25:00
+Open                  24343.5
+High                  24344.7
+Low                   24337.3
+Close                 24338.6
+Volume                      0
+Name: 43, dtype: object
+Previous candle - Open: 24347.0, High: 24348.8, Low: 24339.45, Close: 24343.75
+Current candle - Open: 24343.5, High: 24344.7, Low: 24337.3, Close: 24338.6
+p_body: 3.25, p_upper_wick: 1.8, p_lower_wick: 4.3, p_range: 9.35
+c_high: 24343.5, c_low: 24338.6, c_body: 4.9, c_upper_wick: 1.2, c_lower_wick:  1.3, c_range: 7.4
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+39 2026-08-14 13:00:00  24349.40  24352.15  24343.95  24344.90       0
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.00       0
+41 2026-08-14 13:10:00  24341.80  24348.35  24340.75  24346.85       0
+42 2026-08-14 13:15:00  24347.00  24348.80  24339.45  24343.75       0
+43 2026-08-14 13:25:00  24343.50  24344.70  24337.30  24338.60       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24353.75, 11-candle Low: 24335.85, 11-candle High Wick: 24354.65, 11-candle Low Wick: 24333.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24352.15, Low: 24337.3, Close: 24338.6, Range: 14.85
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low    Close  Volume
+43 2026-08-14 13:25:00  24343.5  24344.70  24337.30  24338.6       0
+44 2026-08-14 13:30:00  24340.2  24341.65  24337.05  24338.2       0
+Previous candle: Date      2026-08-14 13:25:00
+Open                  24343.5
+High                  24344.7
+Low                   24337.3
+Close                 24338.6
+Volume                      0
+Name: 43, dtype: object
+Current candle: Date      2026-08-14 13:30:00
+Open                  24340.2
+High                 24341.65
+Low                  24337.05
+Close                 24338.2
+Volume                      0
+Name: 44, dtype: object
+Previous candle - Open: 24343.5, High: 24344.7, Low: 24337.3, Close: 24338.6
+Current candle - Open: 24340.2, High: 24341.65, Low: 24337.05, Close: 24338.2
+p_body: 4.9, p_upper_wick: 1.2, p_lower_wick: 1.3, p_range: 7.4
+c_high: 24340.2, c_low: 24338.2, c_body: 2.0, c_upper_wick: 1.45, c_lower_wick:  1.15, c_range: 4.6
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+40 2026-08-14 13:05:00  24345.15  24347.35  24340.45  24342.00       0
+41 2026-08-14 13:10:00  24341.80  24348.35  24340.75  24346.85       0
+42 2026-08-14 13:15:00  24347.00  24348.80  24339.45  24343.75       0
+43 2026-08-14 13:25:00  24343.50  24344.70  24337.30  24338.60       0
+44 2026-08-14 13:30:00  24340.20  24341.65  24337.05  24338.20       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24349.9, 11-candle Low: 24335.85, 11-candle High Wick: 24352.15, 11-candle Low Wick: 24333.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24348.8, Low: 24337.05, Close: 24338.2, Range: 11.75
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low    Close  Volume
+44 2026-08-14 13:30:00  24340.2  24341.65  24337.05  24338.2       0
+45 2026-08-14 13:40:00  24348.7  24353.40  24348.20  24350.7       0
+Previous candle: Date      2026-08-14 13:30:00
+Open                  24340.2
+High                 24341.65
+Low                  24337.05
+Close                 24338.2
+Volume                      0
+Name: 44, dtype: object
+Current candle: Date      2026-08-14 13:40:00
+Open                  24348.7
+High                  24353.4
+Low                   24348.2
+Close                 24350.7
+Volume                      0
+Name: 45, dtype: object
+Previous candle - Open: 24340.2, High: 24341.65, Low: 24337.05, Close: 24338.2
+Current candle - Open: 24348.7, High: 24353.4, Low: 24348.2, Close: 24350.7
+p_body: 2.0, p_upper_wick: 1.45, p_lower_wick: 1.15, p_range: 4.6
+c_high: 24350.7, c_low: 24348.7, c_body: 2.0, c_upper_wick: 2.7, c_lower_wick:  0.5, c_range: 5.2
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                   Date     Open      High       Low     Close  Volume
+41 2026-08-14 13:10:00  24341.8  24348.35  24340.75  24346.85       0
+42 2026-08-14 13:15:00  24347.0  24348.80  24339.45  24343.75       0
+43 2026-08-14 13:25:00  24343.5  24344.70  24337.30  24338.60       0
+44 2026-08-14 13:30:00  24340.2  24341.65  24337.05  24338.20       0
+45 2026-08-14 13:40:00  24348.7  24353.40  24348.20  24350.70       0
+Processing stock: NIFTY50, High: 24363.75, Low: 24309.0, High Wick: 24365.0, Low Wick: 24296.8
+11-candle High: 24350.7, 11-candle Low: 24335.85, 11-candle High Wick: 24353.4, 11-candle Low Wick: 24333.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24353.4, Low: 24337.05, Close: 24350.7, Range: 16.35
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24363.75, dl: 24309.0, dhw: 24365.0, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open     High      Low    Close  Volume
+45 2026-08-14 13:40:00  24348.7  24353.4  24348.2  24350.7       0
+46 2026-08-14 13:45:00  24357.4  24391.1  24356.8  24383.7       0
+Previous candle: Date      2026-08-14 13:40:00
+Open                  24348.7
+High                  24353.4
+Low                   24348.2
+Close                 24350.7
+Volume                      0
+Name: 45, dtype: object
+Current candle: Date      2026-08-14 13:45:00
+Open                  24357.4
+High                  24391.1
+Low                   24356.8
+Close                 24383.7
+Volume                      0
+Name: 46, dtype: object
+Previous candle - Open: 24348.7, High: 24353.4, Low: 24348.2, Close: 24350.7
+Current candle - Open: 24357.4, High: 24391.1, Low: 24356.8, Close: 24383.7
+p_body: 2.0, p_upper_wick: 2.7, p_lower_wick: 0.5, p_range: 5.2
+c_high: 24383.7, c_low: 24357.4, c_body: 26.3, c_upper_wick: 7.4, c_lower_wick:  0.6, c_range: 34.3
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+last_5_candles:                   Date     Open      High       Low     Close  Volume
+42 2026-08-14 13:15:00  24347.0  24348.80  24339.45  24343.75       0
+43 2026-08-14 13:25:00  24343.5  24344.70  24337.30  24338.60       0
+44 2026-08-14 13:30:00  24340.2  24341.65  24337.05  24338.20       0
+45 2026-08-14 13:40:00  24348.7  24353.40  24348.20  24350.70       0
+46 2026-08-14 13:45:00  24357.4  24391.10  24356.80  24383.70       0
+Processing stock: NIFTY50, High: 24383.7, Low: 24309.0, High Wick: 24391.1, Low Wick: 24296.8
+11-candle High: 24383.7, 11-candle Low: 24335.85, 11-candle High Wick: 24391.1, 11-candle Low Wick: 24333.45
+Processing stock: NIFTY50
+Last 5 candles - High: 24391.1, Low: 24337.05, Close: 24383.7, Range: 54.05
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24383.7, dl: 24309.0, dhw: 24391.1, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open     High      Low    Close  Volume
+46 2026-08-14 13:45:00  24357.40  24391.1  24356.8  24383.7       0
+47 2026-08-14 13:50:00  24383.95  24389.1  24380.4  24385.6       0
+Previous candle: Date      2026-08-14 13:45:00
+Open                  24357.4
+High                  24391.1
+Low                   24356.8
+Close                 24383.7
+Volume                      0
+Name: 46, dtype: object
+Current candle: Date      2026-08-14 13:50:00
+Open                 24383.95
+High                  24389.1
+Low                   24380.4
+Close                 24385.6
+Volume                      0
+Name: 47, dtype: object
+Previous candle - Open: 24357.4, High: 24391.1, Low: 24356.8, Close: 24383.7
+Current candle - Open: 24383.95, High: 24389.1, Low: 24380.4, Close: 24385.6
+p_body: 26.3, p_upper_wick: 7.4, p_lower_wick: 0.6, p_range: 34.3
+c_high: 24385.6, c_low: 24383.95, c_body: 1.65, c_upper_wick: 3.5, c_lower_wick:  3.55, c_range: 8.7
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price is at day high.
+last_5_candles:                   Date      Open      High       Low    Close  Volume
+43 2026-08-14 13:25:00  24343.50  24344.70  24337.30  24338.6       0
+44 2026-08-14 13:30:00  24340.20  24341.65  24337.05  24338.2       0
+45 2026-08-14 13:40:00  24348.70  24353.40  24348.20  24350.7       0
+46 2026-08-14 13:45:00  24357.40  24391.10  24356.80  24383.7       0
+47 2026-08-14 13:50:00  24383.95  24389.10  24380.40  24385.6       0
+Processing stock: NIFTY50, High: 24385.6, Low: 24309.0, High Wick: 24391.1, Low Wick: 24296.8
+11-candle High: 24385.6, 11-candle Low: 24338.2, 11-candle High Wick: 24391.1, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24391.1, Low: 24337.05, Close: 24385.6, Range: 54.05
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24385.6, dl: 24309.0, dhw: 24391.1, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High      Low    Close  Volume
+47 2026-08-14 13:50:00  24383.95  24389.10  24380.4  24385.6       0
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.6  24395.0       0
+Previous candle: Date      2026-08-14 13:50:00
+Open                 24383.95
+High                  24389.1
+Low                   24380.4
+Close                 24385.6
+Volume                      0
+Name: 47, dtype: object
+Current candle: Date      2026-08-14 13:55:00
+Open                  24386.4
+High                 24397.85
+Low                   24381.6
+Close                 24395.0
+Volume                      0
+Name: 48, dtype: object
+Previous candle - Open: 24383.95, High: 24389.1, Low: 24380.4, Close: 24385.6
+Current candle - Open: 24386.4, High: 24397.85, Low: 24381.6, Close: 24395.0
+p_body: 1.65, p_upper_wick: 3.5, p_lower_wick: 3.55, p_range: 8.7
+c_high: 24395.0, c_low: 24386.4, c_body: 8.6, c_upper_wick: 2.85, c_lower_wick:  4.8, c_range: 16.25
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price is at day high.
+last_5_candles:                   Date      Open      High       Low    Close  Volume
+44 2026-08-14 13:30:00  24340.20  24341.65  24337.05  24338.2       0
+45 2026-08-14 13:40:00  24348.70  24353.40  24348.20  24350.7       0
+46 2026-08-14 13:45:00  24357.40  24391.10  24356.80  24383.7       0
+47 2026-08-14 13:50:00  24383.95  24389.10  24380.40  24385.6       0
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.60  24395.0       0
+Processing stock: NIFTY50, High: 24395.0, Low: 24309.0, High Wick: 24397.85, Low Wick: 24296.8
+11-candle High: 24395.0, 11-candle Low: 24338.2, 11-candle High Wick: 24397.85, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24397.85, Low: 24337.05, Close: 24395.0, Range: 60.8
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.0, dl: 24309.0, dhw: 24397.85, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High      Low     Close  Volume
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.6  24395.00       0
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.0  24395.55       0
+Previous candle: Date      2026-08-14 13:55:00
+Open                  24386.4
+High                 24397.85
+Low                   24381.6
+Close                 24395.0
+Volume                      0
+Name: 48, dtype: object
+Current candle: Date      2026-08-14 14:00:00
+Open                 24395.85
+High                  24405.2
+Low                   24393.0
+Close                24395.55
+Volume                      0
+Name: 49, dtype: object
+Previous candle - Open: 24386.4, High: 24397.85, Low: 24381.6, Close: 24395.0
+Current candle - Open: 24395.85, High: 24405.2, Low: 24393.0, Close: 24395.55
+p_body: 8.6, p_upper_wick: 2.85, p_lower_wick: 4.8, p_range: 16.25
+c_high: 24395.85, c_low: 24395.55, c_body: 0.3, c_upper_wick: 9.35, c_lower_wick:  2.55, c_range: 12.2
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: True
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: True
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price is at day high.
+SELL: Bearish conformation
+Sending telegram message ...
+✅ Telegram alert sent successfully
+buyData: {'symbol': 'NIFTY50', 'signal': 'SELL', 'entry_price': '24398.6', 'stop_loss': '24408.6', 'target_price': '24373.6', 'entry_time': '2026-08-14 14:00:00'}
+last_5_candles:                   Date      Open      High      Low     Close  Volume
+45 2026-08-14 13:40:00  24348.70  24353.40  24348.2  24350.70       0
+46 2026-08-14 13:45:00  24357.40  24391.10  24356.8  24383.70       0
+47 2026-08-14 13:50:00  24383.95  24389.10  24380.4  24385.60       0
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.6  24395.00       0
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.0  24395.55       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24338.2, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24405.2, Low: 24348.2, Close: 24395.55, Range: 57.0
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: UP
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High      Low     Close  Volume
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.0  24395.55       0
+50 2026-08-14 14:10:00  24390.50  24392.05  24386.2  24387.40       0
+Previous candle: Date      2026-08-14 14:00:00
+Open                 24395.85
+High                  24405.2
+Low                   24393.0
+Close                24395.55
+Volume                      0
+Name: 49, dtype: object
+Current candle: Date      2026-08-14 14:10:00
+Open                  24390.5
+High                 24392.05
+Low                   24386.2
+Close                 24387.4
+Volume                      0
+Name: 50, dtype: object
+Previous candle - Open: 24395.85, High: 24405.2, Low: 24393.0, Close: 24395.55
+Current candle - Open: 24390.5, High: 24392.05, Low: 24386.2, Close: 24387.4
+p_body: 0.3, p_upper_wick: 9.35, p_lower_wick: 2.55, p_range: 12.2
+c_high: 24390.5, c_low: 24387.4, c_body: 3.1, c_upper_wick: 1.55, c_lower_wick:  1.2, c_range: 5.85
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+last_5_candles:                   Date      Open      High      Low     Close  Volume
+46 2026-08-14 13:45:00  24357.40  24391.10  24356.8  24383.70       0
+47 2026-08-14 13:50:00  24383.95  24389.10  24380.4  24385.60       0
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.6  24395.00       0
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.0  24395.55       0
+50 2026-08-14 14:10:00  24390.50  24392.05  24386.2  24387.40       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24338.2, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24405.2, Low: 24356.8, Close: 24387.4, Range: 48.4
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open      High       Low     Close  Volume
+50 2026-08-14 14:10:00  24390.5  24392.05  24386.20  24387.40       0
+51 2026-08-14 14:20:00  24378.7  24381.00  24374.05  24375.25       0
+Previous candle: Date      2026-08-14 14:10:00
+Open                  24390.5
+High                 24392.05
+Low                   24386.2
+Close                 24387.4
+Volume                      0
+Name: 50, dtype: object
+Current candle: Date      2026-08-14 14:20:00
+Open                  24378.7
+High                  24381.0
+Low                  24374.05
+Close                24375.25
+Volume                      0
+Name: 51, dtype: object
+Previous candle - Open: 24390.5, High: 24392.05, Low: 24386.2, Close: 24387.4
+Current candle - Open: 24378.7, High: 24381.0, Low: 24374.05, Close: 24375.25
+p_body: 3.1, p_upper_wick: 1.55, p_lower_wick: 1.2, p_range: 5.85
+c_high: 24378.7, c_low: 24375.25, c_body: 3.45, c_upper_wick: 2.3, c_lower_wick:  1.2, c_range: 6.95
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price retraced back to day high.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+47 2026-08-14 13:50:00  24383.95  24389.10  24380.40  24385.60       0
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.60  24395.00       0
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.00  24395.55       0
+50 2026-08-14 14:10:00  24390.50  24392.05  24386.20  24387.40       0
+51 2026-08-14 14:20:00  24378.70  24381.00  24374.05  24375.25       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24338.2, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24405.2, Low: 24374.05, Close: 24375.25, Range: 31.15
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open     High       Low     Close  Volume
+51 2026-08-14 14:20:00  24378.7  24381.0  24374.05  24375.25       0
+52 2026-08-14 14:25:00  24377.3  24379.2  24369.65  24371.60       0
+Previous candle: Date      2026-08-14 14:20:00
+Open                  24378.7
+High                  24381.0
+Low                  24374.05
+Close                24375.25
+Volume                      0
+Name: 51, dtype: object
+Current candle: Date      2026-08-14 14:25:00
+Open                  24377.3
+High                  24379.2
+Low                  24369.65
+Close                 24371.6
+Volume                      0
+Name: 52, dtype: object
+Previous candle - Open: 24378.7, High: 24381.0, Low: 24374.05, Close: 24375.25
+Current candle - Open: 24377.3, High: 24379.2, Low: 24369.65, Close: 24371.6
+p_body: 3.45, p_upper_wick: 2.3, p_lower_wick: 1.2, p_range: 6.95
+c_high: 24377.3, c_low: 24371.6, c_body: 5.7, c_upper_wick: 1.9, c_lower_wick:  1.95, c_range: 9.55
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price retraced back to day high.
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+48 2026-08-14 13:55:00  24386.40  24397.85  24381.60  24395.00       0
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.00  24395.55       0
+50 2026-08-14 14:10:00  24390.50  24392.05  24386.20  24387.40       0
+51 2026-08-14 14:20:00  24378.70  24381.00  24374.05  24375.25       0
+52 2026-08-14 14:25:00  24377.30  24379.20  24369.65  24371.60       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24338.2, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24405.2, Low: 24369.65, Close: 24371.6, Range: 35.55
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date     Open     High       Low    Close  Volume
+52 2026-08-14 14:25:00  24377.3  24379.2  24369.65  24371.6       0
+53 2026-08-14 14:30:00  24372.6  24375.0  24367.55  24371.6       0
+Previous candle: Date      2026-08-14 14:25:00
+Open                  24377.3
+High                  24379.2
+Low                  24369.65
+Close                 24371.6
+Volume                      0
+Name: 52, dtype: object
+Current candle: Date      2026-08-14 14:30:00
+Open                  24372.6
+High                  24375.0
+Low                  24367.55
+Close                 24371.6
+Volume                      0
+Name: 53, dtype: object
+Previous candle - Open: 24377.3, High: 24379.2, Low: 24369.65, Close: 24371.6
+Current candle - Open: 24372.6, High: 24375.0, Low: 24367.55, Close: 24371.6
+p_body: 5.7, p_upper_wick: 1.9, p_lower_wick: 1.95, p_range: 9.55
+c_high: 24372.6, c_low: 24371.6, c_body: 1.0, c_upper_wick: 2.4, c_lower_wick:  4.05, c_range: 7.45
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price retraced back to day high.
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+49 2026-08-14 14:00:00  24395.85  24405.20  24393.00  24395.55       0
+50 2026-08-14 14:10:00  24390.50  24392.05  24386.20  24387.40       0
+51 2026-08-14 14:20:00  24378.70  24381.00  24374.05  24375.25       0
+52 2026-08-14 14:25:00  24377.30  24379.20  24369.65  24371.60       0
+53 2026-08-14 14:30:00  24372.60  24375.00  24367.55  24371.60       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24338.2, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24405.2, Low: 24367.55, Close: 24371.6, Range: 37.65
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low    Close  Volume
+53 2026-08-14 14:30:00  24372.60  24375.00  24367.55  24371.6       0
+54 2026-08-14 14:40:00  24369.15  24373.75  24368.40  24372.1       0
+Previous candle: Date      2026-08-14 14:30:00
+Open                  24372.6
+High                  24375.0
+Low                  24367.55
+Close                 24371.6
+Volume                      0
+Name: 53, dtype: object
+Current candle: Date      2026-08-14 14:40:00
+Open                 24369.15
+High                 24373.75
+Low                   24368.4
+Close                 24372.1
+Volume                      0
+Name: 54, dtype: object
+Previous candle - Open: 24372.6, High: 24375.0, Low: 24367.55, Close: 24371.6
+Current candle - Open: 24369.15, High: 24373.75, Low: 24368.4, Close: 24372.1
+p_body: 1.0, p_upper_wick: 2.4, p_lower_wick: 4.05, p_range: 7.45
+c_high: 24372.1, c_low: 24369.15, c_body: 2.95, c_upper_wick: 1.65, c_lower_wick:  0.75, c_range: 5.35
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: True
+bearish_engulf: False
+bullish_engulf: True, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price retraced back to day high.
+BUY: Bullish confirmation.
+With in first 3-candles.
+Price is near first 3-candle high.
+Sending telegram message ...
+✅ Telegram alert sent successfully
+buyData: {'symbol': 'NIFTY50', 'signal': 'BUY', 'entry_price': '24370.76', 'stop_loss': '24360.76', 'target_price': '24395.76', 'entry_time': '2026-08-14 14:40:00'}
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+50 2026-08-14 14:10:00  24390.50  24392.05  24386.20  24387.40       0
+51 2026-08-14 14:20:00  24378.70  24381.00  24374.05  24375.25       0
+52 2026-08-14 14:25:00  24377.30  24379.20  24369.65  24371.60       0
+53 2026-08-14 14:30:00  24372.60  24375.00  24367.55  24371.60       0
+54 2026-08-14 14:40:00  24369.15  24373.75  24368.40  24372.10       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24338.2, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24337.05
+Processing stock: NIFTY50
+Last 5 candles - High: 24392.05, Low: 24367.55, Close: 24372.1, Range: 24.5
+Last 5 candles range is more than 50% of lot size, determining trend...
+Trend based on last 5 candles: DOWN
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low    Close  Volume
+54 2026-08-14 14:40:00  24369.15  24373.75  24368.40  24372.1       0
+55 2026-08-14 14:45:00  24370.00  24374.15  24364.75  24366.8       0
+Previous candle: Date      2026-08-14 14:40:00
+Open                 24369.15
+High                 24373.75
+Low                   24368.4
+Close                 24372.1
+Volume                      0
+Name: 54, dtype: object
+Current candle: Date      2026-08-14 14:45:00
+Open                  24370.0
+High                 24374.15
+Low                  24364.75
+Close                 24366.8
+Volume                      0
+Name: 55, dtype: object
+Previous candle - Open: 24369.15, High: 24373.75, Low: 24368.4, Close: 24372.1
+Current candle - Open: 24370.0, High: 24374.15, Low: 24364.75, Close: 24366.8
+p_body: 2.95, p_upper_wick: 1.65, p_lower_wick: 0.75, p_range: 5.35
+c_high: 24370.0, c_low: 24366.8, c_body: 3.2, c_upper_wick: 4.15, c_lower_wick:  2.05, c_range: 9.4
+Buffer: 12.5
+c_red_candle: True, c_green_candle: False
+c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: False
+marubozu: False
+shooting_star: False
+hammer: False
+bullish_engulf: False
+bearish_engulf: False
+bullish_engulf: False, bearish_engulf: False
+bullish_confirmation: False
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price retraced back to day high.
+With in first 3-candles.
+Price is near first 3-candle high.
+last_5_candles:                   Date      Open      High       Low     Close  Volume
+51 2026-08-14 14:20:00  24378.70  24381.00  24374.05  24375.25       0
+52 2026-08-14 14:25:00  24377.30  24379.20  24369.65  24371.60       0
+53 2026-08-14 14:30:00  24372.60  24375.00  24367.55  24371.60       0
+54 2026-08-14 14:40:00  24369.15  24373.75  24368.40  24372.10       0
+55 2026-08-14 14:45:00  24370.00  24374.15  24364.75  24366.80       0
+Processing stock: NIFTY50, High: 24395.85, Low: 24309.0, High Wick: 24405.2, Low Wick: 24296.8
+11-candle High: 24395.85, 11-candle Low: 24348.7, 11-candle High Wick: 24405.2, 11-candle Low Wick: 24348.2
+Processing stock: NIFTY50
+Last 5 candles - High: 24381.0, Low: 24364.75, Close: 24366.8, Range: 16.25
+Trend based on last 5 candles: SIDE
+first_3_candles:                  Date      Open      High       Low     Close  Volume
+0 2026-08-14 09:15:00  24363.75  24365.00  24311.45  24322.70       0
+1 2026-08-14 09:25:00  24324.95  24326.05  24318.05  24323.55       0
+2 2026-08-14 09:35:00  24327.45  24337.85  24326.45  24332.85       0
+First candle - f_dh: 24363.75, f_dl: 24322.7, f_dhw: 24365.0, f_dlw: 24311.45,  f_midw: 24343.22
+Day - dh: 24395.85, dl: 24309.0, dhw: 24405.2, dlw: 24296.8
+Detecting patterns for 2 candles
+                  Date      Open      High       Low    Close  Volume
+55 2026-08-14 14:45:00  24370.00  24374.15  24364.75  24366.8       0
+56 2026-08-14 14:50:00  24365.65  24383.40  24365.65  24382.4       0
+Previous candle: Date      2026-08-14 14:45:00
+Open                  24370.0
+High                 24374.15
+Low                  24364.75
+Close                 24366.8
+Volume                      0
+Name: 55, dtype: object
+Current candle: Date      2026-08-14 14:50:00
+Open                 24365.65
+High                  24383.4
+Low                  24365.65
+Close                 24382.4
+Volume                      0
+Name: 56, dtype: object
+Previous candle - Open: 24370.0, High: 24374.15, Low: 24364.75, Close: 24366.8
+Current candle - Open: 24365.65, High: 24383.4, Low: 24365.65, Close: 24382.4
+p_body: 3.2, p_upper_wick: 4.15, p_lower_wick: 2.05, p_range: 9.4
+c_high: 24382.4, c_low: 24365.65, c_body: 16.75, c_upper_wick: 1.0, c_lower_wick:  0.0, c_range: 17.75
+Buffer: 12.5
+c_red_candle: False, c_green_candle: True
+c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
+marubozu: True
+shooting_star: False
+hammer: False
+bullish_engulf: True
+bearish_engulf: False
+bullish_engulf: True, bearish_engulf: False
+bullish_confirmation: True
+bearish_confirmation: False
+Price moved beyond first 3-candle high.
+Days high is more to proceed.
+Price retraced back to day high.
