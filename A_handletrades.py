@@ -38,18 +38,34 @@ if loginstatus is None:
 print("API connected")
 #=================================================
 # VARIABLES
-activePositions = {}
 allOrders = {}
 buyOpenOrders = {}
 sellOpenOrders = {}
+activePositions = {}
+daysMTM = 0.0
+
 #=================================================
 # Get all active positions
 def getactivepositions():
     #--------------------------------------------------
     global activePositions
+    global daysMTM
+
     # get positions
-    activePositions = api.get_positions()
-    print("==>activePositions: ", activePositions)
+    positions = api.get_positions()
+    print("==>positions: ", positions)
+    activePositions.clear()
+    daysMTM = 0.0
+    if positions != None: 
+        # Get days profit/loss
+        for i in positions:
+            if((int(i["netqty"])) > 0):                    
+                activePositions[i["tsym"]] = i   
+            if((i["instname"] == "OPTSTK") or i["instname"] == "OPTIDX"):
+                daysMTM += float(i['urmtom']) + float(i['rpnl'])
+    print(f'{daysMTM} is your Daily MTM')
+    print(f"==>Active position: {activePositions} ")
+
 
 # Get orders and filter it
 def getOrders():
@@ -72,7 +88,7 @@ def getOrders():
     buyOpenOrders = {
         order["tsym"]: order
         for order in allOrders
-        if order.get("status") == "Open"
+        if order.get("status") == "OPEN"
         and order.get("trantype") == "B"
     }
     print("==>buyOpenOrders: ", buyOpenOrders)
@@ -80,7 +96,7 @@ def getOrders():
     sellOpenOrders = {
         order["tsym"]: order
         for order in allOrders
-        if order.get("status") == "Open"
+        if order.get("status") == "OPEN"
         and order.get("trantype") == "S"
     }
     print("==>sellOpenOrders: ", sellOpenOrders)
@@ -92,43 +108,59 @@ def cancelBuyOrders():
     global buyOpenOrders
     # Cancel long open bug orders
     now = datetime.now()
-    for order in buyOpenOrders:
+    for order in buyOpenOrders.values():
         try:
-            order_time = datetime.strptime(order["norentm"], "%d-%m-%Y %H:%M:%S")
+            order_time = datetime.strptime(order["norentm"], "%H:%M:%S %d-%m-%Y")
             # Cancel bug order
             if now - order_time >= timedelta(minutes=5):
                 print(f"Cancelling Order: {order['norenordno']}")
                 resp = api.cancel_order(orderno=order["norenordno"])
                 print(resp)
         except Exception as e:
-            print(f"Error processing {order['norenordno']}: {e}")
+            print(f"Error processing {order['norenordno']}: {e}")  
     #------------------------------------------------------
+
 
 # Close long open sell orders
 def closeSellOrders():
     #----------------------------------------------------
     global sellOpenOrders
+    global activePositions
     # Cancel long open bug orders
     now = datetime.now()
-    for order in sellOpenOrders:
+    for order in sellOpenOrders.values():
         try:
-            order_time = datetime.strptime(order["norentm"], "%d-%m-%Y %H:%M:%S")
+            # Check if the price is manually overriden
+            pInd = order['prc'].find(".")
+            if( (pInd > 0) and (pInd+2 <= len(order['prc'])) and (order['prc'][pInd+2] == "5") ): 
+                print(f"Manually Overridden.")
+                continue # Manual overridden
+
+            order_time = datetime.strptime(order["norentm"], "%H:%M:%S %d-%m-%Y")
             # Close Sell order
-            if now - order_time >= timedelta(minutes=30):
+            print(float(order['qty']))
+            print(order['tsym'])
+            print(NIFTYALL[order['symname']]['StrikeDiff'] )
+            print(float(activePositions[order['tsym']]['urmtom']))
+            lossTol = float(order['qty']) * -0.12*NIFTYALL[order['symname']]['StrikeDiff'] 
+            print(f"loss tolerence: {lossTol}")
+            if ((now - order_time >= timedelta(minutes=30)) or
+                (lossTol > float(activePositions[order['tsym']]['urmtom'])) ) :
                 print(f"Closing Order: {order['norenordno']}")
                 ret = api.modify_order(exchange=order['exch'], tradingsymbol=order['tsym'], 
-                                        orderno=order["norenordno"], newquantity=order['qty'], 
+                                        orderno=order["norenordno"], newquantity=activePositions[order['tsym']]['netqty'], 
                                         newprice_type='MKT', newprice=0.00)
+                print(f"closed order: {ret}")
+
         except Exception as e:
             print(f"Error processing {order['norenordno']}: {e}")
+
 
 # Round off cost to 1 decimal place
 def roundOffCost(val):
     #----------------------------------------------------
-    # print("==>Val", val)
     txt = str(val).split(".")
     lVal = txt[0]  + "." + txt[1][slice(1)]
-    # print("==>lVal", lVal)
     return float(lVal)
 
 
@@ -136,36 +168,43 @@ def roundOffCost(val):
 def placeSellorder():
     #----------------------------------------------------
     global activePositions
+    global sellOpenOrders
     for pos in activePositions:
-        print("==>", pos['symname'])
-        cPrice = float(pos['netavgprc'])
-        tPrice = roundOffCost(cPrice + (0.25*NIFTY[pos['symname']]['StrikeDiff'])-1)
-        lPrice = roundOffCost(cPrice - (0.1*NIFTY[pos['symname']]['StrikeDiff'])+1)
+        print("==>", pos)
+        print(f"Active Position Symbol parent: {activePositions[pos]['symname']}")
+        if activePositions[pos]['symname'] not in NIFTYALL:
+            print(f"Symbol {pos} not found in NIFTYALL. Skipping...")
+            continue
+        cPrice = float(activePositions[pos]['netavgprc'])
+        tPrice = roundOffCost(cPrice + (0.25*NIFTYALL[activePositions[pos]['symname']]['StrikeDiff']))
         print("====>Target Price: ", str(tPrice))
-        print("====>Stop Loss Price: ", str(lPrice))
+
         # Fresh sell order
-        if pos['tsym'] not in sellOpenOrders:
+        if pos not in sellOpenOrders:
             try:
                 api.place_order(buy_or_sell='S', product_type='M',
-                            exchange=pos['exch'], tradingsymbol=pos['tsym'], 
-                            quantity=pos['netqty'], discloseqty=0, 
+                            exchange=activePositions[pos]['exch'], tradingsymbol=activePositions[pos]['tsym'], 
+                            quantity=activePositions[pos]['netqty'], discloseqty=0, 
                             price_type='LMT', price=tPrice, trigger_price=tPrice,
                             retention='DAY', remarks='HTA:LMT')
             except Exception as e:
                 print(f"Error processing {order['norenordno']}: {e}")   
+
         # New quantity is different from the existing order quantity, modify the order 
-        elif pos['netqty'] != sellOpenOrders[pos['tsym']]['qty']:
-            print(f"Updating Order: {sellOpenOrders[pos['tsym']]['norenordno']}")
+        elif activePositions[pos]['netqty'] != sellOpenOrders[activePositions[pos]['tsym']]['qty']:
+            print(f"Updating Order: {sellOpenOrders[activePositions[pos]['tsym']]['norenordno']}")
             try:
-                api.modify_order(exchange=pos['exch'], tradingsymbol=pos['tsym'], 
-                                orderno=sellOpenOrders[pos['tsym']]["norenordno"], 
-                                newquantity=pos['netqty'], newprice_type='LMT', 
+                api.modify_order(exchange=activePositions[pos]['exch'], tradingsymbol=activePositions[pos]['tsym'], 
+                                orderno=sellOpenOrders[activePositions[pos]['tsym']]["norenordno"], 
+                                newquantity=activePositions[pos]['netqty'], newprice_type='LMT', 
                                 newprice=tPrice, newtrigger_price=tPrice)
             except Exception as e:
                 print(f"Error processing {order['norenordno']}: {e}")
 
+
 # Method to round-off to its nearst block size
 def roundOffToNearstblokSize(value, block):
+    #----------------------------------------------------
     #print(value, block)
     wNo100 = (value // 100) *100
     wNo10 = (value // 10) *10
@@ -205,20 +244,15 @@ def roundOffToNearstblokSize(value, block):
     return wNo
 
 
-def roundOffCost(val):
-    #print(val)
-    txt = str(val).split(".")
-    #print(txt)
-    lVal = txt[0]  + "." + txt[1][slice(1)]
-    #print(lVal)
-    return float(lVal)
-
-
 # Place new buy orders based on the options generated by the algorithm 
 def buyNewPositions():
+    #----------------------------------------------------
+        global buyOpenOrders
+        global activePositions 
         print("Buy options")
         key = "HTA:Buy"
         buyData = json.loads(redisObject.get(key))
+        print(f"buy Data: {buyData}")
         bOptions = {}
         if(buyData != None): 
             # Data available
@@ -227,7 +261,7 @@ def buyNewPositions():
             entry_time = datetime.strptime(buyData["entry_time"], "%Y-%m-%d %H:%M:%S")
             elapsed = now - entry_time
             print(elapsed)
-            if elapsed.total_seconds() < 1200000:
+            if elapsed.total_seconds() < 600:
                 tPrice = roundOffToNearstblokSize(float(buyData['entry_price']), 50)
                 print(f"tPrice: {tPrice}")
                 pSym = "NIFTY" if buyData["symbol"] == "NIFTY50" else buyData["symbol"]
@@ -268,11 +302,12 @@ def buyNewPositions():
                 cash = float(aLimits["cash"]) + float(aLimits["payin"])
                 mNeed = bPrice*NIFTYALL[pSym]['LotSize']
                 print("Available Cash:" + str(cash))
-                print("Required Margin:" + str(mNeed))
+                print("Required Cash:" + str(mNeed))
                 print("Todays Profit/Loss:" + str(rpnl))
                 if(rpnl >= -1000):
                     print("Profit/Loss is within limits.")
-                    if(cash > mNeed): 
+                    # Cash available + neither purchased nor placed a purchase order
+                    if (cash > mNeed) and (tSym not in buyOpenOrders) and (tSym not in activePositions): 
                         try:
                             api.place_order(buy_or_sell='B', product_type='M',
                                         exchange='NFO', tradingsymbol=tSym, 
@@ -286,22 +321,16 @@ def buyNewPositions():
                 else:
                     print("Days Loss limit reached.")
 
-   
-# getactivepositions()
-# getOrders()
-# closeSellOrders()
-# placeSellorder()
-buyNewPositions()
-exit()
+
 #=================================================
 INTERVAL = 1 * 60  # 5 minutes
 while True:
     now = datetime.now()
     current_minutes = now.hour * 60 + now.minute
 
-    # Trading window: 09:15 to 15:30
-    start_minutes = 9 * 60 + 15
-    end_minutes = 15 * 60 + 25
+    # Trading window: 09:15 to 15:15
+    start_minutes = 9 * 60 + 16
+    end_minutes = 15 * 60 + 14
     if start_minutes <= current_minutes <= end_minutes:
         loop_start = time.time()
         
@@ -309,6 +338,7 @@ while True:
             # handle trades
             getactivepositions()
             getOrders()
+            cancelBuyOrders()
             closeSellOrders()
             placeSellorder()
             buyNewPositions()

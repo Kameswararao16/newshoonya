@@ -16,7 +16,7 @@ NIFTY = NIFTY.to_dict("records")
 # =========================
 # DOWNLOAD FUNCTION
 # =========================
-def download_stock(stock, api):
+def download_stock(stock, api, st, et):
 
     symbol = stock["Symbol"]
     tradingsymbol = stock["TradingSymbol"]
@@ -28,11 +28,8 @@ def download_stock(stock, api):
     csv_file = os.path.join(DATA_FOLDER, f"{symbol}.csv")
     # print(f"File: {csv_file}")
 
-    # st = datetime.now().replace(hour=9, minute=15, second=0, microsecond=0) - timedelta(minutes=5) # Only for testing purpose
-    et = datetime.now().replace(second=0, microsecond=0)
-    st = et - timedelta(minutes=5)
+    
     print(f"start time: {st}, end time: {et}")
-
     candles = api.get_time_price_series(
         exchange="NSE",
         token=str(token),
@@ -110,10 +107,38 @@ def download_stock(stock, api):
 # RUN DOWNLOAD
 # =========================
 def download_all_stocks(api):
+    et = datetime.now().replace(second=0, microsecond=0)
+    st = et - timedelta(minutes=5)
+    print("waiting for 60seconds...")
+    time.sleep(60) # Attimes, full 5-minutes candle is not formming correctly. So, wait for 60 seconds
+    # st = datetime.now().replace(hour=9, minute=15, second=0, microsecond=0) - timedelta(minutes=5) # Only for testing purpose
     for stock in NIFTY:
         try:
-            download_stock(stock, api)
+            download_stock(stock, api, st, et)
         except Exception as e:
             print(stock["Symbol"], e)
 
     print("DOWNLOAD COMPLETE")
+
+# #===================TEST===================================
+# #login to API
+# from api_helper import NorenApiPy
+
+# api = NorenApiPy()
+
+# with open("cred.yml") as f:
+#     cred = yaml.load(f, Loader=yaml.FullLoader)
+
+# loginstatus = api.injectOAuthHeader(
+#     cred["Access_token"],
+#     cred["UID"],
+#     cred["Account_ID"]
+# )
+
+# if loginstatus is None:
+#     print("Login failed")
+#     exit()
+
+# print("API connected")
+# #=================================================
+# download_all_stocks(api)

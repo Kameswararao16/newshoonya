@@ -75,7 +75,8 @@ while True:
 
     # Trading window: 09:15 to 15:30
     start_minutes = 9 * 60 + 15
-    end_minutes = 15 * 60 + 10
+    end_minutes = 14 * 60 + 40
+
     if start_minutes <= current_minutes <= end_minutes:
         loop_start = time.time()
         
