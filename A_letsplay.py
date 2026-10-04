@@ -10,20 +10,7 @@ from datetime import datetime, timedelta
 import A_download_todays_data as dta
 import A_process_buy_sell as pbs
 #=======================================================
-# # Delete all files/folders inside "nifty100_data_today"
-# folder = Path("nifty100_data_today")
-
-# if folder.exists():
-#     for item in folder.iterdir():
-#         if item.is_file():
-#             item.unlink()
-#         elif item.is_dir():
-#             shutil.rmtree(item)
-#     print("Cleared nifty100_data_today folder.")
-# else:
-#     folder.mkdir(parents=True)
-#     print("Created nifty100_data_today folder.")
-
+# Back-up
 folder = Path("nifty100_data_today")
 archive_folder = Path("archive")
 

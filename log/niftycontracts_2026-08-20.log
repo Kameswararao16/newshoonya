@@ -1,4 +1,0 @@
-/home/nodeusr/Kamesh/newshoonya/A_niftycontracts.py:33: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
-  df["Expiry"] = pd.to_datetime(
-Downloaded: NFO_symbols.txt.zip
-Created: FNO_LotSize_Expiry.csv

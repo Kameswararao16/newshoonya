@@ -1,1515 +1,1140 @@
-API connected
-Starting to process all stocks for buy/sell signals...
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-63 2026-08-18 14:30:00  24201.10  24207.00  24194.10  24198.55       0
-64 2026-08-18 14:35:00  24200.75  24204.45  24191.85  24201.55       0
-65 2026-08-18 14:40:00  24201.75  24207.50  24198.70  24205.20       0
-66 2026-08-18 14:45:00  24206.00  24211.15  24198.90  24207.10       0
-67 2026-08-18 14:50:00  24208.70  24217.70  24204.70  24206.10       0
-df: 69
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-Processing stock: NIFTY50, High: 24244.35, Low: 24223.05, High Wick: 24253.95, Low Wick: 24211.1
-11-candle High: 24244.35, 11-candle Low: 24223.05, 11-candle High Wick: 24253.95, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24253.95, Low: 24211.1, Close: 24244.35, Range: 42.85
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: UP
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24244.35, dl: 24223.05, dhw: 24253.95, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date      Open      High       Low     Close  Volume
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-Previous candle: Date      2026-08-18 09:20:00
-Open                  24239.6
-High                 24246.55
-Low                  24229.85
-Close                24244.35
-Volume                      0
-Name: 1, dtype: object
-Current candle: Date      2026-08-18 09:25:00
-Open                 24246.25
-High                 24269.65
-Low                   24241.1
-Close                 24245.1
-Volume                      0
-Name: 2, dtype: object
-Previous candle - Open: 24239.6, High: 24246.55, Low: 24229.85, Close: 24244.35
-Current candle - Open: 24246.25, High: 24269.65, Low: 24241.1, Close: 24245.1
-p_body: 4.75, p_upper_wick: 2.2, p_lower_wick: 9.75, p_range: 16.7
-c_high: 24246.25, c_low: 24245.1, c_body: 1.15, c_upper_wick: 23.4, c_lower_wick:  4.0, c_range: 28.55
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
-marubozu: False
-shooting_star: True
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: True
-With in first 3-candles.
-abs(f_dl - cc): 22.049999999999272,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: True, trend: UP
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-Processing stock: NIFTY50, High: 24246.25, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24246.25, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24269.65, Low: 24211.1, Close: 24245.1, Range: 58.55
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24246.25, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date      Open      High       Low     Close  Volume
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-3 2026-08-18 09:30:00  24246.40  24246.40  24220.65  24232.65       0
-Previous candle: Date      2026-08-18 09:25:00
-Open                 24246.25
-High                 24269.65
-Low                   24241.1
-Close                 24245.1
-Volume                      0
-Name: 2, dtype: object
-Current candle: Date      2026-08-18 09:30:00
-Open                  24246.4
-High                  24246.4
-Low                  24220.65
-Close                24232.65
-Volume                      0
-Name: 3, dtype: object
-Previous candle - Open: 24246.25, High: 24269.65, Low: 24241.1, Close: 24245.1
-Current candle - Open: 24246.4, High: 24246.4, Low: 24220.65, Close: 24232.65
-p_body: 1.15, p_upper_wick: 23.4, p_lower_wick: 4.0, p_range: 28.55
-c_high: 24246.4, c_low: 24232.65, c_body: 13.75, c_upper_wick: 0.0, c_lower_wick:  12.0, c_range: 25.75
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 9.600000000002183,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-3 2026-08-18 09:30:00  24246.40  24246.40  24220.65  24232.65       0
-Processing stock: NIFTY50, High: 24246.4, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24246.4, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24269.65, Low: 24211.1, Close: 24232.65, Range: 58.55
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24246.4, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date     Open     High       Low     Close  Volume
-3 2026-08-18 09:30:00  24246.4  24246.4  24220.65  24232.65       0
-4 2026-08-18 09:35:00  24233.5  24248.7  24229.70  24247.30       0
-Previous candle: Date      2026-08-18 09:30:00
-Open                  24246.4
-High                  24246.4
-Low                  24220.65
-Close                24232.65
-Volume                      0
-Name: 3, dtype: object
-Current candle: Date      2026-08-18 09:35:00
-Open                  24233.5
-High                  24248.7
-Low                   24229.7
-Close                 24247.3
-Volume                      0
-Name: 4, dtype: object
-Previous candle - Open: 24246.4, High: 24246.4, Low: 24220.65, Close: 24232.65
-Current candle - Open: 24233.5, High: 24248.7, Low: 24229.7, Close: 24247.3
-p_body: 13.75, p_upper_wick: 0.0, p_lower_wick: 12.0, p_range: 25.75
-c_high: 24247.3, c_low: 24233.5, c_body: 13.8, c_upper_wick: 1.4, c_lower_wick:  3.8, c_range: 19.0
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: True
-bearish_engulf: False
-bullish_engulf: True, bearish_engulf: False
-bullish_confirmation: True
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 24.25,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-BUY Bias: Bullish confirmation.
+Symbol, Date, Type of entry, Price Movement, Logic, Entry, SL, Target, Current Price Position, High Profit
+Adding today's OHLC for ZYDUSLIFE
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1153.0  1158.0  1123.7  1145.7     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1153.0
+High                   1158.0
+Low                    1123.7
+Close                  1145.7
+Volume                    NaN
+Name: 60, dtype: object
 Sending telegram message ...
 ✅ Telegram alert sent successfully
-buyData: {'symbol': 'NIFTY50', 'signal': 'BUY', 'entry_price': '24242.55', 'stop_loss': '24232.55', 'target_price': '24267.55', 'entry_time': '2026-08-18 09:35:00'}
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-3 2026-08-18 09:30:00  24246.40  24246.40  24220.65  24232.65       0
-4 2026-08-18 09:35:00  24233.50  24248.70  24229.70  24247.30       0
-Processing stock: NIFTY50, High: 24247.3, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24247.3, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24269.65, Low: 24211.1, Close: 24247.3, Range: 58.55
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24247.3, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date     Open     High       Low     Close  Volume
-4 2026-08-18 09:35:00  24233.5  24248.7  24229.70  24247.30       0
-5 2026-08-18 09:40:00  24249.2  24249.2  24222.95  24224.55       0
-Previous candle: Date      2026-08-18 09:35:00
-Open                  24233.5
-High                  24248.7
-Low                   24229.7
-Close                 24247.3
-Volume                      0
-Name: 4, dtype: object
-Current candle: Date      2026-08-18 09:40:00
-Open                  24249.2
-High                  24249.2
-Low                  24222.95
-Close                24224.55
-Volume                      0
-Name: 5, dtype: object
-Previous candle - Open: 24233.5, High: 24248.7, Low: 24229.7, Close: 24247.3
-Current candle - Open: 24249.2, High: 24249.2, Low: 24222.95, Close: 24224.55
-p_body: 13.8, p_upper_wick: 1.4, p_lower_wick: 3.8, p_range: 19.0
-c_high: 24249.2, c_low: 24224.55, c_body: 24.65, c_upper_wick: 0.0, c_lower_wick:  1.6, c_range: 26.25
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: True
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: True
-bullish_engulf: False, bearish_engulf: True
-bullish_confirmation: False
-bearish_confirmation: True
-With in first 3-candles.
-abs(f_dl - cc): 1.5,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: True, trend: SIDE
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-3 2026-08-18 09:30:00  24246.40  24246.40  24220.65  24232.65       0
-4 2026-08-18 09:35:00  24233.50  24248.70  24229.70  24247.30       0
-5 2026-08-18 09:40:00  24249.20  24249.20  24222.95  24224.55       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24269.65, Low: 24220.65, Close: 24224.55, Range: 49.0
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date      Open      High       Low     Close  Volume
-5 2026-08-18 09:40:00  24249.20  24249.20  24222.95  24224.55       0
-6 2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.50       0
-Previous candle: Date      2026-08-18 09:40:00
-Open                  24249.2
-High                  24249.2
-Low                  24222.95
-Close                24224.55
-Volume                      0
-Name: 5, dtype: object
-Current candle: Date      2026-08-18 09:45:00
-Open                 24226.15
-High                 24232.05
-Low                  24214.85
-Close                 24228.5
-Volume                      0
-Name: 6, dtype: object
-Previous candle - Open: 24249.2, High: 24249.2, Low: 24222.95, Close: 24224.55
-Current candle - Open: 24226.15, High: 24232.05, Low: 24214.85, Close: 24228.5
-p_body: 24.65, p_upper_wick: 0.0, p_lower_wick: 1.6, p_range: 26.25
-c_high: 24228.5, c_low: 24226.15, c_body: 2.35, c_upper_wick: 3.55, c_lower_wick:  11.3, c_range: 17.2
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: True
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: True
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 5.450000000000728,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: DOWN
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-3 2026-08-18 09:30:00  24246.40  24246.40  24220.65  24232.65       0
-4 2026-08-18 09:35:00  24233.50  24248.70  24229.70  24247.30       0
-5 2026-08-18 09:40:00  24249.20  24249.20  24222.95  24224.55       0
-6 2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.50       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24269.65, Low: 24214.85, Close: 24228.5, Range: 54.8
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date      Open      High       Low    Close  Volume
-6 2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.5       0
-7 2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.3       0
-Previous candle: Date      2026-08-18 09:45:00
-Open                 24226.15
-High                 24232.05
-Low                  24214.85
-Close                 24228.5
-Volume                      0
-Name: 6, dtype: object
-Current candle: Date      2026-08-18 09:50:00
-Open                  24230.8
-High                 24241.35
-Low                  24224.15
-Close                 24235.3
-Volume                      0
-Name: 7, dtype: object
-Previous candle - Open: 24226.15, High: 24232.05, Low: 24214.85, Close: 24228.5
-Current candle - Open: 24230.8, High: 24241.35, Low: 24224.15, Close: 24235.3
-p_body: 2.35, p_upper_wick: 3.55, p_lower_wick: 11.3, p_range: 17.2
-c_high: 24235.3, c_low: 24230.8, c_body: 4.5, c_upper_wick: 6.05, c_lower_wick:  6.65, c_range: 17.2
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 12.25,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: DOWN
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-3 2026-08-18 09:30:00  24246.40  24246.40  24220.65  24232.65       0
-4 2026-08-18 09:35:00  24233.50  24248.70  24229.70  24247.30       0
-5 2026-08-18 09:40:00  24249.20  24249.20  24222.95  24224.55       0
-6 2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.50       0
-7 2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.30       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24249.2, Low: 24214.85, Close: 24235.3, Range: 34.35
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date      Open      High       Low    Close  Volume
-7 2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.3       0
-8 2026-08-18 09:55:00  24236.65  24237.30  24221.50  24234.5       0
-Previous candle: Date      2026-08-18 09:50:00
-Open                  24230.8
-High                 24241.35
-Low                  24224.15
-Close                 24235.3
-Volume                      0
-Name: 7, dtype: object
-Current candle: Date      2026-08-18 09:55:00
-Open                 24236.65
-High                  24237.3
-Low                   24221.5
-Close                 24234.5
-Volume                      0
-Name: 8, dtype: object
-Previous candle - Open: 24230.8, High: 24241.35, Low: 24224.15, Close: 24235.3
-Current candle - Open: 24236.65, High: 24237.3, Low: 24221.5, Close: 24234.5
-p_body: 4.5, p_upper_wick: 6.05, p_lower_wick: 6.65, p_range: 17.2
-c_high: 24236.65, c_low: 24234.5, c_body: 2.15, c_upper_wick: 0.65, c_lower_wick:  13.0, c_range: 15.8
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: True
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: True
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 11.450000000000728,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-BUY Bias: Bullish confirmation.
+Adding today's OHLC for WIPRO
+        Date   Open    High     Low   Close  Volume
+0 2026-10-01  158.9  160.95  157.25  159.35     NaN
+df: Date      2026-10-01 00:00:00
+Open                    158.9
+High                   160.95
+Low                    157.25
+Close                  159.35
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for VEDL
+        Date   Open   High     Low   Close  Volume
+0 2026-10-01  257.1  257.2  247.25  252.05     NaN
+df: Date      2026-10-01 00:00:00
+Open                    257.1
+High                    257.2
+Low                    247.25
+Close                  252.05
+Volume                    NaN
+Name: 60, dtype: object
 Sending telegram message ...
 ✅ Telegram alert sent successfully
-buyData: {'symbol': 'NIFTY50', 'signal': 'BUY', 'entry_price': '24230.55', 'stop_loss': '24220.55', 'target_price': '24255.55', 'entry_time': '2026-08-18 09:55:00'}
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-4 2026-08-18 09:35:00  24233.50  24248.70  24229.70  24247.30       0
-5 2026-08-18 09:40:00  24249.20  24249.20  24222.95  24224.55       0
-6 2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.50       0
-7 2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.30       0
-8 2026-08-18 09:55:00  24236.65  24237.30  24221.50  24234.50       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24223.05, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24223.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24249.2, Low: 24214.85, Close: 24234.5, Range: 34.35
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24223.05, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                 Date      Open     High      Low    Close  Volume
-8 2026-08-18 09:55:00  24236.65  24237.3  24221.5  24234.5       0
-9 2026-08-18 10:00:00  24234.10  24234.6  24213.0  24222.8       0
-Previous candle: Date      2026-08-18 09:55:00
-Open                 24236.65
-High                  24237.3
-Low                   24221.5
-Close                 24234.5
-Volume                      0
-Name: 8, dtype: object
-Current candle: Date      2026-08-18 10:00:00
-Open                  24234.1
-High                  24234.6
-Low                   24213.0
-Close                 24222.8
-Volume                      0
-Name: 9, dtype: object
-Previous candle - Open: 24236.65, High: 24237.3, Low: 24221.5, Close: 24234.5
-Current candle - Open: 24234.1, High: 24234.6, Low: 24213.0, Close: 24222.8
-p_body: 2.15, p_upper_wick: 0.65, p_lower_wick: 13.0, p_range: 15.8
-c_high: 24234.1, c_low: 24222.8, c_body: 11.3, c_upper_wick: 0.5, c_lower_wick:  9.8, c_range: 21.6
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 0.25,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                  Date      Open      High       Low     Close  Volume
-5 2026-08-18 09:40:00  24249.20  24249.20  24222.95  24224.55       0
-6 2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.50       0
-7 2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.30       0
-8 2026-08-18 09:55:00  24236.65  24237.30  24221.50  24234.50       0
-9 2026-08-18 10:00:00  24234.10  24234.60  24213.00  24222.80       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24222.8, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24222.8, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24249.2, Low: 24213.0, Close: 24222.8, Range: 36.2
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24222.8, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                  Date     Open     High      Low    Close  Volume
-9  2026-08-18 10:00:00  24234.1  24234.6  24213.0  24222.8       0
-10 2026-08-18 10:05:00  24223.4  24228.4  24221.3  24221.6       0
-Previous candle: Date      2026-08-18 10:00:00
-Open                  24234.1
-High                  24234.6
-Low                   24213.0
-Close                 24222.8
-Volume                      0
-Name: 9, dtype: object
-Current candle: Date      2026-08-18 10:05:00
-Open                  24223.4
-High                  24228.4
-Low                   24221.3
-Close                 24221.6
-Volume                      0
-Name: 10, dtype: object
-Previous candle - Open: 24234.1, High: 24234.6, Low: 24213.0, Close: 24222.8
-Current candle - Open: 24223.4, High: 24228.4, Low: 24221.3, Close: 24221.6
-p_body: 11.3, p_upper_wick: 0.5, p_lower_wick: 9.8, p_range: 21.6
-c_high: 24223.4, c_low: 24221.6, c_body: 1.8, c_upper_wick: 5.0, c_lower_wick:  0.3, c_range: 7.1
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: False
-marubozu: False
-shooting_star: True
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: True
-With in first 3-candles.
-abs(f_dl - cc): 1.4500000000007276,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: True, trend: SIDE
-last_5_candles:                   Date      Open      High       Low    Close  Volume
-6  2026-08-18 09:45:00  24226.15  24232.05  24214.85  24228.5       0
-7  2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.3       0
-8  2026-08-18 09:55:00  24236.65  24237.30  24221.50  24234.5       0
-9  2026-08-18 10:00:00  24234.10  24234.60  24213.00  24222.8       0
-10 2026-08-18 10:05:00  24223.40  24228.40  24221.30  24221.6       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24221.6, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24221.6, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24211.1
-Processing stock: NIFTY50
-Last 5 candles - High: 24241.35, Low: 24213.0, Close: 24221.6, Range: 28.35
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24221.6, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                  Date      Open     High      Low    Close  Volume
-10 2026-08-18 10:05:00  24223.40  24228.4  24221.3  24221.6       0
-11 2026-08-18 10:10:00  24223.05  24224.9  24218.0  24220.2       0
-Previous candle: Date      2026-08-18 10:05:00
-Open                  24223.4
-High                  24228.4
-Low                   24221.3
-Close                 24221.6
-Volume                      0
-Name: 10, dtype: object
-Current candle: Date      2026-08-18 10:10:00
-Open                 24223.05
-High                  24224.9
-Low                   24218.0
-Close                 24220.2
-Volume                      0
-Name: 11, dtype: object
-Previous candle - Open: 24223.4, High: 24228.4, Low: 24221.3, Close: 24221.6
-Current candle - Open: 24223.05, High: 24224.9, Low: 24218.0, Close: 24220.2
-p_body: 1.8, p_upper_wick: 5.0, p_lower_wick: 0.3, p_range: 7.1
-c_high: 24223.05, c_low: 24220.2, c_body: 2.85, c_upper_wick: 1.85, c_lower_wick:  2.2, c_range: 6.9
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 2.849999999998545,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                   Date      Open      High       Low    Close  Volume
-7  2026-08-18 09:50:00  24230.80  24241.35  24224.15  24235.3       0
-8  2026-08-18 09:55:00  24236.65  24237.30  24221.50  24234.5       0
-9  2026-08-18 10:00:00  24234.10  24234.60  24213.00  24222.8       0
-10 2026-08-18 10:05:00  24223.40  24228.40  24221.30  24221.6       0
-11 2026-08-18 10:10:00  24223.05  24224.90  24218.00  24220.2       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24220.2, High Wick: 24269.65, Low Wick: 24211.1
-11-candle High: 24249.2, 11-candle Low: 24220.2, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24213.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24241.35, Low: 24213.0, Close: 24220.2, Range: 28.35
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24220.2, dhw: 24269.65, dlw: 24211.1
-Detecting patterns for 2 candles
-                  Date      Open     High      Low     Close  Volume
-11 2026-08-18 10:10:00  24223.05  24224.9  24218.0  24220.20       0
-12 2026-08-18 10:15:00  24221.10  24221.1  24208.0  24214.05       0
-Previous candle: Date      2026-08-18 10:10:00
-Open                 24223.05
-High                  24224.9
-Low                   24218.0
-Close                 24220.2
-Volume                      0
-Name: 11, dtype: object
-Current candle: Date      2026-08-18 10:15:00
-Open                  24221.1
-High                  24221.1
-Low                   24208.0
-Close                24214.05
-Volume                      0
-Name: 12, dtype: object
-Previous candle - Open: 24223.05, High: 24224.9, Low: 24218.0, Close: 24220.2
-Current candle - Open: 24221.1, High: 24221.1, Low: 24208.0, Close: 24214.05
-p_body: 2.85, p_upper_wick: 1.85, p_lower_wick: 2.2, p_range: 6.9
-c_high: 24221.1, c_low: 24214.05, c_body: 7.05, c_upper_wick: 0.0, c_lower_wick:  6.05, c_range: 13.1
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 9.0,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                   Date      Open     High      Low     Close  Volume
-8  2026-08-18 09:55:00  24236.65  24237.3  24221.5  24234.50       0
-9  2026-08-18 10:00:00  24234.10  24234.6  24213.0  24222.80       0
-10 2026-08-18 10:05:00  24223.40  24228.4  24221.3  24221.60       0
-11 2026-08-18 10:10:00  24223.05  24224.9  24218.0  24220.20       0
-12 2026-08-18 10:15:00  24221.10  24221.1  24208.0  24214.05       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24214.05, High Wick: 24269.65, Low Wick: 24208.0
-11-candle High: 24249.2, 11-candle Low: 24214.05, 11-candle High Wick: 24269.65, 11-candle Low Wick: 24208.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24237.3, Low: 24208.0, Close: 24214.05, Range: 29.3
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24214.05, dhw: 24269.65, dlw: 24208.0
-Detecting patterns for 2 candles
-                  Date      Open      High      Low     Close  Volume
-12 2026-08-18 10:15:00  24221.10  24221.10  24208.0  24214.05       0
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.8  24216.70       0
-Previous candle: Date      2026-08-18 10:15:00
-Open                  24221.1
-High                  24221.1
-Low                   24208.0
-Close                24214.05
-Volume                      0
-Name: 12, dtype: object
-Current candle: Date      2026-08-18 10:20:00
-Open                 24215.05
-High                 24220.75
-Low                   24210.8
-Close                 24216.7
-Volume                      0
-Name: 13, dtype: object
-Previous candle - Open: 24221.1, High: 24221.1, Low: 24208.0, Close: 24214.05
-Current candle - Open: 24215.05, High: 24220.75, Low: 24210.8, Close: 24216.7
-p_body: 7.05, p_upper_wick: 0.0, p_lower_wick: 6.05, p_range: 13.1
-c_high: 24216.7, c_low: 24215.05, c_body: 1.65, c_upper_wick: 4.05, c_lower_wick:  4.25, c_range: 9.95
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 6.349999999998545,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: DOWN
-last_5_candles:                   Date      Open      High      Low     Close  Volume
-9  2026-08-18 10:00:00  24234.10  24234.60  24213.0  24222.80       0
-10 2026-08-18 10:05:00  24223.40  24228.40  24221.3  24221.60       0
-11 2026-08-18 10:10:00  24223.05  24224.90  24218.0  24220.20       0
-12 2026-08-18 10:15:00  24221.10  24221.10  24208.0  24214.05       0
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.8  24216.70       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24214.05, High Wick: 24269.65, Low Wick: 24208.0
-11-candle High: 24249.2, 11-candle Low: 24214.05, 11-candle High Wick: 24249.2, 11-candle Low Wick: 24208.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24234.6, Low: 24208.0, Close: 24216.7, Range: 26.6
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24214.05, dhw: 24269.65, dlw: 24208.0
-Detecting patterns for 2 candles
-                  Date      Open      High      Low     Close  Volume
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.8  24216.70       0
-14 2026-08-18 10:25:00  24218.00  24231.05  24210.3  24225.85       0
-Previous candle: Date      2026-08-18 10:20:00
-Open                 24215.05
-High                 24220.75
-Low                   24210.8
-Close                 24216.7
-Volume                      0
-Name: 13, dtype: object
-Current candle: Date      2026-08-18 10:25:00
-Open                  24218.0
-High                 24231.05
-Low                   24210.3
-Close                24225.85
-Volume                      0
-Name: 14, dtype: object
-Previous candle - Open: 24215.05, High: 24220.75, Low: 24210.8, Close: 24216.7
-Current candle - Open: 24218.0, High: 24231.05, Low: 24210.3, Close: 24225.85
-p_body: 1.65, p_upper_wick: 4.05, p_lower_wick: 4.25, p_range: 9.95
-c_high: 24225.85, c_low: 24218.0, c_body: 7.85, c_upper_wick: 5.2, c_lower_wick:  7.7, c_range: 20.75
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 2.7999999999992724,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                   Date      Open      High      Low     Close  Volume
-10 2026-08-18 10:05:00  24223.40  24228.40  24221.3  24221.60       0
-11 2026-08-18 10:10:00  24223.05  24224.90  24218.0  24220.20       0
-12 2026-08-18 10:15:00  24221.10  24221.10  24208.0  24214.05       0
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.8  24216.70       0
-14 2026-08-18 10:25:00  24218.00  24231.05  24210.3  24225.85       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24214.05, High Wick: 24269.65, Low Wick: 24208.0
-11-candle High: 24249.2, 11-candle Low: 24214.05, 11-candle High Wick: 24249.2, 11-candle Low Wick: 24208.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24231.05, Low: 24208.0, Close: 24225.85, Range: 23.05
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: UP
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24214.05, dhw: 24269.65, dlw: 24208.0
-Detecting patterns for 2 candles
-                  Date     Open      High      Low     Close  Volume
-14 2026-08-18 10:25:00  24218.0  24231.05  24210.3  24225.85       0
-15 2026-08-18 10:30:00  24227.0  24231.30  24225.4  24231.20       0
-Previous candle: Date      2026-08-18 10:25:00
-Open                  24218.0
-High                 24231.05
-Low                   24210.3
-Close                24225.85
-Volume                      0
-Name: 14, dtype: object
-Current candle: Date      2026-08-18 10:30:00
-Open                  24227.0
-High                  24231.3
-Low                   24225.4
-Close                 24231.2
-Volume                      0
-Name: 15, dtype: object
-Previous candle - Open: 24218.0, High: 24231.05, Low: 24210.3, Close: 24225.85
-Current candle - Open: 24227.0, High: 24231.3, Low: 24225.4, Close: 24231.2
-p_body: 7.85, p_upper_wick: 5.2, p_lower_wick: 7.7, p_range: 20.75
-c_high: 24231.2, c_low: 24227.0, c_body: 4.2, c_upper_wick: 0.1, c_lower_wick:  1.6, c_range: 5.9
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 8.150000000001455,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: UP
-last_5_candles:                   Date      Open      High      Low     Close  Volume
-11 2026-08-18 10:10:00  24223.05  24224.90  24218.0  24220.20       0
-12 2026-08-18 10:15:00  24221.10  24221.10  24208.0  24214.05       0
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.8  24216.70       0
-14 2026-08-18 10:25:00  24218.00  24231.05  24210.3  24225.85       0
-15 2026-08-18 10:30:00  24227.00  24231.30  24225.4  24231.20       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24214.05, High Wick: 24269.65, Low Wick: 24208.0
-11-candle High: 24249.2, 11-candle Low: 24214.05, 11-candle High Wick: 24249.2, 11-candle Low Wick: 24208.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24231.3, Low: 24208.0, Close: 24231.2, Range: 23.3
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: UP
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24214.05, dhw: 24269.65, dlw: 24208.0
-Detecting patterns for 2 candles
-                  Date      Open     High      Low    Close  Volume
-15 2026-08-18 10:30:00  24227.00  24231.3  24225.4  24231.2       0
-16 2026-08-18 10:35:00  24231.55  24233.4  24226.0  24226.1       0
-Previous candle: Date      2026-08-18 10:30:00
-Open                  24227.0
-High                  24231.3
-Low                   24225.4
-Close                 24231.2
-Volume                      0
-Name: 15, dtype: object
-Current candle: Date      2026-08-18 10:35:00
-Open                 24231.55
-High                  24233.4
-Low                   24226.0
-Close                 24226.1
-Volume                      0
-Name: 16, dtype: object
-Previous candle - Open: 24227.0, High: 24231.3, Low: 24225.4, Close: 24231.2
-Current candle - Open: 24231.55, High: 24233.4, Low: 24226.0, Close: 24226.1
-p_body: 4.2, p_upper_wick: 0.1, p_lower_wick: 1.6, p_range: 5.9
-c_high: 24231.55, c_low: 24226.1, c_body: 5.45, c_upper_wick: 1.85, c_lower_wick:  0.1, c_range: 7.4
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: True
-bullish_engulf: False, bearish_engulf: True
-bullish_confirmation: False
-bearish_confirmation: True
-With in first 3-candles.
-abs(f_dl - cc): 3.0499999999992724,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: True, trend: UP
-last_5_candles:                   Date      Open      High      Low     Close  Volume
-12 2026-08-18 10:15:00  24221.10  24221.10  24208.0  24214.05       0
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.8  24216.70       0
-14 2026-08-18 10:25:00  24218.00  24231.05  24210.3  24225.85       0
-15 2026-08-18 10:30:00  24227.00  24231.30  24225.4  24231.20       0
-16 2026-08-18 10:35:00  24231.55  24233.40  24226.0  24226.10       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24214.05, High Wick: 24269.65, Low Wick: 24208.0
-11-candle High: 24236.65, 11-candle Low: 24214.05, 11-candle High Wick: 24241.35, 11-candle Low Wick: 24208.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24233.4, Low: 24208.0, Close: 24226.1, Range: 25.4
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24214.05, dhw: 24269.65, dlw: 24208.0
-Detecting patterns for 2 candles
-                  Date      Open     High       Low    Close  Volume
-16 2026-08-18 10:35:00  24231.55  24233.4  24226.00  24226.1       0
-17 2026-08-18 10:40:00  24227.30  24227.3  24210.05  24214.8       0
-Previous candle: Date      2026-08-18 10:35:00
-Open                 24231.55
-High                  24233.4
-Low                   24226.0
-Close                 24226.1
-Volume                      0
-Name: 16, dtype: object
-Current candle: Date      2026-08-18 10:40:00
-Open                  24227.3
-High                  24227.3
-Low                  24210.05
-Close                 24214.8
-Volume                      0
-Name: 17, dtype: object
-Previous candle - Open: 24231.55, High: 24233.4, Low: 24226.0, Close: 24226.1
-Current candle - Open: 24227.3, High: 24227.3, Low: 24210.05, Close: 24214.8
-p_body: 5.45, p_upper_wick: 1.85, p_lower_wick: 0.1, p_range: 7.4
-c_high: 24227.3, c_low: 24214.8, c_body: 12.5, c_upper_wick: 0.0, c_lower_wick:  4.75, c_range: 17.25
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-With in first 3-candles.
-abs(f_dl - cc): 8.25,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-13 2026-08-18 10:20:00  24215.05  24220.75  24210.80  24216.70       0
-14 2026-08-18 10:25:00  24218.00  24231.05  24210.30  24225.85       0
-15 2026-08-18 10:30:00  24227.00  24231.30  24225.40  24231.20       0
-16 2026-08-18 10:35:00  24231.55  24233.40  24226.00  24226.10       0
-17 2026-08-18 10:40:00  24227.30  24227.30  24210.05  24214.80       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24214.05, High Wick: 24269.65, Low Wick: 24208.0
-11-candle High: 24236.65, 11-candle Low: 24214.05, 11-candle High Wick: 24241.35, 11-candle Low Wick: 24208.0
-Processing stock: NIFTY50
-Last 5 candles - High: 24233.4, Low: 24210.05, Close: 24214.8, Range: 23.35
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24214.05, dhw: 24269.65, dlw: 24208.0
-Detecting patterns for 2 candles
-                  Date      Open     High       Low     Close  Volume
-17 2026-08-18 10:40:00  24227.30  24227.3  24210.05  24214.80       0
-18 2026-08-18 10:45:00  24216.15  24216.4  24195.95  24204.75       0
-Previous candle: Date      2026-08-18 10:40:00
-Open                  24227.3
-High                  24227.3
-Low                  24210.05
-Close                 24214.8
-Volume                      0
-Name: 17, dtype: object
-Current candle: Date      2026-08-18 10:45:00
-Open                 24216.15
-High                  24216.4
-Low                  24195.95
-Close                24204.75
-Volume                      0
-Name: 18, dtype: object
-Previous candle - Open: 24227.3, High: 24227.3, Low: 24210.05, Close: 24214.8
-Current candle - Open: 24216.15, High: 24216.4, Low: 24195.95, Close: 24204.75
-p_body: 12.5, p_upper_wick: 0.0, p_lower_wick: 4.75, p_range: 17.25
-c_high: 24216.15, c_low: 24204.75, c_body: 11.4, c_upper_wick: 0.25, c_lower_wick:  8.8, c_range: 20.45
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-With in first 3-candles.
-abs(f_dl - cc): 18.299999999999272,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: DOWN
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-14 2026-08-18 10:25:00  24218.00  24231.05  24210.30  24225.85       0
-15 2026-08-18 10:30:00  24227.00  24231.30  24225.40  24231.20       0
-16 2026-08-18 10:35:00  24231.55  24233.40  24226.00  24226.10       0
-17 2026-08-18 10:40:00  24227.30  24227.30  24210.05  24214.80       0
-18 2026-08-18 10:45:00  24216.15  24216.40  24195.95  24204.75       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24204.75, High Wick: 24269.65, Low Wick: 24195.95
-11-candle High: 24236.65, 11-candle Low: 24204.75, 11-candle High Wick: 24237.3, 11-candle Low Wick: 24195.95
-Processing stock: NIFTY50
-Last 5 candles - High: 24233.4, Low: 24195.95, Close: 24204.75, Range: 37.45
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24204.75, dhw: 24269.65, dlw: 24195.95
-Detecting patterns for 2 candles
-                  Date      Open     High       Low     Close  Volume
-18 2026-08-18 10:45:00  24216.15  24216.4  24195.95  24204.75       0
-19 2026-08-18 10:50:00  24206.25  24210.0  24192.50  24195.55       0
-Previous candle: Date      2026-08-18 10:45:00
-Open                 24216.15
-High                  24216.4
-Low                  24195.95
-Close                24204.75
-Volume                      0
-Name: 18, dtype: object
-Current candle: Date      2026-08-18 10:50:00
-Open                 24206.25
-High                  24210.0
-Low                   24192.5
-Close                24195.55
-Volume                      0
-Name: 19, dtype: object
-Previous candle - Open: 24216.15, High: 24216.4, Low: 24195.95, Close: 24204.75
-Current candle - Open: 24206.25, High: 24210.0, Low: 24192.5, Close: 24195.55
-p_body: 11.4, p_upper_wick: 0.25, p_lower_wick: 8.8, p_range: 20.45
-c_high: 24206.25, c_low: 24195.55, c_body: 10.7, c_upper_wick: 3.75, c_lower_wick:  3.05, c_range: 17.5
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-last_5_candles:                   Date      Open     High       Low     Close  Volume
-15 2026-08-18 10:30:00  24227.00  24231.3  24225.40  24231.20       0
-16 2026-08-18 10:35:00  24231.55  24233.4  24226.00  24226.10       0
-17 2026-08-18 10:40:00  24227.30  24227.3  24210.05  24214.80       0
-18 2026-08-18 10:45:00  24216.15  24216.4  24195.95  24204.75       0
-19 2026-08-18 10:50:00  24206.25  24210.0  24192.50  24195.55       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24192.5
-11-candle High: 24234.1, 11-candle Low: 24195.55, 11-candle High Wick: 24234.6, 11-candle Low Wick: 24192.5
-Processing stock: NIFTY50
-Last 5 candles - High: 24233.4, Low: 24192.5, Close: 24195.55, Range: 40.9
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24192.5
-Detecting patterns for 2 candles
-                  Date      Open     High      Low     Close  Volume
-19 2026-08-18 10:50:00  24206.25  24210.0  24192.5  24195.55       0
-20 2026-08-18 10:55:00  24196.95  24201.8  24187.3  24200.25       0
-Previous candle: Date      2026-08-18 10:50:00
-Open                 24206.25
-High                  24210.0
-Low                   24192.5
-Close                24195.55
-Volume                      0
-Name: 19, dtype: object
-Current candle: Date      2026-08-18 10:55:00
-Open                 24196.95
-High                  24201.8
-Low                   24187.3
-Close                24200.25
-Volume                      0
-Name: 20, dtype: object
-Previous candle - Open: 24206.25, High: 24210.0, Low: 24192.5, Close: 24195.55
-Current candle - Open: 24196.95, High: 24201.8, Low: 24187.3, Close: 24200.25
-p_body: 10.7, p_upper_wick: 3.75, p_lower_wick: 3.05, p_range: 17.5
-c_high: 24200.25, c_low: 24196.95, c_body: 3.3, c_upper_wick: 1.55, c_lower_wick:  9.65, c_range: 14.5
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: True
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: True
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-last_5_candles:                   Date      Open     High       Low     Close  Volume
-16 2026-08-18 10:35:00  24231.55  24233.4  24226.00  24226.10       0
-17 2026-08-18 10:40:00  24227.30  24227.3  24210.05  24214.80       0
-18 2026-08-18 10:45:00  24216.15  24216.4  24195.95  24204.75       0
-19 2026-08-18 10:50:00  24206.25  24210.0  24192.50  24195.55       0
-20 2026-08-18 10:55:00  24196.95  24201.8  24187.30  24200.25       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24187.3
-11-candle High: 24231.55, 11-candle Low: 24195.55, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24187.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24233.4, Low: 24187.3, Close: 24200.25, Range: 46.1
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24187.3
-Detecting patterns for 2 candles
-                  Date      Open      High       Low     Close  Volume
-20 2026-08-18 10:55:00  24196.95  24201.80  24187.30  24200.25       0
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-Previous candle: Date      2026-08-18 10:55:00
-Open                 24196.95
-High                  24201.8
-Low                   24187.3
-Close                24200.25
-Volume                      0
-Name: 20, dtype: object
-Current candle: Date      2026-08-18 11:00:00
-Open                 24201.95
-High                 24205.85
-Low                  24194.85
-Close                24205.85
-Volume                      0
-Name: 21, dtype: object
-Previous candle - Open: 24196.95, High: 24201.8, Low: 24187.3, Close: 24200.25
-Current candle - Open: 24201.95, High: 24205.85, Low: 24194.85, Close: 24205.85
-p_body: 3.3, p_upper_wick: 1.55, p_lower_wick: 9.65, p_range: 14.5
-c_high: 24205.85, c_low: 24201.95, c_body: 3.9, c_upper_wick: 0.0, c_lower_wick:  7.1, c_range: 11.0
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: True
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: True
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-With in first 3-candles.
-abs(f_dl - cc): 17.200000000000728,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-BUY Bias: Bullish confirmation.
+Adding today's OHLC for VBL
+        Date    Open   High     Low  Close  Volume
+0 2026-10-01  429.35  430.8  415.35  425.3     NaN
+df: Date      2026-10-01 00:00:00
+Open                   429.35
+High                    430.8
+Low                    415.35
+Close                   425.3
+Volume                    NaN
+Name: 60, dtype: object
 Sending telegram message ...
 ✅ Telegram alert sent successfully
-buyData: {'symbol': 'NIFTY50', 'signal': 'BUY', 'entry_price': '24203.1', 'stop_loss': '24193.1', 'target_price': '24228.1', 'entry_time': '2026-08-18 11:00:00'}
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-17 2026-08-18 10:40:00  24227.30  24227.30  24210.05  24214.80       0
-18 2026-08-18 10:45:00  24216.15  24216.40  24195.95  24204.75       0
-19 2026-08-18 10:50:00  24206.25  24210.00  24192.50  24195.55       0
-20 2026-08-18 10:55:00  24196.95  24201.80  24187.30  24200.25       0
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24187.3
-11-candle High: 24231.55, 11-candle Low: 24195.55, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24187.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24227.3, Low: 24187.3, Close: 24205.85, Range: 40.0
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24187.3
-Detecting patterns for 2 candles
-                  Date      Open      High       Low     Close  Volume
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-22 2026-08-18 11:05:00  24205.50  24211.50  24201.70  24207.25       0
-Previous candle: Date      2026-08-18 11:00:00
-Open                 24201.95
-High                 24205.85
-Low                  24194.85
-Close                24205.85
-Volume                      0
-Name: 21, dtype: object
-Current candle: Date      2026-08-18 11:05:00
-Open                  24205.5
-High                  24211.5
-Low                   24201.7
-Close                24207.25
-Volume                      0
-Name: 22, dtype: object
-Previous candle - Open: 24201.95, High: 24205.85, Low: 24194.85, Close: 24205.85
-Current candle - Open: 24205.5, High: 24211.5, Low: 24201.7, Close: 24207.25
-p_body: 3.9, p_upper_wick: 0.0, p_lower_wick: 7.1, p_range: 11.0
-c_high: 24207.25, c_low: 24205.5, c_body: 1.75, c_upper_wick: 4.25, c_lower_wick:  3.8, c_range: 9.8
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: True, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-With in first 3-candles.
-abs(f_dl - cc): 15.799999999999272,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: False, trend: SIDE
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-18 2026-08-18 10:45:00  24216.15  24216.40  24195.95  24204.75       0
-19 2026-08-18 10:50:00  24206.25  24210.00  24192.50  24195.55       0
-20 2026-08-18 10:55:00  24196.95  24201.80  24187.30  24200.25       0
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-22 2026-08-18 11:05:00  24205.50  24211.50  24201.70  24207.25       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24187.3
-11-candle High: 24231.55, 11-candle Low: 24195.55, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24187.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24216.4, Low: 24187.3, Close: 24207.25, Range: 29.1
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24187.3
-Detecting patterns for 2 candles
-                  Date      Open     High       Low     Close  Volume
-22 2026-08-18 11:05:00  24205.50  24211.5  24201.70  24207.25       0
-23 2026-08-18 11:10:00  24208.25  24208.7  24197.25  24202.35       0
-Previous candle: Date      2026-08-18 11:05:00
-Open                  24205.5
-High                  24211.5
-Low                   24201.7
-Close                24207.25
-Volume                      0
-Name: 22, dtype: object
-Current candle: Date      2026-08-18 11:10:00
-Open                 24208.25
-High                  24208.7
-Low                  24197.25
-Close                24202.35
-Volume                      0
-Name: 23, dtype: object
-Previous candle - Open: 24205.5, High: 24211.5, Low: 24201.7, Close: 24207.25
-Current candle - Open: 24208.25, High: 24208.7, Low: 24197.25, Close: 24202.35
-p_body: 1.75, p_upper_wick: 4.25, p_lower_wick: 3.8, p_range: 9.8
-c_high: 24208.25, c_low: 24202.35, c_body: 5.9, c_upper_wick: 0.45, c_lower_wick:  5.1, c_range: 11.45
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: True
-bullish_engulf: False, bearish_engulf: True
-bullish_confirmation: False
-bearish_confirmation: True
-Price moved beyond first 3-candle low.
-With in first 3-candles.
-abs(f_dl - cc): 20.700000000000728,  round(0.25 * lsize, 2): 12.5
-bias: UP, bearish_confirmation: True, trend: SIDE
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-19 2026-08-18 10:50:00  24206.25  24210.00  24192.50  24195.55       0
-20 2026-08-18 10:55:00  24196.95  24201.80  24187.30  24200.25       0
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-22 2026-08-18 11:05:00  24205.50  24211.50  24201.70  24207.25       0
-23 2026-08-18 11:10:00  24208.25  24208.70  24197.25  24202.35       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24187.3
-11-candle High: 24231.55, 11-candle Low: 24195.55, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24187.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24211.5, Low: 24187.3, Close: 24202.35, Range: 24.2
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24187.3
-Detecting patterns for 2 candles
-                  Date      Open      High       Low     Close  Volume
-23 2026-08-18 11:10:00  24208.25  24208.70  24197.25  24202.35       0
-24 2026-08-18 11:15:00  24203.75  24209.15  24194.95  24197.75       0
-Previous candle: Date      2026-08-18 11:10:00
-Open                 24208.25
-High                  24208.7
-Low                  24197.25
-Close                24202.35
-Volume                      0
-Name: 23, dtype: object
-Current candle: Date      2026-08-18 11:15:00
-Open                 24203.75
-High                 24209.15
-Low                  24194.95
-Close                24197.75
-Volume                      0
-Name: 24, dtype: object
-Previous candle - Open: 24208.25, High: 24208.7, Low: 24197.25, Close: 24202.35
-Current candle - Open: 24203.75, High: 24209.15, Low: 24194.95, Close: 24197.75
-p_body: 5.9, p_upper_wick: 0.45, p_lower_wick: 5.1, p_range: 11.45
-c_high: 24203.75, c_low: 24197.75, c_body: 6.0, c_upper_wick: 5.4, c_lower_wick:  2.8, c_range: 14.2
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: True, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-20 2026-08-18 10:55:00  24196.95  24201.80  24187.30  24200.25       0
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-22 2026-08-18 11:05:00  24205.50  24211.50  24201.70  24207.25       0
-23 2026-08-18 11:10:00  24208.25  24208.70  24197.25  24202.35       0
-24 2026-08-18 11:15:00  24203.75  24209.15  24194.95  24197.75       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24187.3
-11-candle High: 24231.55, 11-candle Low: 24195.55, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24187.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24211.5, Low: 24187.3, Close: 24197.75, Range: 24.2
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24187.3
-Detecting patterns for 2 candles
-                  Date      Open      High       Low     Close  Volume
-24 2026-08-18 11:15:00  24203.75  24209.15  24194.95  24197.75       0
-25 2026-08-18 11:20:00  24198.90  24198.90  24189.65  24195.75       0
-Previous candle: Date      2026-08-18 11:15:00
-Open                 24203.75
-High                 24209.15
-Low                  24194.95
-Close                24197.75
-Volume                      0
-Name: 24, dtype: object
-Current candle: Date      2026-08-18 11:20:00
-Open                  24198.9
-High                  24198.9
-Low                  24189.65
-Close                24195.75
-Volume                      0
-Name: 25, dtype: object
-Previous candle - Open: 24203.75, High: 24209.15, Low: 24194.95, Close: 24197.75
-Current candle - Open: 24198.9, High: 24198.9, Low: 24189.65, Close: 24195.75
-p_body: 6.0, p_upper_wick: 5.4, p_lower_wick: 2.8, p_range: 14.2
-c_high: 24198.9, c_low: 24195.75, c_body: 3.15, c_upper_wick: 0.0, c_lower_wick:  6.1, c_range: 9.25
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: False
-marubozu: False
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-21 2026-08-18 11:00:00  24201.95  24205.85  24194.85  24205.85       0
-22 2026-08-18 11:05:00  24205.50  24211.50  24201.70  24207.25       0
-23 2026-08-18 11:10:00  24208.25  24208.70  24197.25  24202.35       0
-24 2026-08-18 11:15:00  24203.75  24209.15  24194.95  24197.75       0
-25 2026-08-18 11:20:00  24198.90  24198.90  24189.65  24195.75       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24195.55, High Wick: 24269.65, Low Wick: 24187.3
-11-candle High: 24231.55, 11-candle Low: 24195.55, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24187.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24211.5, Low: 24189.65, Close: 24195.75, Range: 21.85
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24195.55, dhw: 24269.65, dlw: 24187.3
-Detecting patterns for 2 candles
-                  Date     Open     High       Low     Close  Volume
-25 2026-08-18 11:20:00  24198.9  24198.9  24189.65  24195.75       0
-26 2026-08-18 11:25:00  24195.5  24195.6  24182.30  24182.65       0
-Previous candle: Date      2026-08-18 11:20:00
-Open                  24198.9
-High                  24198.9
-Low                  24189.65
-Close                24195.75
-Volume                      0
-Name: 25, dtype: object
-Current candle: Date      2026-08-18 11:25:00
-Open                  24195.5
-High                  24195.6
-Low                   24182.3
-Close                24182.65
-Volume                      0
-Name: 26, dtype: object
-Previous candle - Open: 24198.9, High: 24198.9, Low: 24189.65, Close: 24195.75
-Current candle - Open: 24195.5, High: 24195.6, Low: 24182.3, Close: 24182.65
-p_body: 3.15, p_upper_wick: 0.0, p_lower_wick: 6.1, p_range: 9.25
-c_high: 24195.5, c_low: 24182.65, c_body: 12.85, c_upper_wick: 0.1, c_lower_wick:  0.35, c_range: 13.3
-Buffer: 12.5
-c_red_candle: True, c_green_candle: False
-c_strong_lower_wick: False, c_strong_upper_wick: False, c_strong_body: True
-marubozu: True
-shooting_star: False
-hammer: False
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: False
-bearish_confirmation: True
-Price moved beyond first 3-candle low.
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-22 2026-08-18 11:05:00  24205.50  24211.50  24201.70  24207.25       0
-23 2026-08-18 11:10:00  24208.25  24208.70  24197.25  24202.35       0
-24 2026-08-18 11:15:00  24203.75  24209.15  24194.95  24197.75       0
-25 2026-08-18 11:20:00  24198.90  24198.90  24189.65  24195.75       0
-26 2026-08-18 11:25:00  24195.50  24195.60  24182.30  24182.65       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24182.65, High Wick: 24269.65, Low Wick: 24182.3
-11-candle High: 24231.55, 11-candle Low: 24182.65, 11-candle High Wick: 24233.4, 11-candle Low Wick: 24182.3
-Processing stock: NIFTY50
-Last 5 candles - High: 24211.5, Low: 24182.3, Close: 24182.65, Range: 29.2
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: DOWN
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-Bias after time check: UP
-First candle - f_dh: 24246.25, f_dl: 24223.05, f_dhw: 24269.65, f_dlw: 24211.1,  f_midw: 24234.65
-Day - dh: 24249.2, dl: 24182.65, dhw: 24269.65, dlw: 24182.3
-Detecting patterns for 2 candles
-                  Date      Open      High       Low     Close  Volume
-26 2026-08-18 11:25:00  24195.50  24195.60  24182.30  24182.65       0
-27 2026-08-18 11:30:00  24183.75  24190.65  24174.45  24190.65       0
-Previous candle: Date      2026-08-18 11:25:00
-Open                  24195.5
-High                  24195.6
-Low                   24182.3
-Close                24182.65
-Volume                      0
-Name: 26, dtype: object
-Current candle: Date      2026-08-18 11:30:00
-Open                 24183.75
-High                 24190.65
-Low                  24174.45
-Close                24190.65
-Volume                      0
-Name: 27, dtype: object
-Previous candle - Open: 24195.5, High: 24195.6, Low: 24182.3, Close: 24182.65
-Current candle - Open: 24183.75, High: 24190.65, Low: 24174.45, Close: 24190.65
-p_body: 12.85, p_upper_wick: 0.1, p_lower_wick: 0.35, p_range: 13.3
-c_high: 24190.65, c_low: 24183.75, c_body: 6.9, c_upper_wick: 0.0, c_lower_wick:  9.3, c_range: 16.2
-Buffer: 12.5
-c_red_candle: False, c_green_candle: True
-c_strong_lower_wick: True, c_strong_upper_wick: False, c_strong_body: True
-marubozu: False
-shooting_star: False
-hammer: True
-bullish_engulf: False
-bearish_engulf: False
-bullish_engulf: False, bearish_engulf: False
-bullish_confirmation: True
-bearish_confirmation: False
-Price moved beyond first 3-candle low.
-Days low is more to proceed.
-Price is at day low.
-BUY: Bullish conformation
+Adding today's OHLC for UNIONBANK
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  169.67  172.19  164.81  167.59     NaN
+df: Date      2026-10-01 00:00:00
+Open                   169.67
+High                   172.19
+Low                    164.81
+Close                  167.59
+Volume                    NaN
+Name: 60, dtype: object
 Sending telegram message ...
 ✅ Telegram alert sent successfully
-buyData: {'symbol': 'NIFTY50', 'signal': 'BUY', 'entry_price': '24186.600000000002', 'stop_loss': '24176.600000000002', 'target_price': '24211.600000000002', 'entry_time': '2026-08-18 11:30:00'}
-last_5_candles:                   Date      Open      High       Low     Close  Volume
-23 2026-08-18 11:10:00  24208.25  24208.70  24197.25  24202.35       0
-24 2026-08-18 11:15:00  24203.75  24209.15  24194.95  24197.75       0
-25 2026-08-18 11:20:00  24198.90  24198.90  24189.65  24195.75       0
-26 2026-08-18 11:25:00  24195.50  24195.60  24182.30  24182.65       0
-27 2026-08-18 11:30:00  24183.75  24190.65  24174.45  24190.65       0
-Processing stock: NIFTY50, High: 24249.2, Low: 24182.65, High Wick: 24269.65, Low Wick: 24174.45
-11-candle High: 24227.3, 11-candle Low: 24182.65, 11-candle High Wick: 24227.3, 11-candle Low Wick: 24174.45
-Processing stock: NIFTY50
-Last 5 candles - High: 24209.15, Low: 24174.45, Close: 24190.65, Range: 34.7
-Last 5 candles range is more than 50% of lot size, determining trend...
-Trend based on last 5 candles: SIDE
-first_3_candles:                  Date      Open      High       Low     Close  Volume
-0 2026-08-18 09:15:00  24223.05  24253.95  24211.10  24238.85       0
-1 2026-08-18 09:20:00  24239.60  24246.55  24229.85  24244.35       0
-2 2026-08-18 09:25:00  24246.25  24269.65  24241.10  24245.10       0
-First 3 candles - c1: 15.799999999999272, c2: 4.75, c3: -1.1500000000014552
-Bias based on first 3 candles: UP
-bias reversal.
-NIFTY50 local variable 'curr' referenced before assignment
+Adding today's OHLC for ULTRACEMCO
+        Date     Open     High      Low    Close  Volume
+0 2026-10-01  10849.0  10879.0  10612.0  10710.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                  10849.0
+High                  10879.0
+Low                   10612.0
+Close                 10710.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TVSMOTOR
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4075.4  4100.0  3930.1  4021.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4075.4
+High                   4100.0
+Low                    3930.1
+Close                  4021.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TRENT
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2603.9  2624.0  2545.8  2580.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2603.9
+High                   2624.0
+Low                    2545.8
+Close                  2580.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TORNTPHARM
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4774.5  4810.5  4717.3  4767.3     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4774.5
+High                   4810.5
+Low                    4717.3
+Close                  4767.3
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TITAN
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4591.0  4621.8  4491.0  4515.7     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4591.0
+High                   4621.8
+Low                    4491.0
+Close                  4515.7
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TECHM
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1545.3  1554.8  1512.0  1533.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1545.3
+High                   1554.8
+Low                    1512.0
+Close                  1533.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for TCS
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2066.5  2093.9  2045.1  2075.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2066.5
+High                   2093.9
+Low                    2045.1
+Close                  2075.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for TATASTEEL
+        Date   Open    High     Low  Close  Volume
+0 2026-10-01  184.7  186.55  175.75  178.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                    184.7
+High                   186.55
+Low                    175.75
+Close                   178.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TATAPOWER
+        Date    Open    High    Low   Close  Volume
+0 2026-10-01  354.95  357.15  346.4  350.15     NaN
+df: Date      2026-10-01 00:00:00
+Open                   354.95
+High                   357.15
+Low                     346.4
+Close                  350.15
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for TATACONSUM
+        Date   Open   High    Low  Close  Volume
+0 2026-10-01  952.2  964.8  945.0  957.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                    952.2
+High                    964.8
+Low                     945.0
+Close                   957.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for SUNPHARMA
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1814.4  1828.7  1792.6  1801.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1814.4
+High                   1828.7
+Low                    1792.6
+Close                  1801.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for SRF
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2465.0  2494.9  2431.7  2486.2     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2465.0
+High                   2494.9
+Low                    2431.7
+Close                  2486.2
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for SIEMENS
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  3726.3  3804.0  3709.5  3804.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   3726.3
+High                   3804.0
+Low                    3709.5
+Close                  3804.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for SHRIRAMFIN
+        Date   Open   High    Low  Close  Volume
+0 2026-10-01  973.0  975.0  936.0  945.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                    973.0
+High                    975.0
+Low                     936.0
+Close                   945.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for SBIN
+        Date    Open   High    Low  Close  Volume
+0 2026-10-01  954.55  965.4  945.8  954.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   954.55
+High                    965.4
+Low                     945.8
+Close                   954.1
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for SBILIFE
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1681.5  1730.3  1674.8  1721.6     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1681.5
+High                   1730.3
+Low                    1674.8
+Close                  1721.6
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for RELIANCE
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1180.9  1183.9  1160.8  1167.7     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1180.9
+High                   1183.9
+Low                    1160.8
+Close                  1167.7
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for RECLTD
+        Date   Open   High    Low   Close  Volume
+0 2026-10-01  298.0  298.2  286.2  287.75     NaN
+df: Date      2026-10-01 00:00:00
+Open                    298.0
+High                    298.2
+Low                     286.2
+Close                  287.75
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for POWERGRID
+        Date   Open   High     Low   Close  Volume
+0 2026-10-01  259.0  259.0  252.35  254.55     NaN
+df: Date      2026-10-01 00:00:00
+Open                    259.0
+High                    259.0
+Low                    252.35
+Close                  254.55
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for PNB
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  112.99  113.38  109.37  109.57     NaN
+df: Date      2026-10-01 00:00:00
+Open                   112.99
+High                   113.38
+Low                    109.37
+Close                  109.57
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for PIDILITIND
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1468.0  1486.9  1456.8  1464.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1468.0
+High                   1486.9
+Low                    1456.8
+Close                  1464.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for ONGC
+        Date    Open    High    Low   Close  Volume
+0 2026-10-01  224.78  224.99  220.6  222.37     NaN
+df: Date      2026-10-01 00:00:00
+Open                   224.78
+High                   224.99
+Low                     220.6
+Close                  222.37
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for NTPC
+        Date    Open    High     Low  Close  Volume
+0 2026-10-01  320.55  320.95  313.05  315.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   320.55
+High                   320.95
+Low                    313.05
+Close                   315.1
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for NHPC
+        Date   Open  High    Low  Close  Volume
+0 2026-10-01  72.72  72.9  70.25  71.75     NaN
+df: Date      2026-10-01 00:00:00
+Open                    72.72
+High                     72.9
+Low                     70.25
+Close                   71.75
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for NESTLEIND
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1303.7  1320.9  1295.0  1307.7     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1303.7
+High                   1320.9
+Low                    1295.0
+Close                  1307.7
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for NAUKRI
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1218.0  1221.2  1180.3  1200.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1218.0
+High                   1221.2
+Low                    1180.3
+Close                  1200.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for MOTHERSON
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  161.99  162.27  153.81  157.03     NaN
+df: Date      2026-10-01 00:00:00
+Open                   161.99
+High                   162.27
+Low                    153.81
+Close                  157.03
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for MAXHEALTH
+        Date    Open   High     Low   Close  Volume
+0 2026-10-01  917.95  950.0  902.05  940.95     NaN
+df: Date      2026-10-01 00:00:00
+Open                   917.95
+High                    950.0
+Low                    902.05
+Close                  940.95
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for MARUTI
+        Date     Open     High      Low    Close  Volume
+0 2026-10-01  11844.0  11907.0  11305.0  11386.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                  11844.0
+High                  11907.0
+Low                   11305.0
+Close                 11386.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for MARICO
+        Date   Open   High     Low   Close  Volume
+0 2026-10-01  784.0  791.0  766.25  781.35     NaN
+df: Date      2026-10-01 00:00:00
+Open                    784.0
+High                    791.0
+Low                    766.25
+Close                  781.35
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for MANKIND
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2495.7  2535.0  2476.1  2535.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2495.7
+High                   2535.0
+Low                    2476.1
+Close                  2535.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for LT
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  3731.0  3737.3  3655.9  3693.4     NaN
+df: Date      2026-10-01 00:00:00
+Open                   3731.0
+High                   3737.3
+Low                    3655.9
+Close                  3693.4
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for LODHA
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1116.9  1129.0  1083.3  1105.6     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1116.9
+High                   1129.0
+Low                    1083.3
+Close                  1105.6
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for LICHSGFIN
+        Date   Open   High     Low  Close  Volume
+0 2026-10-01  530.1  531.7  499.25  509.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                    530.1
+High                    531.7
+Low                    499.25
+Close                   509.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for KOTAKBANK
+        Date    Open   High     Low   Close  Volume
+0 2026-10-01  425.65  435.6  416.05  418.35     NaN
+df: Date      2026-10-01 00:00:00
+Open                   425.65
+High                    435.6
+Low                    416.05
+Close                  418.35
+Volume                    NaN
+Name: 60, dtype: object
+KOTAKBANK , 2026-10-01 , DAY, Bearish, Last Candle, 418.35 , 425.65 , 398.8
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for JSWSTEEL
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1250.9  1256.4  1214.8  1233.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1250.9
+High                   1256.4
+Low                    1214.8
+Close                  1233.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for JIOFIN
+        Date    Open   High    Low  Close  Volume
+0 2026-10-01  215.81  216.2  208.5  212.5     NaN
+df: Date      2026-10-01 00:00:00
+Open                   215.81
+High                    216.2
+Low                     208.5
+Close                   212.5
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for JINDALSTEL
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1129.0  1132.7  1079.0  1100.5     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1129.0
+High                   1132.7
+Low                    1079.0
+Close                  1100.5
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for ITC
+        Date    Open    High     Low  Close  Volume
+0 2026-10-01  262.35  262.35  254.65  255.9     NaN
+df: Date      2026-10-01 00:00:00
+Open                   262.35
+High                   262.35
+Low                    254.65
+Close                   255.9
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for IRFC
+        Date   Open   High    Low  Close  Volume
+0 2026-10-01  78.69  78.92  76.51  77.06     NaN
+df: Date      2026-10-01 00:00:00
+Open                    78.69
+High                    78.92
+Low                     76.51
+Close                   77.06
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for IOC
+        Date    Open   High    Low   Close  Volume
+0 2026-10-01  134.08  134.1  131.2  131.34     NaN
+df: Date      2026-10-01 00:00:00
+Open                   134.08
+High                    134.1
+Low                     131.2
+Close                  131.34
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for INFY
+        Date     Open    High     Low   Close  Volume
+0 2026-10-01  1006.85  1035.0  999.15  1035.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                  1006.85
+High                   1035.0
+Low                    999.15
+Close                  1035.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for INDUSINDBK
+        Date   Open    High    Low   Close  Volume
+0 2026-10-01  893.0  900.75  880.3  886.85     NaN
+df: Date      2026-10-01 00:00:00
+Open                    893.0
+High                   900.75
+Low                     880.3
+Close                  886.85
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for INDIGO
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4936.1  5016.2  4878.0  4929.9     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4936.1
+High                   5016.2
+Low                    4878.0
+Close                  4929.9
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for INDHOTEL
+        Date    Open    High    Low  Close  Volume
+0 2026-10-01  727.75  732.95  712.3  718.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   727.75
+High                   732.95
+Low                     712.3
+Close                   718.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for ICICIPRULI
+        Date    Open    High    Low   Close  Volume
+0 2026-10-01  443.85  450.55  441.8  448.05     NaN
+df: Date      2026-10-01 00:00:00
+Open                   443.85
+High                   450.55
+Low                     441.8
+Close                  448.05
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for ICICIBANK
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1316.7  1329.9  1308.4  1310.6     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1316.7
+High                   1329.9
+Low                    1308.4
+Close                  1310.6
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for HYUNDAI
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2030.2  2078.6  2002.0  2024.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2030.2
+High                   2078.6
+Low                    2002.0
+Close                  2024.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for HINDUNILVR
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1868.2  1873.6  1826.9  1836.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1868.2
+High                   1873.6
+Low                    1826.9
+Close                  1836.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for HINDALCO
+        Date    Open    High    Low   Close  Volume
+0 2026-10-01  936.15  946.65  923.5  941.85     NaN
+df: Date      2026-10-01 00:00:00
+Open                   936.15
+High                   946.65
+Low                     923.5
+Close                  941.85
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for HEROMOTOCO
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  5210.0  5290.0  5051.0  5168.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   5210.0
+High                   5290.0
+Low                    5051.0
+Close                  5168.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for HDFCBANK
+        Date   Open   High    Low  Close  Volume
+0 2026-10-01  708.1  721.3  707.1  721.2     NaN
+df: Date      2026-10-01 00:00:00
+Open                    708.1
+High                    721.3
+Low                     707.1
+Close                   721.2
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for HCLTECH
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1240.9  1256.0  1228.9  1243.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1240.9
+High                   1256.0
+Low                    1228.9
+Close                  1243.1
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for HAVELLS
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1021.1  1041.8  1019.7  1040.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1021.1
+High                   1041.8
+Low                    1019.7
+Close                  1040.0
+Volume                    NaN
+Name: 60, dtype: object
+HAVELLS , 2026-10-01 , DAY, Bullish, Last Candle, 1040.0 , 1021.1 , 1062.1
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for HAL
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4668.2  4699.7  4559.3  4601.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4668.2
+High                   4699.7
+Low                    4559.3
+Close                  4601.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for GRASIM
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  3021.0  3045.0  2944.4  2962.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   3021.0
+High                   3045.0
+Low                    2944.4
+Close                  2962.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for GODREJCP
+        Date    Open    High    Low  Close  Volume
+0 2026-10-01  847.55  848.95  838.0  840.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   847.55
+High                   848.95
+Low                     838.0
+Close                   840.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for GAIL
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  171.01  171.89  168.55  171.22     NaN
+df: Date      2026-10-01 00:00:00
+Open                   171.01
+High                   171.89
+Low                    168.55
+Close                  171.22
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for ETERNAL
+        Date    Open   High    Low  Close  Volume
+0 2026-10-01  316.85  320.4  309.8  313.9     NaN
+df: Date      2026-10-01 00:00:00
+Open                   316.85
+High                    320.4
+Low                     309.8
+Close                   313.9
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for EICHERMOT
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  7101.0  7146.0  6840.0  6920.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   7101.0
+High                   7146.0
+Low                    6840.0
+Close                  6920.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for DRREDDY
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1225.9  1233.9  1194.9  1206.2     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1225.9
+High                   1233.9
+Low                    1194.9
+Close                  1206.2
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for DMART
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  3815.0  3880.0  3781.4  3813.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   3815.0
+High                   3880.0
+Low                    3781.4
+Close                  3813.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for DLF
+        Date   Open   High     Low  Close  Volume
+0 2026-10-01  665.0  671.1  650.55  658.4     NaN
+df: Date      2026-10-01 00:00:00
+Open                    665.0
+High                    671.1
+Low                    650.55
+Close                   658.4
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for DIVISLAB
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  9315.0  9318.0  9078.0  9249.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   9315.0
+High                   9318.0
+Low                    9078.0
+Close                  9249.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for DABUR
+        Date    Open    High    Low   Close  Volume
+0 2026-10-01  379.25  383.85  373.2  374.25     NaN
+df: Date      2026-10-01 00:00:00
+Open                   379.25
+High                   383.85
+Low                     373.2
+Close                  374.25
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for CUMMINSIND
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4760.0  4860.0  4760.0  4860.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4760.0
+High                   4860.0
+Low                    4760.0
+Close                  4860.0
+Volume                    NaN
+Name: 60, dtype: object
+CUMMINSIND , 2026-10-01 , DAY, Bullish, Last Candle, 4860.0 , 4760.0 , 4960.0
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for CONCOR
+        Date    Open    High     Low  Close  Volume
+0 2026-10-01  448.45  450.85  436.35  442.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   448.45
+High                   450.85
+Low                    436.35
+Close                   442.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for COALINDIA
+        Date    Open    High    Low  Close  Volume
+0 2026-10-01  422.25  426.35  416.3  420.4     NaN
+df: Date      2026-10-01 00:00:00
+Open                   422.25
+High                   426.35
+Low                     416.3
+Close                   420.4
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for CIPLA
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1352.6  1359.4  1333.4  1344.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1352.6
+High                   1359.4
+Low                    1333.4
+Close                  1344.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for CHOLAFIN
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1608.0  1618.0  1563.2  1580.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1608.0
+High                   1618.0
+Low                    1563.2
+Close                  1580.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for CGPOWER
+        Date    Open   High    Low  Close  Volume
+0 2026-10-01  862.95  889.9  859.6  879.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   862.95
+High                    889.9
+Low                     859.6
+Close                   879.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for CANBK
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  119.44  120.13  116.51  118.36     NaN
+df: Date      2026-10-01 00:00:00
+Open                   119.44
+High                   120.13
+Low                    116.51
+Close                  118.36
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for BRITANNIA
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  4785.0  4812.3  4737.0  4778.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   4785.0
+High                   4812.3
+Low                    4737.0
+Close                  4778.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for BPCL
+        Date   Open    High    Low  Close  Volume
+0 2026-10-01  302.4  305.05  297.1  300.6     NaN
+df: Date      2026-10-01 00:00:00
+Open                    302.4
+High                   305.05
+Low                     297.1
+Close                   300.6
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for BHARTIARTL
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1746.0  1765.8  1726.3  1741.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1746.0
+High                   1765.8
+Low                    1726.3
+Close                  1741.1
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for BEL
+        Date    Open    High     Low  Close  Volume
+0 2026-10-01  385.25  386.15  378.65  383.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   385.25
+High                   386.15
+Low                    378.65
+Close                   383.1
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for BANKBARODA
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  230.01  233.99  229.52  230.82     NaN
+df: Date      2026-10-01 00:00:00
+Open                   230.01
+High                   233.99
+Low                    229.52
+Close                  230.82
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for BAJFINANCE
+        Date   Open    High    Low  Close  Volume
+0 2026-10-01  954.6  955.95  937.3  948.3     NaN
+df: Date      2026-10-01 00:00:00
+Open                    954.6
+High                   955.95
+Low                     937.3
+Close                   948.3
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for BAJAJHLDNG
+        Date     Open     High      Low    Close  Volume
+0 2026-10-01  10736.0  10758.0  10415.0  10666.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                  10736.0
+High                  10758.0
+Low                   10415.0
+Close                 10666.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for BAJAJFINSV
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1720.0  1734.9  1703.4  1732.6     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1720.0
+High                   1734.9
+Low                    1703.4
+Close                  1732.6
+Volume                    NaN
+Name: 60, dtype: object
+BAJAJFINSV , 2026-10-01 , DAY, Bullish, Last Candle, 1732.6 , 1720.0 , 1764.1
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for BAJAJ-AUTO
+        Date     Open     High     Low    Close  Volume
+0 2026-10-01  10621.0  10714.0  9900.0  10045.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                  10621.0
+High                  10714.0
+Low                    9900.0
+Close                 10045.0
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for AXISBANK
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1224.6  1241.6  1215.3  1217.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1224.6
+High                   1241.6
+Low                    1215.3
+Close                  1217.1
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for ASIANPAINT
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2392.9  2420.0  2377.0  2407.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2392.9
+High                   2420.0
+Low                    2377.0
+Close                  2407.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for APOLLOHOSP
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  8101.5  8135.0  7910.0  8133.5     NaN
+df: Date      2026-10-01 00:00:00
+Open                   8101.5
+High                   8135.0
+Low                    7910.0
+Close                  8133.5
+Volume                    NaN
+Name: 60, dtype: object
+APOLLOHOSP , 2026-10-01 , DAY, Bullish, Last Candle, 8133.5 , 8101.5 , 8358.5
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for AMBUJACEM
+        Date   Open   High    Low   Close  Volume
+0 2026-10-01  371.6  371.6  356.3  362.25     NaN
+df: Date      2026-10-01 00:00:00
+Open                    371.6
+High                    371.6
+Low                     356.3
+Close                  362.25
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for ADANIPOWER
+        Date    Open    High    Low   Close  Volume
+0 2026-10-01  202.61  203.36  193.1  196.21     NaN
+df: Date      2026-10-01 00:00:00
+Open                   202.61
+High                   203.36
+Low                     193.1
+Close                  196.21
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for ADANIPORTS
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1778.3  1782.8  1716.0  1737.8     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1778.3
+High                   1782.8
+Low                    1716.0
+Close                  1737.8
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for ADANIGREEN
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1268.8  1298.0  1260.3  1276.1     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1268.8
+High                   1298.0
+Low                    1260.3
+Close                  1276.1
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for ADANIENT
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  2890.0  2903.7  2772.0  2816.8     NaN
+df: Date      2026-10-01 00:00:00
+Open                   2890.0
+High                   2903.7
+Low                    2772.0
+Close                  2816.8
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for ADANIENSOL
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  1321.0  1389.6  1309.1  1326.4     NaN
+df: Date      2026-10-01 00:00:00
+Open                   1321.0
+High                   1389.6
+Low                    1309.1
+Close                  1326.4
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for ABB
+        Date    Open    High     Low   Close  Volume
+0 2026-10-01  6768.0  6947.5  6735.0  6900.0     NaN
+df: Date      2026-10-01 00:00:00
+Open                   6768.0
+High                   6947.5
+Low                    6735.0
+Close                  6900.0
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for NIFTY50
+        Date     Open     High      Low     Close  Volume
+0 2026-10-01  22554.5  22610.6  22217.3  22421.95     NaN
+df: Date      2026-10-01 00:00:00
+Open                  22554.5
+High                  22610.6
+Low                   22217.3
+Close                22421.95
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully
+Adding today's OHLC for NIFTYBANK
+        Date     Open      High      Low     Close  Volume
+0 2026-10-01  54576.5  55091.45  54066.6  54450.75     NaN
+df: Date      2026-10-01 00:00:00
+Open                  54576.5
+High                 55091.45
+Low                   54066.6
+Close                54450.75
+Volume                    NaN
+Name: 60, dtype: object
+Adding today's OHLC for NIFTYNXT50
+        Date     Open     High      Low    Close  Volume
+0 2026-10-01  69539.7  69683.9  68110.5  68997.5     NaN
+df: Date      2026-10-01 00:00:00
+Open                  69539.7
+High                  69683.9
+Low                   68110.5
+Close                 68997.5
+Volume                    NaN
+Name: 60, dtype: object
+Sending telegram message ...
+✅ Telegram alert sent successfully

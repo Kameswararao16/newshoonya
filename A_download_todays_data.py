@@ -109,8 +109,8 @@ def download_stock(stock, api, st, et):
 def download_all_stocks(api):
     et = datetime.now().replace(second=0, microsecond=0)
     st = et - timedelta(minutes=5)
-    print("waiting for 60seconds...")
-    time.sleep(60) # Attimes, full 5-minutes candle is not formming correctly. So, wait for 60 seconds
+    print("waiting for 40seconds...")
+    time.sleep(40) # Attimes, full 5-minutes candle is not formming correctly. So, wait for 60 seconds
     # st = datetime.now().replace(hour=9, minute=15, second=0, microsecond=0) - timedelta(minutes=5) # Only for testing purpose
     for stock in NIFTY:
         try:

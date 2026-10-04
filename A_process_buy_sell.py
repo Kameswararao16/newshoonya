@@ -91,10 +91,15 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
     #--------------------------------------------
     # Get Direction bias based on first 3 candles
     bias = "SIDE"
-    if (c1+c2+c3 >  (0.3 *lsize)): 
-        bias = "UP" 
-    elif (c1+c2+c3 < -(0.5 *lsize)): 
-        bias = "DOWN"
+    bias_color = ("GREEN" if c1+c2+c3 > 0 else "RED")
+    bias_boundary = first_3_candles.iloc[0]["Open"] + c1+c2+c3  # Not used
+    print(f"bias_color: {bias_color}, bias_boundary: {bias_boundary}")
+    if (abs(f_dh - f_dl) > (0.8 *lsize)):
+        print(f"enough movement to consider.")
+        if (c1+c2+c3 >  (0.3 *lsize)): 
+            bias = "UP" 
+        elif (c1+c2+c3 < -(0.5 *lsize)): 
+            bias = "DOWN"
     print(f"Bias based on first 3 candles: {bias}")
     # Get time
     #now = datetime.now().strftime("%H:%M:%S")
@@ -103,7 +108,7 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
     # ---------------- 
     if now > "11:30:00":
         print(f"bias reversal.")
-        if abs(dh-float(curr["High"])) < round(0.25 * lsize, 2):
+        if abs(dh-float(candles.iloc[-1]["High"])) < round(0.25 * lsize, 2):
             print(f"Reached day high. So, bias NONE.")
             bias = "NONE"
         else:
@@ -223,17 +228,17 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
     # Bullish confirmation
     bullish_confirmation = (
         # c_green_candle and
-        (marubozu and c_green_candle) or                        #   Marubo & Green candle
+        (marubozu and c_green_candle) or    #   Marubo & Green candle
         bullish_engulf or                   #   Bullish Engulf
-        hammer                             #   Hammer
+        (hammer  and c_green_candle)        #   Hammer
     )
     print(f"bullish_confirmation: {bullish_confirmation}")
     # Bearish conformation 
     bearish_confirmation = (
         # c_red_candle and 
-        (marubozu and c_red_candle) or                        #   Marubo & red candle
+        (marubozu and c_red_candle) or      #   Marubo & red candle
         bearish_engulf or                   #   Bearish Engulf
-        shooting_star                     #   shooting star  
+        (shooting_star  and c_red_candle)   #   shooting star  
     )
     print(f"bearish_confirmation: {bearish_confirmation}")
 
@@ -251,7 +256,7 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
                 if (bullish_confirmation and trend != "UP"): # Bullish candle formed
                     print(f"BUY: Bullish confirmation.")
                     buy_signal = True
-                    entry = entry - round(c_range*0.25, 2)
+                    entry = entry - round(c_range*0.2, 2)
                     target = entry + round((0.5*lsize), 2)
                     stop_loss = entry - round((0.20*lsize), 2)
                     
@@ -262,7 +267,7 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
                 if(bearish_confirmation and trend != "DOWN"): # Bearish candle formed
                     print(f"SELL: Bearish conformation")
                     sell_signal = True
-                    entry = entry + round(c_range*0.25, 2)  
+                    entry = entry + round(c_range*0.2, 2)  
                     target = entry - round((0.5*lsize), 2)
                     stop_loss = entry + round((0.20*lsize), 2)
                            
@@ -279,7 +284,7 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
                 if(trend != "DOWN" and  (bearish_confirmation or (c_red_candle and (cc < f_dlw and co > f_dlw))) ):  
                     print(f"SELL: Bearish conformation")
                     sell_signal = True
-                    entry = entry + round(c_range*0.25, 2)
+                    entry = entry + round(c_range*0.2, 2)
                     target = entry - round((0.5*lsize), 2)
                     stop_loss = entry + round((0.20*lsize), 2)
                     
@@ -290,7 +295,7 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
                 if( trend != "UP" and  (bullish_confirmation or (c_green_candle and (cc > f_dlw and co < f_dlw))) ):  
                     print(f"BUY: Bullish conformation")
                     buy_signal = True
-                    entry = entry - round(c_range*0.25, 2)
+                    entry = entry - round(c_range*0.2, 2)
                     target = entry + round((0.5*lsize), 2)
                     stop_loss = entry - round((0.20*lsize), 2)
                     
@@ -300,71 +305,43 @@ def detect_candlestick_pattern(first_3_candles, last_5_candles, candles, stkname
         print(f"abs(f_dl - cc): {abs(f_dl - cc)},  round(0.25 * lsize, 2): {round(0.25 * lsize, 2)}")
         print(f"bias: {bias}, bearish_confirmation: {bearish_confirmation}, trend: {trend}")
 
-        # Current candle is inside first 3-candles and current candle is near first 3-candle high
-        # if( (abs(f_dhw - ch) <= round(0.25 * lsize, 2)) or (f_dhw < ch) ):
-        #     print("Price is near first 3-candle high.")
-
         # Up trend + bearish confirmation + current candle close is still near first 3-candle high            
         trigger_sell_signal =  False
         trigger_buy_signal =  False
         # Current candle closed near 1st 3 candle's high(wick)
-        if abs(cc - f_dhw) < round(0.25 * lsize, 2): 
+        if ( (abs(cc - f_dhw) < round(0.25 * lsize, 2)) and (cc < f_dhw) ) : 
+            print(f"Normal sell checks")
             trigger_sell_signal = True
         # Bias is DOWN + Near 1st 3 candle's low with/witout wick
-        elif (bias == "DOWN" and ((abs(cc - f_dlw) < round(0.25 * lsize, 2) and cc < f_dlw) or abs(cc - f_dl) < round(0.25 * lsize, 2) )): 
+        elif(bias != "UP" and  bias_color == "RED" and dlw < f_dlw and cc < f_dl and 
+            (abs(cc - f_dlw) < round(0.25 * lsize, 2) or abs(cc - f_dl) < round(0.25 * lsize, 2) ) ): 
+            print(f"Bias sell checks")
             trigger_sell_signal = True
+
         # Current candle closed near 1st 3 candle's low(wick)
-        if abs(cc - f_dlw) < round(0.25 * lsize, 2): 
+        if ( (abs(cc - f_dlw) < round(0.25 * lsize, 2)) and (cc > f_dlw)): 
+            print(f"Normal buy checks")
             trigger_buy_signal = True
         # Bias is UP + Near 1st 3 candle's high with/witout wick
-        elif (bias == "UP" and ((abs(cc - f_dhw) < round(0.25 * lsize, 2) and cc > f_dhw) or abs(cc - f_dh) < round(0.25 * lsize, 2) )): 
+        elif(bias != "DOWN" and bias_color == "GREEN" and dhw > f_dhw and cc > f_dh and 
+            ((abs(cc - f_dhw) < round(0.25 * lsize, 2) and cc > f_dhw) or abs(cc - f_dh) < round(0.25 * lsize, 2) )): 
+            print(f"Bias buy checks")
             trigger_buy_signal = True
 
         # trend not DOWN + bearish confirmation + sell signal
         if(bearish_confirmation and trend != "DOWN" and  trigger_sell_signal):
             print(f"SELL: Bearish conformation")
             sell_signal = True
-            entry = entry + round(c_range*0.25, 2)
+            entry = entry + round(c_range*0.2, 2)
             target = entry - round((0.5*lsize), 2)
             stop_loss = entry + round((0.20*lsize), 2)
         # trend not UP + bullish confirmation + sell signal
         if(bullish_confirmation and trend != "UP" and  trigger_buy_signal):    
-            print(f"BUY Bias: Bullish confirmation.")
+            print(f"BUY : Bullish confirmation.")
             buy_signal = True
-            entry = entry - round(c_range*0.25, 2)
+            entry = entry - round(c_range*0.2, 2)
             target = entry + round((0.5*lsize), 2)
             stop_loss = entry - round((0.20*lsize), 2)
-
-        # if(bearish_confirmation and trend != "DOWN" and (cc > (f_dhw - round(0.25 * lsize, 2))) and (abs(cc - f_dl) > round(0.40 * lsize, 2))): 
-        #         print(f"SELL: Bearish conformation")
-        #         sell_signal = True
-        #         entry = entry + round(c_range*0.25, 2)
-        #         target = entry - round((0.5*lsize), 2)
-        #         stop_loss = entry + round((0.20*lsize), 2)
-        # # Near first 3 candles day (body) high + Up trend overall + bullish confirmation + either side or down trend (last few candles) 
-        # elif(bullish_confirmation and trend != "UP" and (abs(f_dh - cc) < round(0.25 * lsize, 2)) and (bias == "UP") ):
-        #             print(f"BUY Bias: Bullish confirmation.")
-        #             buy_signal = True
-        #             entry = entry - round(c_range*0.25, 2)
-        #             target = entry + round((0.5*lsize), 2)
-        #             stop_loss = entry - round((0.20*lsize), 2)
-        # # Current candle is inside first 3-candles and current candle is near first 3-candle low        
-        # # elif( (abs(f_dlw - cl) < round(0.25 * lsize, 2)) or (f_dl > cc) or (f_dlw > cl) ) : 
-        # #     print("Price is near first 3-candle low.")   
-        # # Down trend + bullish confirmation + current candle close is still near first 3-candle low
-        # if (bullish_confirmation and trend != "UP" and cc < (f_dlw + round(0.25 * lsize, 2)) and (abs(cc - f_dh) > round(0.40 * lsize, 2))): 
-        #         print(f"BUY: Bullish confirmation.")
-        #         buy_signal = True
-        #         entry = entry - round(c_range*0.25, 2)
-        #         target = entry + round((0.5*lsize), 2)
-        #         stop_loss = entry - round((0.20*lsize), 2)
-        # # Near first 3 candles day (body) low + Down trend overall + bearish confirmation + current candle close is still near first 3-candle low
-        # elif(bearish_confirmation and trend != "DOWN" and (abs(f_dl - cc) < round(0.25 * lsize, 2)) and (bias == "DOWN") and ):
-        #             print(f"SELL Bias: Bearish confirmation.")
-        #             sell_signal = True
-        #             entry = entry + round(c_range*0.25, 2)
-        #             target = entry - round((0.5*lsize), 2)
-        #             stop_loss = entry + round((0.20*lsize), 2)
 
                 
     # Send message
@@ -417,6 +394,10 @@ def process_buy_sell(api):
     print("Starting to process all stocks for buy/sell signals...")
     # time.sleep(5)  # Wait for 5 seconds before starting
     for stock in NIFTY:
+        # process only NIFTY
+        if stock['Symbol'] != "NIFTY50" : 
+            continue
+
         lsize = float(stock['LotSize'])
         try:
             file = os.path.join( DATA_FOLDER, stock["Symbol"]+".csv")
@@ -425,7 +406,7 @@ def process_buy_sell(api):
                 continue
 
             df = pd.read_csv(file)
-            df["Date"] = pd.to_datetime(df["Date"])
+            df["Date"] = pd.to_datetime(df["Date"], dayfirst=True)
             df = df.sort_values("Date")
             # wait for first 3 candles
             if len(df)<4: 
@@ -435,68 +416,68 @@ def process_buy_sell(api):
             last_5_candles = df.iloc[max(0, len(df)-6):len(df)-1]
             print(f"last_5_candles: {last_5_candles}")         
 
-            # #-----------------------------------------------
-            # dh = (df[["Open","Close"]]).max().max()
-            # dl = (df[["Open","Close"]]).min().min()
-            # dhw = df["High"].max()
-            # dlw = df["Low"].min()
-            # hX = df.iloc[max(0, len(df)-12):len(df)-1][["Open", "Close"]].max().max()
-            # lX = df.iloc[max(0, len(df)-12):len(df)-1][["Open", "Close"]].min().min()
-            # hwX = df.iloc[max(0, len(df)-12):len(df)-1]["High"].max()
-            # lwX = df.iloc[max(0, len(df)-12):len(df)-1]["Low"].min()
-            # print(f"Processing stock: {stock['Symbol']}, High: {dh}, Low: {dl}, High Wick: {dhw}, Low Wick: {dlw}")
-            # print(f"11-candle High: {hX}, 11-candle Low: {lX}, 11-candle High Wick: {hwX}, 11-candle Low Wick: {lwX}")
-            # df = (df.sort_values("Date").tail(3))
+            #-----------------------------------------------
+            dh = (df[["Open","Close"]]).max().max()
+            dl = (df[["Open","Close"]]).min().min()
+            dhw = df["High"].max()
+            dlw = df["Low"].min()
+            hX = df.iloc[max(0, len(df)-12):len(df)-1][["Open", "Close"]].max().max()
+            lX = df.iloc[max(0, len(df)-12):len(df)-1][["Open", "Close"]].min().min()
+            hwX = df.iloc[max(0, len(df)-12):len(df)-1]["High"].max()
+            lwX = df.iloc[max(0, len(df)-12):len(df)-1]["Low"].min()
+            print(f"Processing stock: {stock['Symbol']}, High: {dh}, Low: {dl}, High Wick: {dhw}, Low Wick: {dlw}")
+            print(f"11-candle High: {hX}, 11-candle Low: {lX}, 11-candle High Wick: {hwX}, 11-candle Low Wick: {lwX}")
+            df = (df.sort_values("Date").tail(3))
 
-            #====test=====
-            print(f"df: {len(df)}")
+            # #====test=====
+            # print(f"df: {len(df)}")
 
-            for i in range(3, len(df) - 1):
-                window = df.iloc[i-2:i]
-                last_5_candles = df.iloc[max(0, i-6):i-1]
-                print(f"last_5_candles: {last_5_candles}") 
-                df_temp = df.iloc[0:max(0, i-1)]
-                dh = (df_temp[["Open","Close"]]).max().max()
-                dl = (df_temp[["Open","Close"]]).min().min()
-                dhw = df_temp["High"].max()
-                dlw = df_temp["Low"].min()
-                hX = df_temp.iloc[max(0, i-12):i][["Open", "Close"]].max().max()
-                lX = df_temp.iloc[max(0, i-12):i][["Open", "Close"]].min().min()
-                hwX = df_temp.iloc[max(0, i-12):i]["High"].max()
-                lwX = df_temp.iloc[max(0, i-12):i]["Low"].min()
-                print(f"Processing stock: {stock['Symbol']}, High: {dh}, Low: {dl}, High Wick: {dhw}, Low Wick: {dlw}")
-                print(f"11-candle High: {hX}, 11-candle Low: {lX}, 11-candle High Wick: {hwX}, 11-candle Low Wick: {lwX}")
-                print(f"Processing stock: {stock['Symbol']}")
-                detect_candlestick_pattern(first_3_candles, last_5_candles, window, stock['Symbol'], lsize, dh, dl, dhw, dlw, hX, lX, hwX, lwX, round(float(stock['LotSize']) * 0.4))
-                # print(f"waiting 10 second before next stock...")
-                # time.sleep(10)
-            #=============
+            # for i in range(3, len(df) - 1):
+            #     window = df.iloc[i-2:i]
+            #     last_5_candles = df.iloc[max(0, i-6):i-1]
+            #     print(f"last_5_candles: {last_5_candles}") 
+            #     df_temp = df.iloc[0:max(0, i-1)]
+            #     dh = (df_temp[["Open","Close"]]).max().max()
+            #     dl = (df_temp[["Open","Close"]]).min().min()
+            #     dhw = df_temp["High"].max()
+            #     dlw = df_temp["Low"].min()
+            #     hX = df_temp.iloc[max(0, i-12):i][["Open", "Close"]].max().max()
+            #     lX = df_temp.iloc[max(0, i-12):i][["Open", "Close"]].min().min()
+            #     hwX = df_temp.iloc[max(0, i-12):i]["High"].max()
+            #     lwX = df_temp.iloc[max(0, i-12):i]["Low"].min()
+            #     print(f"Processing stock: {stock['Symbol']}, High: {dh}, Low: {dl}, High Wick: {dhw}, Low Wick: {dlw}")
+            #     print(f"11-candle High: {hX}, 11-candle Low: {lX}, 11-candle High Wick: {hwX}, 11-candle Low Wick: {lwX}")
+            #     print(f"Processing stock: {stock['Symbol']}")
+            #     detect_candlestick_pattern(first_3_candles, last_5_candles, window, stock['Symbol'], lsize, dh, dl, dhw, dlw, hX, lX, hwX, lwX, round(float(stock['LotSize']) * 0.4))
+            #     # print(f"waiting 10 second before next stock...")
+            #     # time.sleep(10)
+            # #=============
 
             # print(f"Processing stock: {stock['Symbol']}")
-            # detect_candlestick_pattern(first_3_candles, last_5_candles, df, stock['Symbol'], lsize, dh, dl, dhw, dlw, hX, lX, hwX, lwX, round(float(stock['LotSize']) * 0.4))
+            detect_candlestick_pattern(first_3_candles, last_5_candles, df, stock['Symbol'], lsize, dh, dl, dhw, dlw, hX, lX, hwX, lwX, round(float(stock['LotSize']) * 0.4))
         except Exception as e:
             print(stock["Symbol"], e)
 
     # print("DOWNLOAD COMPLETE")
-#===================TEST===================================
-#login to API
-from api_helper import NorenApiPy
+# #===================TEST===================================
+# #login to API
+# from api_helper import NorenApiPy
 
-api = NorenApiPy()
+# api = NorenApiPy()
 
-with open("cred.yml") as f:
-    cred = yaml.load(f, Loader=yaml.FullLoader)
+# with open("cred.yml") as f:
+#     cred = yaml.load(f, Loader=yaml.FullLoader)
 
-loginstatus = api.injectOAuthHeader(
-    cred["Access_token"],
-    cred["UID"],
-    cred["Account_ID"]
-)
+# loginstatus = api.injectOAuthHeader(
+#     cred["Access_token"],
+#     cred["UID"],
+#     cred["Account_ID"]
+# )
 
-if loginstatus is None:
-    print("Login failed")
-    exit()
+# if loginstatus is None:
+#     print("Login failed")
+#     exit()
 
-print("API connected")
-#=================================================
-process_buy_sell(api)
+# print("API connected")
+# #=================================================
+# process_buy_sell(api)
