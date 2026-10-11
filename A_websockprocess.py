@@ -7,6 +7,8 @@ import queue
 import threading
 import time
 import pandas as pd
+from pathlib import Path
+import shutil
 
 from datetime import datetime, time as dt_time
 
@@ -18,13 +20,37 @@ from api_helper import NorenApiPy
 # ============================================================
 
 LIVE_DATA_FOLDER = "live_data"
+LIVE_DATA_FOLDER_ARCHIVE = "live_data_archive"
 
 # Market data running window
 MARKET_START = dt_time(9, 14, 0)
-MARKET_END = dt_time(22, 14, 0)
+MARKET_END = dt_time(15, 14, 0)
 
 os.makedirs(LIVE_DATA_FOLDER, exist_ok=True)
+os.makedirs(LIVE_DATA_FOLDER_ARCHIVE, exist_ok=True)
+###############################################################
+# Back-up
+folder = Path(LIVE_DATA_FOLDER)
+archive_folder = Path(LIVE_DATA_FOLDER_ARCHIVE)
 
+# Move existing files/folders to archive if they exist
+if folder.exists():
+    # Create timestamped archive folder
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    archive = archive_folder / f"live_data_{timestamp}"
+    archive.mkdir(parents=True, exist_ok=True)
+
+    # Move all files/folders into archive
+    for item in folder.iterdir():
+        shutil.move(str(item), str(archive / item.name))
+
+    print(f"Archived live_data to: {archive}")
+
+else:
+    folder.mkdir(parents=True)
+    print("Created nifty100_data_today folder.")
+
+time.sleep(10)  # Wait for 10 seconds to ensure the folder is created
 
 # ============================================================
 # REDIS
@@ -171,8 +197,6 @@ tokens = [
     "15083", #ADANIPORTS
     "10604", #BHARTIARTL
     "26000" # NIFTY50
-
-
     # Add remaining tokens here
 ]
 
@@ -480,6 +504,214 @@ def create_candle(feed, minute_time):
 
     return candle
 
+# ============================================================
+# CALCULATE PRICE RANGES
+# ============================================================
+
+def calculate_price_ranges(token, current_candle=None):
+
+    try:
+
+        file_path = os.path.join(
+            LIVE_DATA_FOLDER,
+            f"{token}.csv"
+        )
+
+        frames = []
+
+        # ----------------------------------------------------
+        # Read existing completed candles
+        # ----------------------------------------------------
+
+        if os.path.exists(file_path):
+
+            df = pd.read_csv(file_path)
+
+            if not df.empty:
+
+                df["date_time"] = pd.to_datetime(
+                    df["date_time"]
+                )
+
+                frames.append(df)
+
+        # ----------------------------------------------------
+        # Add candle which is about to be saved
+        # ----------------------------------------------------
+
+        if current_candle is not None:
+
+            temp = current_candle.copy()
+
+            temp["date_time"] = pd.to_datetime(
+                temp["date_time"]
+            )
+
+            frames.append(
+                pd.DataFrame([temp])
+            )
+
+        # ----------------------------------------------------
+        # No data
+        # ----------------------------------------------------
+
+        if not frames:
+
+            return {
+                "day_high": None,
+                "day_low": None,
+
+                "high_15m": None,
+                "low_15m": None,
+
+                "high_30m": None,
+                "low_30m": None,
+
+                "high_1h": None,
+                "low_1h": None,
+
+                "high_2h": None,
+                "low_2h": None,
+
+                "high_4h": None,
+                "low_4h": None
+            }
+
+        # ----------------------------------------------------
+        # Combine
+        # ----------------------------------------------------
+
+        df = pd.concat(
+            frames,
+            ignore_index=True
+        )
+
+        # ----------------------------------------------------
+        # Remove duplicate candles
+        # ----------------------------------------------------
+
+        df = df.drop_duplicates(
+            subset=["date_time"],
+            keep="last"
+        )
+
+        df = df.sort_values(
+            "date_time"
+        )
+
+        # ----------------------------------------------------
+        # Only today's candles
+        # ----------------------------------------------------
+
+        today = datetime.now().date()
+
+        df = df[
+            df["date_time"].dt.date == today
+        ]
+
+        if df.empty:
+
+            return {}
+
+        # ====================================================
+        # DAY HIGH / LOW
+        # ====================================================
+
+        day_high = df["high"].max()
+
+        day_low = df["low"].min()
+
+        # ====================================================
+        # CURRENT CANDLE TIME
+        # ====================================================
+
+        current_time = df["date_time"].max()
+
+        # ====================================================
+        # ROLLING RANGE
+        # ====================================================
+
+        def get_range(minutes):
+
+            start_time = (
+                current_time
+                - pd.Timedelta(
+                    minutes=minutes
+                )
+            )
+
+            temp = df[
+                df["date_time"] >= start_time
+            ]
+
+            if temp.empty:
+
+                return None, None
+
+            return (
+                temp["high"].max(),
+                temp["low"].min()
+            )
+
+        # ----------------------------------------------------
+        # 15 minutes
+        # ----------------------------------------------------
+
+        high_15m, low_15m = get_range(15)
+
+        # ----------------------------------------------------
+        # 30 minutes
+        # ----------------------------------------------------
+
+        high_30m, low_30m = get_range(30)
+
+        # ----------------------------------------------------
+        # 1 hour
+        # ----------------------------------------------------
+
+        high_1h, low_1h = get_range(60)
+
+        # ----------------------------------------------------
+        # 2 hours
+        # ----------------------------------------------------
+
+        high_2h, low_2h = get_range(120)
+
+        # ----------------------------------------------------
+        # 4 hours
+        # ----------------------------------------------------
+
+        high_4h, low_4h = get_range(240)
+
+        return {
+
+            "day_high": day_high,
+            "day_low": day_low,
+
+            "high_15m": high_15m,
+            "low_15m": low_15m,
+
+            "high_30m": high_30m,
+            "low_30m": low_30m,
+
+            "high_1h": high_1h,
+            "low_1h": low_1h,
+
+            "high_2h": high_2h,
+            "low_2h": low_2h,
+
+            "high_4h": high_4h,
+            "low_4h": low_4h
+        }
+
+    except Exception as e:
+
+        print(
+            f"[{datetime.now()}] "
+            f"RANGE ERROR {token}: {e}"
+        )
+
+        return {}
 
 # ============================================================
 # SAVE COMPLETED CANDLE
@@ -495,15 +727,66 @@ def save_candle(token, candle):
         )
 
         columns = [
-
             "date_time",
             "open",
             "close",
             "high",
             "low",
-            "volume"
+            "volume",
 
+            "day_high",
+            "day_low",
+
+            "high_15m",
+            "low_15m",
+
+            "high_30m",
+            "low_30m",
+
+            "high_1h",
+            "low_1h",
+
+            "high_2h",
+            "low_2h",
+
+            "high_4h",
+            "low_4h"
         ]
+
+        # ----------------------------------------------------
+        # Calculate ranges using existing CSV + current candle
+        # ----------------------------------------------------
+
+        ranges = calculate_price_ranges(
+            token,
+            candle
+        )
+
+        # ----------------------------------------------------
+        # Add calculated values to candle
+        # ----------------------------------------------------
+
+        candle["day_high"] = ranges["day_high"]
+        candle["day_low"] = ranges["day_low"]
+
+        candle["high_15m"] = ranges["high_15m"]
+        candle["low_15m"] = ranges["low_15m"]
+
+        candle["high_30m"] = ranges["high_30m"]
+        candle["low_30m"] = ranges["low_30m"]
+
+        candle["high_1h"] = ranges["high_1h"]
+        candle["low_1h"] = ranges["low_1h"]
+
+        candle["high_2h"] = ranges["high_2h"]
+        candle["low_2h"] = ranges["low_2h"]
+
+        candle["high_4h"] = ranges["high_4h"]
+        candle["low_4h"] = ranges["low_4h"]
+
+        # ----------------------------------------------------
+        # Create row
+        # ----------------------------------------------------
 
         new_row = pd.DataFrame(
             [candle],
@@ -546,7 +829,6 @@ def save_candle(token, candle):
             f"[{datetime.now()}] "
             f"CSV ERROR for {token}: {e}"
         )
-
 
 # ============================================================
 # UPDATE 1-MINUTE CANDLE

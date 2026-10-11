@@ -88,7 +88,7 @@ def getOrders():
     buyOpenOrders = {
         order["tsym"]: order
         for order in allOrders
-        if order.get("status") == "OPEN"
+        if (order.get("status") == "OPEN" or order.get("status") == "TRIGGER_PENDING")
         and order.get("trantype") == "B"
     }
     print("==>buyOpenOrders: ", buyOpenOrders)
@@ -96,7 +96,7 @@ def getOrders():
     sellOpenOrders = {
         order["tsym"]: order
         for order in allOrders
-        if order.get("status") == "OPEN"
+        if (order.get("status") == "OPEN" or order.get("status") == "TRIGGER_PENDING")
         and order.get("trantype") == "S"
     }
     print("==>sellOpenOrders: ", sellOpenOrders)
@@ -186,10 +186,13 @@ def placeSellorder():
             continue
         bPrice = float(activePositions[pos]['netavgprc'])
         tolerence = 0.15*NIFTYALL[activePositions[pos]['symname']]['StrikeDiff']
+        if(NIFTYALL[activePositions[pos]['symname']]['StrikeDiff'] <= 20):
+            tolerence = 1.3
+        print("====>tolerence: ", str(tolerence))
         tPrice = roundOffCost(bPrice - tolerence)
         print("====>SL LMT Price: ", str(tPrice))
 
-        cPrice = float(activePositions[order['tsym']]['lp'])
+        cPrice = float(activePositions[pos]['lp'])
         diff = cPrice - bPrice
         print(f"Current Price: {cPrice}, Buy Price: {bPrice}, Diff: {diff}, Tolerence: {tolerence}")
         blocks = diff // tolerence
@@ -198,12 +201,20 @@ def placeSellorder():
         if pos not in sellOpenOrders:
             print(f"Placing Sell Order for {pos}")
             try:
-                ret = api.place_order(buy_or_sell='S', product_type=activePositions[pos]['prd'],
-                            exchange=activePositions[pos]['exch'], tradingsymbol=activePositions[pos]['tsym'], 
-                            quantity=activePositions[pos]['netqty'], discloseqty=0, 
-                            price_type='SL_LMT', price=tPrice, trigger_price=tPrice,
-                            retention='DAY', remarks='HTA:SL_LMT')
-
+                print(f"activePositions[pos]: {activePositions[pos]}")
+                ret = api.place_order(
+                        buy_or_sell='S',
+                        product_type=activePositions[pos]['prd'],
+                        exchange=activePositions[pos]['exch'],
+                        tradingsymbol=activePositions[pos]['tsym'],
+                        quantity=abs(int(activePositions[pos]['netqty'])),
+                        discloseqty=0,
+                        price_type='SL-LMT',
+                        price=float(tPrice),
+                        trigger_price=float(tPrice),
+                        retention='DAY',
+                        remarks='HTA:SL_LMT'
+    )
                 print(f"Placed Sell Order: {ret}")
             except Exception as e:
                 print(f"Error processing:{e}")   
@@ -212,34 +223,43 @@ def placeSellorder():
         elif activePositions[pos]['netqty'] != sellOpenOrders[activePositions[pos]['tsym']]['qty']:
             print(f"Updating Order: {sellOpenOrders[activePositions[pos]['tsym']]['norenordno']}")
             try:
-                api.modify_order(exchange=activePositions[pos]['exch'], tradingsymbol=activePositions[pos]['tsym'], 
+                api.modify_order(exchange=activePositions[pos]['exch'], 
+                                tradingsymbol=activePositions[pos]['tsym'], 
                                 orderno=sellOpenOrders[activePositions[pos]['tsym']]["norenordno"], 
-                                newquantity=activePositions[pos]['netqty'], newprice_type='SL_LMT', 
-                                newprice=tPrice, newtrigger_price=tPrice)
+                                newquantity=activePositions[pos]['netqty'], 
+                                newprice_type='SL-LMT', 
+                                newprice=tPrice, 
+                                newtrigger_price=tPrice)
             except Exception as e:
-                print(f"Error processing {order['norenordno']}: {e}")
+                print(f"Error processing {sellOpenOrders[activePositions[pos]['tsym']]['norenordno']}: {e}")
 
         # Enough profit, close order
-        elif ( cPrice > (bPrice + (2.8*tolerence)) ):
+        elif ( cPrice > (bPrice + (2*tolerence)) ):
             print(f"Close order: {sellOpenOrders[activePositions[pos]['tsym']]['norenordno']}")
             try:
-                api.modify_order(exchange=activePositions[pos]['exch'], tradingsymbol=activePositions[pos]['tsym'], 
+                api.modify_order(exchange=activePositions[pos]['exch'], 
+                                tradingsymbol=activePositions[pos]['tsym'], 
                                 orderno=sellOpenOrders[activePositions[pos]['tsym']]["norenordno"], 
-                                newquantity=activePositions[pos]['netqty'], newprice_type='LMT', 
-                                newprice=cPrice, newtrigger_price=cPrice)
+                                newquantity=activePositions[pos]['netqty'], 
+                                newprice_type='LMT', 
+                                newprice=cPrice, 
+                                newtrigger_price=cPrice)
 
             except Exception as e:
                 print(f"Error processing {order['norenordno']}: {e}")
 
         # Price moved to next block of tolerence, modify the order with updated price
-        elif ( (cPrice > bPrice)  and (cPrice > (float(sellOpenOrders[activePositions[pos]['tsym']]['prc']) + (2*tolerence))) ):
+        elif ( (cPrice > bPrice)  and (cPrice > (float(sellOpenOrders[activePositions[pos]['tsym']]['prc']) + (1.5*tolerence))) ):
             print(f"Updating Order Price: {sellOpenOrders[activePositions[pos]['tsym']]['norenordno']}")
-            cPrice = roundOffCost(cPrice - tolerence)
             try:
-                api.modify_order(exchange=activePositions[pos]['exch'], tradingsymbol=activePositions[pos]['tsym'], 
+                api.modify_order(exchange=activePositions[pos]['exch'], 
+                                tradingsymbol=activePositions[pos]['tsym'], 
                                 orderno=sellOpenOrders[activePositions[pos]['tsym']]["norenordno"], 
-                                newquantity=activePositions[pos]['netqty'], newprice_type='SL_LMT', 
-                                newprice=tPrice, newtrigger_price=tPrice)
+                                newquantity=activePositions[pos]['netqty'], 
+                                newprice_type='SL-LMT', 
+                                newprice=float(tPrice+0.8*tolerence), 
+                                newtrigger_price=float(tPrice+0.8*tolerence) )
+
             except Exception as e:
                 print(f"Error processing {order['norenordno']}: {e}")
 

@@ -7,8 +7,9 @@ import yaml
 import pandas as pd
 from datetime import datetime, timedelta
 
-import A_download_todays_data as dta
+# import A_download_todays_data as dta
 import A_process_buy_sell as pbs
+import A_fiveminutescandle as fmd
 #=======================================================
 # Back-up
 folder = Path("nifty100_data_today")
@@ -33,25 +34,25 @@ else:
 
 time.sleep(10)  # Wait for 10 seconds to ensure the folder is created
 #======================================================
-#login to API
-from api_helper import NorenApiPy
+# #login to API
+# from api_helper import NorenApiPy
 
-api = NorenApiPy()
+# api = NorenApiPy()
 
-with open("cred.yml") as f:
-    cred = yaml.load(f, Loader=yaml.FullLoader)
+# with open("cred.yml") as f:
+#     cred = yaml.load(f, Loader=yaml.FullLoader)
 
-loginstatus = api.injectOAuthHeader(
-    cred["Access_token"],
-    cred["UID"],
-    cred["Account_ID"]
-)
+# loginstatus = api.injectOAuthHeader(
+#     cred["Access_token"],
+#     cred["UID"],
+#     cred["Account_ID"]
+# )
 
-if loginstatus is None:
-    print("Login failed")
-    exit()
+# if loginstatus is None:
+#     print("Login failed")
+#     exit()
 
-print("API connected")
+# print("API connected")
 
 #=================================================
 INTERVAL = 5 * 60  # 5 minutes
@@ -69,14 +70,16 @@ while True:
         
         try:
             # dowload all stocks data
-            dta.download_all_stocks(api)
+            # dta.download_all_stocks(api)
+            time.sleep(30)  # Wait for 30 seconds to ensure the data is downloaded
+            fmd.process_all()
 
         except subprocess.CalledProcessError as e:
             print(f"Script failed: {e}")
 
         try:
             # dowload all stocks data
-            pbs.process_buy_sell(api)
+            pbs.process_buy_sell()
 
         except subprocess.CalledProcessError as e:
             print(f"Script failed: {e}")

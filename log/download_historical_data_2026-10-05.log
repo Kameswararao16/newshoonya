@@ -1,0 +1,497 @@
+API connected
+Downloading ZYDUSLIFE (ZYDUSLIFE-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ZYDUSLIFE
+candles: ['{"time":"01-OCT-2026", "into":"1151.00", "inth":"1158.00", "intl":"1123.70", "intc":"1145.70", "ssboe":"1790812800", "intv":"2547369.00"}']
+ZYDUSLIFE: saved 60 rows
+Downloading WIPRO (WIPRO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading WIPRO
+candles: ['{"time":"01-OCT-2026", "into":"158.61", "inth":"160.95", "intl":"157.25", "intc":"159.35", "ssboe":"1790812800", "intv":"18521731.00"}']
+WIPRO: saved 60 rows
+Downloading VEDL (VEDL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading VEDL
+candles: ['{"time":"01-OCT-2026", "into":"256.35", "inth":"257.20", "intl":"247.25", "intc":"252.05", "ssboe":"1790812800", "intv":"10131800.00"}']
+VEDL: saved 60 rows
+Downloading VBL (VBL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading VBL
+candles: ['{"time":"01-OCT-2026", "into":"428.00", "inth":"430.80", "intl":"415.35", "intc":"425.30", "ssboe":"1790812800", "intv":"8516414.00"}']
+VBL: saved 60 rows
+Downloading UNIONBANK (UNIONBANK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading UNIONBANK
+candles: ['{"time":"01-OCT-2026", "into":"169.69", "inth":"172.19", "intl":"164.81", "intc":"167.59", "ssboe":"1790812800", "intv":"7875995.00"}']
+UNIONBANK: saved 60 rows
+Downloading ULTRACEMCO (ULTRACEMCO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ULTRACEMCO
+candles: ['{"time":"01-OCT-2026", "into":"10810.00", "inth":"10879.00", "intl":"10612.00", "intc":"10710.00", "ssboe":"1790812800", "intv":"570684.00"}']
+ULTRACEMCO: saved 60 rows
+Downloading TVSMOTOR (TVSMOTOR-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TVSMOTOR
+candles: ['{"time":"01-OCT-2026", "into":"4090.00", "inth":"4100.00", "intl":"3930.10", "intc":"4021.00", "ssboe":"1790812800", "intv":"1234692.00"}']
+TVSMOTOR: saved 60 rows
+Downloading TRENT (TRENT-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TRENT
+candles: ['{"time":"01-OCT-2026", "into":"2615.00", "inth":"2624.00", "intl":"2545.80", "intc":"2580.00", "ssboe":"1790812800", "intv":"896919.00"}']
+TRENT: saved 60 rows
+Downloading TORNTPHARM (TORNTPHARM-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TORNTPHARM
+candles: ['{"time":"01-OCT-2026", "into":"4800.00", "inth":"4810.50", "intl":"4717.30", "intc":"4767.30", "ssboe":"1790812800", "intv":"357701.00"}']
+TORNTPHARM: saved 60 rows
+Downloading TITAN (TITAN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TITAN
+candles: ['{"time":"01-OCT-2026", "into":"4574.90", "inth":"4621.80", "intl":"4491.00", "intc":"4515.70", "ssboe":"1790812800", "intv":"694098.00"}']
+TITAN: saved 60 rows
+Downloading TECHM (TECHM-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TECHM
+candles: ['{"time":"01-OCT-2026", "into":"1540.00", "inth":"1554.80", "intl":"1512.00", "intc":"1533.00", "ssboe":"1790812800", "intv":"2663224.00"}']
+TECHM: saved 60 rows
+Downloading TCS (TCS-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TCS
+candles: ['{"time":"01-OCT-2026", "into":"2052.60", "inth":"2093.90", "intl":"2045.10", "intc":"2075.00", "ssboe":"1790812800", "intv":"3428501.00"}']
+TCS: saved 60 rows
+Downloading TATASTEEL (TATASTEEL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TATASTEEL
+candles: ['{"time":"01-OCT-2026", "into":"184.37", "inth":"186.55", "intl":"175.75", "intc":"178.00", "ssboe":"1790812800", "intv":"47659952.00"}']
+TATASTEEL: saved 60 rows
+Downloading TATAPOWER (TATAPOWER-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TATAPOWER
+candles: ['{"time":"01-OCT-2026", "into":"352.95", "inth":"357.15", "intl":"346.40", "intc":"350.15", "ssboe":"1790812800", "intv":"4222986.00"}']
+TATAPOWER: saved 60 rows
+Downloading TATACONSUM (TATACONSUM-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading TATACONSUM
+candles: ['{"time":"01-OCT-2026", "into":"952.00", "inth":"964.80", "intl":"945.00", "intc":"957.00", "ssboe":"1790812800", "intv":"1829307.00"}']
+TATACONSUM: saved 60 rows
+Downloading SUNPHARMA (SUNPHARMA-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading SUNPHARMA
+candles: ['{"time":"01-OCT-2026", "into":"1815.00", "inth":"1828.70", "intl":"1792.60", "intc":"1801.00", "ssboe":"1790812800", "intv":"2314700.00"}']
+SUNPHARMA: saved 60 rows
+Downloading SRF (SRF-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading SRF
+candles: ['{"time":"01-OCT-2026", "into":"2472.50", "inth":"2494.90", "intl":"2431.70", "intc":"2486.20", "ssboe":"1790812800", "intv":"352530.00"}']
+SRF: saved 60 rows
+Downloading SIEMENS (SIEMENS-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading SIEMENS
+candles: ['{"time":"01-OCT-2026", "into":"3725.70", "inth":"3804.00", "intl":"3709.50", "intc":"3804.00", "ssboe":"1790812800", "intv":"243713.00"}']
+SIEMENS: saved 60 rows
+Downloading SHRIRAMFIN (SHRIRAMFIN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading SHRIRAMFIN
+candles: ['{"time":"01-OCT-2026", "into":"973.50", "inth":"975.00", "intl":"936.00", "intc":"945.00", "ssboe":"1790812800", "intv":"5599670.00"}']
+SHRIRAMFIN: saved 60 rows
+Downloading SBIN (SBIN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading SBIN
+candles: ['{"time":"01-OCT-2026", "into":"953.10", "inth":"965.40", "intl":"945.80", "intc":"954.10", "ssboe":"1790812800", "intv":"7390452.00"}']
+SBIN: saved 60 rows
+Downloading SBILIFE (SBILIFE-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading SBILIFE
+candles: ['{"time":"01-OCT-2026", "into":"1676.30", "inth":"1730.30", "intl":"1674.80", "intc":"1721.60", "ssboe":"1790812800", "intv":"3329860.00"}']
+SBILIFE: saved 60 rows
+Downloading RELIANCE (RELIANCE-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading RELIANCE
+candles: ['{"time":"01-OCT-2026", "into":"1180.10", "inth":"1183.90", "intl":"1160.80", "intc":"1167.70", "ssboe":"1790812800", "intv":"16771221.00"}']
+RELIANCE: saved 60 rows
+Downloading RECLTD (RECLTD-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading RECLTD
+candles: ['{"time":"01-OCT-2026", "into":"298.05", "inth":"298.20", "intl":"286.20", "intc":"287.75", "ssboe":"1790812800", "intv":"9069239.00"}']
+RECLTD: saved 60 rows
+Downloading POWERGRID (POWERGRID-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading POWERGRID
+candles: ['{"time":"01-OCT-2026", "into":"258.20", "inth":"259.00", "intl":"252.35", "intc":"254.55", "ssboe":"1790812800", "intv":"10976701.00"}']
+POWERGRID: saved 60 rows
+Downloading PNB (PNB-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading PNB
+candles: ['{"time":"01-OCT-2026", "into":"113.06", "inth":"113.38", "intl":"109.37", "intc":"109.57", "ssboe":"1790812800", "intv":"11365686.00"}']
+PNB: saved 60 rows
+Downloading PIDILITIND (PIDILITIND-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading PIDILITIND
+candles: ['{"time":"01-OCT-2026", "into":"1468.10", "inth":"1486.90", "intl":"1456.80", "intc":"1464.00", "ssboe":"1790812800", "intv":"867267.00"}']
+PIDILITIND: saved 60 rows
+Downloading ONGC (ONGC-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ONGC
+candles: ['{"time":"01-OCT-2026", "into":"224.75", "inth":"224.99", "intl":"220.60", "intc":"222.37", "ssboe":"1790812800", "intv":"13099985.00"}']
+ONGC: saved 60 rows
+Downloading NTPC (NTPC-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NTPC
+candles: ['{"time":"01-OCT-2026", "into":"320.80", "inth":"320.95", "intl":"313.05", "intc":"315.10", "ssboe":"1790812800", "intv":"10094465.00"}']
+NTPC: saved 60 rows
+Downloading NHPC (NHPC-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NHPC
+candles: ['{"time":"01-OCT-2026", "into":"72.75", "inth":"72.90", "intl":"70.25", "intc":"71.75", "ssboe":"1790812800", "intv":"10903143.00"}']
+NHPC: saved 60 rows
+Downloading NESTLEIND (NESTLEIND-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NESTLEIND
+candles: ['{"time":"01-OCT-2026", "into":"1301.90", "inth":"1320.90", "intl":"1295.00", "intc":"1307.70", "ssboe":"1790812800", "intv":"1626876.00"}']
+NESTLEIND: saved 60 rows
+Downloading NAUKRI (NAUKRI-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NAUKRI
+candles: ['{"time":"01-OCT-2026", "into":"1215.10", "inth":"1221.20", "intl":"1180.30", "intc":"1200.00", "ssboe":"1790812800", "intv":"2219568.00"}']
+NAUKRI: saved 60 rows
+Downloading MOTHERSON (MOTHERSON-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading MOTHERSON
+candles: ['{"time":"01-OCT-2026", "into":"161.35", "inth":"162.27", "intl":"153.81", "intc":"157.03", "ssboe":"1790812800", "intv":"23039471.00"}']
+MOTHERSON: saved 60 rows
+Downloading MAXHEALTH (MAXHEALTH-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading MAXHEALTH
+candles: ['{"time":"01-OCT-2026", "into":"919.85", "inth":"950.00", "intl":"902.05", "intc":"940.95", "ssboe":"1790812800", "intv":"5464461.00"}']
+MAXHEALTH: saved 60 rows
+Downloading MARUTI (MARUTI-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading MARUTI
+candles: ['{"time":"01-OCT-2026", "into":"11900.00", "inth":"11907.00", "intl":"11305.00", "intc":"11386.00", "ssboe":"1790812800", "intv":"885820.00"}']
+MARUTI: saved 60 rows
+Downloading MARICO (MARICO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading MARICO
+candles: ['{"time":"01-OCT-2026", "into":"786.00", "inth":"791.00", "intl":"766.25", "intc":"781.35", "ssboe":"1790812800", "intv":"1777571.00"}']
+MARICO: saved 60 rows
+Downloading MANKIND (MANKIND-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading MANKIND
+candles: ['{"time":"01-OCT-2026", "into":"2500.00", "inth":"2535.00", "intl":"2476.10", "intc":"2535.00", "ssboe":"1790812800", "intv":"427905.00"}']
+MANKIND: saved 60 rows
+Downloading LT (LT-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading LT
+candles: ['{"time":"01-OCT-2026", "into":"3726.00", "inth":"3737.30", "intl":"3655.90", "intc":"3693.40", "ssboe":"1790812800", "intv":"2220932.00"}']
+LT: saved 60 rows
+Downloading LODHA (LODHA-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading LODHA
+candles: ['{"time":"01-OCT-2026", "into":"1116.00", "inth":"1129.00", "intl":"1083.30", "intc":"1105.60", "ssboe":"1790812800", "intv":"2249380.00"}']
+LODHA: saved 60 rows
+Downloading LICHSGFIN (LICHSGFIN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading LICHSGFIN
+candles: ['{"time":"01-OCT-2026", "into":"530.40", "inth":"531.70", "intl":"499.25", "intc":"509.00", "ssboe":"1790812800", "intv":"5986497.00"}']
+LICHSGFIN: saved 60 rows
+Downloading KOTAKBANK (KOTAKBANK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading KOTAKBANK
+candles: ['{"time":"01-OCT-2026", "into":"426.00", "inth":"435.60", "intl":"416.05", "intc":"418.35", "ssboe":"1790812800", "intv":"76637247.00"}']
+KOTAKBANK: saved 60 rows
+Downloading JSWSTEEL (JSWSTEEL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading JSWSTEEL
+candles: ['{"time":"01-OCT-2026", "into":"1253.00", "inth":"1256.40", "intl":"1214.80", "intc":"1233.00", "ssboe":"1790812800", "intv":"3158301.00"}']
+JSWSTEEL: saved 60 rows
+Downloading JIOFIN (JIOFIN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading JIOFIN
+candles: ['{"time":"01-OCT-2026", "into":"216.00", "inth":"216.20", "intl":"208.50", "intc":"212.50", "ssboe":"1790812800", "intv":"28082023.00"}']
+JIOFIN: saved 60 rows
+Downloading JINDALSTEL (JINDALSTEL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading JINDALSTEL
+candles: ['{"time":"01-OCT-2026", "into":"1130.50", "inth":"1132.70", "intl":"1079.00", "intc":"1100.50", "ssboe":"1790812800", "intv":"862948.00"}']
+JINDALSTEL: saved 60 rows
+Downloading ITC (ITC-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ITC
+candles: ['{"time":"01-OCT-2026", "into":"262.70", "inth":"262.70", "intl":"254.65", "intc":"255.90", "ssboe":"1790812800", "intv":"16447266.00"}']
+ITC: saved 60 rows
+Downloading IRFC (IRFC-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading IRFC
+candles: ['{"time":"01-OCT-2026", "into":"78.70", "inth":"78.92", "intl":"76.51", "intc":"77.06", "ssboe":"1790812800", "intv":"12764829.00"}']
+IRFC: saved 60 rows
+Downloading IOC (IOC-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading IOC
+candles: ['{"time":"01-OCT-2026", "into":"134.00", "inth":"134.10", "intl":"131.20", "intc":"131.34", "ssboe":"1790812800", "intv":"12239747.00"}']
+IOC: saved 60 rows
+Downloading INFY (INFY-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading INFY
+candles: ['{"time":"01-OCT-2026", "into":"1010.00", "inth":"1035.00", "intl":"999.15", "intc":"1035.00", "ssboe":"1790812800", "intv":"15166446.00"}']
+INFY: saved 60 rows
+Downloading INDUSINDBK (INDUSINDBK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading INDUSINDBK
+candles: ['{"time":"01-OCT-2026", "into":"896.10", "inth":"900.75", "intl":"880.30", "intc":"886.85", "ssboe":"1790812800", "intv":"1761249.00"}']
+INDUSINDBK: saved 60 rows
+Downloading INDIGO (INDIGO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading INDIGO
+candles: ['{"time":"01-OCT-2026", "into":"4936.00", "inth":"5016.20", "intl":"4878.00", "intc":"4929.90", "ssboe":"1790812800", "intv":"592514.00"}']
+INDIGO: saved 60 rows
+Downloading INDHOTEL (INDHOTEL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading INDHOTEL
+candles: ['{"time":"01-OCT-2026", "into":"728.00", "inth":"732.95", "intl":"712.30", "intc":"718.00", "ssboe":"1790812800", "intv":"4023940.00"}']
+INDHOTEL: saved 60 rows
+Downloading ICICIPRULI (ICICIPRULI-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ICICIPRULI
+candles: ['{"time":"01-OCT-2026", "into":"443.80", "inth":"450.55", "intl":"441.80", "intc":"448.05", "ssboe":"1790812800", "intv":"1267559.00"}']
+ICICIPRULI: saved 60 rows
+Downloading ICICIBANK (ICICIBANK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ICICIBANK
+candles: ['{"time":"01-OCT-2026", "into":"1316.00", "inth":"1329.90", "intl":"1308.40", "intc":"1310.60", "ssboe":"1790812800", "intv":"13163495.00"}']
+ICICIBANK: saved 60 rows
+Downloading HYUNDAI (HYUNDAI-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HYUNDAI
+candles: ['{"time":"01-OCT-2026", "into":"2031.00", "inth":"2078.60", "intl":"2002.00", "intc":"2024.00", "ssboe":"1790812800", "intv":"1795808.00"}']
+HYUNDAI: saved 60 rows
+Downloading HINDUNILVR (HINDUNILVR-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HINDUNILVR
+candles: ['{"time":"01-OCT-2026", "into":"1870.10", "inth":"1873.60", "intl":"1826.90", "intc":"1836.00", "ssboe":"1790812800", "intv":"1331680.00"}']
+HINDUNILVR: saved 60 rows
+Downloading HINDALCO (HINDALCO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HINDALCO
+candles: ['{"time":"01-OCT-2026", "into":"935.00", "inth":"946.65", "intl":"923.50", "intc":"941.85", "ssboe":"1790812800", "intv":"5877840.00"}']
+HINDALCO: saved 60 rows
+Downloading HEROMOTOCO (HEROMOTOCO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HEROMOTOCO
+candles: ['{"time":"01-OCT-2026", "into":"5235.00", "inth":"5290.00", "intl":"5051.00", "intc":"5168.00", "ssboe":"1790812800", "intv":"862662.00"}']
+HEROMOTOCO: saved 60 rows
+Downloading HDFCBANK (HDFCBANK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HDFCBANK
+candles: ['{"time":"01-OCT-2026", "into":"708.40", "inth":"721.30", "intl":"707.10", "intc":"721.20", "ssboe":"1790812800", "intv":"37389857.00"}']
+HDFCBANK: saved 60 rows
+Downloading HCLTECH (HCLTECH-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HCLTECH
+candles: ['{"time":"01-OCT-2026", "into":"1230.00", "inth":"1256.00", "intl":"1228.90", "intc":"1243.10", "ssboe":"1790812800", "intv":"3430282.00"}']
+HCLTECH: saved 60 rows
+Downloading HAVELLS (HAVELLS-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HAVELLS
+candles: ['{"time":"01-OCT-2026", "into":"1020.00", "inth":"1041.80", "intl":"1019.70", "intc":"1040.00", "ssboe":"1790812800", "intv":"2030089.00"}']
+HAVELLS: saved 60 rows
+Downloading HAL (HAL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading HAL
+candles: ['{"time":"01-OCT-2026", "into":"4666.00", "inth":"4699.70", "intl":"4559.30", "intc":"4601.00", "ssboe":"1790812800", "intv":"739864.00"}']
+HAL: saved 60 rows
+Downloading GRASIM (GRASIM-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading GRASIM
+candles: ['{"time":"01-OCT-2026", "into":"3038.00", "inth":"3045.00", "intl":"2944.40", "intc":"2962.00", "ssboe":"1790812800", "intv":"1385746.00"}']
+GRASIM: saved 60 rows
+Downloading GODREJCP (GODREJCP-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading GODREJCP
+candles: ['{"time":"01-OCT-2026", "into":"852.00", "inth":"852.00", "intl":"838.00", "intc":"840.00", "ssboe":"1790812800", "intv":"838419.00"}']
+GODREJCP: saved 60 rows
+Downloading GAIL (GAIL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading GAIL
+candles: ['{"time":"01-OCT-2026", "into":"170.60", "inth":"171.89", "intl":"168.55", "intc":"171.22", "ssboe":"1790812800", "intv":"6882008.00"}']
+GAIL: saved 60 rows
+Downloading ETERNAL (ETERNAL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ETERNAL
+candles: ['{"time":"01-OCT-2026", "into":"316.60", "inth":"320.40", "intl":"309.80", "intc":"313.90", "ssboe":"1790812800", "intv":"29716584.00"}']
+ETERNAL: saved 60 rows
+Downloading EICHERMOT (EICHERMOT-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading EICHERMOT
+candles: ['{"time":"01-OCT-2026", "into":"7120.00", "inth":"7146.00", "intl":"6840.00", "intc":"6920.00", "ssboe":"1790812800", "intv":"817452.00"}']
+EICHERMOT: saved 60 rows
+Downloading DRREDDY (DRREDDY-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading DRREDDY
+candles: ['{"time":"01-OCT-2026", "into":"1233.00", "inth":"1233.90", "intl":"1194.90", "intc":"1206.20", "ssboe":"1790812800", "intv":"2607818.00"}']
+DRREDDY: saved 60 rows
+Downloading DMART (DMART-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading DMART
+candles: ['{"time":"01-OCT-2026", "into":"3809.80", "inth":"3880.00", "intl":"3781.40", "intc":"3813.00", "ssboe":"1790812800", "intv":"652283.00"}']
+DMART: saved 60 rows
+Downloading DLF (DLF-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading DLF
+candles: ['{"time":"01-OCT-2026", "into":"664.50", "inth":"671.10", "intl":"650.55", "intc":"658.40", "ssboe":"1790812800", "intv":"6264045.00"}']
+DLF: saved 60 rows
+Downloading DIVISLAB (DIVISLAB-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading DIVISLAB
+candles: ['{"time":"01-OCT-2026", "into":"9277.00", "inth":"9318.00", "intl":"9078.00", "intc":"9249.00", "ssboe":"1790812800", "intv":"567310.00"}']
+DIVISLAB: saved 60 rows
+Downloading DABUR (DABUR-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading DABUR
+candles: ['{"time":"01-OCT-2026", "into":"379.70", "inth":"383.85", "intl":"373.20", "intc":"374.25", "ssboe":"1790812800", "intv":"2455226.00"}']
+DABUR: saved 60 rows
+Downloading CUMMINSIND (CUMMINSIND-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading CUMMINSIND
+candles: ['{"time":"01-OCT-2026", "into":"4789.90", "inth":"4860.00", "intl":"4760.00", "intc":"4860.00", "ssboe":"1790812800", "intv":"393680.00"}']
+CUMMINSIND: saved 60 rows
+Downloading CONCOR (CONCOR-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading CONCOR
+candles: ['{"time":"01-OCT-2026", "into":"448.00", "inth":"450.85", "intl":"436.35", "intc":"442.00", "ssboe":"1790812800", "intv":"877730.00"}']
+CONCOR: saved 60 rows
+Downloading COALINDIA (COALINDIA-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading COALINDIA
+candles: ['{"time":"01-OCT-2026", "into":"421.20", "inth":"426.35", "intl":"416.30", "intc":"420.40", "ssboe":"1790812800", "intv":"7514836.00"}']
+COALINDIA: saved 60 rows
+Downloading CIPLA (CIPLA-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading CIPLA
+candles: ['{"time":"01-OCT-2026", "into":"1349.10", "inth":"1359.40", "intl":"1333.40", "intc":"1344.00", "ssboe":"1790812800", "intv":"921789.00"}']
+CIPLA: saved 60 rows
+Downloading CHOLAFIN (CHOLAFIN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading CHOLAFIN
+candles: ['{"time":"01-OCT-2026", "into":"1619.70", "inth":"1619.70", "intl":"1563.20", "intc":"1580.00", "ssboe":"1790812800", "intv":"1699959.00"}']
+CHOLAFIN: saved 60 rows
+Downloading CGPOWER (CGPOWER-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading CGPOWER
+candles: ['{"time":"01-OCT-2026", "into":"861.00", "inth":"889.90", "intl":"859.60", "intc":"879.00", "ssboe":"1790812800", "intv":"4633143.00"}']
+CGPOWER: saved 60 rows
+Downloading CANBK (CANBK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading CANBK
+candles: ['{"time":"01-OCT-2026", "into":"119.45", "inth":"120.13", "intl":"116.51", "intc":"118.36", "ssboe":"1790812800", "intv":"13953325.00"}']
+CANBK: saved 60 rows
+Downloading BRITANNIA (BRITANNIA-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BRITANNIA
+candles: ['{"time":"01-OCT-2026", "into":"4798.00", "inth":"4812.30", "intl":"4737.00", "intc":"4778.00", "ssboe":"1790812800", "intv":"362699.00"}']
+BRITANNIA: saved 60 rows
+Downloading BPCL (BPCL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BPCL
+candles: ['{"time":"01-OCT-2026", "into":"302.00", "inth":"305.05", "intl":"297.10", "intc":"300.60", "ssboe":"1790812800", "intv":"5618518.00"}']
+BPCL: saved 60 rows
+Downloading BHARTIARTL (BHARTIARTL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BHARTIARTL
+candles: ['{"time":"01-OCT-2026", "into":"1745.00", "inth":"1765.80", "intl":"1726.30", "intc":"1741.10", "ssboe":"1790812800", "intv":"5609657.00"}']
+BHARTIARTL: saved 60 rows
+Downloading BEL (BEL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BEL
+candles: ['{"time":"01-OCT-2026", "into":"385.20", "inth":"386.15", "intl":"378.65", "intc":"383.10", "ssboe":"1790812800", "intv":"10250149.00"}']
+BEL: saved 60 rows
+Downloading BANKBARODA (BANKBARODA-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BANKBARODA
+candles: ['{"time":"01-OCT-2026", "into":"230.00", "inth":"233.99", "intl":"229.52", "intc":"230.82", "ssboe":"1790812800", "intv":"9034271.00"}']
+BANKBARODA: saved 60 rows
+Downloading BAJFINANCE (BAJFINANCE-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BAJFINANCE
+candles: ['{"time":"01-OCT-2026", "into":"953.90", "inth":"955.95", "intl":"937.30", "intc":"948.30", "ssboe":"1790812800", "intv":"5698769.00"}']
+BAJFINANCE: saved 60 rows
+Downloading BAJAJHLDNG (BAJAJHLDNG-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BAJAJHLDNG
+candles: ['{"time":"01-OCT-2026", "into":"10775.00", "inth":"10775.00", "intl":"10415.00", "intc":"10666.00", "ssboe":"1790812800", "intv":"39942.00"}']
+BAJAJHLDNG: saved 60 rows
+Downloading BAJAJFINSV (BAJAJFINSV-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BAJAJFINSV
+candles: ['{"time":"01-OCT-2026", "into":"1723.00", "inth":"1734.90", "intl":"1703.40", "intc":"1732.60", "ssboe":"1790812800", "intv":"2292234.00"}']
+BAJAJFINSV: saved 60 rows
+Downloading BAJAJ-AUTO (BAJAJ-AUTO-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading BAJAJ-AUTO
+candles: ['{"time":"01-OCT-2026", "into":"10701.00", "inth":"10714.00", "intl":"9900.00", "intc":"10045.00", "ssboe":"1790812800", "intv":"1491300.00"}']
+BAJAJ-AUTO: saved 60 rows
+Downloading AXISBANK (AXISBANK-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading AXISBANK
+candles: ['{"time":"01-OCT-2026", "into":"1219.10", "inth":"1241.60", "intl":"1215.30", "intc":"1217.10", "ssboe":"1790812800", "intv":"7005197.00"}']
+AXISBANK: saved 60 rows
+Downloading ASIANPAINT (ASIANPAINT-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ASIANPAINT
+candles: ['{"time":"01-OCT-2026", "into":"2391.00", "inth":"2420.00", "intl":"2377.00", "intc":"2407.00", "ssboe":"1790812800", "intv":"1005836.00"}']
+ASIANPAINT: saved 60 rows
+Downloading APOLLOHOSP (APOLLOHOSP-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading APOLLOHOSP
+candles: ['{"time":"01-OCT-2026", "into":"8090.00", "inth":"8135.00", "intl":"7910.00", "intc":"8133.50", "ssboe":"1790812800", "intv":"939105.00"}']
+APOLLOHOSP: saved 60 rows
+Downloading AMBUJACEM (AMBUJACEM-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading AMBUJACEM
+candles: ['{"time":"01-OCT-2026", "into":"371.50", "inth":"371.60", "intl":"356.30", "intc":"362.25", "ssboe":"1790812800", "intv":"3893265.00"}']
+AMBUJACEM: saved 60 rows
+Downloading ADANIPOWER (ADANIPOWER-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ADANIPOWER
+candles: ['{"time":"01-OCT-2026", "into":"202.90", "inth":"203.36", "intl":"193.10", "intc":"196.21", "ssboe":"1790812800", "intv":"33548439.00"}']
+ADANIPOWER: saved 60 rows
+Downloading ADANIPORTS (ADANIPORTS-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ADANIPORTS
+candles: ['{"time":"01-OCT-2026", "into":"1786.00", "inth":"1786.00", "intl":"1716.00", "intc":"1737.80", "ssboe":"1790812800", "intv":"2157928.00"}']
+ADANIPORTS: saved 60 rows
+Downloading ADANIGREEN (ADANIGREEN-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ADANIGREEN
+candles: ['{"time":"01-OCT-2026", "into":"1274.10", "inth":"1298.00", "intl":"1260.30", "intc":"1276.10", "ssboe":"1790812800", "intv":"6355094.00"}']
+ADANIGREEN: saved 60 rows
+Downloading ADANIENT (ADANIENT-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ADANIENT
+candles: ['{"time":"01-OCT-2026", "into":"2900.00", "inth":"2903.70", "intl":"2772.00", "intc":"2816.80", "ssboe":"1790812800", "intv":"2100334.00"}']
+ADANIENT: saved 60 rows
+Downloading ADANIENSOL (ADANIENSOL-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ADANIENSOL
+candles: ['{"time":"01-OCT-2026", "into":"1318.10", "inth":"1389.60", "intl":"1309.10", "intc":"1326.40", "ssboe":"1790812800", "intv":"7267118.00"}']
+ADANIENSOL: saved 60 rows
+Downloading ABB (ABB-EQ)
+latest: 2026-10-01, today: 2026-10-04
+Downloading ABB
+candles: ['{"time":"01-OCT-2026", "into":"6780.00", "inth":"6947.50", "intl":"6735.00", "intc":"6900.00", "ssboe":"1790812800", "intv":"240835.00"}']
+ABB: saved 60 rows
+Downloading NIFTY50 (Nifty 50)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NIFTY50
+candles: ['{"time":"01-OCT-2026", "into":"22543.70", "inth":"22610.60", "intl":"22217.30", "intc":"22421.95", "ssboe":"1790812800", "intv":"451303049.00"}']
+NIFTY50: saved 60 rows
+Downloading NIFTYBANK (Nifty Bank)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NIFTYBANK
+candles: ['{"time":"01-OCT-2026", "into":"54583.05", "inth":"55091.45", "intl":"54066.60", "intc":"54450.75", "ssboe":"1790812800", "intv":"304389100.00"}']
+NIFTYBANK: saved 60 rows
+Downloading NIFTYNXT50 (Nifty Next 50)
+latest: 2026-10-01, today: 2026-10-04
+Downloading NIFTYNXT50
+candles: ['{"time":"01-OCT-2026", "into":"69531.05", "inth":"69683.90", "intl":"68110.50", "intc":"68981.35", "ssboe":"1790812800", "intv":"867195731.00"}']
+NIFTYNXT50: saved 60 rows
+DOWNLOAD COMPLETE

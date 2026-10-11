@@ -48,9 +48,6 @@ now = datetime.now()
 
 starttime = int(
     now.replace(
-        year=2026,
-        month=10,
-        day=1,
         hour=9,
         minute=15,
         second=0,

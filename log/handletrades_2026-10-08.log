@@ -1,0 +1,15 @@
+API connected
+==>positions:  [{'stat': 'Ok', 'uid': 'RMS50', 'actid': 'FA199969', 'exch': 'NFO', 'tsym': 'SBIN27OCT26C970', 's_prdt_ali': 'NRML', 'prd': 'M', 'token': '127006', 'symname': 'SBIN', 'und_exch': 'NSE', 'und_tk': '3045', 'instname': 'OPTSTK', 'cname': 'SBIN OCT 970 CE ', 'dname': 'SBIN OCT 970 CE ', 'frzqty': '22501', 'pp': '2', 'ls': '750', 'ti': '0.05', 'mult': '1', 'prcftr': '1.000000', 'daybuyqty': '0', 'daysellqty': '0', 'daybuyamt': '0.00', 'daybuyavgprc': '0.00', 'daysellamt': '0.00', 'daysellavgprc': '0.00', 'cfbuyqty': '1500', 'cfsellqty': '0', 'cfbuyamt': '16725.00', 'cfbuyavgprc': '11.15', 'cfsellamt': '0.00', 'cfsellavgprc': '0.00', 'openbuyqty': '0', 'opensellqty': '0', 'openbuyamt': '0.00', 'openbuyavgprc': '0.00', 'opensellamt': '0.00', 'opensellavgprc': '0.00', 'dayavgprc': '0.00', 'netqty': '1500', 'netavgprc': '11.15', 'upldprc': '11.00', 'netupldprc': '11.00', 'lp': '10.10', 'urmtom': '-1575.00', 'bep': '11.15', 'totbuyamt': '16725.00', 'totsellamt': '0.00', 'totbuyavgprc': '11.15', 'totsellavgprc': '0.00', 'rpnl': '-0.00'}]
+-1575.0 is your Daily MTM
+==>Active position: {'SBIN27OCT26C970': {'stat': 'Ok', 'uid': 'RMS50', 'actid': 'FA199969', 'exch': 'NFO', 'tsym': 'SBIN27OCT26C970', 's_prdt_ali': 'NRML', 'prd': 'M', 'token': '127006', 'symname': 'SBIN', 'und_exch': 'NSE', 'und_tk': '3045', 'instname': 'OPTSTK', 'cname': 'SBIN OCT 970 CE ', 'dname': 'SBIN OCT 970 CE ', 'frzqty': '22501', 'pp': '2', 'ls': '750', 'ti': '0.05', 'mult': '1', 'prcftr': '1.000000', 'daybuyqty': '0', 'daysellqty': '0', 'daybuyamt': '0.00', 'daybuyavgprc': '0.00', 'daysellamt': '0.00', 'daysellavgprc': '0.00', 'cfbuyqty': '1500', 'cfsellqty': '0', 'cfbuyamt': '16725.00', 'cfbuyavgprc': '11.15', 'cfsellamt': '0.00', 'cfsellavgprc': '0.00', 'openbuyqty': '0', 'opensellqty': '0', 'openbuyamt': '0.00', 'openbuyavgprc': '0.00', 'opensellamt': '0.00', 'opensellavgprc': '0.00', 'dayavgprc': '0.00', 'netqty': '1500', 'netavgprc': '11.15', 'upldprc': '11.00', 'netupldprc': '11.00', 'lp': '10.10', 'urmtom': '-1575.00', 'bep': '11.15', 'totbuyamt': '16725.00', 'totsellamt': '0.00', 'totbuyavgprc': '11.15', 'totsellavgprc': '0.00', 'rpnl': '-0.00'}} 
+==>allOrders: None
+No Data
+==> SBIN27OCT26C970
+Active Position Symbol parent: SBIN
+====>SL LMT Price:  9.6
+Traceback (most recent call last):
+  File "/home/nodeusr/Kamesh/newshoonya/A_handletrades.py", line 397, in <module>
+    placeSellorder()
+  File "/home/nodeusr/Kamesh/newshoonya/A_handletrades.py", line 192, in placeSellorder
+    cPrice = float(activePositions[order['tsym']]['lp'])
+NameError: name 'order' is not defined
